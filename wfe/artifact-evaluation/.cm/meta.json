@@ -1,0 +1,28 @@
+{
+ "template_file": "_resources/_template.html",
+
+ "menu_desc":[
+   {
+     "html_start":"<div id=\"ck_menu_0\"><div style=\"padding:3px;margin-top:6px;\">",
+     "html_end":"</div></div>",
+
+     "html_on_start":"<span id=\"ck_menu_text_0_selected\">",
+     "html_on_end":"</span>",
+     "html_off_start":"<span id=\"ck_menu_text_0\">",
+     "html_off_end":"</span>",
+
+     "nodes":[
+       {"id":"index", "name":"Home", "link":"$#wfe_url_prefix_page#$index"},
+       {"id":"current", "name":"On-going","link":"$#wfe_url_prefix_page#$current"},
+       {"id":"submission", "name":"Submission","link":"$#wfe_url_prefix_page#$submission"},
+       {"id":"reviewing", "name":"Reviewing","link":"$#wfe_url_prefix_page#$reviewing"},
+       {"id":"committee", "name":"Committee","link":"$#wfe_url_prefix_page#$committee"},
+       {"id":"prior", "name":"Prior AE","link":"$#wfe_url_prefix_page#$prior_ae"}
+     ]
+   }
+ ],
+
+ "global_keywords":"artifact evaluation, collective knowledge, ppopp, cgo, adapt, reproducible research",
+
+ "share":" <!-- AddToAny BEGIN -->\n <div class=\"a2a_kit a2a_default_style\" style=\"margin:0 auto;font-size:12px;width:60px;\">\n  <a class=\"a2a_dd\" href=\"https://www.addtoany.com/share_save\">Share</a>\n </div>\n <script type=\"text/javascript\" src=\"//static.addtoany.com/menu/page.js\"></script>\n <!-- AddToAny END -->\n"
+}

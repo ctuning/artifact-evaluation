@@ -3,12 +3,8 @@ CK-powered website for Artifact Evaluation for PPoPP, CGO, ADAPT
 
 Prerequisites
 =============
-* Collective Knowledge Framework for Open and Reproducible R&D: 
+Collective Knowledge Framework for Open and Reproducible R&D: 
 http://github.com/ctuning/ck
-
-If you have python pip, you can install it simply via:
-
- $ pip install ck
 
 Description
 ===========

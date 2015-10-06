@@ -13,10 +13,9 @@
 
      "nodes":[
        {"id":"index", "name":"Home", "link":"$#wfe_url_prefix_page#$index"},
-       {"id":"current", "name":"On-going","link":"$#wfe_url_prefix_page#$current"},
-       {"id":"submission", "name":"Submission","link":"$#wfe_url_prefix_page#$submission"},
-       {"id":"reviewing", "name":"Reviewing","link":"$#wfe_url_prefix_page#$reviewing"},
-       {"id":"committee", "name":"Committee","link":"$#wfe_url_prefix_page#$committee"},
+       {"id":"committee", "name":"Joint Committee","link":"$#wfe_url_prefix_page#$committee"},
+       {"id":"submission", "name":"Submission Guide","link":"$#wfe_url_prefix_page#$submission"},
+       {"id":"reviewing", "name":"Reviewing Guide","link":"$#wfe_url_prefix_page#$reviewing"},
        {"id":"prior", "name":"Prior AE","link":"$#wfe_url_prefix_page#$prior_ae"}
      ]
    }

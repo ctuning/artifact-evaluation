@@ -6,6 +6,10 @@ Prerequisites
 Collective Knowledge Framework for Open and Reproducible R&D: 
 http://github.com/ctuning/ck
 
+If you have Python PIP, you can install CK easily as following:
+* Linux: sudo pip install ck
+* Windows: pip install ck
+
 Description
 ===========
 

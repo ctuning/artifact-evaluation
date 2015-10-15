@@ -101,83 +101,91 @@ and this <a href="https://groups.google.com/forum/#!forum/collective-knowledge">
 <!-------------------------------------------------------------------------------------------->
 <div style="margin-left: 20px;">
 
-\appendix
-\section{Artifact Description}
+<!------------------------------------------------------------------->
+ <h2>Abstract</h2>
 
-Submission and reviewing methodology: \\
-\url{cTuning.org/ae/submission_ae_20151015.html}
+  <div style="margin-left: 20px;">
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Abstract}
+   <p>
+   <b>Check-list</b><br><br>
 
-{\em Obligatory}
+     <img src="$#ck_url_template_pull#$resources/image-general-workflow1.png"><br><br>
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Description}
-\subsubsection{How delivered}
+     Make sure that reviewers have competence + possibly meta in Digital Library (under discussion)
+  </div>
 
-package (VM, Docker, tar/zip/gzip, OCCAM, CK, ...)
- or
-private machine with pre-installed software 
- (when using)
-
-public website
-private website
-
-everything included or has to be rebuild
-
-Approximate HDD size required
-
-\subsubsection{Hardware dependencies}
-
-specific hardware
- (vendor, CPU/GPU/FPGA, number of processors/cores, 
-  interconnect, memory, counters
+<!------------------------------------------------------------------->
+ <h2>Description</h2>
+  <div style="margin-left: 20px;">
 
 
-\subsubsection{Software dependencies}
+   <h3>How delivered</h3>
 
-specific OS (patched Linux)
-libraries
-compilers
-tools
+   <h3>Hardware dependencies</h3>
 
-If third-party/proprietary software has to be used, 
-we strongly suggest to describe where to get and how to install
-(we are arranging some AE licenses for commonly used tools)
+   <h3>Software dependencies</h3>
 
-\subsubsection{Datasets}
+   <h3>Datasets</h3>
 
-included, open source, need to download, proprietary/can provide alternative, some smaller subset
+   <h3>Interactive report</h3>
+  </div>
 
+<!------------------------------------------------------------------->
+ <h2>Installation</h2>
 
-interactive report
+<!------------------------------------------------------------------->
+ <h2>Experiment workflow</h2>
 
-\subsubsection{Expected output}
+  
+ Add link to my workflow paper ...
 
-Replication or reproducibility:
-Just tool output, performance numbers, scalability, etc
+<!------------------------------------------------------------------->
+ <h2>Evaluation and expected result</h2>
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Experiment workflow}
+<!------------------------------------------------------------------->
+ <h2>Notes</h2>
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Evaluation}
+<!------------------------------------------------------------------->
+ <h2>Check list</h2>
 
-How to get expected output, report unexpected behavior or bugs
+  <div style="margin-left: 20px;">
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Notes}
+   <table border="1" cellpadding="5" cellspacing="0">
+    <tr>
+     <td><b>Criteria</b></td>
+     <td><b>Score (readiness on scale 0..10)</b></td>
+    </tr>
+    <tr>
+     <td>Documentation</td>
+     <td></td>
+    </tr>
+    <tr>
+     <td>Completeness</td>
+     <td></td>
+    </tr>
+    <tr>
+     <td>Installation</td>
+     <td></td>
+    </tr>
+    <tr>
+     <td>Use case</td>
+     <td></td>
+    </tr>
+    <tr>
+     <td>Expected behavior</td>
+     <td></td>
+    </tr>
+   </table>
 
-If you know where possible unexpected behavior or problems 
-(that you maybe even plan to solve in the future)
+  </div>
 
 
 </div>
 
 
 <!-------------------------------------------------------------------------------------------->
-<h2>Examples of accepted artifacts</h2>
+<h2>Examples of accepted artifacts from past conferences, workshops and journals</h2>
+
 
 
 
@@ -195,30 +203,48 @@ with evaluated artifacts we keep track of all past versions:
 </ul>
 
 <!-------------------------------------------------------------------------------------------->
-<h2>Artifact sharing</h2>
+<h1>If accepted</h1>
 
-Though you are not obliged to publicly release your artifacts 
-(in fact, it is sometimes impossible due to various limitations), 
-we strongly encourage you to share them with the community
-(even if they are not open-source).
+<div style="margin-left: 20px;">
+ <h2>Final paper</h2>
 
-You can release them as an auxilary material in Digital Libraries,
-your institutional repository, various open services for code
-and data sharing.
+ You will be given conference-specific instructions about how 
+ to add a scalable logo "Arifact Evaluated" to your paper. 
 
-Furthermore, many of the encountered problems during AE 
-motivated us to start developing a supporting open-source technology 
-that can help improve artifact sharing, validation and reuse:
-<ul>
- <li>
-  <b><a href="http://www.occamportal.org">OCCAM Framework</a></b> - enabling open curation for computer architecture modeling.
- </li>
- <li>
-  <b><a href="http://github.com/ctuning/ck/wiki">Collective Knowledge Framework (CK)</a></b> - 
-  converting artifacts into reusable components and experimental workflows with Python-based wrappers and unified JSON API
-  shared via <a href="http://github.com/ctuning/ck">GitHub</a> (see example of PLDI'15
-  CLSmith artifact converted into CK); enabling interactive and reproducible articles
-  (see example of an <a href="http://cknowledge.org/repo/web.php?wcid=report:b0779e2a64c22907">interactive report</a> 
-  for CK-powered universal and multi-objective OpenCL autotuning). 
- </li>
-</ul>
+ You can also keep AE appendix in your final paper
+ (while removing all unnecessary or confidential information).
+
+ <h2>Artifact sharing</h2>
+
+ Though you are not obliged to publicly release your artifacts 
+ (in fact, it is sometimes impossible due to various limitations), 
+ we strongly encourage you to share them with the community
+ (even if they are not open-source).
+
+ You can release them as an auxiliary material in Digital Libraries,
+ your institutional repository, various open services for code
+ and data sharing.
+
+ Furthermore, many of the encountered problems during AE 
+ motivated us to start developing a supporting open-source technology 
+ that can help improve artifact sharing, validation and reuse:
+ <ul>
+  <li>
+   <b><a href="http://www.occamportal.org">OCCAM Framework</a></b> - enabling open curation for computer architecture modeling.
+  </li>
+  <li>
+   <b><a href="http://github.com/ctuning/ck/wiki">Collective Knowledge Framework (CK)</a></b> - 
+   converting artifacts (code and data) into reusable components and experimental workflows with Python-based wrappers and unified JSON API
+   shared via <a href="http://github.com/ctuning/ck">GitHub</a> (see example of 
+    <a href="https://github.com/ctuning/ck/wiki/Getting_started_guide_clsmith">PLDI'15 CLSmith artifact</a> converted to 
+    <a href="https://github.com/ctuning/ck-clsmith">CK format</a>). 
+  </li>
+ </ul>
+
+ You are welcome to use the following <a href="$#ck_url_template_pull#$templates/ae.html">AE HTML template</a> 
+ to describe your artifact or check out our <a href="http://github.com/ctuning/ck/wiki">CK framework</a> 
+ to prepare interactive reports with experiment replay (as demonstrated on <a href="http://cknowledge.org/repo/web.php?wcid=report:b0779e2a64c22907">this page 
+ for CK-powered universal and multi-objective OpenCL autotuning</a>). 
+</div>
+
+

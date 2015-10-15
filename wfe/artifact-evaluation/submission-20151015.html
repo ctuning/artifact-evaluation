@@ -4,7 +4,7 @@ around mid-October 2015!
 -->
  
 <p>
-This guide (<b>V20151015</b>) should help you describe, pack 
+This guide should help you describe, pack 
 and submit your artifacts for a review.
 
 
@@ -53,11 +53,7 @@ on our <a href="$#ck_root_page_url#$reviewing$#ck_page_suffix#$">reviewing guide
 </ul>
 
 where <b>"met expectations" score or above</b> means that your artifact 
-successfully passed evaluation and will receive a stamp of approval:
-
-<center>
-<img src="$#ck_url_template_pull#$resources/ae_logo.png">
-</center>
+successfully passed evaluation and will receive a stamp of approval. 
 
 The highest ranked artifact will also receive a <i>"distinguished artifact" 
 award</i>  (see <a href="http://cTuning.org/event/ae-ppopp2015">PPoPP'15</a> 
@@ -97,76 +93,27 @@ and this <a href="https://groups.google.com/forum/#!forum/collective-knowledge">
 <!-------------------------------------------------------------------------------------------->
 <div style="margin-left: 20px;">
 
-\appendix
-\section{Artifact Description}
-
-Submission and reviewing methodology: \\
-\url{cTuning.org/ae/submission_ae_20151015.html}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Abstract}
-
-{\em Obligatory}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Description}
-\subsubsection{How delivered}
-
-package (VM, Docker, tar/zip/gzip, OCCAM, CK, ...)
- or
-private machine with pre-installed software 
- (when using)
-
-public website
-private website
-
-everything included or has to be rebuild
-
-Approximate HDD size required
-
-\subsubsection{Hardware dependencies}
-
-specific hardware
- (vendor, CPU/GPU/FPGA, number of processors/cores, 
-  interconnect, memory, counters
+   <h3>Artifact abstract</h3>
 
 
-\subsubsection{Software dependencies}
 
-specific OS (patched Linux)
-libraries
-compilers
-tools
-
-If third-party/proprietary software has to be used, 
-we strongly suggest to describe where to get and how to install
-(we are arranging some AE licenses for commonly used tools)
-
-\subsubsection{Datasets}
-
-included, open source, need to download, proprietary/can provide alternative, some smaller subset
+   <h3>Artifact checklist</h3>
 
 
-interactive report
 
-\subsubsection{Expected output}
+   <h3>Artifact packaging and installation</h3>
 
-Replication or reproducibility:
-Just tool output, performance numbers, scalability, etc
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Experiment workflow}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Evaluation}
+   <h3>Experiment workflow</h3>
 
-How to get expected output, report unexpected behavior or bugs
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Notes}
 
-If you know where possible unexpected behavior or problems 
-(that you maybe even plan to solve in the future)
+   <h3>Expected result</h3>
+
+
+
+   <h3>Notes</h3>
 
 
 </div>
@@ -178,17 +125,6 @@ If you know where possible unexpected behavior or problems
 
 
 
-<!-------------------------------------------------------------------------------------------->
-<h2>Methodology archive</h2>
-
-To help readers understand which submission/reviewing methodology was used in papers 
-with evaluated artifacts we keep track of all past versions:
-<ul>
- <li><b>V20151015 (PPoPP'16/CGO'16/ADAPT'16)</b>: 
-  <a href="$#ck_url_template_pull#$templates/ae-20151015.tex">LaTeX template</a>,
-  <a href="$#ck_root_page_url#$submission-20151015$#ck_page_suffix#$">submission guide</a>,
-  <a href="$#ck_root_page_url#$reviewing-20151015$#ck_page_suffix#$">reviewing guide</a>
-</ul>
 
 <!-------------------------------------------------------------------------------------------->
 <h2>Artifact sharing</h2>
@@ -202,19 +138,21 @@ You can release them as an auxilary material in Digital Libraries,
 your institutional repository, various open services for code
 and data sharing.
 
-Furthermore, many of the encountered problems during AE 
-motivated us to start developing a supporting open-source technology 
-that can help improve artifact sharing, validation and reuse:
+<p>
+
+Based on the outcome of the past AE and your feedback, 
+we are now working on an open-source technology that 
+can improve artifact sharing, validation and reuse:
 <ul>
  <li>
-  <b><a href="http://www.occamportal.org">OCCAM Framework</a></b> - enabling open curation for computer architecture modeling.
+  <b><a href="http://www.occamportal.org">OCCAM portal</a></b> - enabling open curation for computer architecture modeling.
  </li>
  <li>
   <b><a href="http://github.com/ctuning/ck/wiki">Collective Knowledge Framework (CK)</a></b> - 
-  converting artifacts into reusable components and experimental workflows with Python-based wrappers and unified JSON API
+  converting artifacts into reusable components with python wrapper and unified JSON API
   shared via <a href="http://github.com/ctuning/ck">GitHub</a> (see example of PLDI'15
-  CLSmith artifact converted into CK); enabling interactive and reproducible articles
-  (see example of an <a href="http://cknowledge.org/repo/web.php?wcid=report:b0779e2a64c22907">interactive report</a> 
-  for CK-powered universal and multi-objective OpenCL autotuning). 
+  CLSmith artifact converted into CK) and enabling interactive and reproducible articles
+  (see example of a <a href="http://cknowledge.org/repo/web.php?wcid=report:b0779e2a64c22907">universal 
+  OpenCL autotuning report</a> or this website ). 
  </li>
 </ul>

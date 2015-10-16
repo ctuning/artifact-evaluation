@@ -1,0 +1,53 @@
+### Review template for Artifact Evaluation V20151015
+
+
+
+## Overall assessment (score 0..100%) #################################
+
+# Documentation: (add your score)
+(Describe your experience, success/failure,
+encountered problems, and suggestions to authors)
+
+# Packaging: (add your score)
+(Describe your experience, success/failure,
+encountered problems, and suggestions to authors)
+
+
+# Installation: (add your score)
+(Describe your experience, success/failure,
+encountered problems, and suggestions to authors)
+
+
+# Use case: (add your score)
+(Describe your experience, success/failure,
+encountered problems, and suggestions to authors)
+
+
+# Expected behavior: (add your score)
+(Describe your experience, success/failure,
+encountered problems, and suggestions to authors)
+
+
+# Customization and reusability: (add your score)
+(Describe your experience, success/failure,
+encountered problems, and suggestions to authors)
+
+
+# Paper coverage: (add your score)
+(Describe your experience, success/failure,
+encountered problems, and suggestions to authors)
+
+
+
+## Final assessment: ##################################################
+
+Leave only one from below:
+
+* significantly exceeded expectations
+* exceeded expectations
+* met expectations
+* fell below expectations
+* significantly fell below expectations
+
+Provide explanation of your score and 
+what to improve during rebuttal.

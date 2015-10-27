@@ -1,8 +1,3 @@
-<!-- We currently use <a href="http://www.artifact-eval.org/guidelines.html">the following guidelines</a> 
-for packaging artifact submissions. However, we are preparing a revised version that should be available
-around mid-October 2015! 
--->
- 
 <p>
 This guide (<b>V20151015</b>) should help you describe 
 and submit your artifacts for a review.
@@ -18,21 +13,29 @@ for a possible public release, if you plan to do so
 (for example as an auxiliary material in a Digital
 Library or on your personal web page).
 
-You may check a few examples of accepted artifacts from past conferences <a href="#examples">further on this page</a>.
+<p>
+<b>Navigation</b>:
+<ul>
+ <li><a href="#expect">What to expect</a></li>
+ <li><a href="#prepare">Preparing artifacts for submission</a></li>
+ <li><a href="#accepted">If accepted</a></li>
+ <li><a href="#examples">Examples of accepted artifacts</a></li>
+ <li><a href="#archive">Methodology archive</a></li>
+ <li><a href="$#ck_root_page_url#$submission_extra$#ck_page_suffix#$">Extended artifact description</a></li>
+</ul>
 
 <!-------------------------------------------------------------------------------------------->
 <p>
-<h1><u>What to expect</u></h1>
+<h1><a name="expect"><u>What to expect</u></a></h1>
 
-You need to pack your artifact (code and data) using any publicly avialable tool 
-you prefer or strictly require (for example, <a href="https://www.virtualbox.org">Virtual Box</a>, 
-<a href="https://www.docker.com">Docker</a> or tar/zip archive with source code which should
-be rebuilt particularly when you need a non-virtualized access to a specific hardware)
-or arrange a remote access to machine with pre-installed software 
+<p>
+We are trying to make artifact submission as simple as possible.
+You just need to pack your artifact (code and data) using any publicly avialable tool 
+you prefer or arrange a remote access to machine with pre-installed software 
 (exceptional cases when rare hardware or proprietary software is used). 
 <p>
-Then, you need to prepare a small and relatively informal guide for reviewers 
-using our <a href="$#ck_url_template_pull#$templates/ae.tex">AE LaTeX template</a> 
+Then, you need to prepare a small and informal guide for reviewers 
+using our <a href="#prepare">AE LaTeX template</a> 
 to explain what are your artifacts, how to access and 
 use them, and what is the expected result (<i>we currently discuss with the 
 conference chairs and ACM to let you keep it as Appendix in your 
@@ -83,229 +86,139 @@ This section is also used as a discussion forum with the community
 about how to improve AE.
 
 <p>
-Since our eventual goal is not to name and shame
-problematic artifacts, but to promote artifact
-validation and sharing, you will be able to address
+Since our eventual goal is to promote artifact
+validation and sharing (rather than naming and shaming
+problematic artifacts), you will be able to address
 raised issues during the rebuttal.
 
-Furthermore, we allow light communication between reviewers and authors 
-whenever there are installation/usage problems.
+Furthermore, we allow a small amount of communication 
+between reviewers and authors whenever there are 
+installation/usage problems.
 
 In such cases, AE chairs will serve as a proxy to avoid 
-revealing reviewers' identity (unless you submit artifacts 
-along with your publication for an <a href="http://adapt-workshop.org">ADAPT 
-workshop with a public Reddit-based evaluation</a>).
+revealing reviewers' identity.
 
 <!-------------------------------------------------------------------------------------------->
 <p>
-<h1><u>Preparing artifacts for submission</u></h1>
+<h1><a name="prepare"><u>Preparing artifacts for submission</u></a></h1>
 
-To minimize your effort, we prepared a <a href="$#ck_url_template_pull#$templates/ae.tex">LaTeX template</a> 
-which you can fill in, append to the end of your paper, and submit the final PDF for the artifact review.
+You just need to perform the following 4 steps to submit your artifact:
 
-Each template subsection is described below.
+<ol>
+ <li>
+  <b>Pack your artifact</b> (code and data) or provide an easy access to them 
+  using any publicly available and free tool you prefer or strictly require. 
+  <br>
+  <br>
+  For example, you can use the following:
+  <ul>
+   <li>
+    <a href="https://www.virtualbox.org">Virtual Box</a> to pack all code and data including OS.
+   </li>
+   <li>
+    <a href="https://www.docker.com">Docker</a> to pack only touched code and data during experiment. 
+   </li>
+   <li>
+    Standard zip or tar with all related code and data, particularly when artifact
+    should be rebuilt on a reviewers machine (for example to have a non-virtualized access to a specific hardware). 
+   </li>
+   <li>
+    Private or public GIT or SVN.
+   </li>
+   <li>
+    Arrange a remote access to machine with pre-installed software 
+    (<i>exceptional cases when rare hardware or proprietary software is used</i>). 
+   </li>
+  </ul>
 
-If you encounter problems or have any questions, do not hesitate to 
+  <br>
+   Note that after experiencing various sharing and
+   reproducibility issues during <a href="http://www.slideshare.net/GrigoriFursin/presentation-fursin-aecgoppopp2015">past Artifact Evaluation</a>,
+   we started developing new and open-source technology
+   which involves the community to solve them. If you 
+   are interested to check it out, we will be happy 
+   to help you use this technology or get your feedback 
+   to improve it for the future AE:
+
+  <ul>
+   <li>
+    <b><a href="http://www.occamportal.org">OCCAM Framework</a></b> to enable open curation for computer architecture modeling.
+   </li>
+   <li>
+    <b><a href="http://github.com/ctuning/ck/wiki">Collective Knowledge Framework (CK)</a></b> to decompose 
+    ad-hoc experimental workflows, scripts and VM/Docker images into reusable and customizable components
+    while using already installed and possibly proprietary tools, benchmarks and data sets 
+    (see example of <a href="https://github.com/ctuning/ck/wiki/Getting_started_guide_clsmith">PLDI'15 CLSmith artifact</a> 
+    converted to <a href="https://github.com/ctuning/ck-clsmith">CK format</a> 
+     with <a href="http://cknowledge.org/repo/web.php?wcid=bc0409fb61f0aa82:1b437e72c74fe782">live reproducible results</a>; 
+     and <a href="http://cknowledge.org/repo/web.php?wcid=report:b0779e2a64c22907">interactive paper example</a> with 
+     reusable <a href="http://github.com/ctuning/reproduce-carp-project">benchmarks, data sets</a> and CK plugins 
+     for <a href="http://github.com/ctuning/ck-autotuning">autotuning</a> and <a href="http://github.com/ctuning/ck-analytics">machine learning</a> 
+     shared via <a href="http://github.com/ctuning/reproduce-ck-paper">GitHub<a>). 
+     <i><a href="https://github.com/ctuning/ck/wiki/Tutorial_CGO2016">CK tutorial</a> will be held 
+     at <a href="http://cgo.org/cgo2016">CGO'16</a></i>.
+   </li>
+  </ul>
+ </li>
+
+ <br>
+ <li>
+  <b>Write a brief artifact abstract</b> to informally describe your artifact, how it supports your paper, 
+  how it can be validated, and what is the expected result. It will be used
+  to select appropriate reviewers.
+ </li>
+ 
+ <br>
+ <li>
+  <b>Fill in and append AE template</b> to the PDF of your accepted paper.
+   links
+ </li>
+
+ <br>
+ <li>
+  <b>Submit artifact abstract and new PDF </b> at 
+  <a href="https://easychair.org/conferences/?conf=aecgoppopp2016">this EasyChair website</a> for the joint PPoPP/CGO 2016 AE.
+ </li>
+
+</ol>
+
+<i>
+If you encounter problems, find some ambiguities or have any questions, do not hesitate to 
 contact <a href="mailto:childers@cs.pitt.edu;Grigori.Fursin@cTuning.org">AE chairs</a> privately
 or publicly via <a href="https://www.linkedin.com/grp/home?gid=7433414">LinkedIn group</a> 
 and this <a href="https://groups.google.com/forum/#!forum/collective-knowledge">mailing list</a>.
+</i>
 
 <!-------------------------------------------------------------------------------------------->
-<div style="margin-left: 20px;">
+<p>
+<h1><a name="accepted"><u>If accepted</u></a></h1>
 
-<!------------------------------------------------------------------->
- <h2>Abstract</h2>
+ You will be given conference-specific instructions about how 
+ to add a scalable logo "Artifact Evaluated" to your paper. 
 
-  Briefly and informally describe your artifact, how it supports your paper, 
-  how it can be validated, and what is the expected result. It will be used
-  to select appropriate reviewers.
+ You can also keep AE appendix in your final paper if you wish
+ while removing all unnecessary or confidential information
+ (under negotiations with Digital Libraries). 
 
-<!------------------------------------------------------------------->
- <h2>Description</h2>
-  <div style="margin-left: 20px;">
+ <i>Even accepted artifacts may have some unforeseen behavior and limitations
+ discovered during evaluation. Now you have a chance to add related notes 
+ to your paper as a future work (if you wish).</i>.
 
-   <h3>Brief check-list (artifact meta-information)</h3>
+<p>
 
-     Together with artifact abstract, this informal check-list will help us make sure that reviewers 
-     have appropriate competency as well as technology to evaluate your artifact. 
-     It can also be used as meta information
-     to find your artifacts in Digital Libraries (<i>under discussion/development</i>).
-     It was created based on past AE experience and your feedback as such to cover most of the 
-     artifacts in computer systems' research including SW/HW co-design, benchmarking, design space exploration, 
-     autotuning, architecture simulation, run-time adaptation, and more. 
+ Though you are not obliged to publicly release your artifacts 
+ (in fact, it is sometimes impossible due to various limitations), 
+ we strongly encourage you to share them with the community
+ (even if they are not open-source).
 
-     <img src="$#ck_url_template_pull#$resources/image-general-workflow1.png" align="left" style="margin:10px;margin-right:30px;">
-     <br><br>
+ You can release them as an auxiliary material in Digital Libraries,
+ your institutional repository, various open services for code
+ and data sharing.
 
-     Fill in whatever is applicable with some informal keywords and remove unrelated items 
-     (please, consider questions below just as informal hints
-     that reviewers are usually concerned about):
-
-     <div style="margin-left: 120px;">
-      <ul>
-       <li>
-        <b>Algorithm:</b> Are you presenting a new algorithm?
-       </li>
-       <li>
-        <b>Program:</b> Which benchmarks do you use 
-                       (<a href="http://parsec.cs.princeton.edu">PARSEC</a>,
-                        <a href="http://www.nas.nasa.gov/publications/npb.html">NAS</a>,
-                        <a href="https://www.eembc.org">EEMBC</a>,
-                        <a href="http://www.capsl.udel.edu/splash/index.html">SPLASH</a>,
-                        <a href="https://www.cs.virginia.edu/~skadron/wiki/rodinia">Rodinia</a>,
-                        <a href="http://www.netlib.org/linpack">LINPACK</a>,
-                        <a href="http://hpcg-benchmark.org/">HPCG</a>,
-                        <a href="http://wwweb.eecs.umich.edu/mibench">MiBench</a>,
-                        <a href="https://www.spec.org/cpu2006">SPEC</a>,
-                        <a href="http://github.com/ctuning/ctuning-programs">cTuning</a>, etc)? 
-                        Are they included or should they be downloaded? Which version?
-                        Are they public or private? If they are private, 
-                        is there a public analog to evaluate your artifact?
-                        What is the approximate size?
-       </li>
-       <li>
-        <b>Compilation:</b> Do you present or require a specific compiler? Public/private? Is it included? Which version? 
-       </li>
-       <li>
-        <b>Transformations:</b> Do you present or require program transformation tool (source-to-source, binary-to-binary, compiler pass, etc)? 
-                                Public/private? Is it included? Which version?
-       </li>
-       <li>
-        <b>Binary:</b>          Are binaries included? OS-specific? Which version?
-       </li>
-       <li>
-        <b>Data set:</b>        Do you use specific data sets (for example, 
-                                <a href="http://www.doc.ic.ac.uk/~ahanda/VaFRIC/iclnuim.html">ICL-NUIM</a>,
-                                <a href="http://github.com/ctuning/ctuning-datasets-min">CK min</a>, 
-                                <a href="https://drive.google.com/folderview?id=0B-wXENVfIO82dzYwaUNIVElxaGc&usp=sharing#list">CK large</a>, etc)? 
-                                Are they included? If not, how to download and install? 
-                                What is approximate size?
-       </li>
-       <li>
-        <b>Run-time environment:</b> Is your artifact OS-specific (Linux, Windows, MacOS, Android, etc) ?
-                                     Which version? Which are the main software dependencies (JIT, libs, run-time adaptation frameworks, etc);
-                                     Do you need root access? 
-       </li>
-       <li>
-        <b>Hardware:</b>             Do you need specific hardware (supercomputer, architecture simulator, CPU, GPU, neural network accelerator, FPGA) 
-                                     or features such as hardware counters
-                                     to measure power consumption, or access to CPU/GPU frequency)? 
-                                     Are they publicly available?
-       </li>
-       <li>
-        <b>Run-time state:</b>       Is your artifact sensitive to run-time state (cold/hot cache, network/cache contentions, etc.)
-       </li>
-       <li>
-        <b>Execution:</b>            Any specific conditions during execution (sole user, process pinning, profiling, adaptation, etc)?
-       </li>
-       <li>
-        <b>Output:</b>               What is your output (console, file, table, graph) and what is your result 
-                                     (exact output, measured characteristic, etc)?
-
-       </li>
-       <li>
-        <b>Experiment workflow:</b>  How experimental workflow to replicate/reproduce results 
-                                     is implemented (OS scripts, manual steps by user, IPython notebook, CK workflow, etc)? 
-       </li>
-       <li>
-        <b>Publicly available?:</b>  Will you artifact be publicly available? If yes, we may spend an extra effort to help you with documentation.
-       </li>
-      </ul>
-     </div>
-
-
-<!------------------------------------------------------------------->
-   <h3>How delivered</h3>
-
-     Describe, how reviewers can access your artifact:
-     <ul>
-      <li>Download package from a public website</li>
-      <li>Download package from a private website (you will need to send information how to access your artifact to AE chairs)</li>
-      <li>Access artifact via private machine with pre-installed software (only when access to rare hardware is required or proprietary
-           software is used - you will need to send information and credentials to access your machine to AE chairs)</li>
-     </ul>
-
-     Please, describe approximate disk space required after unpacking your artifact 
-     (to avoid surprises when artifact requires 20GB of free space). We do not have
-     a strict limit but strongly suggest to limit space to several GB and avoid including 
-     unnecessary software to your VM images.
-
-<!------------------------------------------------------------------->
-   <h3>Hardware dependencies</h3>
-
-    Describe any specific hardware and its features
-    strictly required to evaluate your artifact 
-    (vendor, CPU/GPU/FPGA, number of processors/cores, interconnect, memory, 
-    hardware counters, etc).
-
-<!------------------------------------------------------------------->
-   <h3>Software dependencies</h3>
-
-    Describe any specific OS and software packages required to evaluate your
-    artifact. This is particularly important if you share source code 
-    that has to be rebuilt or if you rely on proprietary software that you
-    can not include to your package. In such case, we strongly suggest to describe 
-    where to get and to install all third-party tools.
-
-    <br><br>
-    <i>Note that we are trying to obtain AE licenses for some commonly used proprietary tools and benchmarks 
-    (we will you informed in case of positive outcome).</i>
-
-
-<!------------------------------------------------------------------->
-   <h3>Datasets</h3>
-
-    If third-party data sets are not included in your packages (for example, 
-    they are very large or proprietary), please provide details how to download
-    and install them. 
-
-    <i>In case of proprietary data sets, we suggest to provide reviewers
-    a public alternative subset for evaluation</i>.
-
-  </div>
-
-<!------------------------------------------------------------------->
- <h2>Installation</h2>
-
- Describe installation and setup procedures for your artifact
- (even if you use VM image or access to remote machine) targeting
- a novice user. 
-
-<!------------------------------------------------------------------->
- <h2>Experiment workflow</h2>
-
-  Describe experiment workflow and how is it implemented, invoked
-  and customized (if needed), i.e. as an OS script, IPython notebook, etc.
-
-  See below example of an experimental workflow for multi-objective
-  and machine-learning based autotuning:
-
-  <p>
-  <center>
-  <a href="https://hal.inria.fr/hal-01054763">
-   <img src="$#ck_url_template_pull#$resources/image-pipelines2.png"><br><br>
-  </a>
-  </center>
-
-
-<!------------------------------------------------------------------->
- <h2>Evaluation and expected result</h2>
-
-  Describe all steps necessary to evaluate your artifact
-  using the workflow above. Also describe whether reviewers
-  will need to replicate (exact result match) or reproduce (possibly
-  varying result or different experimental conditions) the output.
-  Finally, describe the expected result as well as allowable variation
-  (particularly important for performance numbers and speed-ups).
-
-<!------------------------------------------------------------------->
- <h2>Notes</h2>
-
- You can add informal notes for reviewers to draw
- their attention to known or possible issues (particularly
- if you plan to continue working on them after submission).
-
-</div>
+ You are welcome to use the following <a href="$#ck_url_template_pull#$templates/ae.html">AE HTML template</a> 
+ to describe your artifact or check out our <a href="http://github.com/ctuning/ck/wiki">CK framework</a> 
+ to prepare interactive reports with experiment replay (as demonstrated on <a href="http://cknowledge.org/repo/web.php?wcid=report:b0779e2a64c22907">this page 
+ for universal and customizable multi-objective autotuning</a>). 
 
 <!-------------------------------------------------------------------------------------------->
 <p>
@@ -340,7 +253,7 @@ and this <a href="https://groups.google.com/forum/#!forum/collective-knowledge">
 
 <!-------------------------------------------------------------------------------------------->
 <p>
-<h1><u>Methodology archive</u></h2>
+<h1><a name="archive"><u>Methodology archive</u></a></h2>
 
 We keep track of all past versions of submission/reviewing methodology to let readers 
 understand which one was used in papers with evaluated artifacts.
@@ -352,64 +265,9 @@ understand which one was used in papers with evaluated artifacts.
   <a href="$#ck_root_page_url#$reviewing-20151015$#ck_page_suffix#$">reviewing guide</a>
 </ul>
 
-<!-------------------------------------------------------------------------------------------->
-<p>
-<h1><u>If accepted</u></h1>
-
-<div style="margin-left: 20px;">
- <h2>Final paper</h2>
-
- You will be given conference-specific instructions about how 
- to add a scalable logo "Artifact Evaluated" to your paper. 
-
- You can also keep AE appendix in your final paper
- (while removing all unnecessary or confidential information).
-
- You may also want to 
-
- <br><br>
-
- <i>Even accepted artifacts may have some unforeseen behavior and limitations
- discovered during evaluation. Now you have a chance to add related notes 
- to your paper as a future work (if you wish).</i>.
-
- <h2>Artifact sharing, customization and reusability</h2>
-
- Though you are not obliged to publicly release your artifacts 
- (in fact, it is sometimes impossible due to various limitations), 
- we strongly encourage you to share them with the community
- (even if they are not open-source).
-
- You can release them as an auxiliary material in Digital Libraries,
- your institutional repository, various open services for code
- and data sharing.
-
- Furthermore, many of the encountered problems during AE 
- motivated us to start developing a supporting open-source technology 
- that can help improve artifact sharing, validation and reuse:
- <ul>
-  <li>
-   <b><a href="http://www.occamportal.org">OCCAM Framework</a></b> - enabling open curation for computer architecture modeling.
-  </li>
-  <li>
-   <b><a href="http://github.com/ctuning/ck/wiki">Collective Knowledge Framework (CK)</a></b> - 
-   converting artifacts and ad-hoc experimental workflows (code and data) into reusable and customizable components with Python-based wrappers and unified JSON API
-   shared via <a href="http://github.com">GitHub</a> or <a href="http://bitbucket.org">BitBucket</a> (see example of 
-    <a href="https://github.com/ctuning/ck/wiki/Getting_started_guide_clsmith">PLDI'15 CLSmith artifact</a> converted to 
-    <a href="https://github.com/ctuning/ck-clsmith">CK format</a> with <a href="http://cknowledge.org/repo/web.php?wcid=bc0409fb61f0aa82:1b437e72c74fe782">live reproducible resutls</a>). 
-  </li>
- </ul>
-
- You are welcome to use the following <a href="$#ck_url_template_pull#$templates/ae.html">AE HTML template</a> 
- to describe your artifact or check out our <a href="http://github.com/ctuning/ck/wiki">CK framework</a> 
- to prepare interactive reports with experiment replay (as demonstrated on <a href="http://cknowledge.org/repo/web.php?wcid=report:b0779e2a64c22907">this page 
- for universal and customizable multi-objective autotuning</a>). 
-</div>
-
-
 <br>
-<p>
  <center>
- <i>Thank you very much for participating in Artifact Evaluation and Sharing!</i>
+ <i><h2>Thank you for participating in Artifact Evaluation!</h2></i>
  </center>
 <br>
+

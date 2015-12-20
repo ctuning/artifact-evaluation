@@ -31,7 +31,7 @@ def init(i):
     return {'return':0}
 
 ##############################################################################
-# TBD: action description
+# generate table with AE members per year
 
 def generate(i):
     """

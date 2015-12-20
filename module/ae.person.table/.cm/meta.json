@@ -1,6 +1,8 @@
 {
   "actions": {
-    "generate": {}
+    "generate": {
+      "desc": "generate table with AE members per year"
+    }
   }, 
   "copyright": "See CK COPYRIGHT.txt for copyright details", 
   "desc": "generate AE table", 

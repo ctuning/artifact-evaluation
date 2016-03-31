@@ -154,8 +154,8 @@ a {text-decoration: none}
 {
  background-color:#0f6faf;
  width:100%; 
- height:22px;
- color:#ffff00;
+ height:28px;
+ color:#ffffff;
  text-align:center;
  font-size:13px;
  padding:0px;
@@ -164,9 +164,9 @@ a {text-decoration: none}
  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
 }
 
-#ck_note1 a:link { color: #efff00; }
+#ck_note1 a:link { color: #ffff0f; }
 #ck_note1 a:visited { color: #efff00; }
-#ck_note1 a:hover { color: #9f0000; }
+#ck_note1 a:hover { color: #6f0000; }
 #ck_note1 a:active { color: #efff00; }
 
 #ck_note2

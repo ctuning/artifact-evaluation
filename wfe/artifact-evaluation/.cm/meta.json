@@ -17,6 +17,7 @@
        {"id":"committee", "name":"Joint Committee","link":"$#wfe_url_prefix_page#$committee"},
        {"id":"submission", "name":"Submission Guide","link":"$#wfe_url_prefix_page#$submission"},
        {"id":"reviewing", "name":"Reviewing Guide","link":"$#wfe_url_prefix_page#$reviewing"},
+       {"id":"faq", "name":"FAQ","link":"$#wfe_url_prefix_page#$faq"},
        {"id":"prior", "name":"Prior AE","link":"$#wfe_url_prefix_page#$prior_ae"}
      ]
    }

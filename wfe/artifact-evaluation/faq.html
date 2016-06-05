@@ -1,18 +1,114 @@
-<h2>Frequently asked questions</h2>
+<center><h1>Frequently Asked Questions</h1>
 
-<i>Under construction - this page can be modified 
-at <a href="https://github.com/ctuning/ck-web-artifact-evaluation/blob/master/wfe/artifact-evaluation/faq.html">GitHub</a></i>!
+<small><i>This page continuously evolves and can be modified directly at <a href="https://github.com/ctuning/ck-web-artifact-evaluation/blob/master/wfe/artifact-evaluation/faq.html">GitHub</a></i></small>!
+</center>
 
-<h3>How to pack my artifact?</h3>
+<!----------------------------------------------------------------------------------------------------->
+<h3>Should my software artifacts be open-source?</h3>
 
-<h3>How to make it customizable?</h3>
+No, it is not strictly necessary and you can 
+provide your software artifact as a binary.
+However, in case of problems, reviewers will not be 
+able to fix it and will likely give you a negative score.
 
-<h3>How to reuse benchmarks and datasets from others?</h3>
+<!----------------------------------------------------------------------------------------------------->
+<h3>Is Artifact evaluation blind or double-blind?</h3>
 
-<h3>How to report and compare empirical resuls?<h3>
+AE is a single-blind process, i.e. authors' names are known to the evaluators
+(there is no need to hide them since papers are accepted),
+but names of evaluators are not known to the authors.
+AE chair is usually used as a proxy between the authors and the evaluators
+in case of questions and problems.
 
+<p>
+In the future, we would like to move to a fully open, community-driven evaluation
+which was successfully validated at <a href="http://adapt-workshop.org/motivation2016.html">ADAPT'16</a> -
+your comments and ideas are welcome!
+
+<!----------------------------------------------------------------------------------------------------->
+<h3>How to pack artifacts?</h3>
+
+We do not have strict requirements at this stage. You can pack 
+your artifacts simply in a tar ball, zip file, Virtual Machine or Docker image.
+You can also share artifacts via public services such as GitHub or BitBucket.
+Please, see <a href="$#ck_root_page_url#$submission$#ck_page_suffix#$">our submission guide</a> 
+for more details.
+
+<p>
+However, from our <a href="http://www.slideshare.net/GrigoriFursin/presentation-fursin-aecgoppopp2015">past Artifact Evaluation</a>, 
+the most challenging part is to automate and customize
+experimental workflows. It is even worse, if you need
+to validate experiments using latest software environment
+and hardware (rather than quickly outdated VM and Docker
+images). Currently, some ad-hoc scripts are used
+to implement such workflows. They are difficult to change
+and customize, particularly when an evaluator would like 
+to try other compilers, libraries and data sets.
+
+<p>
+Therefore, we decided to develop <a href="http://github.com/ctuning/ck">Collective Knowledge Framework (CK)</a> - 
+a small, portable and customizable framework to help researchers share their artifacts as reusable Python components 
+with a unified JSON API. This approach should help researchers quickly prototype experimental workflows 
+(such as multi-objective autotuning) from such components while automatically detecting and resolving
+all required software or hardware dependencies. CK is also intended to reduce evaluators' burden
+by unifying statistical analysis and predictive analytics (via scikit-learn, R, DNN), 
+and enabling interactive reports. Please, see examples of a <a href="http://cknowledge.org/repo">live repository</a>,
+<a href="http://cknowledge.org/interactive-report">interactive article</a> 
+and <a href="https://github.com/ctuning/ck/wiki/Getting_started_guide_clsmith">PLDI'15 CLSmith artifact shared in CK format</a>.
+Feel free to contact us, if you would like to use it but need some help to convert your artifacts into CK format.
+
+<!----------------------------------------------------------------------------------------------------->
+<h3>Is it possible to provide a remote access to a machine with pre-installed artifacts?</h3>
+
+Only in exceptional cases, i.e. when rare hardware or proprietary software is required,
+or VM image is too large, or when you are not authorized to move artifacts outside your organization.
+In such case, you will need to send an access information 
+to the AE chairs via private email or SMS. They will then pass
+this information to the evaluators.
+
+<!----------------------------------------------------------------------------------------------------->
+<h3>Can I share commercial benchmarks or software with evaluators?</h3>
+
+Please, check the license of your benchmarks, data sets and software. 
+In case of any doubts, try to find a free alternative. Note, that we have 
+a preliminary agreement with the EEMBC consortium to let authors 
+share their EEMBC benchmarks with the evaluators for Artifact Evaluation purposes.
+
+<!----------------------------------------------------------------------------------------------------->
+<h3>Should I make my artifacts customizable? How can I plug in benchmarks and datasets from others?</h3>
+
+It is encouraged but not strictly necessary. Note, that we are developing
+a supporting <a href="http://cknowledge.org">Collective Knowledge technology</a> 
+to simply sharing of artifacts and experimental workflows as customizable 
+and reusable components. Benchmarks, data sets, models, tools and scripts 
+shared in the CK format can be automatically plugged in to the experimental workflow.
+
+<!----------------------------------------------------------------------------------------------------->
+<h3>Do I have to make my artifacts public if they pass evaluation?</h3>
+
+You are not obliged to make your artifacts public (particularly in case of commercial artifacts).
+Nevertheless, we strongly encourage you to make your artifacts publicly available upon publication 
+of the proceedings (for example, by including them as "source materials"
+in the Digital Library). 
+
+<!----------------------------------------------------------------------------------------------------->
+<h3>How to report and compare empirical results?<h3>
+<i>TBD</i>
+
+<!----------------------------------------------------------------------------------------------------->
 <h3>How to deal with numerical instability?</h3>
+<i>TBD</i>
 
+<!----------------------------------------------------------------------------------------------------->
 <h3>How to check algorithm scalability?</h3>
+<i>TBD</i>
 
-<h3>How to crowdsource my experiments?</h3>
+<!----------------------------------------------------------------------------------------------------->
+<h3>How to report and share unexpected results?</h3>
+<i>TBD</i>
+
+<!----------------------------------------------------------------------------------------------------->
+<h3>Are there limits on Artifact Evaluation Appendix in my camera-ready paper?</h3>
+
+There is a limit of 2 pages for the AE Appendix in the final camera-ready paper.
+

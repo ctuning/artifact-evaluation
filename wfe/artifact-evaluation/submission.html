@@ -34,11 +34,12 @@ You just need to pack your artifact (code and data) using any publicly avialable
 you prefer or arrange a remote access to machine with pre-installed software 
 (exceptional cases when rare hardware or proprietary software is used). 
 <p>
-Then, you need to prepare a small and informal guide for reviewers 
-using our AE LaTeX template (see below) to explain what are your artifacts, how to access and 
-use them, and what is the expected result (<i>we currently discuss with the 
-conference chairs and ACM to let you keep it as Appendix in your 
-paper if your artifact passes evaluation</i>).
+Then, you need to prepare a small and informal Artifact Evaluation appendix
+using our AE LaTeX template (see below) to explain evaluators 
+what are your artifacts and how to use them
+(you will be allowed to add up to 2 pages of this Appendix to your final camera-ready paper).
+Please, see this <a href="http://arxiv.org/pdf/1501.05387v6.pdf">PPoPP'16 paper</a> 
+for an example of such AE appendix.
 
 <p>
 At least two reviewers will follow your guide to <i>replicate</i> your results (for example, exact output match) 
@@ -135,34 +136,28 @@ You just need to perform the following 4 steps to submit your artifact:
   You can also check and use <a href="http://ctuning.org/cm/wiki/index.php?title=Reproducibility#Resources">other public tools</a> 
   available for artifact sharing.
 
-  <br><br>
-   Note that after experiencing various sharing and
-   reproducibility issues during <a href="http://www.slideshare.net/GrigoriFursin/presentation-fursin-aecgoppopp2015">past Artifact Evaluation</a>,
-   we started developing new and open-source technology
-   which involves the community to solve them. If you 
-   are interested to check it out, we will be happy 
-   to help you use this technology or get your feedback 
-   to improve it for the future AE:
+  <p>
+  From our <a href="http://www.slideshare.net/GrigoriFursin/presentation-fursin-aecgoppopp2015">past Artifact Evaluation experience</a>, 
+  we've noticed that the most challenging part is to automate and customize
+  experimental workflows. It is even worse, if you need
+  to validate experiments using latest software environment
+  and hardware (rather than quickly outdated VM and Docker
+  images). Most of the time, some ad-hoc scripts are used
+  to implement these workflows. They are very difficult to change
+  and customize, particularly when an evaluator would like 
+  to try other compilers, libraries and data sets.
 
-  <ul>
-   <li>
-    <b><a href="http://www.occamportal.org">OCCAM Framework</a></b> to enable open curation for computer architecture modeling.
-   </li>
-   <li>
-    <b><a href="http://github.com/ctuning/ck">Collective Knowledge Framework (CK)</a></b> to decompose 
-    ad-hoc experimental workflows, scripts and VM/Docker images into reusable and customizable components
-    while using already installed and possibly proprietary tools, benchmarks and data sets 
-    (see example of <a href="https://github.com/ctuning/ck/wiki/Getting_started_guide_clsmith">PLDI'15 CLSmith artifact</a> 
-    converted to <a href="https://github.com/ctuning/ck-clsmith">CK format</a> 
-     with <a href="http://cknowledge.org/repo/web.php?wcid=bc0409fb61f0aa82:1b437e72c74fe782">live reproducible results</a>; 
-     and <a href="http://cknowledge.org/repo/web.php?wcid=report:b0779e2a64c22907">interactive paper example</a> with 
-     reusable <a href="http://github.com/ctuning/reproduce-carp-project">benchmarks, data sets</a> and CK plugins 
-     for <a href="http://github.com/ctuning/ck-autotuning">autotuning</a> and <a href="http://github.com/ctuning/ck-analytics">machine learning</a> 
-     shared via <a href="http://github.com/ctuning/reproduce-ck-paper">GitHub<a>). 
-     at <a href="http://cgo.org/cgo2016">CGO'16</a></i>.
-   </li>
-  </ul>
- </li>
+  <p>
+  These problems motivated us to develop <a href="http://github.com/ctuning/ck">Collective Knowledge Framework (CK)</a> - 
+  a small and open-source infrastructure and repository to help researchers share their artifacts as reusable Python components 
+  with a unified JSON API. This approach should help researchers quickly prototype experimental workflows 
+  (such as multi-objective autotuning) from such components while automatically detecting and resolving
+  all required software or hardware dependencies. CK is also intended to reduce evaluators' burden
+  by unifying statistical analysis and predictive analytics (via scikit-learn, R, DNN), 
+  and enabling interactive reports. Please, see examples of a CK-based <a href="http://cknowledge.org/repo">live repository</a>,
+  <a href="http://cknowledge.org/interactive-report">interactive article</a> 
+  and <a href="https://github.com/ctuning/ck/wiki/Getting_started_guide_clsmith">PLDI'15 CLSmith artifact shared in CK format</a>.
+  Feel free to use it when submitting artifacts for the evaluation.
 
  <br>
  <li>
@@ -173,14 +168,14 @@ You just need to perform the following 4 steps to submit your artifact:
  
  <br>
  <li>
-  <b>Fill in and append AE template (<a href="$#ck_url_template_pull#$templates/ae-20151015.tex">download here</a>)</b> to the PDF of your accepted paper.
+  <b>Fill in and append AE template (<a href="$#ck_url_template_pull#$templates/ae-20160509.tex">download here</a>)</b> to the PDF of your accepted paper.
   Though it should be relatively intuitive, you can check out <a href="$#ck_root_page_url#$submission_extra$#ck_page_suffix#$">extra notes about this template</a> based on our past AE experience.
  </li>
 
  <br>
  <li>
   <b>Submit artifact abstract and new PDF </b> at 
-  <a href="https://easychair.org/conferences/?conf=aecgoppopp2016">this EasyChair website</a> for the joint PPoPP/CGO 2016 AE.
+  <a href="https://easychair.org/conferences/?conf=aecgoppopp2016">this EasyChair website</a> for the joint PPoPP/CGO AE.
  </li>
 
 </ol>
@@ -246,6 +241,9 @@ and this <a href="https://groups.google.com/forum/#!forum/collective-knowledge">
 
 <ul>
  <li>
+  "Gunrock: A High-Performance Graph Processing Library on the GPU", PPoPP 2016 (<a href="http://arxiv.org/pdf/1501.05387v6.pdf">PDF with AE appendix</a> and <a href="https://github.com/gunrock/gunrock">GitHub</a>)
+ </li>
+ <li>
   "Polymer: A NUMA-aware Graph-structured Analytics Framework", PPoPP 2015 (<a href="https://github.com/realstolz/polymer">GitHub</a> and <a href="http://ipads.se.sjtu.edu.cn/projects/polymer.html">personal web page</a>)
  </li>
  <li>
@@ -283,6 +281,10 @@ understand which one was used in papers with evaluated artifacts.
   <a href="$#ck_url_template_pull#$templates/ae-20151015.tex">LaTeX template</a>,
   <a href="$#ck_root_page_url#$submission-20151015$#ck_page_suffix#$">submission guide</a>,
   <a href="$#ck_root_page_url#$reviewing-20151015$#ck_page_suffix#$">reviewing guide</a>
+ <li><b>V20160509 (PPoPP'17/CGO'17)</b>: 
+  <a href="$#ck_url_template_pull#$templates/ae-20160509.tex">LaTeX template</a>,
+  <a href="$#ck_root_page_url#$submission-20160509$#ck_page_suffix#$">submission guide</a>,
+  <a href="$#ck_root_page_url#$reviewing-20160509$#ck_page_suffix#$">reviewing guide</a>
 </ul>
 
 <br>

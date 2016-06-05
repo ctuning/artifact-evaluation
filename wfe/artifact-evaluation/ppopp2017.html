@@ -35,7 +35,7 @@
 </div>
 
 <!------------------------------------------------>
-<div style="float:right;width:270px;padding:10px;">
+<div style="float:right;width:286px;padding:10px;">
  <div id="ck_box_with_shadow1">
   <center>
    <b>Important dates:</b><br>
@@ -43,19 +43,26 @@
 
   <table border="0" cellpadding="2" cellspacing="0">
    <tr><td>Paper decision: </td><td><b><i>12 Nov 2016</i></b></td></tr>
-   <tr><td>Artifact submission: </td><td><b><i>TBA</i></b></td></tr>
-   <tr><td>Technical clarification: </td><td><b><i>TBA</i></b></td></tr>
-   <tr><td>Decision announced: </td><td><b><i>TBA</i></b></td></tr>
-   <tr><td>Public discussion: </td><td><b><i>TBA</i></b></td></tr>
+   <tr><td>Artifact submission: </td><td><b><i>18 Nov 2016 (AoE)</i></b></td></tr>
+   <tr><td>Technical clarification: </td><td><b><i>5-10 Dec 2016</i></b></td></tr>
+   <tr><td>Decision announced: </td><td><b><i>13 Dec 2016</i></b></td></tr>
+   <tr><td>Final paper: </td><td><b><i>15 Dec 2016</i></b></td></tr>
+   <tr><td>Public discussion: </td><td><b><i>6 Feb 2017 (TBC)</i></b></td></tr>
   </table>
 
+  <center>
   <br>
   <span style="font-size:11pt">
-   <center>
-    <b>AE Chair:</b><br>
-   </center>
+    <b>PPoPP AE Chair:</b><br>
    <a href="https://people.cs.pitt.edu/~wahn/pubs.html">Wonsun Ahn</a> (University&nbsp;of&nbsp;Pittsburgh,&nbsp;USA)
   </span>
+
+  <br>
+  <br>
+   <b>AE SC:</b><br>
+  <a href="http://cknowledge.org">Grigori Fursin</a>,
+  <a href="http://people.cs.pitt.edu/~childers">Bruce Childers</a>
+  </center>
 
  </div>
 </div>
@@ -86,54 +93,74 @@ will be invited to formally submit their supporting materials to the
 <a href="$#ck_root_page_url#$index$#ck_page_suffix#$">Artifact
 Evaluation process</a>. The Artifact Evaluation process
 is run by a <a href="$#ck_root_page_url#$committee$#ck_page_suffix#$">separate committee</a> 
-whose task is to <a href="$#ck_root_page_url#$reviewing$#ck_page_suffix#$">assess</a> 
+whose task is to reproduce (at least some) experiments 
+and <a href="$#ck_root_page_url#$reviewing$#ck_page_suffix#$">assess</a> 
 how the artifacts support the work described in the
 papers. This submission is voluntary and will not
 influence the final decision regarding the papers.
+
+<p>
 Papers that successfully go through the Artifact Evaluation 
 process will receive a seal of approval printed
-on the papers themselves.
-Authors of accepted papers are then encouraged to make these
+on the papers themselves. Authors of such papers will have an option
+to include their Artifact Appendix to the final paper (up to 2 pages).
+Authors are also encouraged (though not obliged) to make these
 materials publicly available upon publication of the
 proceedings, by including them as "source materials"
 in the Digital Library.
 
+<p>
+<i>If you have any questions, please check <a href="$#ck_root_page_url#$faq$#ck_page_suffix#$">AE FAQs</a>
+and do not hesitate to contact AE chair and the steering committee or post your question
+to our <a href="https://www.linkedin.com/grp/home?gid=7433414">LinkedIn group</a>.
+</i>
+
 <h3>How to submit</h3>
 
 Please, prepare your artifacts for submission using the following <a href="$#ck_root_page_url#$submission$#ck_page_suffix#$">guide</a>.
-Then, register your submission at the joint PPoPP/CGO EasyChair website (<b>TBD</b>) - you will be asked to submit your paper title, 
-author list, artifact abstract, pdf of your paper with an appendix describing how to access 
+Then, register your submission at the joint PPoPP/CGO <a href="https://easychair.org/conferences/?conf=aecgoppopp2017">EasyChair website</a> - 
+you will be asked to submit your paper title, author list, artifact abstract, pdf of your paper with an appendix describing how to access 
 and validate your artifacts, and possible conflicts of interests with  
 <a href="$#ck_root_page_url#$committee$#ck_page_suffix#$">AE members</a>. 
 
+<p>
+<i>
+To encourage sharing of artifacts and experimental workflows as reusable and customizable components, 
+<a href="http://cTuning.org">cTuning foundation</a> and <a href="http://dividiti.com">dividiti</a>
+will give an extra cash prize of $500 for the highest ranked artifact shared using 
+<a href="https://github.com/ctuning/ck/wiki/Getting_started_guide_basic">Collective Knowledge framework</a>.
+The community can help you pack your artifacts as a CK repository 
+via this <a href="https://groups.google.com/forum/#!forum/collective-knowledge">mailing list</a>.
+</i>
+
 <h3>Reviewing process</h3>
 
-Your artifacts will be reviewing based on the following <a href="$#ck_root_page_url#$reviewing$#ck_page_suffix#$">guidelines</a>.
+Your artifacts will be reviewed based on the following <a href="$#ck_root_page_url#$reviewing$#ck_page_suffix#$">guidelines</a>.
 Artifacts receiving "met expectations" or above score will pass evaluation and will receive
-a stamp of approval. We are also arranging a prize for the highest ranked artifact. 
+a stamp of approval. The highest ranked artifacts will receive prizes (to be announced). 
 
 <h3>Feedback</h3>
 
-We consider Artifact Evaluation as a continuous
-learning curve - our eventual goal is to
-collaboratively develop common experimental and artifact
-sharing methodology for computer system's research. 
+We consider Artifact Evaluation as a continuous learning curve - 
+our eventual goal is to develop a common methodology for experiment sharing
+and evaluation in computer system's research. 
+
+Therefore, based on encountered issues during past AE and your feedback,
+we are currently developing the following open-source supporting technology for Artifact Evaluation:
+<ul>
+ <li><a href="http://github.com/ctuning/ck">Collective Knowledge framework</a> 
+     to simplify sharing and reuse of experimental workflows 
+     and all related artifacts with the possibility to customize, crowdsource
+     and compare empirical experiments (see example of a <a href="http://cknowledge.org/repo">public repository with program autotuning and crowd-tuning results</a>);
+ <li><a href="http://www.occamportal.org/">OCCAM infrastructure</a> to enable open curation for computer architecture modeling.
+</ul>
 
 <p>
-Based on some encountered issues and your feedback,
-we also develop an open-source supporting technology 
-particularly focusing on empirical experimentation,
-customization of experimental workflows (for example,
-to evaluate algorithm scalability, numerical stability,
-speed ups, etc), fair comparison of results 
-(for example, for computer architecture modeling), 
-and artifact reuse (<a href="http://github.com/ctuning/ck">Collective Knowledge</a> 
-and <a href="http://www.occamportal.org/">OCCAM</a> projects).
-
-<p>
+<i>
 If you have questions, comments and suggestions on how
 to improve artifact submission, reviewing, customization
 and reuse, please do not hesitate to <a href="mailto:Grigori.Fursin@cTuning.org;childers@cs.pitt.edu">get in touch with the AE steering committee</a>!
+</i>
 
 <br>
 <br>

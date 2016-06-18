@@ -1,4 +1,4 @@
-### Review template for Artifact Evaluation V20151015
+### Review template for Artifact Evaluation V20160509
 
 Possible scores:
 * +2: significantly exceeded expectations

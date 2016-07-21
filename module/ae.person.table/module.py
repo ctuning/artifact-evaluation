@@ -52,15 +52,20 @@ def generate(i):
     s+='<table border="0" cellpadding="3" cellspacing="0" class="ck_margin_40px">\n\n'
     s+=' <tr><td><b>Name:</b></td> <td><b>Organization:</b></td>'
 
-    for tg in sorted(tags_desc,reverse=True):
-        s+='<td align="center"><b>'+tags_desc[tg]+'</b></td>'
+    for q in tags_desc:
+        tg=q['id']
+        name=q['name']
+        s+='<td align="center"><b>'+name+'</b></td>'
     s+='</tr>\n'
 
 
     aec={}
     aecx={}
 
-    for tg in tags_desc:
+    for q in tags_desc:
+        tg=q['id']
+        name=q['name']
+
         # List all people
         ii={'action':'search',
             'module_uoa':cfg['module_deps']['person'],
@@ -94,7 +99,11 @@ def generate(i):
 
         s+=' <tr><td>'+n+'</td><td>'+o+'</td>'
 
-        for tg in sorted(tags_desc,reverse=True):
+        for q in tags_desc:
+
+            tg=q['id']
+            name=q['name']
+
             sx=''
             if tg in t: sx='<b>*</b>'
             s+='<td align="center">'+sx+'</td>'

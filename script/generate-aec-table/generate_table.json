@@ -1,7 +1,9 @@
 {
-  "tags_desc":{
-    "ae-cgo-ppopp2015":"PPoPP-CGO'15",
-    "ae-cgo-ppopp2016":"PPoPP-CGO'16"
-  }
+  "tags_desc":[
+    {"id":"ae-cgo-ppopp2017","name":"PPoPP-CGO'17"},
+    {"id":"ae-pact2016","name":"PACT'16"},
+    {"id":"ae-cgo-ppopp2016","name":"PPoPP-CGO'16"},
+    {"id":"ae-cgo-ppopp2015","name":"PPoPP-CGO'15"}
+  ]
 }
 

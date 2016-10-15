@@ -132,9 +132,10 @@ You just need to perform the following 4 steps to submit your artifact:
     to the remote machine during evaluation (unless explicitly agreed with AE chairs) - you can do it during
     rebuttal phase, if needed!
    </li>
+   <li>
+    Check <a href="http://github.com/ctuning/ck/wiki/Enabling-open-science-tools">other tools</a> 
+    which can be useful for artifact and workflow sharing.
   </ul>
-  You can also check and use <a href="http://ctuning.org/cm/wiki/index.php?title=Reproducibility#Resources">other public tools</a> 
-  available for artifact sharing.
 
   <p>
   From our <a href="http://www.slideshare.net/GrigoriFursin/presentation-fursin-aecgoppopp2015">past Artifact Evaluation experience</a>, 
@@ -149,19 +150,21 @@ You just need to perform the following 4 steps to submit your artifact:
 
   <p>
   <i>These problems motivated us to develop <a href="http://github.com/ctuning/ck">Collective Knowledge Framework (CK)</a> - 
-  a small and open-source infrastructure and repository to help researchers share their artifacts as reusable Python components 
-  with a unified JSON API. This approach should help researchers quickly prototype experimental workflows 
-  (such as multi-objective autotuning) from such components while automatically detecting and resolving
-  all required software or hardware dependencies. CK is also intended to reduce evaluators' burden
-  by unifying statistical analysis and predictive analytics (via scikit-learn, R, DNN), 
-  and enabling interactive reports. Please, check CK Getting Started Guide
-  <a href="https://github.com/ctuning/ck/wiki/Getting-started-guide">Part 1</a> 
-  and <a href="https://github.com/ctuning/ck/wiki/Portable-workflows">Part 2</a>, 
-  practical examples of a CK-based <a href="http://cknowledge.org/repo">live repository</a>,
-  <a href="http://cknowledge.org/interactive-report">interactive article</a>,
-  <a href="https://github.com/ctuning/ck/wiki/Getting_started_guide_clsmith">PLDI'15 CLSmith artifact shared in CK format</a>,
-  and <a href="http://github.com/ctuning/reproduce-pamela-project">PACT'16 artifact shared in the CK format at GitHub</a>.
-  Feel free to use it when submitting artifacts for the evaluation.</i>
+  a small, portable and open-source infrastructure and repository to help researchers quickly prototype and share their experimental 
+  workflows with all related artifacts as reusable Python components with a unified JSON API and JSON meta description. 
+  CK supports Linux, MacOS, Windows, Android and reduces the burden of researchers and evaluators by automatically detecting 
+  and resolving all required software dependencies across diverse hardware, 
+  unifying autotuning, statistical analysis and predictive analytics (via scikit-learn, R, etc), 
+  and enabling <a href="http://cknowledge.org/interactive-report">interactive reports</a>.<br><br>
+
+  Please, check out how ARM uses CK to crowdsource benchmarking of <a href="https://github.com/ctuning/ck-wa">real workloads</a>, 
+  General Motors to collaboratively optimize <a href="https://github.com/dividiti/ck-caffe">Caffe framework</a>,
+  and Imperial Colleage (London) to crowsource compiler bug detection 
+  (see <a href="https://github.com/ctuning/ck-clsmith">PLDI'15 artifacts in the CK format</a>).
+  If you would like to share your artifacts in the reusable CK format, please check 
+  <a href="https://github.com/ctuning/ck/wiki/Getting-started-guide">Getting Started Guide</a>, 
+  <a href="https://github.com/ctuning/ck/wiki/Portable-workflows">CK portable workflows</a>
+  and list of already <a href="https://github.com/ctuning/ck/wiki/Shared-modules">shared CK plugins</a>.</i>
 
  <br>
  <li>
@@ -229,13 +232,6 @@ or <a href="mailto:Grigori.Fursin@cTuning.org;childers@cs.pitt.edu">AE steering 
  discovered during evaluation. Now you have a chance to add related notes 
  to your paper as a future work (if you wish).</i>.
 
- <p>
- Note, that we are developing open-source <a href="http://github.com/ctuning/ck">Collective Knowledge framework</a> 
- to help researchers share their artifacts as unified, reusable and customizable components together
- with experimental workflows and interactive articles. If you are interested to know
- more, please check some <a href="http://cknowledge.org/repo">online examples</a> 
- and a recent <a href="http://bit.ly/ck-date16">DATE'16 paper</a>.
-
 <!-------------------------------------------------------------------------------------------->
 <p>
 <h1><a name="examples"><u>A few examples of accepted artifacts from the past conferences, workshops and journals</u></a></h1>
@@ -245,10 +241,10 @@ or <a href="mailto:Grigori.Fursin@cTuning.org;childers@cs.pitt.edu">AE steering 
   "Gunrock: A High-Performance Graph Processing Library on the GPU", PPoPP 2016 (<a href="http://arxiv.org/pdf/1501.05387v6.pdf">PDF with AE appendix</a> and <a href="https://github.com/gunrock/gunrock">GitHub</a>)
  </li>
  <li>
-  "Integrating algorithmic parameters into benchmarking and design space exploration in dense 3D scene understanding", PACT 2016 (<b>example of <a href="http://cknowledge.org/repo/web.php?template=cknowledge&wcid=208c21b837924601:2d41f89bcf32d4d4:3b1b261d30f3934a">interactive graphs</a> and <a href="http://github.com/ctuning/reproduce-pamela-project">artifacts</a> in the <a href="">Collective Knowledge</a> format</b>)
+  "Integrating algorithmic parameters into benchmarking and design space exploration in dense 3D scene understanding", PACT 2016 (example of <a href="http://cknowledge.org/repo/web.php?template=cknowledge&wcid=208c21b837924601:2d41f89bcf32d4d4:3b1b261d30f3934a">interactive graphs</a> and <a href="http://github.com/ctuning/reproduce-pamela-project">artifacts</a> in the <a href="">Collective Knowledge</a> format)
  </li>
  <li>
-  "GEMMbench: a framework for reproducible and collaborative benchmarking of matrix multiplication", ADAPT 2016 (<b>example of a <a href="http://github.com/ctuning/ck/wiki">CK</a>-powered <a href="https://github.com/dividiti/gemmbench">artifact</a> </a> reviewed and validated by the community via <a href="https://www.reddit.com/r/adaptworkshop/comments/3sngox/adapt16_submission_gemmbench_a_framework_for/">Reddit</a></b>)
+  "GEMMbench: a framework for reproducible and collaborative benchmarking of matrix multiplication", ADAPT 2016 (example of a <a href="http://github.com/ctuning/ck/wiki">CK</a>-powered <a href="https://github.com/dividiti/gemmbench">artifact</a> </a> reviewed and validated by the community via <a href="https://www.reddit.com/r/adaptworkshop/comments/3sngox/adapt16_submission_gemmbench_a_framework_for/">Reddit</a>)
  </li>
  <li>
   "Polymer: A NUMA-aware Graph-structured Analytics Framework", PPoPP 2015 (<a href="https://github.com/realstolz/polymer">GitHub</a> and <a href="http://ipads.se.sjtu.edu.cn/projects/polymer.html">personal web page</a>)
@@ -272,7 +268,7 @@ or <a href="mailto:Grigori.Fursin@cTuning.org;childers@cs.pitt.edu">AE steering 
   "Roofline-aware DVFS for GPUs", ADAPT 2014 (<a href="http://dl.acm.org/citation.cfm?doid=2553062.2553067">ACM DL</a>, <a href="http://cknowledge.org/repo/web.php?wcid=876bf92b1409cb46:26177154df5a20ef">Collective Knowledge repository</a>)
  </li>
  <li>
-  "Many-Core Compiler Fuzzing", PLDI 2015 (<b>example of an <a href="https://github.com/ctuning/ck/wiki/Getting_started_guide_clsmith">artifact</a> with <a href="http://cknowledge.org/repo/web.php?wcid=bc0409fb61f0aa82:1b437e72c74fe782">live results</a> shared in the <a href="http://github.com/ctuning/ck">Collective Knowledge</a> format</b>)
+  "Many-Core Compiler Fuzzing", PLDI 2015 (example of an <a href="https://github.com/ctuning/ck/wiki/Getting_started_guide_clsmith">artifact</a> with <a href="http://cknowledge.org/repo/web.php?wcid=bc0409fb61f0aa82:1b437e72c74fe782">live results</a> shared in the <a href="http://github.com/ctuning/ck">Collective Knowledge</a> format)
  </li>
 </ul>
 

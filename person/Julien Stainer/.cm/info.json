@@ -1,0 +1,21 @@
+{
+  "backup_data_uid": "fe4c4e37a5bbf921",
+  "backup_module_uid": "b0743a4044480ead",
+  "backup_module_uoa": "person",
+  "control": {
+    "author": "Grigori Fursin",
+    "author_email": "Grigori.Fursin@cTuning.org",
+    "author_webpage": "http://fursin.net",
+    "copyright": "See CK COPYRIGHT.txt for copyright details",
+    "engine": "CK",
+    "iso_datetime": "2016-11-11T12:17:08.338209",
+    "license": "See CK LICENSE.txt for licensing details",
+    "version": [
+      "1",
+      "8",
+      "3",
+      "2"
+    ]
+  },
+  "data_name": "Julien Stainer"
+}

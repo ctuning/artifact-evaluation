@@ -1,5 +1,7 @@
 {
- "name":"David Beckingsale",
- "organization":"LLNL (USA)",
- "tags":["ae-cgo-ppopp2016"]
+  "name": "David Beckingsale",
+  "organization": "LLNL (USA)",
+  "tags": [
+    "ae-cgo-ppopp2016"
+  ]
 }

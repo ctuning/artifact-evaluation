@@ -1,5 +1,7 @@
 {
- "name":"Ben Taylor",
- "organization":"Lancaster University (UK)",
- "tags":["ae-pact2016"]
+  "name": "Ben Taylor",
+  "organization": "Lancaster University (UK)",
+  "tags": [
+    "ae-pact2016"
+  ]
 }

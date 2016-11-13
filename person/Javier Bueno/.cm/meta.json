@@ -1,5 +1,7 @@
 {
- "name":"Javier Bueno",
- "organization":"BSC (Spain)",
- "tags":["ae-pact2016"]
+  "name": "Javier Bueno",
+  "organization": "BSC (Spain)",
+  "tags": [
+    "ae-pact2016"
+  ]
 }

@@ -1,5 +1,7 @@
 {
- "name":"Ennan Zhai",
- "organization":"Yale University (USA)",
- "tags":["ae-cgo-ppopp2016"]
+  "name": "Ennan Zhai",
+  "organization": "Yale University (USA)",
+  "tags": [
+    "ae-cgo-ppopp2016"
+  ]
 }

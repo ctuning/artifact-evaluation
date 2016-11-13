@@ -1,5 +1,7 @@
 {
- "name":"Willy Wolff",
- "organization":"Lancaster University (UK)",
- "tags":["ae-pact2016"]
+  "name": "Willy Wolff",
+  "organization": "Lancaster University (UK)",
+  "tags": [
+    "ae-pact2016"
+  ]
 }

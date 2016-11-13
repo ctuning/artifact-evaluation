@@ -1,5 +1,7 @@
 {
- "name":"Volker Seeker",
- "organization":"University of Edinburgh (UK)",
- "tags":["ae-pact2016"]
+  "name": "Volker Seeker",
+  "organization": "University of Edinburgh (UK)",
+  "tags": [
+    "ae-pact2016"
+  ]
 }

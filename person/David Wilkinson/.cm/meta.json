@@ -1,5 +1,8 @@
 {
- "name":"David Wilkinson",
- "organization":"University of Pittsburgh (USA)",
- "tags":["ae-cgo-ppopp2015","ae-cgo-ppopp2016"]
+  "name": "David Wilkinson",
+  "organization": "University of Pittsburgh (USA)",
+  "tags": [
+    "ae-cgo-ppopp2015",
+    "ae-cgo-ppopp2016"
+  ]
 }

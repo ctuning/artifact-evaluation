@@ -1,5 +1,7 @@
 {
- "name":"Trevor Brown",
- "organization":"University of Toronto (Canada)",
- "tags":["ae-cgo-ppopp2016"]
+  "name": "Trevor Brown",
+  "organization": "University of Toronto (Canada)",
+  "tags": [
+    "ae-cgo-ppopp2016"
+  ]
 }

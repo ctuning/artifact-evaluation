@@ -1,5 +1,7 @@
 {
- "name":"Ankush Desai",
- "organization":"UC Berkeley (USA)",
- "tags":["ae-cgo-ppopp2016"]
+  "name": "Ankush Desai",
+  "organization": "UC Berkeley (USA)",
+  "tags": [
+    "ae-cgo-ppopp2016"
+  ]
 }

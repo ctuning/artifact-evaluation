@@ -1,5 +1,7 @@
 {
- "name":"Gergo Barany",
- "organization":"CEA (France)",
- "tags":["ae-cgo-ppopp2016"]
+  "name": "Gergo Barany",
+  "organization": "CEA (France)",
+  "tags": [
+    "ae-cgo-ppopp2016"
+  ]
 }

@@ -1,5 +1,7 @@
 {
- "name":"Stavros Aronis",
- "organization":"Uppsala University (Sweden)",
- "tags":["ae-cgo-ppopp2016"]
+  "name": "Stavros Aronis",
+  "organization": "Uppsala University (Sweden)",
+  "tags": [
+    "ae-cgo-ppopp2016"
+  ]
 }

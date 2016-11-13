@@ -1,5 +1,7 @@
 {
- "name":"Xiaowei Zhu",
- "organization":" Tsinghua University (China)",
- "tags":["ae-cgo-ppopp2016"]
+  "name": "Xiaowei Zhu",
+  "organization": " Tsinghua University (China)",
+  "tags": [
+    "ae-cgo-ppopp2016"
+  ]
 }

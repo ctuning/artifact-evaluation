@@ -1,5 +1,8 @@
 {
- "name":"Peter Libic",
- "organization":"Google ; Charles University in Prague (Czech Republic)",
- "tags":["ae-cgo-ppopp2016","ae-cgo-ppopp2015"]
+  "name": "Peter Libic",
+  "organization": "Google ; Charles University in Prague (Czech Republic)",
+  "tags": [
+    "ae-cgo-ppopp2016",
+    "ae-cgo-ppopp2015"
+  ]
 }

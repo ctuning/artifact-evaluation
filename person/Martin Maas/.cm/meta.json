@@ -1,5 +1,7 @@
 {
- "name":"Martin Maas",
- "organization":"University of California Berkeley (USA)",
- "tags":["ae-cgo-ppopp2015"]
+  "name": "Martin Maas",
+  "organization": "University of California Berkeley (USA)",
+  "tags": [
+    "ae-cgo-ppopp2015"
+  ]
 }

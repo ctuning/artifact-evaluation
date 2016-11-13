@@ -1,5 +1,7 @@
 {
- "name":"Melanie Kambadur",
- "organization":"Columbia University (USA)",
- "tags":["ae-cgo-ppopp2015"]
+  "name": "Melanie Kambadur",
+  "organization": "Columbia University (USA)",
+  "tags": [
+    "ae-cgo-ppopp2015"
+  ]
 }

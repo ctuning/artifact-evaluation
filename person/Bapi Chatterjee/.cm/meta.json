@@ -1,5 +1,8 @@
 {
- "name":"Bapi Chatterjee",
- "organization":"Chalmers University (Sweden)",
- "tags":["ae-cgo-ppopp2015","ae-cgo-ppopp2016"]
+  "name": "Bapi Chatterjee",
+  "organization": "Chalmers University (Sweden)",
+  "tags": [
+    "ae-cgo-ppopp2015",
+    "ae-cgo-ppopp2016"
+  ]
 }

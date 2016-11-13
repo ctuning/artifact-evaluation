@@ -1,5 +1,8 @@
 {
- "name":"Man Cao",
- "organization":"Ohio State University (USA)",
- "tags":["ae-cgo-ppopp2016","ae-cgo-ppopp2017"]
+  "name": "Man Cao",
+  "organization": "Ohio State University (USA)",
+  "tags": [
+    "ae-cgo-ppopp2016",
+    "ae-cgo-ppopp2017"
+  ]
 }

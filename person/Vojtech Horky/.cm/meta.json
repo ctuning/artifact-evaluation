@@ -1,5 +1,7 @@
 {
- "name":"Vojtech Horky",
- "organization":"Charles University in Prague (Czech Republic)",
- "tags":["ae-cgo-ppopp2015"]
+  "name": "Vojtech Horky",
+  "organization": "Charles University in Prague (Czech Republic)",
+  "tags": [
+    "ae-cgo-ppopp2015"
+  ]
 }

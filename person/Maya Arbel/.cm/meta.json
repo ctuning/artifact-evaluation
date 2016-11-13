@@ -1,5 +1,7 @@
 {
- "name":"Maya Arbel",
- "organization":"Technion (Israel)",
- "tags":["ae-cgo-ppopp2016"]
+  "name": "Maya Arbel",
+  "organization": "Technion (Israel)",
+  "tags": [
+    "ae-cgo-ppopp2016"
+  ]
 }

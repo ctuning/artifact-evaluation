@@ -1,5 +1,7 @@
 {
- "name":"Xavier Martorell",
- "organization":"BSC (Spain)",
- "tags":["ae-pact2016"]
+  "name": "Xavier Martorell",
+  "organization": "BSC (Spain)",
+  "tags": [
+    "ae-pact2016"
+  ]
 }

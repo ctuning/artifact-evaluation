@@ -1,5 +1,7 @@
 {
- "name":"Faisal Zaghloul",
- "organization":"Yale University (USA)",
- "tags":["ae-cgo-ppopp2017"]
+  "name": "Faisal Zaghloul",
+  "organization": "Yale University (USA)",
+  "tags": [
+    "ae-cgo-ppopp2017"
+  ]
 }

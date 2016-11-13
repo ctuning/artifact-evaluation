@@ -1,5 +1,7 @@
 {
- "name":"Todd Gamblin",
- "organization":"LLNL (USA)",
- "tags":["ae-cgo-ppopp2016"]
+  "name": "Todd Gamblin",
+  "organization": "LLNL (USA)",
+  "tags": [
+    "ae-cgo-ppopp2016"
+  ]
 }

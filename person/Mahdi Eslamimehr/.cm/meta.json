@@ -1,5 +1,7 @@
 {
- "name":"Mahdi Eslamimehr",
- "organization":"SAP Labs (USA)",
- "tags":["ae-cgo-ppopp2015"]
+  "name": "Mahdi Eslamimehr",
+  "organization": "SAP Labs (USA)",
+  "tags": [
+    "ae-cgo-ppopp2015"
+  ]
 }

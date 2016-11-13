@@ -1,5 +1,7 @@
 {
- "name":"Raul Sirvent",
- "organization":"BSC (Spain)",
- "tags":["ae-pact2016"]
+  "name": "Raul Sirvent",
+  "organization": "BSC (Spain)",
+  "tags": [
+    "ae-pact2016"
+  ]
 }

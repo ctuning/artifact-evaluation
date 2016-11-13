@@ -82,14 +82,20 @@ def generate(i):
             n=d.get('name','')
             o=d.get('organization','')
             if n!='':
-               nx=n.split(' ')
-               if len(nx)==2:
-                  ny=nx[1]+' '+nx[0]
-                  aecx[ny]=n
-                  if ny not in aec: 
-                     aec[ny]={'tags':[]}
-                  aec[ny]['tags'].append(tg)
-                  aec[ny]['org']=o
+               # Sort by surname
+               n1=''
+               n2=n
+               j=n.rfind(' ')
+               if j>0:
+                  n1=n[:j].strip()
+                  n2=n[j+1:].strip()
+
+               ny=n2+' '+n1
+               aecx[ny]=n
+               if ny not in aec: 
+                  aec[ny]={'tags':[]}
+               aec[ny]['tags'].append(tg)
+               aec[ny]['org']=o
 
     for q in sorted(aec):
         n=aecx[q]

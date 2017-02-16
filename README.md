@@ -1,15 +1,4 @@
-CK-powered website for Artifact Evaluation for computer systems' events
-=======================================================================
-
-Conferences, workshops and journals using our AE methodology
-============================================================
-
-* PPoPP
-* CGO
-* ADAPT
-* PACT
-
-See AE website for more details: http://cTuning.org/ae 
+This is a CK repository to generate http://cTuning.org/ae website.
 
 Prerequisites
 =============

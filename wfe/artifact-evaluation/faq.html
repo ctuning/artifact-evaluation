@@ -77,38 +77,74 @@ share their EEMBC benchmarks with the evaluators for Artifact Evaluation purpose
 <!----------------------------------------------------------------------------------------------------->
 <h3>Should I make my artifacts customizable? How can I plug in benchmarks and datasets from others?</h3>
 
-It is encouraged but not strictly necessary. Note, that we are developing
-a supporting <a href="http://cknowledge.org">Collective Knowledge technology</a> 
-to simply sharing of artifacts and experimental workflows as customizable 
-and reusable components. Benchmarks, data sets, models, tools and scripts 
-shared in the CK format can be automatically plugged in to the experimental workflow.
+It is encouraged but not strictly necessary. For example, you can check how it's done in 
+<a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper">this artifact</a> (distinguished award winner)
+from CGO'17 using an open-source <a href="http://github.com/ctuning/ck/wiki">Collective Knowledge framework</a> (CK).
+This framework allows you to assemble experimental workflows 
+from a growing number of artifacts shared in a customizable and reusable CK format
+with a simple JSON API and meta information. You can also share your own artifacts 
+(benchmarks, data sets, models, tools) in the CK format.
 
 <!----------------------------------------------------------------------------------------------------->
 <h3>Do I have to make my artifacts public if they pass evaluation?</h3>
 
 You are not obliged to make your artifacts public (particularly in case of commercial artifacts).
-Nevertheless, we strongly encourage you to make your artifacts publicly available upon publication 
+Nevertheless, we encourage you to make your artifacts publicly available upon publication 
 of the proceedings (for example, by including them as "source materials"
-in the Digital Library). 
+in the Digital Library) as a part of <a href="http://dl.acm.org/citation.cfm?id=2618142">our vision for collaborative and reproducible
+computer engineering</a>. 
+
+<p>
+Furthermore, if you have your artifacts already publicly available at the time
+of submission, you may profit from the "public review" option, where you are engaged
+directly with the community to discuss, evaluate and use your software. See such
+examples <a href="http://cTuning.org/ae/artifacts.html">here</a> (search for "example of public evaluation).
 
 <!----------------------------------------------------------------------------------------------------->
-<h3>How to report and compare empirical results?<h3>
-<i>TBD</i>
+<h3>How to report and compare empirical results?</h3>
+
+You should undoubtedly run empirical experiments more than once! 
+There is no universal recipe how many times you should repeat your empirical experiment 
+since it heavily depends on the type of your experiments, machine and environment. 
+
+<p>
+From our practical experience on collaborative and empirical autotuning
+(<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IwcnpkwAAAAJ&citation_for_view=IwcnpkwAAAAJ:maZDTaKrznsC">example</a>), 
+we usually perform
+as many repetitions as needed to "stabilize" expected value 
+(by analyzing a histogram of the results). But even reporting
+variation of the results (for example, standard deviation) is already a good start.
+
+<p>
+Furthermore, we strongly suggest you to pre-record results from your platform
+and provide a script to automatically compare new results with the pre-recorded ones
+preferably using expected values. This will help evaluators avoid wasting time 
+when trying to dig out and validate results in stdout.
+For example, see how new results are visualized and compared against the pre-recorded ones
+using <a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper/files/618737/ck-aarch64-dashboard.pdf">Collective Knowledge dashboard</a> in this 
+<a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper">CGO'17 distinguished artifact</a>.
 
 <!----------------------------------------------------------------------------------------------------->
-<h3>How to deal with numerical instability?</h3>
-<i>TBD</i>
+<h3>How to deal with numerical accuracy and instability?</h3>
+
+If the accuracy of your results depends on a given machine, environment and optimizations (for example,
+when optimizing BLAS, DNN, etc), you should provide a script/plugin to automatically report unexpected 
+loss in accuracy (above provided threshold) as well as any numerical instability.
 
 <!----------------------------------------------------------------------------------------------------->
-<h3>How to check algorithm scalability?</h3>
-<i>TBD</i>
+<h3>How to validate models or algorithm scalability?</h3>
+
+If you present a novel parallel algorithm or some predictive model which should scale 
+across a number of cores/processors/nodes, we suggest you 
+to provide such an experimental workflow which could automatically detect the underlying topology 
+of a user machine (or it can at least be configurable), validate your models or algorithm scalability, 
+and report any unexpected behavior. In the future, we expect to use public repositories
+of knowledge where results will be automatically validated against the ones continuously shared
+by the community (<a href="http://cKnowledge.org/repo">1</a>, <a href="https://arxiv.org/abs/1506.06256">2</a>).
 
 <!----------------------------------------------------------------------------------------------------->
-<h3>How to report and share unexpected results?</h3>
-<i>TBD</i>
+<h3>Is there any page limit for my Artifact Evaluation Appendix?</h3>
 
-<!----------------------------------------------------------------------------------------------------->
-<h3>Are there limits on Artifact Evaluation Appendix in my camera-ready paper?</h3>
-
-There is a limit of 2 pages for the AE Appendix in the final camera-ready paper.
-
+There is no limit for the AE Appendix at the time of the submission for Artifact Evaluation,
+but there is a 2 page limit for the final AE Appendix in the camera-ready conference paper.
+We expect to have a less strict limit in the journals willing to participate in our AE initiative.

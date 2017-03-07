@@ -1,9 +1,11 @@
-This is a CK repository to generate http://cTuning.org/ae website.
+![logo](https://github.com/ctuning/ck-guide-images/blob/master/logo-validated-by-the-community-simple.png)
+
+This is a Collective Knowledge repository to generate http://cTuning.org/ae website.
 
 Prerequisites
 =============
-Collective Knowledge Framework for Open and Reproducible R&D: 
-http://github.com/ctuning/ck
+Collective Knowledge Framework to implement customizable, portable, reusable and reproducible
+research workflows: http://github.com/ctuning/ck
 
 Description
 ===========
@@ -43,3 +45,7 @@ or on Windows:
 
 This will create static html pages in tmp-website sub-directory
 that you can upload to your web server.
+
+Feedback and public discussions
+===============================
+* [CK mailing list](http://groups.google.com/group/collective-knowledge)

@@ -14,7 +14,7 @@
 </i>
 
 <br>
-This guide was prepared by <a href="http://fursin.net/research.html">Grigori Fursin</a>
+This guide (V20170414) was prepared by <a href="http://fursin.net/research.html">Grigori Fursin</a>
 and <a href="http://people.cs.pitt.edu/~childers">Bruce Childers</a> with contributions from 
 <a href="http://www.sandia.gov/~maherou">Michael Heroux</a>, 
 <a href="https://gcl.cis.udel.edu/personal/taufer/">Michela Taufer</a> 
@@ -23,16 +23,8 @@ to help you describe and submit your artifacts for evaluation across a range of 
 and journals.
 
 
-It gradually evolves based on our long-term vision 
-(<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IwcnpkwAAAAJ&cstart=20&citation_for_view=IwcnpkwAAAAJ:isC4tDSrTZIC">TRUST'14@PLDI'14</a> 
-and <a href="https://www.researchgate.net/publication/304010295_Collective_Knowledge_Towards_RD_Sustainability">DATE'16</a>)
-and your feedback after our <a href="$#ck_root_page_url#$prior_ae$#ck_page_suffix#$">past Artifact Evaluations</a> 
-(see <a href="https://www.slideshare.net/GrigoriFursin/cgoppopp17-artifact-evaluation-discussion-enabling-open-and-reproducible-research">AE CGO-PPoPP'17 discussions</a>).
-
-
-It should also help you prepare your artifacts 
-for a possible public release if you decide to do so
-(for example as an auxiliary material in a Digital Library).
+It gradually evolves based on <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IwcnpkwAAAAJ&cstart=20&citation_for_view=IwcnpkwAAAAJ:isC4tDSrTZIC">our long-term vision</a>
+and your feedback during our <a href="https://www.slideshare.net/GrigoriFursin/cgoppopp17-artifact-evaluation-discussion-enabling-open-and-reproducible-research">Artifact Evaluations public discussion sessions</a>.
 
 <p>
 <b>Navigation</b>:
@@ -54,7 +46,7 @@ We aim to make artifact submission as simple as possible.
 You just need to pack your artifact (code and data) using any publicly available tool
 you prefer. In some exceptional cases when rare hardware or proprietary software is used,
 you can arrange a remote access to machine with the pre-installed software.
- 
+
 <p>
 Then, you need to prepare a small and informal Artifact Evaluation appendix
 using our AE LaTeX template (common for PPoPP, CGO, PACT and SC conferences - see below) 
@@ -66,16 +58,11 @@ You can find examples of such AE appendices in the following papers:
 <a href="https://drive.google.com/file/d/0BxJn2NuLIEx_dnRlSHU3MlpHSGs/view">SC'16</a>.
 
 <p>
-At least two reviewers will follow your guide to <i>replicate</i> your results (for example, exact output match) 
-or <i>reproduce</i> them (for example, varying performance numbers or scalability
-on a different machine), and will then send you a report with the 
-following overall assessment of your artifact based 
+At least three reviewers will follow your guide to evaluate your artifacts and will then send you a report 
+with the following overall assessment of your artifact based 
 on our <a href="$#ck_root_page_url#$reviewing$#ck_page_suffix#$">reviewing guidelines</a>:
 
 <ul>
- <li>
-  <b>significantly exceeded expectations</b>
- </li>
  <li>
   <b>exceeded expectations</b>
  </li>
@@ -85,27 +72,50 @@ on our <a href="$#ck_root_page_url#$reviewing$#ck_page_suffix#$">reviewing guide
  <li>
   <b>fell below expectations</b>
  </li>
- <li>
-  <b>significantly fell below expectations</b>
- </li>
 </ul>
 
 where <b>"met expectations" score or above</b> means that your artifact 
-successfully passed evaluation and will receive a stamp of approval
-(you will add it to your camera-ready paper):
+successfully passed evaluation and will receive the following stamps of approval 
+depending on the conference:
+
 
 <center>
-<img src="$#ck_url_template_pull#$resources/ae_logo.png">
+   <table border="1" cellpadding="5" cellspacing="0">
+    <tr>
+     <td align="center"><b>Badges for ACM conferences<br>(CGO,PPoPP,SC)</b></td>
+     <td align="center"><b>Badges for non-ACM conferences<br>(PACT)</b></td>
+    </tr>
+
+    <tr>
+     <td valign="top" align="center">
+      Check <a href="$#ck_root_page_url#$reviewing$#ck_page_suffix#$">our AE criteria</a>:
+
+      <p><b>Artifacts Evaluated - Functional</b><br>
+      <img src="http://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/artifacts_evaluated_functional_dl.jpg">
+
+      <p><b>Artifacts Evaluated - Reusable</b><br>
+      <img src="http://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/artifacts_evaluated_reusable_dl.jpg">
+
+      <p><b>Artifacts Available</b><br>
+      <img src="http://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/artifacts_available_dl.jpg">
+
+      <p><b>Results validated</b><br>
+      <img src="http://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/results_reproduced_dl.jpg">
+
+     </td>
+     <td valign="top" align="center">
+
+     <center><img src="$#ck_url_template_pull#$resources/ae-stamp-pact.png"></center>
+
+     </td>
+    </tr>
+   </table>
 </center>
 
+<p>
 The highest ranked artifact which is not only reproducible 
 but also easily customizable and reusable typically 
 receives a <i>"distinguished artifact" award</i>.
-
-<p>
-Note that we recently helped prepare the ACM's 
-<a href="http://www.acm.org/publications/policies/artifact-review-badging">"Result and Artifact Review and Badging"</a> policy
-and plan to gradually implement it for the next AEs (<a href="http://sc17.supercomputing.org/submitters/technical-papers/reproducibility-initiatives-for-technical-papers/">SC'17</a> is already adopting it).
 
 <p>
 Since our eventual goal is to promote <a href="http://dl.acm.org/citation.cfm?id=2618142">collaborative and reproducible research</a>, 
@@ -124,9 +134,40 @@ is already accepted, but not vice versa).
 <p>
 <h1><a name="prepare"><u>Preparing artifacts for submission</u></a></h1>
 
-You just need to perform the following 4 steps to submit your artifact:
+You need to perform the following steps to submit your artifact for evaluation:
 
 <ol>
+ <li>
+  <b>Prepare experimental workflow</b>.
+
+  <p><i>Note that if you just want to make your artifacts publicly available
+  (which is also encouraged) without validation of experimental results, please go to the next step</i>.
+
+  <p>We strongly encourage you to at least provide some scripts to prepare and run experiments,
+  as well as reporting and validating results. You may be interested to use 
+  <a href="http://jupyter.org">Jupyter Notebooks</a> for this purpose.
+
+  <p>
+  Furthermore, from our <a href="https://www.slideshare.net/GrigoriFursin/enabling-open-and-reproducible-computer-systems-research-the-good-the-bad-and-the-ugly">past Artifact Evaluation experience</a>, 
+  we have noticed that the biggest burden for evaluators is to deal with numerous ad-hoc scripts to prepare, customize and run experiments,
+  try other benchmarks, data sets, compilers and simulators, analyze results and compare them with the ones from the paper. 
+  Therefore we also suggest you to use workflow frameworks which can customize and automate experiments in some unified way such as:
+
+  <ul>
+   <li>
+    <a href="https://en.wikipedia.org/wiki/Collective_Knowledge_(software)">Collective Knowledge framework (CK)</a> 
+    to convert your artifacts to reusable components with JSON API; assemble experimental workflows from them as LEGO
+    (such as multi-objective DNN optimization); automate package installation; crowdsource and reproduce experiments; 
+    enable interactive report. See <a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper">CK-based cross-platform customizable workflow</a> 
+    from the University of Cambridge which won distinguished artifact award at CGO'17, as well as 
+    its <a href="http://ctuning.org/ae/resources/paper-with-distinguished-ck-artifact-and-ae-appendix-cgo2017.pdf">AE Appendix</a> 
+    and <a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper/files/618737/ck-aarch64-dashboard.pdf">interactive CK dashboard</a>
+    to compare empirical results with the ones from the paper.
+   <li><a href="https://occam.cs.pitt.edu">OCCAM</a> (Open Curation for Computer Architecture Modeling) is a project that serves as the catalyst for the tools, education, and community-building needed to bring openness, accountability, comparability, and repeatability to computer architecture experimentation.
+   <li><a href="https://codeocean.com">Code Ocean</a> is a cloud-based executable research platform.
+  </ul>
+
+  <p>
  <li>
   <b>Pack your artifact</b> (code and data) or provide an easy access to them 
   using any publicly available and free tool you prefer or strictly require. 
@@ -144,6 +185,7 @@ You just need to perform the following 4 steps to submit your artifact:
    <li>
     Standard zip or tar with all related code and data, particularly when artifact
     should be rebuilt on a reviewers machine (for example to have a non-virtualized access to a specific hardware). 
+    You may check <a href="https://www.reprozip.org">ReproZip</a> tool to automatically pack your artifacts with all dependencies.
    </li>
    <li>
     Private or public GIT or SVN.
@@ -160,48 +202,27 @@ You just need to perform the following 4 steps to submit your artifact:
     which can be useful for artifact and workflow sharing.
   </ul>
 
-  <p>
-  From our <a href="http://www.slideshare.net/GrigoriFursin/presentation-fursin-aecgoppopp2015">past Artifact Evaluation experience</a>, 
-  we have noticed that the most challenging part is to automate and customize
-  experimental workflows. It is even worse, if you need
-  to validate experiments using latest software environment
-  and hardware (rather than quickly outdated VM and Docker
-  images). Most of the time, some ad-hoc scripts are used
-  to implement these workflows. They are very difficult to change
-  and customize, particularly when an evaluator would like 
-  to try other compilers, libraries and data sets.
+  <br>
 
-  <p>
-  <i>These problems motivated us to develop <a href="http://github.com/ctuning/ck">Collective Knowledge Framework (CK)</a> - 
-  a small, portable and open-source infrastructure and repository to help researchers quickly prototype and share their experimental 
-  workflows with all related artifacts as reusable Python components with a unified JSON API and JSON meta description. 
-  CK supports Linux, MacOS, Windows, Android and reduces the burden of researchers and evaluators by automatically detecting 
-  and resolving all required software dependencies across diverse hardware, 
-  unifying autotuning, statistical analysis and predictive analytics (via scikit-learn, R, etc), 
-  and enabling <a href="http://cknowledge.org/interactive-report">interactive reports</a>.<br><br>
+  <i>Note that we now provide free service to help authors prepare their artifacts for submission and make them 
+     more portable, reusable and customizable using above open-source frameworks. If you are interested,
+     feel free to contact <a href="mailto:Grigori.Fursin@cTuning.org;childers@cs.pitt.edu">AE chairs</a> 
+     for more details.</i>
+  <br>
+  <br>
 
-  Please see the distinguished artifact from CGO'17 with a Collective Knowledge Workflow: [&nbsp;<a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper">GitHub</a>&nbsp;,&nbsp;<a href="$#ck_root_page_url#$resources/paper-with-distinguished-ck-artifact-and-ae-appendix-cgo2017.pdf">Paper&nbsp;with&nbsp;AE&nbsp;appendix&nbsp;and&nbsp;CK&nbsp;workflow</a>&nbsp;,&nbsp<a href="https://michel-steuwer.github.io/About-CK">CK&nbsp;concepts</a>&nbsp;].
-  Also check out how ARM uses CK to crowdsource benchmarking of <a href="https://github.com/ctuning/ck-wa">real workloads</a>, 
-  General Motors to collaboratively optimize <a href="https://github.com/dividiti/ck-caffe">Caffe framework</a>,
-  and Imperial College (London) to crowdsource compiler bug detection 
-  (see <a href="https://github.com/ctuning/ck-clsmith">PLDI'15 artifacts in the CK format</a>).
-  If you would like to share your artifacts in the reusable CK format, please read 
-  Dr. Michel Steuwer's (who was submitting and evaluating CGO artifacts) <a href="https://michel-steuwer.github.io/About-CK">informal blog</a> about CK concepts,
-  <a href="https://github.com/ctuning/ck/wiki/Getting-started-guide">Getting Started Guide</a>, 
-  <a href="https://github.com/ctuning/ck/wiki/Portable-workflows">CK portable workflows</a>
-  and check out this list of already <a href="https://github.com/ctuning/ck/wiki/Shared-modules">shared CK plugins</a>.</i>
-
- <br>
  <li>
-  <b>Write a brief artifact abstract</b> to informally describe your artifact including minimal
-  hardware and software requirements, how it supports your paper, how it can be validated and
+  <b>Write a brief artifact abstract with an informal check-list</b> to informally describe your artifact 
+  including minimal hardware and software requirements, how it supports your paper, how it can be validated and
   what the expected result is. It will be used to select appropriate reviewers.
  </li>
  
  <br>
  <li>
   <b>Fill in and append AE template (<a href="$#ck_url_template_pull#$templates/ae-20160509.tex">download here</a>)</b> to the PDF of your accepted paper.
-  Though it should be relatively intuitive, you can check out <a href="$#ck_root_page_url#$submission_extra$#ck_page_suffix#$">extra notes about this template</a> based on our past AE experience.
+  Though it should be relatively intuitive, we still strongly suggest you to
+  check out <a href="$#ck_root_page_url#$submission_extra$#ck_page_suffix#$">extra notes
+  about how to fill in this template</a> based on our past AE experience.
  </li>
 
  <br>
@@ -213,49 +234,32 @@ You just need to perform the following 4 steps to submit your artifact:
 
 <i>
 If you encounter problems, find some ambiguities or have any questions, 
-do not hesitate to contact AE chairs of your conference 
-or <a href="mailto:Grigori.Fursin@cTuning.org;childers@cs.pitt.edu">AE steering committee</a>!
+do not hesitate to contact <a href="mailto:Grigori.Fursin@cTuning.org;childers@cs.pitt.edu">AE steering committee</a>!
 </i>
 
 <!-------------------------------------------------------------------------------------------->
 <p>
 <h1><a name="accepted"><u>If accepted</u></a></h1>
 
- You can now add the following stamp to the final camera-ready version of your paper:
-
- <ul>
-  <li>for PPoPP: <a href="$#ck_url_template_pull#$stamps/ae-ppopp.pdf">PDF</a>
-  <li>for CGO: <a href="$#ck_url_template_pull#$stamps/ae-cgo.pdf">PDF</a>
-  <li>for PACT: <a href="$#ck_url_template_pull#$stamps/ae-pact.pdf">PDF</a>
- </ul>
-
- While there are no strict formatting rules for the stamp,
- please add it anywhere close to the title. For example,
- see <a href="http://www.cs.technion.ac.il/~mad/publications/ppopp2015-prcu.pdf">PPoPP'15 article</a> 
- together with this <a href="$#ck_url_template_pull#$stamps/logo-latex.tex">LaTeX example</a>.
- You can change \hspace and \raisebox parameters to better fit stamp to your paper.
-
- <p>
- We strongly encourage you to submit your AE appendix (up to 2 pages)
- as an auxiliary material for the Digital Library 
- (while removing all unnecessary or confidential information) 
- along with the final variant of your paper. This will help
- readers better understand what was evaluated.
+ AE chairs will tell you how to add appropriate stamps to the final camera-ready version of your paper.
+ We also strongly encourage you to add up to 2 pages of your AE appendix 
+ to your camera ready paper while removing all unnecessary or confidential information. 
+ This will help readers better understand what was evaluated.
 
  <p>
  Though you are not obliged to publicly release your artifacts 
  (in fact, it is sometimes impossible due to various limitations), 
  we also strongly encourage you to share them with the community
- (even if they are not open-source).
+ even if they are not open-source.
 
  You can release them as an auxiliary material in Digital Libraries
- together with your AE appendix or use your institutional repository
+ or use your institutional repository
  and various public services for code and data sharing.
 
  <p>
  <i>Even accepted artifacts may have some unforeseen behavior and limitations
  discovered during evaluation. Now you have a chance to add related notes 
- to your paper as a future work (if you wish).</i>.
+ in the Artifact Appendix as a future work.</i>.
 
 <!-------------------------------------------------------------------------------------------->
 <p>
@@ -263,7 +267,7 @@ or <a href="mailto:Grigori.Fursin@cTuning.org;childers@cs.pitt.edu">AE steering 
 
 <ul>
  <li>
-  <span style="color:#af0000">"Software Prefetching for Indirect Memory Accesses", CGO 2017, <b>Distinguished CK-powered artifact award</b> (<a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper/issues?q=is%3Aissue+is%3Aclosed">GitHub</a>, <a href="$#ck_root_page_url#$resources/paper-with-distinguished-ck-artifact-and-ae-appendix-cgo2017.pdf">PDF with AE appendix</a>, <a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper/files/618737/ck-aarch64-dashboard.pdf">CK dashboard snapshot</a>)</span>
+  <span style="color:#af0000">"Software Prefetching for Indirect Memory Accesses", CGO 2017, <b>Distinguished artifact award with customizable and portable CK-based workflow</b> (<a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper/issues?q=is%3Aissue+is%3Aclosed">Sources at GitHub</a>, <a href="$#ck_root_page_url#$resources/paper-with-distinguished-ck-artifact-and-ae-appendix-cgo2017.pdf">PDF with AE appendix</a>, <a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper/files/618737/ck-aarch64-dashboard.pdf">CK dashboard snapshot</a>)</span>
  </li>
  <li>
   "Self-Checkpoint: An In-Memory Checkpoint Method Using Less Space and its Practice on Fault-Tolerant HPL", PPoPP 2017 (example of a public evaluation via HPC and supercomputer mailing lists: <a href="https://github.com/thu-pacman/self-checkpoint/issues/1">GitHub discussions</a>)
@@ -317,18 +321,18 @@ We keep track of all past versions of submission/reviewing methodology to let re
 understand which one was used in papers with evaluated artifacts.
 
 <ul>
- <li><b>V20151015 (PPoPP'16/CGO'16/ADAPT'16)</b>: 
-  <a href="$#ck_url_template_pull#$templates/ae-20151015.tex">LaTeX template</a>,
-  <a href="$#ck_root_page_url#$submission-20151015$#ck_page_suffix#$">submission guide</a>,
-  <a href="$#ck_root_page_url#$reviewing-20151015$#ck_page_suffix#$">reviewing guide</a>
- <li><b>V20160509 (PACT'16)</b>: 
-  <a href="$#ck_url_template_pull#$templates/ae-20160509.tex">LaTeX template</a>,
-  <a href="$#ck_root_page_url#$submission-20160509$#ck_page_suffix#$">submission guide</a>,
-  <a href="$#ck_root_page_url#$reviewing-20160509$#ck_page_suffix#$">reviewing guide</a>
  <li><b>V20161020 (PPoPP'17/CGO'17)</b>: 
   <a href="$#ck_url_template_pull#$templates/ae-20160509.tex">LaTeX template</a>,
   <a href="$#ck_root_page_url#$submission-20161020$#ck_page_suffix#$">submission guide</a>,
   <a href="$#ck_root_page_url#$reviewing-20161020$#ck_page_suffix#$">reviewing guide</a>
+ <li><b>V20160509 (PACT'16)</b>: 
+  <a href="$#ck_url_template_pull#$templates/ae-20160509.tex">LaTeX template</a>,
+  <a href="$#ck_root_page_url#$submission-20160509$#ck_page_suffix#$">submission guide</a>,
+  <a href="$#ck_root_page_url#$reviewing-20160509$#ck_page_suffix#$">reviewing guide</a>
+ <li><b>V20151015 (PPoPP'16/CGO'16/ADAPT'16)</b>: 
+  <a href="$#ck_url_template_pull#$templates/ae-20151015.tex">LaTeX template</a>,
+  <a href="$#ck_root_page_url#$submission-20151015$#ck_page_suffix#$">submission guide</a>,
+  <a href="$#ck_root_page_url#$reviewing-20151015$#ck_page_suffix#$">reviewing guide</a>
 </ul>
 
 <br>
@@ -336,15 +340,3 @@ understand which one was used in papers with evaluated artifacts.
  <i><h2>Thank you for participating in Artifact Evaluation!</h2></i>
  </center>
 <br>
-
-<center>
- <small>
-  <i>
-   This guide was prepared by <a href="http://fursin.net/research">Grigori Fursin</a> and
-   <a href="http://people.cs.pitt.edu/~childers">Bruce Childers</a> with contributions 
-   from <a href="http://www.sandia.gov/~maherou">Michael Heroux</a>, 
-   <a href="https://gcl.cis.udel.edu/personal/taufer/">Michela Taufer</a> 
-   and other <a href="$#ck_root_page_url#$committee$#ck_page_suffix#$">colleagues</a>.
-  </i>
- </small>
-</center>

@@ -2,35 +2,36 @@
 
 <!-------------------------------------------------------------------------------------------->
 <p>
-<h1><a name="extended"><u>Extended artifact description (V20161020)</u></a></h1>
+<h1><a name="extended"><u>Extended artifact description (V20170414)</u></a></h1>
 
 Here we provide a few informal suggestions to help you fill in your AE template for submission.
 
-They are based on <a href="http://www.slideshare.net/GrigoriFursin/presentation-fursin-aecgoppopp2015">our 
-past Artifact Evaluations</a> to help you avoid common issues and reduce reviewers burden.
+They are based on our past Artifact Evaluations and personal experience 
+to crowdsource and reproduce experiments 
+(<a href="https://www.slideshare.net/GrigoriFursin/cgoppopp17-artifact-evaluation-discussion-enabling-open-and-reproducible-research">2017</a>,
+<a href="https://www.slideshare.net/GrigoriFursin/panel-at-acmsigplantrust2014">2014</a>,
+<a href="https://hal.inria.fr/inria-00436029">2009</a>) 
+to help you avoid common pitfalls and reduce reviewers burden.
 
 <!-------------------------------------------------------------------------------------------->
 <div style="margin-left: 20px;">
 
-<!------------------------------------------------------------------->
+ <!------------------------------------------------------------------->
  <h2><a name="desc_abstract">Abstract</a></h2>
 
   Briefly and informally describe your artifact including minimal hardware and software requirements, 
   how it supports your paper, how it can be validated, and what is the expected result. It will be used
   to select appropriate reviewers.
 
-<!------------------------------------------------------------------->
- <h2><a name="desc_description">Description</a></h2>
-  <div style="margin-left: 20px;">
-
-   <h3>Artifact check-list (meta-information)</h3>
+ <!------------------------------------------------------------------->
+ <h2>Artifact check-list (meta-information)</h2>
 
      Together with artifact abstract, this informal check-list will help us make sure that reviewers 
      have appropriate competency as well as technology to evaluate your artifact. 
      It can also be used as meta information
      to find your artifacts in Digital Libraries (<i>under discussion/development</i>).
      It was created based on past AE experience and your feedback as such to cover most of the 
-     artifacts in computer systems' research including SW/HW co-design, benchmarking, design space exploration, 
+     artifacts in computer systems research including SW/HW co-design, benchmarking, design space exploration, 
      autotuning, architecture simulation, run-time adaptation, and more. 
 
      <img src="$#ck_url_template_pull#$resources/image-general-workflow1.png" align="left" style="margin:10px;margin-right:30px;">
@@ -104,17 +105,26 @@ past Artifact Evaluations</a> to help you avoid common issues and reduce reviewe
 
        </li>
        <li>
-        <b>Experiment workflow:</b>  How experimental workflow to replicate/reproduce results 
-                                     is implemented (OS scripts, manual steps by user, <a href="http://jupyter.org">IPython/Jupyter notebook</a>, <a href="http://github.com/ctuning/ck">CK workflow</a>, etc)? 
+        <b>Experiments:</b>          How experiments to replicate/reproduce results 
+                                     are prepared and performed (OS scripts, manual steps by user, <a href="http://jupyter.org">IPython/Jupyter notebook</a>, <a href="http://github.com/ctuning/ck">CK workflow</a>, etc)? 
+       </li>
+
+       <li>
+        <b>Workflow frameworks used?</b>   Were any standard workflow frameworks used to automate and customize experiments 
+        (such as <a href="https://en.wikipedia.org/wiki/Collective_Knowledge_(software)">CK</a>, 
+        <a href="https://occam.cs.pitt.edu">OCCAM</a>, <a href="https://codeocean.com">Code Ocean</a> or any similar).
        </li>
        <li>
         <b>Publicly available?:</b>  Will your artifact be publicly available? If yes, we may spend an extra effort to help you with documentation.
        </li>
       </ul>
+
      </div>
 
-
 <!------------------------------------------------------------------->
+ <h2><a name="desc_description">Description</a></h2>
+  <div style="margin-left: 20px;">
+
    <h3>How delivered</h3>
 
      Describe, how reviewers can access your artifact:
@@ -209,7 +219,9 @@ past Artifact Evaluations</a> to help you avoid common issues and reduce reviewe
   run-time systems), hardware, etc. Also, describe if it is possible 
   to parameterize your workflow (whatever is applicable such as 
   changing number of threads, optimizations, CPU/GPU frequency, 
-  accuracy, autotuning scenario, etc).
+  accuracy, autotuning scenario, etc). See this
+  <a href="$#ck_root_page_url#$resources/paper-with-distinguished-ck-artifact-and-ae-appendix-cgo2017.pdf">CGO'17 distinguished artifact</a> 
+  as an example of a portable, customizable and reusable workflow.
 
 <!------------------------------------------------------------------->
  <h2>Notes</h2>

@@ -4,7 +4,7 @@
 </center>
 
 <!----------------------------------------------------------------------------------------------------->
-<h3>Should my software artifacts be open-source?</h3>
+<h3>Do I have to open source my software artifacts?</h3>
 
 No, it is not strictly necessary and you can 
 provide your software artifact as a binary.
@@ -20,42 +20,15 @@ but names of evaluators are not known to the authors.
 AE chair is usually used as a proxy between the authors and the evaluators
 in case of questions and problems.
 
-<p>
-In the future, we would like to move to a fully open, community-driven evaluation
-which was successfully validated at <a href="http://adapt-workshop.org/motivation2016.html">ADAPT'16</a> -
-your comments and ideas are welcome!
-
 <!----------------------------------------------------------------------------------------------------->
 <h3>How to pack artifacts?</h3>
 
 We do not have strict requirements at this stage. You can pack 
 your artifacts simply in a tar ball, zip file, Virtual Machine or Docker image.
-You can also share artifacts via public services such as GitHub or BitBucket.
+You can also share artifacts via public services including GitHub, GitLab and BitBucket.
+
 Please see <a href="$#ck_root_page_url#$submission$#ck_page_suffix#$">our submission guide</a> 
 for more details.
-
-<p>
-However, from our <a href="http://www.slideshare.net/GrigoriFursin/presentation-fursin-aecgoppopp2015">past Artifact Evaluation</a>, 
-the most challenging part is to automate and customize
-experimental workflows. It is even worse, if you need
-to validate experiments using latest software environment
-and hardware (rather than quickly outdated VM and Docker
-images). Currently, some ad-hoc scripts are used
-to implement such workflows. They are difficult to change
-and customize, particularly when an evaluator would like 
-to try other compilers, libraries and data sets.
-
-<p>
-Therefore, we decided to develop <a href="http://github.com/ctuning/ck">Collective Knowledge Framework (CK)</a> - 
-a small, portable and customizable framework to help researchers share their artifacts as reusable Python components 
-with a unified JSON API. This approach should help researchers quickly prototype experimental workflows 
-(such as multi-objective autotuning) from such components while automatically detecting and resolving
-all required software or hardware dependencies. CK is also intended to reduce evaluators' burden
-by unifying statistical analysis and predictive analytics (via scikit-learn, R, DNN), 
-and enabling interactive reports. Please see examples of a <a href="http://cknowledge.org/repo">live repository</a>,
-<a href="http://cknowledge.org/interactive-report">interactive article</a> 
-and <a href="https://github.com/ctuning/ck/wiki/Getting_started_guide_clsmith">PLDI'15 CLSmith artifact shared in CK format</a>.
-Feel free to contact us, if you would like to use it but need some help to convert your artifacts into CK format.
 
 <!----------------------------------------------------------------------------------------------------->
 <h3>Is it possible to provide a remote access to a machine with pre-installed artifacts?</h3>
@@ -70,66 +43,115 @@ this information to the evaluators.
 <h3>Can I share commercial benchmarks or software with evaluators?</h3>
 
 Please check the license of your benchmarks, data sets and software. 
-In case of any doubts, try to find a free alternative. Note, that we have 
-a preliminary agreement with the EEMBC consortium to let authors 
-share their EEMBC benchmarks with the evaluators for Artifact Evaluation purposes.
+In case of any doubts, try to find a free alternative. In fact, 
+we strongly suggest you to provide a small subset of free benchmarks 
+and data sets to simplify evaluation.
+
+Note, that we have a preliminary agreement with the <a href="https://www.eembc.org">EEMBC consortium</a>
+to let authors share their EEMBC benchmarks with the evaluators for Artifact Evaluation purposes.
 
 <!----------------------------------------------------------------------------------------------------->
-<h3>Should I make my artifacts customizable? How can I plug in benchmarks and datasets from others?</h3>
+<h3>Can I engage with the community to evaluate my artifacts?</h3>
 
-It is encouraged but not strictly necessary. For example, you can check how it's done in 
-<a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper">this artifact</a> (distinguished award winner)
-from CGO'17 using an open-source <a href="http://github.com/ctuning/ck/wiki">Collective Knowledge framework</a> (CK).
-This framework allows you to assemble experimental workflows 
-from a growing number of artifacts shared in a customizable and reusable CK format
-with a simple JSON API and meta information. You can also share your own artifacts 
-(benchmarks, data sets, models, tools) in the CK format.
+<p>
+Based on the community feedback, we provided an extra option of open evaluations
+to let the community validate artifacts which are publicly available 
+at GitHub, GitLab, BitBuckets, etc, report issues and help the authors 
+fix them. 
+
+Note, that at the end, these artifacts still go through traditional
+evaluation process via AE committee. We successfully validated 
+at <a href="http://adapt-workshop.org/motivation2016.html">ADAPT'16</a> 
+and CGO/PPoPP'17 AE!
+
+<!----------------------------------------------------------------------------------------------------->
+<h3>How to automate and customize experiments?</h3>
+
+For our past AE experience, the major difficulty for evaluators is
+that nearly every artifact pack has its own ad-hoc scripts and formats
+(see our <a href="https://fr.slideshare.net/GrigoriFursin/cgoppopp17-artifact-evaluation-discussion-enabling-open-and-reproducible-research">last AE CGO-PPoPP'17 presentation</a>).
+
+Things get even worse, if someone would like to validate experiments 
+using latest software environment and hardware (rather than quickly 
+outdated VM and Docker images). Most of the submitted scripts are 
+not easy to change, customize or port, particularly when an evaluator 
+would like to try other compilers, libraries and data sets.
+
+<p>
+Therefore, we strongly suggest to use portable workflow frameworks 
+with unified JSON API such as 
+<a href="https://en.wikipedia.org/wiki/Collective_Knowledge_(software)">Collective Knowledge (CK)</a>
+to reduce evaluators' burden. It helps automate and unify your experiments, 
+plug in different compilers, benchmarks, data sets, tools, predictive models to your workflows, 
+and unify aggregation and visualization of results. 
+Please, check out this CGO'17 article from the University of Cambridge ("Software Prefetching for Indirect Memory Accesses") 
+with CK-based experimental workflow which won distinguished artifact award:
+<ul>
+  <li><a href="$#ck_root_page_url#$resources/paper-with-distinguished-ck-artifact-and-ae-appendix-cgo2017.pdf">Paper&nbsp;with&nbsp;AE&nbsp;appendix&nbsp;and&nbsp;CK&nbsp;workflow</a>
+  <li><a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper">Artifacts at GitHub</a>
+  <li><a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper/files/618737/ck-aarch64-dashboard.pdf">PDF snapshot of the interactive CK dashboard</a>
+  <li><a href="https://michel-steuwer.github.io/About-CK">CK&nbsp;concepts</a>
+  <li><a href="https://github.com/ctuning/ck/wiki/Portable-workflows">CK cross-platform package manager</a>
+  <li><a href="https://github.com/ctuning/ck/wiki/Artifact-sharing">CK artifact sharing</a>
+  <li><a href="https://github.com/dividiti/ck-caffe">CK workflow for collaborative Caffe DNN optimization</a>
+</ul>
+
+We now provide free (voluntarily) service to help authors convert their artifacts 
+and ad-hoc scripts to unified and customizable workflows. Contact <a href="mailto:Grigori.Fursin@cTuning.org">AE committee</a>
+for more details.
 
 <!----------------------------------------------------------------------------------------------------->
 <h3>Do I have to make my artifacts public if they pass evaluation?</h3>
 
-You are not obliged to make your artifacts public (particularly in case of commercial artifacts).
+No, you don't have to (it may be impossible in some cases of commercial artifacts).
 Nevertheless, we encourage you to make your artifacts publicly available upon publication 
-of the proceedings (for example, by including them as "source materials"
-in the Digital Library) as a part of <a href="http://dl.acm.org/citation.cfm?id=2618142">our vision for collaborative and reproducible
+(for example, by including them as "source materials" in the Digital Library) 
+as a part of <a href="http://dl.acm.org/citation.cfm?id=2618142">our vision for collaborative and reproducible
 computer engineering</a>. 
 
 <p>
 Furthermore, if you have your artifacts already publicly available at the time
 of submission, you may profit from the "public review" option, where you are engaged
 directly with the community to discuss, evaluate and use your software. See such
-examples <a href="http://cTuning.org/ae/artifacts.html">here</a> (search for "example of public evaluation).
+examples <a href="http://cTuning.org/ae/artifacts.html">here</a> 
+(search for "example of public evaluation").
 
 <!----------------------------------------------------------------------------------------------------->
 <h3>How to report and compare empirical results?</h3>
 
-You should undoubtedly run empirical experiments more than once! 
+First of all, you should undoubtedly run empirical experiments more than once 
+(we still encounter many cases where researchers measure execution time only once)! 
 There is no universal recipe how many times you should repeat your empirical experiment 
 since it heavily depends on the type of your experiments, machine and environment. 
+You should then analyze distribution of execution time as shown in the figure below:
 
-<p>
-From our practical experience on collaborative and empirical autotuning
-(<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IwcnpkwAAAAJ&citation_for_view=IwcnpkwAAAAJ:maZDTaKrznsC">example</a>), 
-we usually perform
-as many repetitions as needed to "stabilize" expected value 
-(by analyzing a histogram of the results). But even reporting
-variation of the results (for example, standard deviation) is already a good start.
+<center><img src="https://raw.githubusercontent.com/ctuning/ck-assets/master/slide/reproducibility/994e7359d7760ab1-cropped.png"></center>
 
+<p>If you have more than one expected value (b), it means that you have several
+run-time states on your machine which may be switching during your experiments
+(such as adaptive frequency scaling) and you can not reliably compare empirical results.
+
+However, if there is only one expected value for a given experiment (a), 
+then you can use it to compare multiple experiments (for example during
+autotuning as described 
+<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IwcnpkwAAAAJ&citation_for_view=IwcnpkwAAAAJ:maZDTaKrznsC">here</a>).
+ 
 <p>
+You should also report variation of empirical results together with expected values.
 Furthermore, we strongly suggest you to pre-record results from your platform
 and provide a script to automatically compare new results with the pre-recorded ones
 preferably using expected values. This will help evaluators avoid wasting time 
 when trying to dig out and validate results in stdout.
 For example, see how new results are visualized and compared against the pre-recorded ones
-using <a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper/files/618737/ck-aarch64-dashboard.pdf">Collective Knowledge dashboard</a> in this 
-<a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper">CGO'17 distinguished artifact</a>.
+using <a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper/files/618737/ck-aarch64-dashboard.pdf">CK dashboard</a> 
+in the <a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper">CGO'17 distinguished artifact</a>.
 
 <!----------------------------------------------------------------------------------------------------->
 <h3>How to deal with numerical accuracy and instability?</h3>
 
-If the accuracy of your results depends on a given machine, environment and optimizations (for example,
-when optimizing BLAS, DNN, etc), you should provide a script/plugin to automatically report unexpected 
-loss in accuracy (above provided threshold) as well as any numerical instability.
+If the accuracy of your results depends on a given machine, environment and optimizations 
+(for example, when optimizing BLAS, DNN, etc), you should provide a script/plugin to automatically 
+report unexpected loss in accuracy (above provided threshold) as well as any numerical instability.
 
 <!----------------------------------------------------------------------------------------------------->
 <h3>How to validate models or algorithm scalability?</h3>
@@ -145,6 +167,9 @@ by the community (<a href="http://cKnowledge.org/repo">1</a>, <a href="https://a
 <!----------------------------------------------------------------------------------------------------->
 <h3>Is there any page limit for my Artifact Evaluation Appendix?</h3>
 
-There is no limit for the AE Appendix at the time of the submission for Artifact Evaluation,
-but there is a 2 page limit for the final AE Appendix in the camera-ready conference paper.
-We expect to have a less strict limit in the journals willing to participate in our AE initiative.
+There is no limit for the AE Appendix at the time of the submission for Artifact Evaluation.
+
+<p>There is a 2 page limit for the AE Appendix in the camera-ready CGO,PPoPP and PACT paper.
+There is no page limit for the AE Appendix in the camera-ready SC paper. We also expect 
+that there will be no page limits for AE Appendices in the journals willing to participate 
+in our AE initiative.

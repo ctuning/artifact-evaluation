@@ -1,46 +1,56 @@
 ### Review template for Artifact Evaluation V20151015
 
+Please, check details about scoring here: http://cTuning.org/ae/reviewing.html
+
 Possible scores:
-* +2: significantly exceeded expectations
 * +1: exceeded expectations
-*  0: met expectations
+*  0: met expectations (or inapplicable)
 * -1: fell below expectations
-* -2: significantly fell below expectations
 
 ################################################################
 
-# Documentation: (add your score)
+# Artifacts publicly available (if applicable): (add your score)
 
 (Describe your experience, success/failure,
 encountered problems, and suggestions to authors)
 
 
-# Packaging: (add your score)
+# Package complete: (add your score)
 (Describe your experience, success/failure,
 encountered problems, and suggestions to authors)
 
 
-# Installation: (add your score)
+# Well documented: (add your score)
 (Describe your experience, success/failure,
 encountered problems, and suggestions to authors)
 
 
-# Use case: (add your score)
+# Exercisable: (add your score)
 (Describe your experience, success/failure,
 encountered problems, and suggestions to authors)
 
 
-# Expected behavior: (add your score)
+# Consistent: (add your score)
 (Describe your experience, success/failure,
 encountered problems, and suggestions to authors)
 
 
-# Relevance: (add your score)
+# Artifacts functional: (add your overall score)
 (Describe your experience, success/failure,
 encountered problems, and suggestions to authors)
 
 
-# Customization and reusability: (add your score)
+# Artifacts customizable and reusable: (add your score)
+(Describe your experience, success/failure,
+encountered problems, and suggestions to authors)
+
+
+# Results replicated (if applicable): (add your score)
+(Describe your experience, success/failure,
+encountered problems, and suggestions to authors)
+
+
+# Results reproduced (if applicable): (add your score)
 (Describe your experience, success/failure,
 encountered problems, and suggestions to authors)
 
@@ -48,6 +58,8 @@ encountered problems, and suggestions to authors)
 ################################################################
 
 # Overall score: (add your score)
+
+Did artifacts and results match authors' description? 
 
 Provide explanation of your score and 
 what can be improved during rebuttal.

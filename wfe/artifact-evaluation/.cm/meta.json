@@ -12,11 +12,11 @@
      "html_off_end":"</span>",
 
      "nodes":[
-       {"id":"index", "name":"Home", "link":"$#wfe_url_prefix_page#$index"},
+       {"id":"index", "name":"About", "link":"$#wfe_url_prefix_page#$index"},
        {"id":"artifacts", "name":"Artifacts", "link":"$#wfe_url_prefix_page#$artifacts"},
-       {"id":"committee", "name":"Joint Committee","link":"$#wfe_url_prefix_page#$committee"},
-       {"id":"submission", "name":"Submission Guide","link":"$#wfe_url_prefix_page#$submission"},
-       {"id":"reviewing", "name":"Reviewing Guide","link":"$#wfe_url_prefix_page#$reviewing"},
+       {"id":"committee", "name":"Committee","link":"$#wfe_url_prefix_page#$committee"},
+       {"id":"submission", "name":"Submission","link":"$#wfe_url_prefix_page#$submission"},
+       {"id":"reviewing", "name":"Reviewing","link":"$#wfe_url_prefix_page#$reviewing"},
        {"id":"faq", "name":"FAQ","link":"$#wfe_url_prefix_page#$faq"},
        {"id":"prior", "name":"Prior AE","link":"$#wfe_url_prefix_page#$prior_ae"}
      ]

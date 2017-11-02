@@ -8,7 +8,7 @@
   Slides from the CGO/PPoPP'17 AE discussion session on how to improve artifact evaluation are available <a href="https://www.slideshare.net/GrigoriFursin/cgoppopp17-artifact-evaluation-discussion-enabling-open-and-reproducible-research">here</a>.
  </li>
  <li>
-  We co-authored new <a href="http://www.acm.org/publications/policies/artifact-review-badging">ACM Result and Artifact Review and Badging policy</a> in 2016 and plan to use it for the next CGO/PPoPP/PACT AE</a>.
+  We co-authored a new <a href="http://www.acm.org/publications/policies/artifact-review-badging">ACM Result and Artifact Review and Badging policy</a> in 2016 and now use it for the CGO and PPoPP AE</a>.
  </li>
 </ul>
 </i>
@@ -24,7 +24,7 @@ and journals.
 
 
 It gradually evolves based on <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IwcnpkwAAAAJ&cstart=20&citation_for_view=IwcnpkwAAAAJ:isC4tDSrTZIC">our long-term vision</a>
-and your feedback during our <a href="https://www.slideshare.net/GrigoriFursin/cgoppopp17-artifact-evaluation-discussion-enabling-open-and-reproducible-research">Artifact Evaluations public discussion sessions</a>.
+and your feedback during our <a href="https://www.slideshare.net/GrigoriFursin/cgoppopp17-artifact-evaluation-discussion-enabling-open-and-reproducible-research">public Artifact Evaluation discussion sessions</a>.
 
 <p>
 <b>Navigation</b>:
@@ -45,7 +45,7 @@ and your feedback during our <a href="https://www.slideshare.net/GrigoriFursin/c
 We aim to formalize and unify artifact submission while keeping it as simple as possible.
 You will need to pack your artifacts (code and data) using any publicly available tool
 you prefer. In some exceptional cases when rare hardware or proprietary software is used,
-you can arrange a remote access to machine with the pre-installed software.
+you can arrange a remote access to a machine with the pre-installed software.
 We strongly encourage to use workflow frameworks such as <a href="http://github.com/ctuning/ck/wiki">CK</a>
 to unify preparation and validation of experiments.
 
@@ -128,7 +128,7 @@ and reviewers to fix raised issues until a given artifact can pass evaluation
 (unless a major problem is encountered).
 
 In such cases, AE chairs will serve as a proxy to avoid 
-revealing reviewers' identity (the review is blind,
+revealing reviewers' identity (reviews are blind,
 i.e. your identity is known to reviewers since your paper 
 is already accepted, but not vice versa).
 
@@ -154,7 +154,7 @@ You need to perform the following steps to submit your artifact for evaluation:
   we have noticed that the biggest burden for evaluators is to deal with numerous ad-hoc scripts to prepare, customize and run experiments,
   try other benchmarks, data sets, compilers and simulators, analyze results and compare them with the ones from the paper. 
   That's why we collaborate with <a href="http://acm.org">ACM</a> to unify packing and sharing of artifacts as reusable and customizable components
-  using <a href="http://cKnowledge.org">Collective Knowledge framework</a> and <a href="https://occam.cs.pitt.edu">OCCAM</a>
+  using the <a href="http://cKnowledge.org">Collective Knowledge framework</a> and <a href="https://occam.cs.pitt.edu">OCCAM</a>
   (see <a href="https://dl.acm.org/docs/reproducibility.cfm">ACM announcement</a>).
   You are not obliged to use CK and OCCAM since they may only influence "Artifacts Evaluated - Reusable" badge 
   but not the overall evaluation. However if you are interested to try CK, 
@@ -162,8 +162,7 @@ You need to perform the following steps to submit your artifact for evaluation:
   offers free help to convert your workflows
   to the CK format while reusing already existing artifacts 
   (for example, see <a href="http://cKnowledge.org/ai-artifacts">reusable AI artifacts</a>)
-  either before or soon after your submission. 
-  Feel free to contact <a href="mailto:Grigori.Fursin@cTuning.org">Grigori Fursin</a> 
+  for your submission. Feel free to contact <a href="mailto:Grigori.Fursin@cTuning.org">Grigori Fursin</a> 
   as soon as possible for more details. The highest ranked artifacts shared in the CK format
   will also receive a 300$ Amazon gift card from <a href="http://dividiti.com">dividiti</a>.
   For example, check out distinguished artifact from CGO'17 which was shared 
@@ -180,13 +179,13 @@ You need to perform the following steps to submit your artifact for evaluation:
   <ul>
    <li>
     <a href="https://www.virtualbox.org">Virtual Box</a> to pack all code and data including OS 
-    (typical images are around 2..3GB. we strongly recommend to avoid images larger than 10GB).
+    (typical images are around 2..3GB; we strongly recommend to avoid images larger than 10GB).
    </li>
    <li>
     <a href="https://www.docker.com">Docker</a> to pack only touched code and data during experiment. 
    </li>
    <li>
-    Standard zip or tar with all related code and data, particularly when artifact
+    Standard zip or tar with all related code and data, particularly when an artifact
     should be rebuilt on a reviewers machine (for example to have a non-virtualized access to a specific hardware). 
     You may check <a href="https://www.reprozip.org">ReproZip</a> tool to automatically pack your artifacts with all dependencies.
    </li>
@@ -194,24 +193,17 @@ You need to perform the following steps to submit your artifact for evaluation:
     Private or public GIT or SVN.
    </li>
    <li>
-    Arrange a remote access to machine with pre-installed software 
-    (<i>exceptional cases when rare hardware or proprietary software is used or the VM image is too large)</i>) 
+    Arrange a remote access to a machine with pre-installed software 
+    (<i>exceptional cases when rare hardware or proprietary software is used or your VM image is too large)</i>) 
     - you will need to privately send the access information to the AE chairs. Also, please avoid making any changes
-    to the remote machine during evaluation (unless explicitly agreed with AE chairs) - you can do it during
-    rebuttal phase, if needed!
+    to the remote machine during evaluation unless explicitly agreed with AE chairs - you can do it during
+    the rebuttal phase if needed!
    </li>
    <li>
     Check <a href="http://github.com/ctuning/ck/wiki/Enabling-open-science-tools">other tools</a> 
     which can be useful for artifact and workflow sharing.
   </ul>
 
-  <br>
-
-  <i>Note that we now provide free service to help authors prepare their artifacts for submission and make them 
-     more portable, reusable and customizable using above open-source frameworks. If you are interested,
-     feel free to contact <a href="mailto:Grigori.Fursin@cTuning.org;childers@cs.pitt.edu">AE chairs</a> 
-     for more details.</i>
-  <br>
   <br>
 
  <li>
@@ -230,7 +222,7 @@ You need to perform the following steps to submit your artifact for evaluation:
 
  <br>
  <li>
-  <b>Submit artifact abstract and new PDF </b> at the AE submission website (such as EasyChair).
+  <b>Submit artifact abstract and the new PDF </b> at the AE submission website depending on a conference.
  </li>
 
 </ol>
@@ -266,7 +258,7 @@ do not hesitate to contact <a href="mailto:Grigori.Fursin@cTuning.org;childers@c
 
 <!-------------------------------------------------------------------------------------------->
 <p>
-<h1><a name="examples"><u>A few examples of accepted artifacts from the past conferences, workshops and journals</u></a></h1>
+<h1><a name="examples"><u>A few examples of the accepted artifacts from the past conferences, workshops and journals</u></a></h1>
 
 <ul>
  <li>
@@ -320,8 +312,8 @@ do not hesitate to contact <a href="mailto:Grigori.Fursin@cTuning.org;childers@c
 <p>
 <h1><a name="archive"><u>Methodology archive</u></a></h2>
 
-We keep track of all past versions of submission/reviewing methodology to let readers 
-understand which one was used in papers with evaluated artifacts.
+We keep track of the past submission and reviewing methodology to let readers 
+understand which one was used in the papers with the evaluated artifacts.
 
 <ul>
  <li><b>V20171101 (CGO'18/PPoPP'18)</b>: 

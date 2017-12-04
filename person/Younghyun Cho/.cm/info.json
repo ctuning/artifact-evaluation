@@ -1,0 +1,21 @@
+{
+  "backup_data_uid": "3d294824a26ec0ac",
+  "backup_module_uid": "b0743a4044480ead",
+  "backup_module_uoa": "person",
+  "control": {
+    "author": "Grigori Fursin",
+    "author_email": "Grigori.Fursin@cTuning.org",
+    "author_webpage": "http://fursin.net",
+    "copyright": "See CK COPYRIGHT.txt for copyright details",
+    "engine": "CK",
+    "iso_datetime": "2017-12-04T14:50:34.333142",
+    "license": "See CK LICENSE.txt for licensing details",
+    "version": [
+      "1",
+      "9",
+      "4",
+      "1"
+    ]
+  },
+  "data_name": "Younghyun Cho"
+}

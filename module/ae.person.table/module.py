@@ -52,10 +52,23 @@ def generate(i):
     s+='<table border="0" cellpadding="3" cellspacing="0" class="ck_margin_40px">\n\n'
     s+=' <tr><td><b>Name:</b></td> <td><b>Organization:</b></td>'
 
+    x=''
+    y='style="background-color:#efefef"'
+    highlight1=True
+
     for q in tags_desc:
+        if highlight1:
+           x1=x
+           highlight1=False
+        else:
+           x1=y
+           highlight1=True
+
         tg=q['id']
         name=q['name']
-        s+='<td align="center"><b>'+name+'</b></td>'
+
+        s+='<td '+x1+' align="center"><b>'+name+'</b></td>'
+
     s+='</tr>\n'
 
 
@@ -97,22 +110,39 @@ def generate(i):
                aec[ny]['tags'].append(tg)
                aec[ny]['org']=o
 
+    highlight=True
     for q in sorted(aec):
         n=aecx[q]
         t=aec[q]['tags']
         o=aec[q]['org']
 
+        if highlight:
+           x='style="background-color:#dfcfff"'
+           y='style="background-color:#cf9fff"'
+           highlight=False
+        else:
+           x=''
+           y='style="background-color:#efefef"'
+           highlight=True
 
-        s+=' <tr><td>'+n+'</td><td>'+o+'</td>'
+        s+=' <tr '+x+'><td>'+n+'</td><td>'+o+'</td>'
 
+        highlight1=True
         for q in tags_desc:
+
+            if highlight1:
+               x1=x
+               highlight1=False
+            else:
+               x1=y
+               highlight1=True
 
             tg=q['id']
             name=q['name']
 
             sx=''
             if tg in t: sx='<b>*</b>'
-            s+='<td align="center">'+sx+'</td>'
+            s+='<td '+x1+' align="center">'+sx+'</td>'
 
         s+='</tr>\n'
 

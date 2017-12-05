@@ -2,6 +2,12 @@
 <i>
 <ul>
  <li>
+  <b>Do not forget to provide a list of hardware, software, benchmark and data set dependencies in your artifact abstract - this is essential to find appropriate evaluators!</b>
+ </li>
+ <li>
+  Participate in the <a href="http://cKnowledge.org/request">1st competition on reproducible SW/HW co-design competition</a> at ASPLOS'18
+ </li>
+ <li>
   For SC'17 authors: you can find extra notes about how to fill in Artifact Appendix <a href="$#ck_root_page_url#$submission_extra$#ck_page_suffix#$">here</a>.
  </li>
  <li>
@@ -46,12 +52,14 @@ We aim to formalize and unify artifact submission while keeping it as simple as 
 You will need to pack your artifacts (code and data) using any publicly available tool
 you prefer. In some exceptional cases when rare hardware or proprietary software is used,
 you can arrange a remote access to a machine with the pre-installed software.
-We strongly encourage to use workflow frameworks such as <a href="http://github.com/ctuning/ck/wiki">CK</a>
-to unify preparation and validation of experiments.
+We strongly encourage to use workflow frameworks such as <a href="http://cKnowledge.org">CK</a>
+to unify preparation and validation of experiments (ACM currently <a href="https://dl.acm.org/reproducibility.cfm">evaluates possibility to
+integrate CK</a> with the ACM Digital Library; <a href="http://cTuning.org">cTuning foundation</a>
+also provides free community help to convert your artifacts to the CK format</a>).
 
 <p>
 Then you need to prepare a small and informal Artifact Evaluation appendix
-using our AE LaTeX template (common for PPoPP, CGO, PACT and SC conferences - see below) 
+using our <a href="$#ck_url_template_pull#$templates/ae-20160509.tex">AE LaTeX template</a> (common for PPoPP, CGO, PACT and SC conferences) 
 to explain evaluators what your artifacts are and how to use them
 (you will be allowed to add up to 2 pages of this Appendix to your final camera-ready paper).
 You can find examples of such AE appendices in the following papers:
@@ -207,7 +215,7 @@ You need to perform the following steps to submit your artifact for evaluation:
   <br>
 
  <li>
-  <b>Write a brief artifact abstract with an informal check-list</b> to informally describe your artifact 
+  <b>Write a brief artifact abstract with a SW/HW check-list</b> to informally describe your artifact 
   including minimal hardware and software requirements, how it supports your paper, how it can be validated and
   what the expected result is. It will be used to select appropriate reviewers.
  </li>

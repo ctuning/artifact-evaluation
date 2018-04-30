@@ -25,5 +25,5 @@
 
  "global_keywords":"artifact evaluation, collective knowledge, ppopp, cgo, adapt, reproducible research",
 
- "share":" <!-- AddToAny BEGIN -->\n <div class=\"a2a_kit a2a_default_style\" style=\"margin:0 auto;font-size:12px;width:60px;\">\n  <a class=\"a2a_dd\" href=\"https://www.addtoany.com/share_save\">Share</a>\n </div>\n <script type=\"text/javascript\" src=\"//static.addtoany.com/menu/page.js\"></script>\n <!-- AddToAny END -->\n"
+ "share":" <!-- AddToAny BEGIN -->\n<a class=\"a2a_dd\" href=\"https://www.addtoany.com/share\"><img src=\"https://static.addtoany.com/buttons/share_save_171_16.png\" width=\"171\" height=\"16\" border=\"0\" alt=\"Share\"/></a>\n<script async src=\"https://static.addtoany.com/menu/page.js\"></script>\n<!-- AddToAny END -->"
 }

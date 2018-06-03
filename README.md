@@ -52,7 +52,7 @@ CK web front-end templates, styles and images.
 Usage:
 
 ```
- $ ck pull repo:ck-web-artifact-evaluation
+ $ ck pull repo:ck-artifact-evaluation
 ```
 
  (dependency on ck-web repo will be automatically resolved)

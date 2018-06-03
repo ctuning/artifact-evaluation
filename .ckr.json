@@ -1,10 +1,10 @@
 {
   "data_uid": "1b8b35474438bdbc", 
-  "data_name": "ck-web-artifact-evaluation", 
+  "data_name": "ck-artifact-evaluation", 
   "dict": {
-    "url": "https://github.com/ctuning/ck-web-artifact-evaluation", 
+    "url": "https://github.com/ctuning/ck-artifact-evaluation", 
     "shared": "git"
   }, 
-  "data_alias": "ck-web-artifact-evaluation", 
-  "data_uoa": "ck-web-artifact-evaluation"
+  "data_alias": "ck-artifact-evaluation", 
+  "data_uoa": "ck-artifact-evaluation"
 }

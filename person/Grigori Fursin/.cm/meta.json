@@ -1,6 +1,8 @@
 {
-  "name": "Grigori Fursin",
-  "organization": "dividiti (UK) / cTuning foundation (France)",
+  "first_name": "Grigori", 
+  "last_name": "Fursin", 
+  "name": "Grigori Fursin", 
+  "organization": "dividiti (UK) / cTuning foundation (France)", 
   "tags": [
     "ae-cgo-ppopp2017"
   ]

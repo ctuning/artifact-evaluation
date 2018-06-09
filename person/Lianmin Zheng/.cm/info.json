@@ -1,21 +1,21 @@
 {
-  "backup_data_uid": "e1948739b11a609c",
-  "backup_module_uid": "b0743a4044480ead",
-  "backup_module_uoa": "person",
+  "backup_data_uid": "e1948739b11a609c", 
+  "backup_module_uid": "b0743a4044480ead", 
+  "backup_module_uoa": "person", 
   "control": {
-    "author": "Grigori Fursin",
-    "author_email": "Grigori.Fursin@cTuning.org",
-    "author_webpage": "http://fursin.net",
-    "copyright": "See CK COPYRIGHT.txt for copyright details",
-    "engine": "CK",
-    "iso_datetime": "2018-06-03T13:39:14.246508",
-    "license": "See CK LICENSE.txt for licensing details",
+    "author": "Grigori Fursin", 
+    "author_email": "Grigori.Fursin@cTuning.org", 
+    "author_webpage": "http://fursin.net", 
+    "copyright": "See CK COPYRIGHT.txt for copyright details", 
+    "engine": "CK", 
+    "iso_datetime": "2018-06-03T13:39:14.246508", 
+    "license": "See CK LICENSE.txt for licensing details", 
     "version": [
-      "1",
-      "9",
-      "4",
+      "1", 
+      "9", 
+      "4", 
       "1"
     ]
-  },
+  }, 
   "data_name": "Lianmin Zheng"
 }

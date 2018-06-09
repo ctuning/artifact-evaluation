@@ -1,6 +1,6 @@
 {
-  "name": "David Boehme",
-  "organization": "LLNL (USA)",
+  "name": "David Boehme", 
+  "organization": "LLNL (USA)", 
   "tags": [
     "ae-cgo-ppopp2015"
   ]

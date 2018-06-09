@@ -1,7 +1,10 @@
 {
-  "name": "Flavio Vella",
-  "organization": "dividiti (UK)",
+  "first_name": "Flavio", 
+  "last_name": "Vella", 
+  "name": "Flavio Vella", 
+  "organization": "dividiti (UK)", 
   "tags": [
-    "ae-pact2017", "ae-ppopp2018"
+    "ae-pact2017", 
+    "ae-ppopp2018"
   ]
 }

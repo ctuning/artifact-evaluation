@@ -1,6 +1,8 @@
 {
-  "name": "Anton Lokhmotov",
-  "organization": "dividiti (UK)",
+  "first_name": "Anton", 
+  "last_name": "Lokhmotov", 
+  "name": "Anton Lokhmotov", 
+  "organization": "dividiti (UK)", 
   "tags": [
     "ae-cgo-ppopp2017"
   ]

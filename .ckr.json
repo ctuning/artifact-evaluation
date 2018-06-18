@@ -3,7 +3,21 @@
   "data_name": "ck-artifact-evaluation", 
   "dict": {
     "url": "https://github.com/ctuning/ck-artifact-evaluation", 
-    "shared": "git"
+    "shared": "git",
+    "repo_deps": [
+      {
+        "repo_uoa": "ck-env"
+      },
+      {
+        "repo_uoa": "ck-dissemination-modules"
+      },
+      {
+        "repo_uoa": "ck-web"
+      },
+      {
+        "repo_uoa": "ck-docker"
+      }
+    ]
   }, 
   "data_alias": "ck-artifact-evaluation", 
   "data_uoa": "ck-artifact-evaluation"

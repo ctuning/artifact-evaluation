@@ -12,7 +12,7 @@ post them to the dedicated <a href="https://groups.google.com/forum/#!forum/arti
 
 No, it is not strictly necessary and you can 
 provide your software artifact as a binary.
-However, in case of problems, reviewers will not be 
+However, in case of problems, reviewers may not be 
 able to fix it and will likely give you a negative score.
 
 <!----------------------------------------------------------------------------------------------------->
@@ -37,9 +37,9 @@ for more details.
 <!----------------------------------------------------------------------------------------------------->
 <h3>Is it possible to provide a remote access to a machine with pre-installed artifacts?</h3>
 
-Only in exceptional cases, i.e. when rare hardware or proprietary software is required,
+Only in exceptional cases, i.e. when rare hardware or proprietary software/benchmarks are required,
 or VM image is too large, or when you are not authorized to move artifacts outside your organization.
-In such case, you will need to send access information 
+In such case, you will need to send the access information 
 to the AE chairs via private email or SMS. 
 They will then pass this information to the evaluators.
 
@@ -69,54 +69,73 @@ at <a href="http://adapt-workshop.org/motivation2016.html">ADAPT'16</a>
 and CGO/PPoPP'17 AE!
 
 <!----------------------------------------------------------------------------------------------------->
-<h3>How to automate and customize experiments?</h3>
+<h3>How to automate, customize and port experiments?</h3>
 
-For our past AE experience, the major difficulty for evaluators is
-that nearly every artifact pack has its own ad-hoc scripts and formats
-(see our <a href="https://fr.slideshare.net/GrigoriFursin/cgoppopp17-artifact-evaluation-discussion-enabling-open-and-reproducible-research">last AE CGO-PPoPP'17 presentation</a>).
+For our past AE experience, the major difficulty that evaluators 
+face is the lack of a common and portable workflow framework
+in systems research. This means that each year they have 
+to learn some ad-hoc scripts and formats in nearly 
+all artifacts without even reusing such knowledge the following year
+(see our public presentation about 
+<a href="https://fr.slideshare.net/GrigoriFursin/cgoppopp17-artifact-evaluation-discussion-enabling-open-and-reproducible-research">CGO-PPoPP'17 AE issues</a>).
 
-Things get even worse, if someone would like to validate experiments 
-using latest software environment and hardware (rather than quickly 
-outdated VM and Docker images). Most of the submitted scripts are 
-not easy to change, customize or port, particularly when an evaluator 
-would like to try other compilers, libraries and data sets.
+Things get even worse if an evaluator would like to validate experiments 
+using a different compiler, tool, library, data set, operating systems or hardware
+rather than just replicating quickly outdated results using 
+VM and Docker images - our experience shows that most of the submitted scripts 
+are not easy to change, customize or port.
 
 <p>
-That's why we collaborate with <a href="http://acm.org">ACM</a> to unify packing and sharing of artifacts as reusable and customizable components
-using <a href="http://cKnowledge.org">Collective Knowledge framework</a> 
-(see <a href="https://dl.acm.org/docs/reproducibility.cfm">ACM announcement</a>).
+That is why we collaborate with <a href="http://cKnowledge.org/partners.html">the community</a> 
+and <a href="http://acm.org">ACM</a> to develop a common experimental framework
+(<a href="https://github.com/ctuning/ck">Collective Knowledge aka CK</a>) 
+with and a common JSON API and a <a href="https://github.com/ctuning/ck/wiki/Portable-workflows">portable package manager</a> 
+which unifies detection and installation of dependencies for Linux, MacOS, Windows and Android.
 
-CK helps automate and unify your experiments, 
-plug in different compilers, benchmarks, data sets, tools, predictive models to your workflows, 
-and unify aggregation and visualization of results. 
-Please, check out this CGO'17 article from the University of Cambridge ("Software Prefetching for Indirect Memory Accesses") 
-with CK-based experimental workflow which won a distinguished artifact award:
+<p>
+You can see how CK workflows helped automate, crowdsource and visualize experiments in the 
+<a href="http://cKnowledge.org/request">1st ACM ReQuEST-ASPLOS'18 tournament</a> 
+to co-design Pareto-efficient software/hardware stack for deep learning:
+ <a href="https://github.com/ctuning/ck-request-asplos18-results">CK workflows</a>,
+   <a href="https://doi.org/10.1145/3229762">ACM proceedings</a>,
+   <a href="https://portalparts.acm.org/3230000/3229762/fm/frontmatter.pdf">report</a> and
+   <a href="http://cKnowledge.org/request-results">reproducible results</a>.
+
+You can also reuse shared <a href="http://cKnowledge.org/shared-programs.html">programs/benchmarks</a>,
+<a href="http://cKnowledge.org/shared-packages.html">portable packages (code and data sets)</a>,
+<a href="http://cKnowledge.org/shared-repos.html">repositories with customizable workflows and other CK components</a>,
+and <a href="http://cKnowledge.org/shared-soft-detection-plugins.html">software detection plugins</a> in your own workflows.
+
+<p>
+You can also check this CGO'17 article from the University of Cambridge 
+on "Software Prefetching for Indirect Memory Accesses"
+with CK-based experimental workflow and packages, which won a distinguished artifact award:
 <ul>
   <li><a href="$#ck_root_page_url#$resources/paper-with-distinguished-ck-artifact-and-ae-appendix-cgo2017.pdf">Paper&nbsp;with&nbsp;AE&nbsp;appendix&nbsp;and&nbsp;CK&nbsp;workflow</a>
   <li><a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper">Artifacts at GitHub</a>
   <li><a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper/files/618737/ck-aarch64-dashboard.pdf">PDF snapshot of the interactive CK dashboard</a>
-  <li><a href="https://michel-steuwer.github.io/About-CK">CK&nbsp;concepts</a>
-  <li><a href="https://github.com/ctuning/ck/wiki/Portable-workflows">CK cross-platform package manager</a>
-  <li><a href="https://github.com/ctuning/ck/wiki/Artifact-sharing">CK artifact sharing</a>
-  <li><a href="https://github.com/dividiti/ck-caffe">CK workflow for collaborative Caffe DNN optimization</a>
 </ul>
 
-Note that you are not obliged to use CK since it may only influence "Artifacts Evaluated - Reusable" badge 
-but not the overall evaluation. However if you are interested to try CK, 
-<a href="http://cTuning.org">cTuning foundation (the AE Steering Committee)</a> 
-offers free help to convert your workflows
-to the CK format while reusing already existing artifacts 
-(for example, see <a href="http://cKnowledge.org/ai-artifacts">reusable AI artifacts</a>)
-either before or soon after your submission. 
+Please, follow <a href="https://github.com/ctuning/ck/wiki/Adding-new-workflows">this guide</a> 
+if you want to convert your artifacts and workflows to the CK format.
+Note that you are not obliged to use CK. 
+<b>However if you are interested to give it a try and help evaluators,
+<a href="http://cTuning.org">the non-profit cTuning foundation</a> 
+regularly helps users to convert their workflows to the CK format while reusing already existing artifacts -
+just <a href="https://github.com/ctuning/ck/wiki/Contacts">contact them</a> way before 
+submitting artifacts.</b> You can also join us at the <a href="http://rescue-hpc.org">ResCuE-HPC workshop</a>
+on Reproducible, Customizable and Portable Workflows for HPC at Supercomputing'18
+to discuss how to introduce common workflows to systems research!
 
 <!----------------------------------------------------------------------------------------------------->
 <h3>Do I have to make my artifacts public if they pass evaluation?</h3>
 
-No, you don't have to (it may be impossible in some cases of commercial artifacts).
-Nevertheless, we encourage you to make your artifacts publicly available upon publication 
-(for example, by including them as "source materials" in the Digital Library) 
-as a part of <a href="http://dl.acm.org/citation.cfm?id=2618142">our vision for collaborative and reproducible
-computer engineering</a>. 
+No, you don't have to and it may be impossible in some cases of some commercial artifacts.
+Nevertheless, we encourage you to make your artifacts publicly available upon publication, 
+for example, by including them as "source materials" in the Digital Library
+or sharing them in a permanent repository (required to receive the "available" badge)
+as outlined in <a href="http://dl.acm.org/citation.cfm?id=2618142">our vision</a>
+for collaborative and reproducible computer engineering.
 
 <p>
 Furthermore, if you have your artifacts already publicly available at the time
@@ -129,9 +148,11 @@ examples <a href="http://cTuning.org/ae/artifacts.html">here</a>
 <h3>How to report and compare empirical results?</h3>
 
 First of all, you should undoubtedly run empirical experiments more than once 
-(we still encounter many cases where researchers measure execution time only once)! 
+(we still encounter many cases where researchers measure execution time only once)
+and perform statistical analysis (i.e. do not just look at average but at distribution of values)! 
+
 There is no universal recipe how many times you should repeat your empirical experiment 
-since it heavily depends on the type of your experiments, machine and environment. 
+since it heavily depends on the type of your experiments, platform and environment. 
 You should then analyze distribution of execution time as shown in the figure below:
 
 <center><img src="https://raw.githubusercontent.com/ctuning/ck-assets/master/slide/reproducibility/994e7359d7760ab1-cropped.png"></center>
@@ -167,18 +188,19 @@ report unexpected loss in accuracy (above provided threshold) as well as any num
 
 If you present a novel parallel algorithm or some predictive model which should scale 
 across a number of cores/processors/nodes, we suggest you 
-provide such an experimental workflow which could automatically detect the underlying topology 
+to provide such an experimental workflow which could automatically detect the underlying topology 
 of a user machine (or it can at least be configurable), validate your models or algorithm scalability, 
 and report any unexpected behavior. In the future, we expect to use public repositories
 of knowledge where results will be automatically validated against the ones continuously shared
-by the community (<a href="http://cKnowledge.org/repo">1</a>, <a href="https://arxiv.org/abs/1506.06256">2</a>).
+by the community (<a href="http://cKnowledge.org/repo">1</a>, <a href="http://cKnowledge.org/rpi-crowd-tuning">2</a>).
 
 <!----------------------------------------------------------------------------------------------------->
 <h3>Is there any page limit for my Artifact Evaluation Appendix?</h3>
 
 There is no limit for the AE Appendix at the time of the submission for Artifact Evaluation.
 
-<p>There is a 2 page limit for the AE Appendix in the camera-ready CGO,PPoPP and PACT paper.
+<p>
+However, there is currently a 2 page limit for the AE Appendix in the camera-ready CGO and PPoPP papers.
 There is no page limit for the AE Appendix in the camera-ready SC paper. We also expect 
 that there will be no page limits for AE Appendices in the journals willing to participate 
 in our AE initiative.

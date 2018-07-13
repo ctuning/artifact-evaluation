@@ -54,7 +54,7 @@ def generate(i):
 
     x=''
     y='style="background-color:#efefef"'
-    highlight1=True
+    highlight1=False
 
     for q in tags_desc:
         if highlight1:
@@ -127,7 +127,7 @@ def generate(i):
 
         s+=' <tr '+x+'><td>'+n+'</td><td>'+o+'</td>'
 
-        highlight1=True
+        highlight1=False
         for q in tags_desc:
 
             if highlight1:

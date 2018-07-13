@@ -1,5 +1,9 @@
 {
   "first_name": "Nikolay", 
   "last_name": "Chunosov", 
-  "name": "Nikolay Chunosov"
+  "name": "Nikolay Chunosov",
+  "organization": "Xored", 
+  "tags": [
+    "ae-request-asplos2018"
+  ]
 }

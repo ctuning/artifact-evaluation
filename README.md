@@ -6,7 +6,7 @@ This is a Collective Knowledge repository to generate http://cTuning.org/ae webs
 Prerequisites
 =============
 Collective Knowledge Framework to implement customizable, portable, reusable and reproducible
-research workflows: http://github.com/ctuning/ck
+research workflows: https://github.com/ctuning/ck
 
 Publications
 ============
@@ -96,4 +96,5 @@ by the CK framework:
 
 Feedback and public discussions
 ===============================
-* [CK mailing list](http://groups.google.com/group/collective-knowledge)
+* [CK google group](http://groups.google.com/group/collective-knowledge)
+* [AE google group](https://groups.google.com/forum/#!forum/artifact-evaluation)

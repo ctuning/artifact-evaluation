@@ -2,7 +2,7 @@
 
 <!-------------------------------------------------------------------------------------------->
 <p>
-<h1><a name="extended"><u>Extended artifact description (V20180713)</u></a></h1>
+<h1><a name="extended"><u>Extended artifact description (V20170414)</u></a></h1>
 
 Here we provide a few informal suggestions to help you fill in your AE template for submission.
 
@@ -12,13 +12,6 @@ to crowdsource and reproduce experiments
 <a href="https://www.slideshare.net/GrigoriFursin/panel-at-acmsigplantrust2014">2014</a>,
 <a href="https://hal.inria.fr/inria-00436029">2009</a>) 
 to help you avoid common pitfalls and reduce reviewers burden.
-
-<p>
-<i>
-If you encounter problems, find some ambiguities or have any questions, 
-do not hesitate to get in touch with the AE community via 
-the <a href="https://groups.google.com/forum/#!forum/artifact-evaluation">dedicated AE google group</a>.
-</i>
 
 <!-------------------------------------------------------------------------------------------->
 <div style="margin-left: 20px;">
@@ -107,43 +100,13 @@ the <a href="https://groups.google.com/forum/#!forum/artifact-evaluation">dedica
         <b>Execution:</b>            Any specific conditions during execution (sole user, process pinning, profiling, adaptation, etc)? How long will it approximately run?
        </li>
        <li>
-        <b>Metrics:</b>              Which metrics are reported (execution time, inference per second, Top1 accuracy, static and dynamic energy consumption, etc) - 
-                                     particularly important for multi-objective benchmarking, optimization and co-design 
-                                     (see <a href="http://cKnowledge.org/request">ACM ReQuEST tournaments</a>).
-       </li>
-       <li>
         <b>Output:</b>               What is your output (console, file, table, graph) and what is your result 
-                                     (exact output, numerical results, measured characteristics, etc)?
+                                     (exact output, measured characteristic, etc)?
 
        </li>
        <li>
-        <b>Experiments:</b>          How to prepare experiments and replicate/reproduce results
-                                     (OS scripts, manual steps by user, 
-                                     <a href="http://jupyter.org">IPython/Jupyter notebook</a>, <a href="http://github.com/ctuning/ck">CK workflow</a>, etc)? 
-                                     Do not forget to mention tolerable variation of empirical results!
-       </li>
-
-       <li>
-        <b>How much disk space required (approximately)?:</b> This can help evaluators and end-users to find appropriate resources.
-       </li>
-
-       <li>
-        <b>How much time is needed to prepare workflow (approximately)?:</b> This can help evaluators and end-users to estimate resources needed to evaluate your artifact.
-
-       </li>
-
-       <li>
-        <b>How much time is needed to complete experiments (approximately)?:</b> This can help evaluators and end-users to estimate resources needed to evaluate your artifact.
-
-       </li>
-
-       <li>
-        <b>Publicly available?:</b>  Will your artifact be publicly available? If yes, we may spend an extra effort to help you with the documentation.
-       </li>
-
-       <li>
-        <b>Code/data licenses (if publicly available)?:</b> If you workflows and artifacts will be publicly available, please provide information about licenses.
-                                                            This will help the community to reuse your components.
+        <b>Experiments:</b>          How experiments to replicate/reproduce results 
+                                     are prepared and performed (OS scripts, manual steps by user, <a href="http://jupyter.org">IPython/Jupyter notebook</a>, <a href="http://github.com/ctuning/ck">CK workflow</a>, etc)? 
        </li>
 
        <li>
@@ -151,12 +114,14 @@ the <a href="https://groups.google.com/forum/#!forum/artifact-evaluation">dedica
         (such as <a href="https://en.wikipedia.org/wiki/Collective_Knowledge_(software)">CK</a>, 
         <a href="https://occam.cs.pitt.edu">OCCAM</a>, <a href="https://codeocean.com">Code Ocean</a> or any similar).
        </li>
-
+       <li>
+        <b>Publicly available?:</b>  Will your artifact be publicly available? If yes, we may spend an extra effort to help you with documentation.
+       </li>
        <li>
         <b>Archived?:</b> 
         Note that the author-created artifacts relevant to this paper 
         will receive an ACM "artifact available" badge *only if* 
-        they have been placed on a publicly 
+        they have been placed on a publically 
         accessible archival repository such as <a href="https://zenodo.org">Zenodo</a>, 
         <a href="https://figshare.com">FigShare</a>
         or <a href="http://datadryad.org">Dryad</a>. 
@@ -238,7 +203,7 @@ the <a href="https://groups.google.com/forum/#!forum/artifact-evaluation">dedica
   Describe experiment workflow and how it is implemented, 
   invoked and customized (if needed), i.e. some OS scripts, 
   <a href="http://jupyter.org">IPython/Jupyter notebook</a>, 
-  <a href="https://github.com/ctuning/ck/wiki/Adding-new-workflows">portable CK workflow</a>, etc.
+  <a href="http://github.com/ctuning/ck">portable CK workflow</a>, etc.
 
   See the following example of the experimental workflow 
   for multi-objective and machine-learning based autotuning:
@@ -270,15 +235,11 @@ the <a href="https://groups.google.com/forum/#!forum/artifact-evaluation">dedica
   run-time systems), hardware, etc. Also, describe if it is possible 
   to parameterize your workflow (whatever is applicable such as 
   changing number of threads, optimizations, CPU/GPU frequency, 
-  accuracy, autotuning scenario, etc). 
-  See artifact description of the following award-winning artifacts
-  as examples of portable, customizable and reusable workflows
-  implemented using open-source <a href="https://github.com/ctuning/ck">Collective Knowledge workflow
-  with a portable package manager</a>:
-  [shared CK workflows from the <a href="https://github.com/ctuning/ck-request-asplos18-results">1st ACM ReQuEST-ASPLOS'18 tournament to co-design efficient SW/HW stack for deep learning</a>],
-  [<a href="https://www.cl.cam.ac.uk/~sa614/papers/Software-Prefetching-CGO2017.pdf">CGO'17 paper</a>],
-  [<a href="https://dl.acm.org/citation.cfm?doid=3149704.3149768">IA3 @ Supercomputing'17 paper</a>],
-  [<a href="https://dl.acm.org/citation.cfm?doid=2807591.2807619">SC'15</a>].
+  accuracy, autotuning scenario, etc). See artifact description of the following award-winning artifacts
+  as examples of portable, customizable and reusable workflows:
+  [<a href="https://www.cl.cam.ac.uk/~sa614/papers/Software-Prefetching-CGO2017.pdf">CGO'17 paper</a>] ,
+  [<a href="https://dl.acm.org/citation.cfm?doid=3149704.3149768">IA3 @ SuperComputing'17 paper</a>] 
+
 
 <!------------------------------------------------------------------->
  <h2>Notes</h2>

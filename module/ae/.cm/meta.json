@@ -1,0 +1,13 @@
+{
+  "actions": {
+    "process_hotcrp": {
+      "desc": "process JSON file from HOTCRP and generate table of artifacts"
+    }
+  },
+  "copyright": "See CK COPYRIGHT.txt for copyright details",
+  "desc": "automating artifact evaluation",
+  "developer": "Grigori Fursin",
+  "developer_email": "Grigori.Fursin@cTuning.org",
+  "developer_webpage": "http://fursin.net",
+  "license": "See CK LICENSE.txt for licensing details"
+}

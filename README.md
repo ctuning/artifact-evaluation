@@ -46,6 +46,11 @@ or on Windows:
 CK will create all static html pages in the "tmp-website" sub-directory
 that you can upload to your web server.
 
+You can generate a list of artifacts with their ACM badges from the HotCRP JSON file as follows:
+```
+ $ ck process_hotcrp ae --json_file={downloaded JSON file with decisions from HotCRP}
+```
+
 Contributions
 =============
 

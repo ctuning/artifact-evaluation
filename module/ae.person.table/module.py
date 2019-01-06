@@ -36,6 +36,8 @@ def init(i):
 def generate(i):
     """
     Input:  {
+              (output_txt_file) - if !='', generate text file for a given conference
+              (conf_id)         - record names for this conf
             }
 
     Output: {
@@ -46,8 +48,14 @@ def generate(i):
 
     """
 
+    import copy
+
     s=''
     tags_desc=i.get('tags_desc','')
+
+    otf=i.get('output_text_file','')
+    conf_id=i.get('conf_id','')
+    tt=''
 
     s+='<table border="0" cellpadding="3" cellspacing="0" class="ck_margin_40px">\n\n'
     s+=' <tr><td><b>Name:</b></td> <td><b>Organization:</b></td>'
@@ -74,6 +82,9 @@ def generate(i):
 
     aec={}
     aecx={}
+
+    selected_aec={}
+    selected_aecx={}
 
     for q in tags_desc:
         tg=q['id']
@@ -109,6 +120,10 @@ def generate(i):
                   aec[ny]={'tags':[]}
                aec[ny]['tags'].append(tg)
                aec[ny]['org']=o
+
+               if conf_id==tg:
+                  selected_aec[ny]=copy.deepcopy(aec[ny])
+                  selected_aecx[ny]=copy.deepcopy(aecx[ny])
 
     highlight=True
     for q in sorted(aec):
@@ -150,5 +165,18 @@ def generate(i):
     s+='</table>\n'
 
     ck.out(s)
+
+    if otf!='' and len(selected_aec)>0:
+       j=0
+       for q in sorted(selected_aec):
+           j+=1
+
+           org=selected_aec[q]['org']
+           org=org.replace(' (',', ').replace(')','')
+
+           tt+=str(j)+') '+selected_aecx[q]+' ('+org+')\n'
+
+       r=ck.save_text_file({'text_file':otf, 'string':tt})
+       if r['return']>0: return r
 
     return {'return':0}

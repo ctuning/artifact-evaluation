@@ -1,0 +1,118 @@
+/* -*- mode: css; indent-tabs-mode: t; css-indent-offset: 8 -*- */
+/* mobile.css -- HotCRP mobile CSS styles */
+/* Copyright (c) 2006-2018 Eddie Kohler; see LICENSE. */
+
+@media screen and (max-width: 1024px) {
+.paperinfo, .paperinfo-row, .paperinfo-cl, .paperinfo-cr, .paperinfo-cb {
+	display: block;
+	width: auto;
+}
+.paperinfo-cr {
+	padding-top: 1em;
+}
+}
+@media screen and (max-width: 768px) {
+html {
+	font-size: 14px;
+}
+#header-site, #header-page, h1.paptitle, div.submission_modes {
+	padding-left: 12px;
+}
+#header-right, h1.paptitle, div#footer {
+	padding-right: 12px;
+}
+table.vbar {
+	margin-right: 12px;
+}
+div#body {
+	margin: 0 12px;
+}
+div#body > .demargin {
+	margin: 0 -12px;
+}
+div#body > .demargin .remargin-left {
+	padding-left: 12px;
+}
+div#body > .demargin .remargin-right {
+	padding-right: 12px;
+}
+#msg-initial {
+	padding: 0 12px;
+}
+div.paptitle {
+	margin-left: 0;
+}
+h2.paptitle {
+	text-indent: -1.5em;
+	margin-left: 1.5em;
+}
+.pspcard, .leftmenu-menu-container {
+	float: none;
+	position: static;
+	width: auto;
+	margin-left: 0;
+	margin-bottom: 16px;
+}
+.leftmenu-list {
+	-webkit-columns: 100px 4;
+	-moz-columns: 100px 4;
+	columns: 100px 4;
+	-webkit-column-gap: 18px;
+	-moz-column-gap: 18px;
+	column-gap: 18px;
+}
+.pspcard_fold {
+	padding: 7px 0;
+	display: block;
+}
+.pspcard_open {
+	display: none;
+}
+.papcard, .pedcard, .notecard, .revcard, .cmtcard {
+	margin-left: 0;
+}
+.pedcard {
+	margin-right: 0;
+}
+.leftmenu-content-container {
+	margin: 0 -12px;
+}
+.leftmenu-content {
+	padding-left: 12px;
+	padding-right: 12px;
+}
+.leftmenu-content > .xmsg, .leftmenu-content > .demargin {
+	margin-left: -12px;
+	margin-right: -12px;
+}
+.leftmenu-content > .xmsg > .xmsgc {
+	padding-left: 12px;
+	padding-right: 12px;
+}
+.leftmenu-content > .demargin .remargin-left {
+	padding-left: 12px;
+}
+.leftmenu-content > .demargin .remargin-right {
+	padding-right: 12px;
+}
+input, textarea {
+	max-width: 100%;
+}
+table.pltable {
+	font-size: smaller;
+}
+.reviewersdiv {
+	font-size: smaller;
+	overflow-x: scroll;
+	margin-top: -0.25em;
+}
+.rvl, .rvr {
+	width: 100%;
+	float: none;
+}
+.rvr {
+	margin-top: 8px;
+	border-top: 1px solid #ffecef;
+	padding: 8px 0 0;
+}
+}

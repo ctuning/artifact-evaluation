@@ -3,12 +3,12 @@
     "generate": {
       "desc": "generate table with AE members per year"
     }
-  }, 
-  "copyright": "See CK COPYRIGHT.txt for copyright details", 
-  "desc": "generate AE table", 
-  "developer": "Grigori Fursin", 
-  "developer_email": "Grigori.Fursin@cTuning.org", 
-  "developer_webpage": "http://fursin.net", 
+  },
+  "copyright": "See CK COPYRIGHT.txt for copyright details",
+  "desc": "generate AE table",
+  "developer": "Grigori Fursin",
+  "developer_email": "Grigori.Fursin@cTuning.org",
+  "developer_webpage": "http://fursin.net",
   "license": "See CK LICENSE.txt for licensing details",
   "module_deps": {
     "person": "b0743a4044480ead"

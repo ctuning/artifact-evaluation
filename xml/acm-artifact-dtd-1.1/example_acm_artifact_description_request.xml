@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifacts>
+  <artifact>
+    <artifact_doi>10.1145/3229773</artifact_doi>
+    <artifact_type artif_types="software"></artifact_type>
+    <artifact_publication_date>06/12/2018</artifact_publication_date>
+    <title>Collective Knowledge Workflow for Multi-objective autotuning of MobileNets across the full software/hardware stack</title>
+    <version>1.0</version>
+    <contributors>
+      <contrib>
+        <seq_no>1</seq_no>
+        <first_name>Anton</first_name>
+        <last_name>Lokhmotov</last_name>
+        <affiliation>dividiti, UK</affiliation>
+        <role>AUTHOR</role>
+        <email_address>anton@dividiti.com</email_address>
+      </contrib>
+      <contrib>
+        <seq_no>2</seq_no>
+        <first_name>Nikolay</first_name>
+        <last_name>Chunosov</last_name>
+        <affiliation>Xored, Russia; dividiti, UK</affiliation>
+        <role>AUTHOR</role>
+        <email_address>nikolay.chunosov@xored.com</email_address>
+      </contrib>
+      <contrib>
+        <seq_no>3</seq_no>
+        <first_name>Flavio</first_name>
+        <last_name>Vella</last_name>
+        <affiliation>dividiti, UK</affiliation>
+        <role>AUTHOR</role>
+        <email_address>flavio@dividiti.com</email_address>
+      </contrib>
+      <contrib>
+        <seq_no>4</seq_no>
+        <first_name>Grigori</first_name>
+        <last_name>Fursin</last_name>
+        <affiliation>dividiti, UK; cTuning foundation, France</affiliation>
+        <role>AUTHOR</role>
+        <email_address>Grigori.Fursin@cTuning.org</email_address>
+      </contrib>
+    </contributors>
+    <artifact_instructions>
+      <general_inst>
+        <software_dependencies>Check Artifact Appendix in the original paper or README at https://github.com/dividiti/ck-request-asplos18-mobilenets-armcl-opencl for details.</software_dependencies>
+        <hardware_dependencies>Check Artifact Appendix in the original paper or README at https://github.com/dividiti/ck-request-asplos18-mobilenets-armcl-opencl for details.</hardware_dependencies>
+        <installation>Check Artifact Appendix in the original paper or README at https://github.com/dividiti/ck-request-asplos18-mobilenets-armcl-opencl for details. CK framework will attempt to automatically detect the required software and install missing packages for a given hardware. see reusable CK packages at http://cknowledge.org/shared-packages.html.</installation>
+      </general_inst>
+      <experimental_inst>
+        <installation>Through Collective Knowledge workflow. Check Artifact Appendix in the original paper or README at https://github.com/dividiti/ck-request-asplos18-mobilenets-armcl-opencl for details.</installation>
+        <parameterization>Through Collective Knowledge workflow.</parameterization>
+        <worksflow>Collective Knowledge: https://github.com/ctuning/ck</worksflow>
+        <evaluation>Automated through Collective Knowledge workflow. Check Artifact Appendix in the original paper or README at https://github.com/dividiti/ck-request-asplos18-mobilenets-armcl-opencl for details. See all shared results at the ReQuEST dashboard: http://cKnowledge.org/request-results.</evaluation>
+      </experimental_inst>
+    </artifact_instructions>
+    <description>A unified Collective Knowledge workflow with reusable components for the ReQuEST'18 submission "Multi-objective autotuning of MobileNets across the full software/hardware stack"</description>
+    <keywords>
+      <kw>MobileNets</kw>
+      <kw>Collective Knowledge</kw>
+      <kw>performance</kw>
+      <kw>accuracy</kw>
+      <kw>system co-design</kw>
+      <kw>reproducible experimentation</kw>
+      <kw>customizable workflows</kw>
+      <kw>autotuning</kw>
+      <kw>crowdtuning</kw>
+      <kw>live scoreboard</kw>
+    </keywords>
+    <acm_ccs>
+      <concept>
+        <concept_id>10002944.10011123.10011130</concept_id>
+        <concept_desc>General and reference~Evaluation</concept_desc>
+        <concept_significance>500</concept_significance>
+      </concept>
+      <concept>
+        <concept_id>10002944.10011123.10011131</concept_id>
+        <concept_desc>General and reference~Experimentation</concept_desc>
+        <concept_significance>500</concept_significance>
+      </concept>
+      <concept>
+        <concept_id>10002944.10011123.10011673</concept_id>
+        <concept_desc>General and reference~Design</concept_desc>
+        <concept_significance>500</concept_significance>
+      </concept>
+      <concept>
+        <concept_id>10002944.10011123.10011674</concept_id>
+        <concept_desc>General and reference~Performance</concept_desc>
+        <concept_significance>500</concept_significance>
+      </concept>
+      <concept>
+        <concept_id>10002944.10011123.10010916</concept_id>
+        <concept_desc>General and reference~Measurement</concept_desc>
+        <concept_significance>300</concept_significance>
+      </concept>
+      <concept>
+        <concept_id>10002944.10011123.10011124</concept_id>
+        <concept_desc>General and reference~Metrics</concept_desc>
+        <concept_significance>300</concept_significance>
+      </concept>
+      <concept>
+        <concept_id>10010147.10010178</concept_id>
+        <concept_desc>Computing methodologies~Artificial intelligence</concept_desc>
+        <concept_significance>500</concept_significance>
+      </concept>
+      <concept>
+        <concept_id>10010147.10010257.10010321</concept_id>
+        <concept_desc>Computing methodologies~Machine learning algorithms</concept_desc>
+        <concept_significance>500</concept_significance>
+      </concept>
+      <concept>
+        <concept_id>10010147.10010178.10010224.10010245.10010251</concept_id>
+        <concept_desc>Computing methodologies~Object recognition</concept_desc>
+        <concept_significance>100</concept_significance>
+      </concept>
+      <concept>
+        <concept_id>10010583.10010786.10010787.10010791</concept_id>
+        <concept_desc>Hardware~Emerging tools and methodologies</concept_desc>
+        <concept_significance>500</concept_significance>
+      </concept>
+      <concept>
+        <concept_id>10010583.10010786.10010787.10010788</concept_id>
+        <concept_desc>Hardware~Emerging architectures</concept_desc>
+        <concept_significance>500</concept_significance>
+      </concept>
+      <concept>
+        <concept_id>10010405.10010489</concept_id>
+        <concept_desc>Applied computing~Education</concept_desc>
+        <concept_significance>300</concept_significance>
+      </concept>
+      <concept>
+        <concept_id>10010405.10010489.10010492</concept_id>
+        <concept_desc>Applied computing~Collaborative learning</concept_desc>
+        <concept_significance>300</concept_significance>
+      </concept>
+      <concept>
+        <concept_id>10011007.10011006.10011072</concept_id>
+        <concept_desc>Software and its engineering~Software libraries and repositories</concept_desc>
+        <concept_significance>300</concept_significance>
+      </concept>
+    </acm_ccs>
+    <fulltext>
+      <file>
+        <fname>request-asplos18-artifact-6-ck-readme.md</fname>
+        <description>Information about how to prepare artifact and reproduce experiments using Collective Knowledge framework</description>
+        <caption_file>Reproducibility README</caption_file>
+      </file>
+      <file>
+        <fname>request-asplos18-artifact-6-ck-workflow.zip</fname>
+        <description>Collective Knowledge workflow snapshot to automatically rebuild environment on a user platform, run a given workflow, reproduce expeirments and reuse artifacts</description>
+        <caption_file>zip file</caption_file>
+      </file>
+      <file>
+        <fname>request-asplos18-artifact-6-ck-results.zip</fname>
+        <description>Snapshot of experimental results in the Collective Knowledge format (https://github.com/ctuning/ck/wiki)</description>
+        <caption_file>zip file</caption_file>
+      </file>
+    </fulltext>
+    <license>authors' code and CK workflow are available under BSD 3-clause license</license>
+    <license_url>https://github.com/dividiti/ck-request-asplos18-mobilenets-armcl-opencl/blob/master/LICENSE.txt</license_url>
+    <publisher>
+      <publisher_id>PUB27</publisher_id>
+      <publisher_code>ACMNY</publisher_code>
+      <publisher_name>ACM</publisher_name>
+      <publisher_address>2 Penn Plaza, Suite 701</publisher_address>
+      <publisher_city>New York</publisher_city>
+      <publisher_state>NY</publisher_state>
+      <publisher_country>USA</publisher_country>
+      <publisher_zip_code>10121-0701</publisher_zip_code>
+      <publisher_contact>212 869-7440</publisher_contact>
+      <publisher_phone/>
+    </publisher>
+    <reproducibility>
+      <reproducible>
+        <reproducible_type reproducible_types="Results_Replicated"></reproducible_type>
+        <description_url>http://ctuning.org/ae/reviewing-20171101.html</description_url>
+      </reproducible>
+    </reproducibility>
+    <copyrights>
+      <copyright_holder>
+        <copyright_holder_name>dividiti</copyright_holder_name>
+        <copyright_holder_year>2018</copyright_holder_year>
+      </copyright_holder>
+    </copyrights>
+    <artifact_links>
+      <linked_articles>
+        <linked_article>
+          <article_doi>10.1145/3229762.3229767</article_doi>
+          <title>Multi-objective autotuning of MobileNets across the full software/hardware stack</title>
+          <description/>
+        </linked_article>
+        <linked_article>
+          <article_doi>10.3850/9783981537079_1018</article_doi>
+          <title>Collective Knowledge: Towards R&amp;D sustainability</title>
+          <description/>
+        </linked_article>
+      </linked_articles>
+    </artifact_links>
+  </artifact>
+</artifacts>

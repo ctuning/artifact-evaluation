@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artifacts>
+	<artifact>
+		<artifact_type artif_types="software"/>
+		<artifact_publication_date>01-01-2019</artifact_publication_date>
+		<embargo_date/>
+		<title>Software for %YOUR PPOPP2019 PAPER TITLE%</title>
+		<foreign_title/>
+		<language/>
+		<version>1.0</version>
+		<contributors>
+			<contrib>
+				<acm_author_profileid/>
+				<orcid_id>0000-0003-1833-8061</orcid_id>
+				<seq_no>1</seq_no>
+				<first_name>Zhongjun</first_name>
+				<middle_name/>
+				<last_name>Jin</last_name>
+				<suffix/>
+				<affiliation>University of Michigan</affiliation>
+				<role>author</role>
+				<bio>I am a PhD student in Database Research Group at University of Michigan EECS. I am co-supervised by Prof. Mike Cafarella and Prof. H. V. Jagadish (jag). My research interest lies in data preparation and data integration. I interned in Trifacta in summer 2017 working on data standardization. I received B.S. degrees in computer science and mathematics from Purdue University. Before transfering to Purdue, I studied in ECE for two years in Tianjin University in China.</bio>
+				<email_address>markjin@umich.edu</email_address>
+			</contrib>
+			<contrib>
+				<acm_author_profileid/>
+				<orcid_id/>
+				<seq_no>2</seq_no>
+				<first_name>Michael</first_name>
+				<middle_name>R.</middle_name>
+				<last_name>Anderson</last_name>
+				<suffix/>
+				<affiliation>University of Michigan</affiliation>
+				<role>author</role>
+				<bio/>
+				<email_address>mrander@umich.edu</email_address>
+			</contrib>
+		</contributors>
+		<artifact_instructions>
+			<general_inst>
+				<software_dependencies> %FROM YOUR ARTIFACT APPENDIX%</software_dependencies>
+				<hardware_dependencies> %FROM YOUR ARTIFACT APPENDIX%</hardware_dependencies>
+				<installation>See Artifact Appendix for more details.</installation>
+			</general_inst>
+			<experimental_inst>
+				<installation>See Artifact Appendix for more details.</installation>
+				<parameterization>Provide info if needed</parameterization>
+				<worksflow></worksflow>
+				<evaluation>See Artifact Appendix for more details.</evaluation>
+			</experimental_inst>
+		</artifact_instructions>
+		<description>
+		</description>
+		<data_documentation> The test data set has 50 tasks and 5 test cases for each task. All tests are available at https://github.com/markjin1990/foofah_benchmarks
+		</data_documentation>
+		<provenance> The dataset is collected from several related work and repaired by a volunteer. Check the long paper "Foofah: Transforming Data By Example" for details.
+		</provenance>
+		<keywords>
+			<kw>data transformation</kw>
+			<kw>program synthesis</kw>
+			<kw>semi-structured data</kw>
+			<kw>programming by example</kw>
+			<kw>heuristic search</kw>
+		</keywords>
+		<acm_ccs>
+			<concept>
+				<concept_id>10002951.10002952.10003219.10003215</concept_id>
+				<concept_desc>Information systems~Extraction, transformation and loading</concept_desc>
+				<concept_significance>500</concept_significance>
+			</concept>
+		</acm_ccs>
+		<fulltext>
+			<file>
+				<fname>ppopp2019-artifact-appendix.pdf</fname>
+				<description>
+					Information about how to prepare artifact and reproduce experiments
+ 				</description>
+				<caption_file>Artifact Appendix PDF</caption_file>
+			</file>
+			<file>
+				<fname>ppopp2019-artifact.zip</fname>
+				<description>
+					%PROVIDE YOUR DESCRIPTION%
+ 				</description>
+				<caption_file>Artifact zip</caption_file>
+			</file>
+		</fulltext>
+		<license>
+			Foofah is made available under the MIT License.
+		</license>
+		<license_url>https://github.com/umich-dbgroup/foofah/blob/master/LICENSE.md</license_url>
+		<publisher>
+			<publisher_id>PUB27</publisher_id>
+			<publisher_code>ACMNY</publisher_code>
+			<publisher_name>ACM</publisher_name>
+			<publisher_address>2 Penn Plaza, Suite 701</publisher_address>
+			<publisher_city>New York</publisher_city>
+			<publisher_state>NY</publisher_state>
+			<publisher_country>USA</publisher_country>
+			<publisher_zip_code>10121-0701</publisher_zip_code>
+			<publisher_phone>212 869-7440</publisher_phone>
+			<publisher_isbn_prefix>978</publisher_isbn_prefix>
+			<publisher_url>http://dl.acm.org</publisher_url>
+		</publisher>
+		<reproducibility>
+			<reproducible>
+				<reproducible_type reproducible_types="Results_Replicated"/>
+				<official_date/>
+				<additional_text/>
+				<description_url>http://cTuning.org/ae/reviewing-20180713.html</description_url>
+			</reproducible>
+		</reproducibility>
+		<copyrights>
+			<copyright_holder>
+				<copyright_holder_name>University of Michigan</copyright_holder_name>
+				<copyright_holder_year>2017</copyright_holder_year>
+			</copyright_holder>
+		</copyrights>
+		<artifact_links>
+			<linked_articles>
+				<linked_article>
+					<article_doi>To be filled by ACM</article_doi>
+					<title>%YOUR PPOPP2019 PAPER TITLE%</title>
+					<description/>
+				</linked_article>
+			</linked_articles>
+		</artifact_links>
+	</artifact>
+</artifacts>

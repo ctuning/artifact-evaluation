@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ACM Artifact DTD version 1.1 -->
+<!-- Copyright 2019 Association for Computing Machinery. Permission to make digital or hard copies of this work in whole for non-commercial use is granted without fee provided that copies bear this notice. Derivatives and commercial use of this work are not permitted without prior permission. Please contact permissions@acm.org for additional information -->
+<!-- Created and Maintained by Asad Ali and Craig Rodkin -->
+<!-- version 1.1 updated April 12, 2017 -->
+<!ELEMENT acknowledgements (#PCDATA)>
+<!ELEMENT acm_author_profileid (#PCDATA)>
+<!ELEMENT acm_ccs (concept+)>
+<!ELEMENT additional_text (#PCDATA)>
+<!ELEMENT affiliation (#PCDATA)>
+<!ELEMENT article_doi (#PCDATA)>
+<!ELEMENT article_url (#PCDATA)>
+<!ELEMENT artifact ((artifact_doi | artifact_url)?, artifact_type, artifact_publication_date, embargo_date?, title, foreign_title?, language?, version?, contributors, artifact_instructions?, description?, data_documentation?, provenance?, keywords?, acm_ccs?, artifact_image?, (fulltext | repository_url), license, license_url, formats?, artifact_sponsors*, publisher?, reproducibility?, copyrights?, artifact_links?)>
+<!ELEMENT artifact_doi (#PCDATA)>
+<!ELEMENT artifact_image (image, caption?)>
+<!ELEMENT artifact_instructions (general_inst*, experimental_inst*)>
+<!ELEMENT artifact_links (linked_artifacts?, linked_articles?)>
+<!ELEMENT artifact_publication_date (#PCDATA)>
+<!ELEMENT artifact_sponsors (funding_agency, funder_identifier?, grant_numbers*, acknowledgements?)>
+<!ELEMENT artifact_type EMPTY>
+<!ATTLIST artifact_type
+	artif_types (audio | video | software | data | experiment | dataset ) #IMPLIED
+>
+<!ELEMENT artifact_url (#PCDATA)>
+<!ELEMENT artifacts (comment*, artifact+)>
+<!ELEMENT bio (#PCDATA)>
+<!ELEMENT caption (#PCDATA)>
+<!ELEMENT caption_file (#PCDATA)>
+<!ELEMENT comment (#PCDATA)>
+<!ELEMENT concept (concept_id, concept_desc?, concept_significance)>
+<!ELEMENT concept_desc (#PCDATA)>
+<!ELEMENT concept_id (#PCDATA)>
+<!ELEMENT concept_significance (#PCDATA)>
+<!ELEMENT contrib (acm_author_profileid?, orcid_id?, seq_no, first_name?, middle_name?, last_name, suffix?, affiliation?, role, bio?, email_address?)>
+<!ELEMENT contributors (contrib+)>
+<!ELEMENT copyright_holder (copyright_holder_name, copyright_holder_year?)>
+<!ELEMENT copyright_holder_name (#PCDATA)>
+<!ELEMENT copyright_holder_year (#PCDATA)>
+<!ELEMENT copyrights (copyright_holder+)>
+<!ELEMENT data_documentation (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT description_url (#PCDATA)>
+<!ELEMENT duration (#PCDATA)>
+<!ELEMENT email_address (#PCDATA)>
+<!ELEMENT embargo_date (#PCDATA)>
+<!ELEMENT evaluation (#PCDATA)>
+<!ELEMENT experimental_inst (installation, parameterization?, worksflow?, evaluation?, other_instructions?)>
+<!ELEMENT file (fname, duration?, publisher_artifact_url?, description?, streaming?, caption_file?, poster_image?)>
+<!ELEMENT first_name (#PCDATA)>
+<!ELEMENT fname (#PCDATA)>
+<!ELEMENT foreign_title (#PCDATA)>
+<!ELEMENT format (#PCDATA)>
+<!ELEMENT formats (format+)>
+<!ELEMENT fulltext (file+)>
+<!ELEMENT funder_identifier (#PCDATA)>
+<!ELEMENT funding_agency (#PCDATA)>
+<!ELEMENT general_inst (software_dependencies?, hardware_dependencies?, installation?, other_instructions?)>
+<!ELEMENT grant_number (#PCDATA)>
+<!ELEMENT grant_numbers (grant_number+)>
+<!ELEMENT hardware_dependencies (#PCDATA)>
+<!ELEMENT image (#PCDATA)>
+<!ELEMENT installation (#PCDATA)>
+<!ELEMENT keywords (kw+)>
+<!ELEMENT kw (#PCDATA)>
+<!ELEMENT language (#PCDATA)>
+<!ELEMENT last_name (#PCDATA)>
+<!ELEMENT license (#PCDATA)>
+<!ELEMENT license_url (#PCDATA)>
+<!ELEMENT link_display (#PCDATA)>
+<!ELEMENT linked_article ((article_doi | article_url)?,  title, description)>
+<!ELEMENT linked_articles (linked_article+)>
+<!ELEMENT linked_artifact ((artifact_doi | artifact_url)?, title, description)>
+<!ELEMENT linked_artifacts (linked_artifact+)>
+<!ELEMENT middle_name (#PCDATA)>
+<!ELEMENT official_date (#PCDATA)>
+<!ELEMENT orcid_id (#PCDATA)>
+<!ELEMENT other_instructions (#PCDATA)>
+<!ELEMENT parameterization (#PCDATA)>
+<!ELEMENT poster_image (#PCDATA)>
+<!ELEMENT provenance (#PCDATA)>
+<!ELEMENT publisher (publisher_id?, publisher_code?, publisher_name, publisher_address?, publisher_city?, publisher_state?, publisher_country?, publisher_zip_code?, publisher_contact?, publisher_phone?, publisher_isbn_prefix?, publisher_url?)>
+<!ELEMENT publisher_address (#PCDATA)>
+<!ELEMENT publisher_artifact_id (#PCDATA)>
+<!ELEMENT publisher_artifact_url (#PCDATA)>
+<!ELEMENT publisher_city (#PCDATA)>
+<!ELEMENT publisher_code (#PCDATA)>
+<!ELEMENT publisher_contact (#PCDATA)>
+<!ELEMENT publisher_country (#PCDATA)>
+<!ELEMENT publisher_id (#PCDATA)>
+<!ELEMENT publisher_isbn_prefix (#PCDATA)>
+<!ELEMENT publisher_name (#PCDATA)>
+<!ELEMENT publisher_phone (#PCDATA)>
+<!ELEMENT publisher_state (#PCDATA)>
+<!ELEMENT publisher_url (#PCDATA)>
+<!ELEMENT publisher_zip_code (#PCDATA)>
+<!ELEMENT repository_url (#PCDATA)>
+<!ELEMENT reproducibility (reproducible+)>
+<!ELEMENT reproducible (reproducible_type, official_date?, additional_text?, (title | description_url)?, contributors?)>
+<!ELEMENT reproducible_type EMPTY>
+<!ATTLIST reproducible_type
+	reproducible_types (Artifacts_Available | Artifacts_Evaluated_Functional | Artifacts_Evaluated_Reusable | Results_Replicated | Results_Reproduced) #IMPLIED
+>
+<!ELEMENT role (#PCDATA)>
+<!ELEMENT seq_no (#PCDATA)>
+<!ELEMENT software_dependencies (#PCDATA)>
+<!ELEMENT streaming (#PCDATA)>
+<!ELEMENT suffix (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT version (#PCDATA)>
+<!ELEMENT worksflow (#PCDATA)>
+

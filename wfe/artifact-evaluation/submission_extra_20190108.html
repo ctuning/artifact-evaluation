@@ -1,0 +1,304 @@
+<i>[&nbsp;<a href="$#ck_root_page_url#$submission$#ck_page_suffix#$">Back to submission guide</a>&nbsp;]</i>
+
+<!-------------------------------------------------------------------------------------------->
+<p>
+<h1><a name="extended"><u>Extended artifact description (V20180713)</u></a></h1>
+
+Here we provide a few informal suggestions to help you fill in your AE template for submission
+while avoiding common pitfalls and reducing reviewers burden.
+
+They are based on our past Artifact Evaluations and personal experience 
+to crowdsource and reproduce experiments 
+(<a href="https://portalparts.acm.org/3230000/3229762/fm/frontmatter.pdf">2018a</a>,
+<a href="https://docs.google.com/document/d/1QZzRVMZMsMev3lxBgHG4TFHEFXy__N7B69ysWXi0ZcY/edit">2018b</a>,
+<a href="https://www.slideshare.net/GrigoriFursin/enabling-open-and-reproducible-computer-systems-research-the-good-the-bad-and-the-ugly">2017a</a>,
+<a href="https://www.slideshare.net/GrigoriFursin/cgoppopp17-artifact-evaluation-discussion-enabling-open-and-reproducible-research">2017b</a>,
+<a href="https://www.slideshare.net/GrigoriFursin/panel-at-acmsigplantrust2014">2014</a>).
+
+<p>
+<i>
+If you encounter problems, find some ambiguities or have any questions, 
+do not hesitate to get in touch with the AE community via 
+the <a href="https://groups.google.com/forum/#!forum/artifact-evaluation">dedicated AE google group</a>.
+</i>
+
+<!-------------------------------------------------------------------------------------------->
+<div style="margin-left: 20px;">
+
+ <!------------------------------------------------------------------->
+ <h2><a name="desc_abstract">Abstract</a></h2>
+
+  Briefly and informally describe your artifact including minimal hardware and software requirements, 
+  how it supports your paper, how it can be validated, and what is the expected result. It will be used
+  to select appropriate reviewers.
+
+ <!------------------------------------------------------------------->
+ <h2>Artifact check-list (meta-information)</h2>
+
+     Together with artifact abstract, this informal check-list will help us make sure that reviewers 
+     have appropriate competency as well as technology to evaluate your artifact. 
+     It can also be used as meta information
+     to find your artifacts in Digital Libraries (<i>under discussion/development</i>).
+     It was created based on past AE experience and your feedback as such to cover most of the 
+     artifacts in computer systems research including SW/HW co-design, benchmarking, design space exploration, 
+     autotuning, architecture simulation, run-time adaptation, and more. 
+
+     <img src="$#ck_url_template_pull#$resources/image-general-workflow1.png" align="left" style="margin:10px;margin-right:30px;">
+     <br><br>
+
+     Fill in whatever is applicable with some informal keywords and remove unrelated items 
+     (please consider questions below just as informal hints
+     that reviewers are usually concerned about):
+
+     <div style="margin-left: 120px;">
+      <ul>
+       <li>
+        <b>Algorithm:</b> Are you presenting a new algorithm?
+       </li>
+       <li>
+        <b>Program:</b> Which benchmarks do you use 
+                       (<a href="http://parsec.cs.princeton.edu">PARSEC</a>
+                        <a href="https://github.com/ctuning/ck-wa">ARM real workloads</a>,
+                        <a href="http://www.nas.nasa.gov/publications/npb.html">NAS</a>,
+                        <a href="https://www.eembc.org">EEMBC</a>,
+                        <a href="http://www.capsl.udel.edu/splash/index.html">SPLASH</a>,
+                        <a href="https://www.cs.virginia.edu/~skadron/wiki/rodinia">Rodinia</a>,
+                        <a href="http://www.netlib.org/linpack">LINPACK</a>,
+                        <a href="http://hpcg-benchmark.org/">HPCG</a>,
+                        <a href="http://wwweb.eecs.umich.edu/mibench">MiBench</a>,
+                        <a href="https://www.spec.org/cpu2006">SPEC</a>,
+                        <a href="http://github.com/ctuning/ctuning-programs">cTuning</a>, etc)? 
+                        Are they included or should they be downloaded? Which version?
+                        Are they public or private? If they are private, 
+                        is there a public analog to evaluate your artifact?
+                        What is the approximate size?
+       </li>
+       <li>
+        <b>Compilation:</b> Do you present or require a specific compiler? Public/private? Is it included? Which version? 
+       </li>
+       <li>
+        <b>Transformations:</b> Do you present or require a program transformation tool (source-to-source, binary-to-binary, compiler pass, etc)? 
+                                Public/private? Is it included? Which version?
+       </li>
+       <li>
+        <b>Binary:</b>          Are binaries included? OS-specific? Which version?
+       </li>
+       <li>
+        <b>Data set:</b>        Do you use specific data sets (for example, 
+                                <a href="http://www.doc.ic.ac.uk/~ahanda/VaFRIC/iclnuim.html">ICL-NUIM</a>,
+                                <a href="http://github.com/ctuning/ctuning-datasets-min">cTuning data sets</a>, 
+                                <a href="https://drive.google.com/folderview?id=0B-wXENVfIO82dzYwaUNIVElxaGc&usp=sharing#list">KDataSets</a>, etc)? 
+                                Are they included? If not, how to download and install? 
+                                What is their approximate size?
+       </li>
+       <li>
+        <b>Run-time environment:</b> Is your artifact OS-specific (Linux, Windows, MacOS, Android, etc) ?
+                                     Which version? Which are the main software dependencies (JIT, libs, run-time adaptation frameworks, etc);
+                                     Do you need root access? 
+       </li>
+       <li>
+        <b>Hardware:</b>             Do you need specific hardware (supercomputer, architecture simulator, CPU, GPU, neural network accelerator, FPGA) 
+                                     or features such as hardware counters
+                                     to measure power consumption, or access to CPU/GPU frequency)? 
+                                     Are they publicly available?
+       </li>
+       <li>
+        <b>Run-time state:</b>       Is your artifact sensitive to run-time state (cold/hot cache, network/cache contentions, etc.)
+       </li>
+       <li>
+        <b>Execution:</b>            Any specific conditions during execution (sole user, process pinning, profiling, adaptation, etc)? How long will it approximately run?
+       </li>
+       <li>
+        <b>Metrics:</b>              Which metrics are reported (execution time, inference per second, Top1 accuracy, static and dynamic energy consumption, etc) - 
+                                     particularly important for multi-objective benchmarking, optimization and co-design 
+                                     (see <a href="http://cKnowledge.org/request">ACM ReQuEST tournaments</a>).
+       </li>
+       <li>
+        <b>Output:</b>               What is your output (console, file, table, graph) and what is your result 
+                                     (exact output, numerical results, measured characteristics, etc)?
+
+       </li>
+       <li>
+        <b>Experiments:</b>          How to prepare experiments and replicate/reproduce results
+                                     (OS scripts, manual steps by user, 
+                                     <a href="http://jupyter.org">IPython/Jupyter notebook</a>, <a href="http://github.com/ctuning/ck">CK workflow</a>, etc)? 
+                                     Do not forget to mention tolerable variation of empirical results!
+       </li>
+
+       <li>
+        <b>How much disk space required (approximately)?:</b> This can help evaluators and end-users to find appropriate resources.
+       </li>
+
+       <li>
+        <b>How much time is needed to prepare workflow (approximately)?:</b> This can help evaluators and end-users to estimate resources needed to evaluate your artifact.
+
+       </li>
+
+       <li>
+        <b>How much time is needed to complete experiments (approximately)?:</b> This can help evaluators and end-users to estimate resources needed to evaluate your artifact.
+
+       </li>
+
+       <li>
+        <b>Publicly available?:</b>  Will your artifact be publicly available? If yes, we may spend an extra effort to help you with the documentation.
+       </li>
+
+       <li>
+        <b>Code licenses (if publicly available)?:</b> If you workflows and artifacts will be publicly available, please provide information about licenses.
+                                                            This will help the community to reuse your components.
+       </li>
+
+       <li>
+        <b>Code licenses (if publicly available)?:</b> If you workflows and artifacts will be publicly available, please provide information about licenses.
+                                                            This will help the community to reuse your components.
+       </li>
+
+       <li>
+        <b>Workflow frameworks used?</b>   Did authors use any portable workflow framework which can  automate and customize experiments 
+        (such as <a href="http://cKnowledge.org">CK</a>)?
+       </li>
+
+       <li>
+        <b>Archived?:</b> 
+        Note that the author-created artifacts relevant to this paper 
+        will receive an ACM "artifact available" badge *only if* 
+        they have been placed on a publicly 
+        accessible archival repository such as <a href="https://zenodo.org">Zenodo</a>, 
+        <a href="https://figshare.com">FigShare</a>
+        or <a href="http://datadryad.org">Dryad</a>. 
+        A DOI will be then assigned to their artifacts and must be provided here!  
+        Personal web pages, Google Drive, GitHub, GitLab and BitBucket 
+        are not accepted for this badge.
+       </li>
+      </ul>
+
+     </div>
+
+<!------------------------------------------------------------------->
+ <h2><a name="desc_description">Description</a></h2>
+  <div style="margin-left: 20px;">
+
+   <h3>How delivered</h3>
+
+     Describe, how reviewers can access your artifact:
+     <ul>
+      <li>Download package from a public website</li>
+      <li>Download package from a private website (you will need to send information how to access your artifact to AE chairs)</li>
+      <li>Access artifact via private machine with pre-installed software (only when access to rare hardware is required or proprietary
+           software is used - you will need to send information and credentials to access your machine to AE chairs)</li>
+     </ul>
+
+     Please describe approximate disk space required after unpacking your artifact 
+     (to avoid surprises when artifact requires 20GB of free space). We do not have
+     a strict limit but strongly suggest to limit space to several GB and avoid including 
+     unnecessary software to your VM images.
+
+<!------------------------------------------------------------------->
+   <h3>Hardware dependencies</h3>
+
+    Describe any specific hardware and its features
+    strictly required to evaluate your artifact 
+    (vendor, CPU/GPU/FPGA, number of processors/cores, interconnect, memory, 
+    hardware counters, etc).
+
+<!------------------------------------------------------------------->
+   <h3>Software dependencies</h3>
+
+    Describe any specific OS and software packages required to evaluate your
+    artifact. This is particularly important if you share source code 
+    that has to be rebuilt or if you rely on proprietary software that you
+    can not include to your package. In such case, we strongly suggest to describe 
+    where to get and to install all third-party tools.
+
+    <br><br>
+    <i>Note that we are trying to obtain AE licenses for some commonly used proprietary tools and benchmarks 
+    (you will be informed in case of positive outcome).</i>
+
+
+<!------------------------------------------------------------------->
+   <h3>Data sets</h3>
+
+    If third-party data sets are not included in your packages (for example, 
+    they are very large or proprietary), please provide details how to download
+    and install them. 
+
+    <i>In case of proprietary data sets, we suggest you provide reviewers
+    a public alternative subset for evaluation</i>.
+
+  </div>
+
+<!------------------------------------------------------------------->
+ <h2><a name="desc_installation">Installation</a></h2>
+
+ Describe installation and setup procedures for your artifact
+ (even if you use VM image or access to remote machine) targeting
+ a novice user. 
+
+<!------------------------------------------------------------------->
+ <h2><a name="desc_workflow">Experiment workflow</a></h2>
+
+  Describe experiment workflow and how it is implemented, 
+  invoked and customized (if needed), i.e. some OS scripts, 
+  <a href="http://jupyter.org">IPython/Jupyter notebook</a>, 
+  <a href="https://github.com/ctuning/ck/wiki/Adding-new-workflows">portable CK workflow</a>, etc.
+
+  See the following example of the experimental workflow 
+  for multi-objective and machine-learning based autotuning:
+
+  <p>
+  <center>
+  <a href="https://hal.inria.fr/hal-01054763">
+   <img src="$#ck_url_template_pull#$resources/image-pipelines2.png"><br><br>
+  </a>
+  </center>
+
+<!------------------------------------------------------------------->
+ <h2><a name="desc_evaluation">Evaluation and expected result</a></h2>
+
+  Describe all steps necessary to evaluate your artifact
+  using the workflow above. Also describe whether reviewers
+  will need to replicate (exact result match) or reproduce (possibly
+  varying result or different experimental conditions) the output.
+  Finally, describe the expected result as well as allowable variation
+  (particularly important for performance numbers and speed-ups).
+
+<!------------------------------------------------------------------->
+ <h2><a name="desc_evaluation">Experiment customization</a></h2>
+
+  It is currently optional since it is not always trivial.
+  If possible, describe how to customize your workflow, i.e. if 
+  it is possible to use different data sets, benchmarks, real applications,
+  predictive models, software environment (compilers, libraries, 
+  run-time systems), hardware, etc. Also, describe if it is possible 
+  to parameterize your workflow (whatever is applicable such as 
+  changing number of threads, optimizations, CPU/GPU frequency, 
+  accuracy, autotuning scenario, etc). 
+
+  See artifact description of the following distinguished artifacts
+  as examples of portable, customizable and reusable workflows
+  using <a href="https://github.com/ctuning/ck">CK framework</a>:
+  [shared CK workflows from the <a href="https://github.com/ctuning/ck-request-asplos18-results">1st ACM ReQuEST-ASPLOS'18 tournament to co-design efficient SW/HW stack for deep learning</a>],
+  [<a href="https://www.cl.cam.ac.uk/~sa614/papers/Software-Prefetching-CGO2017.pdf">CGO'17 paper</a>],
+  [<a href="https://dl.acm.org/citation.cfm?doid=3149704.3149768">IA3 @ Supercomputing'17 paper</a>],
+  [<a href="https://dl.acm.org/citation.cfm?doid=2807591.2807619">SC'15</a>].
+
+<!------------------------------------------------------------------->
+ <h2>Notes</h2>
+
+ You can add informal notes for reviewers to draw
+ their attention to known or possible issues (particularly
+ if you plan to continue working on them after submission).
+
+</div>
+
+<br>
+<center>
+ <small>
+  <i>
+   This guide was prepared by <a href="http://fursin.net/research">Grigori Fursin</a>
+   with contributions from <a href="http://people.cs.pitt.edu/~childers">Bruce Childers</a>, 
+   <a href="http://www.sandia.gov/~maherou">Michael Heroux</a>, 
+   <a href="https://gcl.cis.udel.edu/personal/taufer/">Michela Taufer</a> and other colleagues.
+  </i>
+ </small>
+</center>

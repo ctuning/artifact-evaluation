@@ -209,3 +209,116 @@ in our AE initiative.
 <h3>Where can I find a sample HotCRP configuration to set up AE?</h3>
 
 Please, check out our <a href="https://www.linkedin.com/pulse/acm-ppopp19-artifact-evaluation-report-hotcrp-grigori-fursin/">PPoPP'19 HotCRP configuration for AE</a> in case you need to set up your own HotCRP instance.
+
+<!----------------------------------------------------------------------------------------------------->
+<a name="artifacts_for_acm_dl"><h3>How to prepare your artifact for the ACM DL?</h3>
+
+The procedure is not yet automated and our ACM colleagues are working on that. 
+
+In the meantime, you need to prepare at least three files 
+and make them available to your Artifact Evaluation chairs
+(for example via Dropbox or Google Drive):
+
+<ol>
+ <li>Main archive of your artifact in zip, tar, VM/Docker image or other formats (for example, <i>artifact.zip</i>)
+     <br>
+     <br>
+
+ <li>PDF of your Artifact Appendix with the final title and authors of your accepted paper (for example, <i>artifact-appendix.pdf</i>)
+     <br>
+     <br>
+
+ <li>An XML description of your artifact (for example, <i>artifact.xml</i>) - this is the most tricky part since it has to be done manually at the moment (we expect that ACM will add a web front-end in the ACM DL to prepare such descriptions).
+
+     <p>
+     Please, select one XML artifact template from below and update all fields with your own information:
+     <ul>
+      <li><a href="https://github.com/ctuning/ck-artifact-evaluation/blob/master/xml/acm-artifact-dtd-1.1/example_acm_artifact_description_ppopp.xml">XML template for generic artifacts without any specific format</a>
+      <li><a href="https://github.com/ctuning/ck-artifact-evaluation/blob/master/xml/acm-artifact-dtd-1.1/example_acm_artifact_description_request.xml">XML template for artifacts using Collective Knowledge workflow framework (based on ACM ReQuEST tournament)</a>
+     </ul>
+
+     <p>
+     You can skip updating the following fields which will be later updated by ACM:
+     <ul>
+      <li>artifact_publication_date
+      <li>publisher
+      <li>article_doi
+     </ul>
+
+     <p>
+     You can generate CSS (ACM Computing Classification System) for your artifact
+     using this <a href="https://dl.acm.org/ccs/ccs_flat.cfm">online ACM tool</a>.
+
+     <p>
+     Don't forget to provide correct names for your files (archive and appendix) in this XML.
+
+     <p>
+     <b>Note, that you have to validate the correctness of your XML against the following
+        <a href="https://github.com/ctuning/ck-artifact-evaluation/blob/master/xml/acm-artifact-dtd-1.1/acm_artifact_v1.1.dtd">ACM DTD file</a></b>.
+
+        If you don't know how to do it, we provided an API for such validation in the CK framework. You can validate your XML as follows:
+        <ol>
+         <li>Install CK as described <a href="https://github.com/ctuning/ck#installation">here</a> (Linux, Windows, MacOS).
+         <li>Install the Artifact Evaluation repository as follows: <pre>ck pull repo:ck-artifact-evaluation</pre>
+         <li>Validate your XML as follows untill there are not mistakes: <pre>ck validate xml:acm-artifact-dtd-1.1 --xml_file=artifact.xml</pre>
+        </ol>
+</ol>
+
+If needed, you can add more files if you think that they should be separated from the main archive. However, you then need to describe them in the XML of your artifact.
+
+<p>
+Please, see an example of a paper and its artifact in the ACM Digital library (also check "source materials" tab):
+<ul>
+ <li><a href="https://dl.acm.org/citation.cfm?id=3229763">Paper "Highly Efficient 8-bit Low Precision Inference of Convolutional Neural Networks with IntelCaffe"</a>
+ <li><a href="https://dl.acm.org/citation.cfm?id=3229769">Artifact for the above paper</a>
+</ul>
+
+If you have any questions, do not hesitate to contact your AE chairs 
+or <a href="https://groups.google.com/forum/#!forum/artifact-evaluation">ask us via public AE discussion group</a>!
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

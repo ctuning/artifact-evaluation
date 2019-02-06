@@ -1,3 +1,26 @@
+=== Data ===
+Files:
+
+ * xml/acm-artifact-dtd-1.1/acm_artifact_v1.1.dtd 
+ * xml/example_acm_artifact_description_ppopp.xml
+
+   Copyright 2019 Association for Computing Machinery. 
+   Permission to make digital or hard copies of this work in whole 
+   for non-commercial use is granted without fee provided that copies 
+   bear this notice. Derivatives and commercial use of this work 
+   are not permitted without prior permission. 
+
+   Please contact permissions@acm.org for additional information.
+
+All other files:
+
+   Copyright (c) 2014-2019 cTuning Foundation and individual contributors.
+   All rights reserved
+
+   Redistribution and use in source and binary forms, with or without modification,
+   are permitted under Creative Commons Attribution License (CC-BY).
+
+=== Code ===
 Copyright (c) 2014-2019 cTuning foundation <admin@cTuning.org>
 All rights reserved
 
@@ -26,16 +49,3 @@ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
 ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-=======================================================================
-Files:
- * xml/acm-artifact-dtd-1.1/acm_artifact_v1.1.dtd 
- * xml/example_acm_artifact_description_ppopp.xml
-
-Copyright 2019 Association for Computing Machinery. 
-Permission to make digital or hard copies of this work in whole 
-for non-commercial use is granted without fee provided that copies 
-bear this notice. Derivatives and commercial use of this work 
-are not permitted without prior permission. 
-
-Please contact permissions@acm.org for additional information.

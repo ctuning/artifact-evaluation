@@ -1,11 +1,14 @@
 [![compatibility](https://github.com/ctuning/ck-guide-images/blob/master/ck-compatible.svg)](https://github.com/ctuning/ck)
 [![DOI](https://zenodo.org/badge/42662522.svg)](https://zenodo.org/badge/latestdoi/42662522)
 
-Code license: [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 Data license: [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
+Code license: [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 This is a [Collective Knowledge](https://github.com/ctuning/ck) repository 
-with sources and templates for [Artifact Evaluation evaluation website](http://cTuning.org/ae).
+with methodology, templates and workflows to reproduce results 
+from published articles (artifact evaluation) - 
+see [Artifact Evaluation evaluation website](http://cTuning.org/ae) 
+for more details.
 
 Description
 ===========

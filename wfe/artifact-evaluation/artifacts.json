@@ -1,7 +1,7 @@
 {
  "template_file":"resources/_template.html",
 
- "title":"Accepted artifacts",
+ "title":"Reproducible papers with code and validated results",
 
  "menu":["artifacts"]
 }

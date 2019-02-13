@@ -1,0 +1,277 @@
+<p>
+This document (<b>V20190109</b>) provides guidelines to review artifacts.
+
+It gradually evolves to define common evaluation criteria based 
+on <a href="$#ck_root_page_url#$prior_ae$#ck_page_suffix#$">our past Artifact Evaluations</a>,
+<a href="https://www.acm.org/publications/policies/artifact-review-badging">ACM reviewing and badging policy</a> 
+(which we co-authored in 2016), 
+and your feedback from past AE 
+(<a href="https://portalparts.acm.org/3230000/3229762/fm/frontmatter.pdf">2018a</a>,
+<a href="https://docs.google.com/document/d/1QZzRVMZMsMev3lxBgHG4TFHEFXy__N7B69ysWXi0ZcY/edit">2018b</a>,
+<a href="https://www.slideshare.net/GrigoriFursin/enabling-open-and-reproducible-computer-systems-research-the-good-the-bad-and-the-ugly">2017a</a>,
+<a href="https://www.slideshare.net/GrigoriFursin/cgoppopp17-artifact-evaluation-discussion-enabling-open-and-reproducible-research">2017b</a>,
+<a href="https://www.slideshare.net/GrigoriFursin/panel-at-acmsigplantrust2014">2014</a>).
+
+<!-------------------------------------------------------------------------------------------->
+<h2>Reviewing process</h2>
+
+After an artifact submission deadline specific to a given
+event, AE reviewers will bid on artifacts they would
+like to review based on a provided artifact abstract and
+check-list, their competencies, and access to specific
+hardware and software, while avoiding possible 
+conflicts of interest.
+
+Within a few days, AE chairs will make the final reviewer selection 
+to ensure at least three or more reviewers per artifact.
+
+<p>
+Reviewers will then have approximately 2..3 weeks to evaluate artifacts 
+and provide a report using a dedicated artifact submission website (usually HotCRP).
+
+Reviewers will be communicating with authors about encountered issues 
+continuously and anonymously via submission website in order to quickly resolve issues
+- our philosophy of artifact evaluation is not to fail problematic artifacts 
+but to help authors improve at least publicly available ones and pass evaluation!
+
+<p>
+In the end, AE chairs will then decide on a set of badges (see below)
+to award to a given artifact based on all reviews and authors responses.
+
+<!-------------------------------------------------------------------------------------------->
+<h2>Artifact evaluation</h2>
+
+  Reviewers will need to read a paper and then thoroughly go through authors' artifact appendix 
+  step-by-step to evaluate a given artifact. They should then describe their experience at each stage 
+  (success or failure, encountered problems and how they were possibly solved, 
+  and questions or suggestions to the authors), and then give a score 
+  on scale -1 .. +1 where
+
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;<b>+1)</b> exceeded expectations<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<b>0)</b> met expectations (or inapplicable)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<b>-1)</b> fell below expectations<br>
+
+  <p>
+  <div style="margin-left: 20px;">
+
+   <table border="1" cellpadding="5" cellspacing="0">
+    <tr>
+     <td colspan="2"><b>Criteria</b></td>
+     <td align="center"><b>Score</b></td>
+     <td align="center"><b>ACM reproducibility badges</b></td>
+    </tr>
+
+    <tr>
+     <td colspan="2" valign="top"><a name="artifacts_available"><b>Artifacts available?</b></td>
+     <td valign="top">
+      Are all artifacts related to this paper publicly available?
+      <p><i>Note that it is not obligatory to make artifacts publicly available!</i>
+     </td>
+     <td>
+The author-created artifacts relevant to this paper 
+will receive an ACM "artifact available" badge 
+<b>only if</b> they have been placed on
+a publicly accessible archival repository
+such as <a href="https://zenodo.org">Zenodo</a>, 
+<a href="https://figshare.com">FigShare</a>,
+and <a href="http://datadryad.org">Dryad</a>.
+A DOI will be then assigned to their artifacts
+and must be provided in the Artifact Appendix!
+
+<center><img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/artifacts_available_dl.jpg"></center>
+
+<p>
+<b>Notes:</b>
+
+ACM does not mandate the use of above repositories. However, publisher repositories,
+institutional repositories, or open commercial repositories are acceptable
+<b>only</b> if they have a declared plan to enable permanent accessibility!
+<b>Personal web pages, GitHub, GitLab and BitBucket are not acceptable for this purpose.</b>
+
+<p>
+Artifacts do not need to have been formally evaluated in order for an article
+to receive this badge. In addition, they need not be complete in the sense
+described above. They simply need to be relevant to the study and add value
+beyond the text in the article. Such artifacts could be something as simple
+as the data from which the figures are drawn, or as complex as a complete
+software system under study.
+
+     </td>
+    </tr>
+
+
+    <tr>
+     <td rowspan="4" valign="top"><b>Artifacts functional?</b></td>
+     <td valign="top">Package complete?</td>
+     <td>
+All components relevant to evaluation are included in the package? 
+
+<p><i>Note that proprietary artifacts need not be included. If they are required
+to exercise the package then this should be documented, along with instructions
+on how to obtain them. Proxies for proprietary data should be included so as to
+demonstrate the analysis.</i>
+     </td>
+     <td rowspan="4" valign="top">
+
+The artifacts associated with the paper will receive an "Artifacts Evaluated
+- Functional" badge <i>only if</i> they are found to be documented, consistent,
+complete, exercisable, and include appropriate evidence of verification and
+validation.
+
+      <p><center><img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/artifacts_evaluated_functional_dl.jpg"></center>
+     </td>
+    </tr>
+
+    <tr>
+     <td valign="top">Well documented?</td>
+     <td>Enough to understand, install and evaluate artifact?</td>
+    </tr>
+
+    <tr>
+     <td valign="top">Exercisable?</td>
+     <td>
+Includes scripts and/or software to perform appropriate experiments and generate results?
+     </td>
+    </tr>
+
+    <tr>
+     <td valign="top">Consistent?</td>
+     <td>Artifacts are relevant to the associated paper and contribute in some inherent way to the generation of its main results?</td>
+    </tr>
+
+    <tr>
+     <td colspan="2" valign="top"><b>Artifacts customizable and reusable?</b></td>
+     <td valign="top">
+
+      <p>Can other users easily reuse and customize this artifact and experimental workflow?
+      For example, can it be used on a different platform, with different benchmarks, data sets, 
+      compilers, tools, under different conditions and parameters, etc.?
+
+<p>
+<i>Unfortunately, current criteria for awarding this badge are vague. 
+We work with <a href="http://cKnowledge.org/partners.html">the community</a> to develop <a href="http://cKnowledge.org">Collective Knowledge framework</a>
+which can help authors share their artifacts and workflows as <a href="http://cKnowledge.org/shared-packages.html">reusable, portable and customizable components</a>
+with a standard API. The idea is to automatically award this badge when authors use portable and customizable workflow frameworks
+(see <a href="https://portalparts.acm.org/3230000/3229762/fm/frontmatter.pdf">ACM ReQuEST</a> and
+<a href="https://github.com/ctuning/ck-scc18/wiki">SC SCC</a> for more details).
+</i>
+
+     </td>
+     <td valign="top">
+The artifacts associated with the paper will receive an "Artifact Evaluated - Reusable" badge 
+<i>only if</i> they are of a quality that significantly exceeds minimal functionality. 
+That is, they have all the qualities of the Artifacts Evaluated - Functional level, 
+but, in addition, they are very carefully documented and well-structured to the extent 
+that reuse and repurposing is facilitated. In particular, norms and standards of the research
+community for artifacts of this type are strictly adhered to.
+
+<center><img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/artifacts_evaluated_reusable_dl.jpg"></center>
+     </td>
+    </tr>
+
+
+    <tr>
+     <td colspan="2" valign="top"><b>Results validated?</b></td>
+     <td valign="top">
+      Can all main results from the paper be validated using provided artifacts?
+
+      <p>
+      Report any unexpected artifact behavior (depends on the type of artifact such as unexpected output, scalability issues, crashes, performance variation, etc).
+
+     </td>
+     <td valign="top">
+
+The artifacts associated with the paper will receive a
+"Results replicated" badge <i>only if</i> the main results 
+of the paper have been obtained in a subsequent study 
+by a person or team other than the authors, using, 
+in part, artifacts provided by the author.
+
+      <p><center><img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/results_replicated_dl.jpg"></center>
+
+       <p>
+       Note that variation of empirical and numerical results is tolerated.
+       In fact it is often unavoidable in computer systems research - see
+       "how to report and compare empirical results" in 
+       <a href="$#ck_root_page_url#$faq$#ck_page_suffix#$">AE FAQ</a>!
+
+       <p><i>Since it may take months to reproduce some complex experiments 
+       (for example to perform full training of a deep learning model),
+       we now discuss a staged AE where we will first validate that
+       artifacts are functional before camera ready paper, and then
+       use a separate AE with full validation of all results based on 
+       <a href="http://cKnowledge.org/request">ACM ReQuEST tournament methodology</a>
+       without strict deadlines. We plan to validate this approach
+       at <a href="http://sysml.cc">SysML'19</a>.</i>
+
+     </td>
+    </tr>
+
+
+    <tr>
+     <td colspan="2" valign="top"><b>Workflow framework used?</b></td>
+     <td valign="top">
+       Was any portable and customizable workflow framework 
+       used to automate preparation and validation of experiments
+       (such as <a href="https://github.com/ctuning/ck">CK</a>)?
+     </td>
+     <td align="left">
+      We promote the use of standard workflow frameworks to help evaluators quickly
+      validate results in an automated and portable way. Such artifact can
+      receive a special prize if arranged by the event.</td>
+     </td>
+    </tr>
+
+    <tr>
+     <td colspan="2" valign="top"><b>Distinguished artifact?</b></td>
+     <td valign="top">
+      Is artifact publicly available, functional, reproducible and easily reusable?
+     </td>
+     <td align="left">Artifact can receive distinguished artifact award if arranged by the event.</td>
+     </td>
+    </tr>
+
+
+   </table>
+
+  </div>
+
+<!-------------------------------------------------------------------------------------------->
+<h2>Methodology archive</h2>
+
+We keep track of the past submission and reviewing methodology to let readers 
+understand which one was used in the papers with the evaluated artifacts.
+
+<ul>
+ <li><b>V20190109 (SysML'19)</b>: 
+  <a href="$#ck_url_template_pull#$templates/ae-20190109.tex">LaTeX template</a>,
+  <a href="$#ck_root_page_url#$submission-20190109$#ck_page_suffix#$">submission guide</a>,
+  <a href="$#ck_root_page_url#$reviewing-20190109$#ck_page_suffix#$">reviewing guide</a>
+ <li><b>V20180713 (CGO'19/PPoPP'19/PACT'18/IA3'18/ReQuEST'18)</b>: 
+  <a href="$#ck_url_template_pull#$templates/ae-20170622.tex">LaTeX template</a>,
+  <a href="$#ck_root_page_url#$submission-20180713$#ck_page_suffix#$">submission guide</a>,
+  <a href="$#ck_root_page_url#$reviewing-20180713$#ck_page_suffix#$">reviewing guide</a>
+ <li><b>V20171101 (CGO'18/PPoPP'18)</b>: 
+  <a href="$#ck_url_template_pull#$templates/ae-20170622.tex">LaTeX template</a>,
+  <a href="$#ck_root_page_url#$submission-20171101$#ck_page_suffix#$">submission guide</a>,
+  <a href="$#ck_root_page_url#$reviewing-20171101$#ck_page_suffix#$">reviewing guide</a>
+ <li><b>V20161020 (PACT'17)</b>: 
+  <a href="$#ck_url_template_pull#$templates/ae-20170622.tex">LaTeX template</a>,
+  <a href="$#ck_root_page_url#$submission-20170414$#ck_page_suffix#$">submission guide</a>,
+  <a href="$#ck_root_page_url#$reviewing-20170414$#ck_page_suffix#$">reviewing guide</a>
+ <li><b>V20161020 (PPoPP'17/CGO'17)</b>: 
+  <a href="$#ck_url_template_pull#$templates/ae-20160509.tex">LaTeX template</a>,
+  <a href="$#ck_root_page_url#$submission-20161020$#ck_page_suffix#$">submission guide</a>,
+  <a href="$#ck_root_page_url#$reviewing-20161020$#ck_page_suffix#$">reviewing guide</a>
+ <li><b>V20160509 (PACT'16)</b>: 
+  <a href="$#ck_url_template_pull#$templates/ae-20160509.tex">LaTeX template</a>,
+  <a href="$#ck_root_page_url#$submission-20160509$#ck_page_suffix#$">submission guide</a>,
+  <a href="$#ck_root_page_url#$reviewing-20160509$#ck_page_suffix#$">reviewing guide</a>
+ <li><b>V20151015 (PPoPP'16/CGO'16/ADAPT'16)</b>: 
+  <a href="$#ck_url_template_pull#$templates/ae-20151015.tex">LaTeX template</a>,
+  <a href="$#ck_root_page_url#$submission-20151015$#ck_page_suffix#$">submission guide</a>,
+  <a href="$#ck_root_page_url#$reviewing-20151015$#ck_page_suffix#$">reviewing guide</a>
+</ul>
+
+Also see <a href="http://artifact-eval.org">original AE procedures for programming language conferences</a>.

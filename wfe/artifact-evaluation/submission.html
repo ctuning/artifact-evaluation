@@ -1,4 +1,4 @@
-This document (<b>V20190108</b>) provides guidelines to submit your artifact for evaluation across a range of CS conferences and journals.
+This document (<b>V20190727</b>) provides guidelines to submit your artifact for evaluation across a range of CS conferences and journals.
 
 It gradually evolves to define a common submission methodology based 
 on <a href="$#ck_root_page_url#$prior_ae$#ck_page_suffix#$">our past Artifact Evaluations and open discussions</a>,
@@ -14,25 +14,20 @@ the <a href="https://www.acm.org/publications/policies/artifact-review-badging">
 <h3>News</h3>
 <ul>
  <li>
-  <b>Do not forget to provide a list of hardware, software, benchmark and data set dependencies in your artifact abstract - this is essential to find appropriate evaluators!</b>
+  Do not forget to provide a list of hardware, software, benchmark and data set dependencies in your artifact abstract - this is essential to find appropriate evaluators!
  </li>
  <li>
-  <b>We opened a <a href="https://groups.google.com/forum/#!forum/artifact-evaluation">dedicated AE google group</a> with many past AE chairs and organizers - feel free to provide your feedback or ask questions there!</b>
+  We created an index of <a href="https://ReproIndex.com/components">reusable research components</a> (automated tasks, packages, software detection plugins).
  </li>
  <li>
-  Follow this <a href="https://github.com/ctuning/ck/wiki/Adding-new-workflows">guide</a> 
-  if you would like to convert your experimental scripts to portable and customizable CK workflows. 
-  Feel free to contact the <a href="">CK community</a> to get free help!
+  We opened a <a href="https://groups.google.com/forum/#!forum/artifact-evaluation">dedicated AE google group</a> - feel free to provide your feedback or ask questions there!
  </li>
  <li>
-  Proceedings, CK workflows and report from the <a href="http://cKnowledge.org/request">1st ACM ReQuEST-ASPLOS'18 tournament 
-    to co-design efficient SW/HW stack for deep learning</a> are now available online: 
-    <a href="https://doi.org/10.1145/3229762">ACM DL</a>,
-    <a href="https://portalparts.acm.org/3230000/3229762/fm/frontmatter.pdf">report</a>,
-    <a href="https://github.com/ctuning/ck-request-asplos18-results">CK workflows</a>.
- </li>
- <li>
-  We co-authored a new <a href="http://www.acm.org/publications/policies/artifact-review-badging">ACM Result and Artifact Review and Badging policy</a> in 2016 and now use it for AE at CGO, PPoPP, Supercomputing, ReQuEST, IA3 and SysML.</a>.
+  Results from the <a href="https://cKnowledge.org/request">1st ACM ReQuEST-ASPLOS'18 tournament</a>
+    to co-design efficient SW/HW stacks for deep learning: 
+    <a href="https://doi.org/10.1145/3229762">ACM proceedings</a>,
+    <a href="https://portalparts.acm.org/3230000/3229762/fm/frontmatter.pdf">organizers' report</a>,
+    <a href="https://github.com/ctuning/ck-request-asplos18-results">automated workflows</a>.
  </li>
 </ul>
 
@@ -59,17 +54,18 @@ In some exceptional cases when rare hardware or proprietary software is used,
 you can arrange a remote access to a machine with the pre-installed software.
 Then you need to prepare a small and informal Artifact Appendix
 using our <a href="$#ck_url_template_pull#$templates/ae-20190108.tex">AE LaTeX template</a> 
-(now used by CGO, PPoPP, Supercomputing, PACT, IA3, RTSS, ReQuEST and other ACM/IEEE conferences and workshops) 
+(now used by ASPLOS, SML, CGO, PPoPP, Supercomputing, PACT, IA3, RTSS, ReQuEST and other ACM/IEEE conferences and workshops) 
 to explain evaluators what your artifact is and how to validate it.
 You will normally be allowed to add up to 2 pages of this Appendix to your final camera-ready paper.
 You will need to add this appendix to you paper and submit it to the AE submission website for a given event.
 You can find examples of such AE appendices in the following papers:
+<a href="https://dl.acm.org/citation.cfm?doid=3229762.3229763">SysML'19</a>, 
 <a href="https://dl.acm.org/citation.cfm?doid=3229762.3229763">ReQuEST-ASPLOS'18</a> 
 (associated <a href="https://github.com/ctuning/ck-request-asplos18-caffe-intel">experimental workflow</a>), 
 <a href="https://www.cl.cam.ac.uk/~sa614/papers/Software-Prefetching-CGO2017.pdf">CGO'17</a>, 
 <a href="http://arxiv.org/pdf/1501.05387v6.pdf">PPoPP'16</a>,
 <a href="https://drive.google.com/file/d/0BxJn2NuLIEx_dnRlSHU3MlpHSGs/view">SC'16</a>.
-<b>Note that since your paper is already accepted, artifact submission is single blind i.e. you can add author names to your PDF!</b>
+<b>Note that since your paper is already accepted, artifact submission is single blind i.e. you can add authors to your PDF!</b>
 
 <p>
 <b>Please, do not forget to check the following <a href="$#ck_root_page_url#$reviewing$#ck_page_suffix#$">artifact reviewing guidelines</a>
@@ -89,7 +85,7 @@ with the following overall assessment of your artifact and a <a href="$#ck_root_
 </center>
 
 <p>
-Since our eventual goal is to promote <a href="http://dl.acm.org/citation.cfm?id=2618142">collaborative and reproducible research</a>, 
+Since our eventual goal is to promote <a href="https://arxiv.org/abs/1406.4020">collaborative and reproducible research</a>, 
 we see AE as a cooperative process between authors 
 and reviewers to validate shared artifacts rather than naming and shaming
 problematic artifacts. We therefore allow continuous and anonymous communication between authors
@@ -112,22 +108,12 @@ You need to perform the following steps to submit your artifact for evaluation:
   to prepare and run experiments, as well as reporting and validating results. 
 
   <p>
-  <i>If you would like to use the <a href="http://cknowledge.org">Collective Knowledge framework</a> 
-  to <a href="https://github.com/ctuning/ck/wiki/Adding-new-workflows">automate your workflow</a> and think you might need some assistance, 
-  please <a href="https://groups.google.com/forum/#!forum/collective-knowledge">contact us</a> in advance! 
-  We are developing CK to help authors reduce their time and effort when preparing AI/ML/SW/HW workflows 
-  for artifact evaluation by reusing many data sets, models and frameworks 
-  <a href="http://cknowledge.org/shared-packages.html">already shared by the community</a> in a common format. 
-  This, in turn, should enable evaluators to 
-  <a href="https://www.slideshare.net/GrigoriFursin/enabling-open-and-reproducible-computer-systems-research-the-good-the-bad-and-the-ugly">quickly validate results in an automated and portable way</a>. 
-
-  Please, see <a href="http://cKnowledge.org/partners.html">CK community use-cases</a>
-  and check out the following papers with CK workflows:  
-  <a href="https://dl.acm.org/citation.cfm?doid=3229762.3229763">ReQuEST-ASPLOS'18</a> 
-  (associated <a href="https://github.com/ctuning/ck-request-asplos18-caffe-intel">CK workflow</a>), 
-  <a href="https://www.cl.cam.ac.uk/~sa614/papers/Software-Prefetching-CGO2017.pdf">CGO'17</a>, 
-  <a href="https://dl.acm.org/citation.cfm?doid=3149704.3149768">IA3'17</a>,
-  <a href="https://dl.acm.org/citation.cfm?doid=2807591.2807619">SC'15</a>.
+  <i>Note that we are developing an open-source <a href="https://doi.org/10.5281/zenodo.2556147">Collective Knowledge Framework (CK)</a>
+  to automate and standardize the evaluation of artifacts. CK helps to reuse various automation tasks, data sets, models, programs and portable workflows
+  <a href="https://ReproIndex.com/components">already shared by the community</a> 
+  (see CK artifacts and workflows from <a href="https://reproindex.com/papers?a=-">reproduced papers</a>).
+  If you would like to use it for your submission, please check <a href="https://github.com/ctuning/ck/wiki/Adding-new-workflows">this guide</a> 
+  or get in touch with the <a href="https://groups.google.com/forum/#!forum/collective-knowledge">CK community</a> for assistance.
   </i>
 
  <li>
@@ -319,9 +305,3 @@ understand which one was used in the papers with the evaluated artifacts.
 </ul>
 
 Also see <a href="http://artifact-eval.org">original AE procedures for programming language conferences</a>.
-
-<br>
- <center>
- <i><h2>Thank you for participating in Artifact Evaluation!</h2></i>
- </center>
-<br>

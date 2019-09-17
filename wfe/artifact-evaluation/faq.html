@@ -206,7 +206,7 @@ that there will be no page limits for AE Appendices in the journals willing to p
 in our AE initiative.
 
 <!----------------------------------------------------------------------------------------------------->
-<h3>Where can I find a sample HotCRP configuration to set up AE?</h3>
+<a name="hotcrp"><h3>Where can I find a sample HotCRP configuration to set up AE?</h3>
 
 Please, check out our <a href="https://www.linkedin.com/pulse/acm-ppopp19-artifact-evaluation-report-hotcrp-grigori-fursin/">PPoPP'19 HotCRP configuration for AE</a> in case you need to set up your own HotCRP instance.
 
@@ -256,26 +256,34 @@ and make them available to your Artifact Evaluation chairs
      <b>Note, that you have to validate the correctness of your XML against the following
         <a href="https://github.com/ctuning/ck-artifact-evaluation/blob/master/xml/acm-artifact-dtd-1.1/acm_artifact_v1.1.dtd">ACM DTD file</a></b>.
 
-        If you don't know how to do it, we provided an API for such validation in the CK framework. You can validate your XML as follows:
+        If you don't know how to do it, we provided a reusable <a href="https://ReproIndex.com/actions">CK action (CK API)</a> for such validation. You can validate your XML as follows:
         <ol>
          <li>Install CK as described <a href="https://github.com/ctuning/ck#installation">here</a> (Linux, Windows, MacOS).<BR><BR>
          <li>If you already have some CK repositories installed, update them as follows: <pre>ck pull all</pre>
          <li>Install the Artifact Evaluation repository as follows: <pre>ck pull repo:ck-artifact-evaluation</pre>
          <li>Validate your XML as follows untill there are not mistakes: <pre>ck validate xml:acm-artifact-dtd-1.1 --xml_file=artifact.xml</pre>
         </ol>
+
+        <p>
+        The code for the above CK actions is available at GitHub: 
+        <a href="https://github.com/ctuning/ck-env/blob/master/module/xml/module.py">XML actions</a>,
+        <a href="https://github.com/ctuning/ck-artifact-evaluation/blob/master/module/ae/module.py">AE actions</a>.
 </ol>
 
-If needed, you can add more files if you think that they should be separated from the main archive. However, you then need to describe them in the XML of your artifact.
+<!--If needed, you can add more files if you think that they should be separated from the main archive. However, you then need to describe them in the XML of your artifact.-->
 
 <p>
-Please, see an example of a paper and its artifact in the ACM Digital library (also check "source materials" tab):
+Please, see an example of a paper and its artifact in the ACM Digital library (check "source materials" tab):
 <ul>
  <li><a href="https://dl.acm.org/citation.cfm?id=3229763">Paper "Highly Efficient 8-bit Low Precision Inference of Convolutional Neural Networks with IntelCaffe"</a>
  <li><a href="https://dl.acm.org/citation.cfm?id=3229769">Artifact for the above paper</a>
 </ul>
 
-If you have any questions, do not hesitate to contact your AE chairs 
-or <a href="https://groups.google.com/forum/#!forum/artifact-evaluation">ask us via public AE discussion group</a>!
+<!----------------------------------------------------------------------------------------------------->
+<a name="contacts"><h3>Questions and Feedback</h3>
+
+If you have any questions, do not hesitate to contact the AE community 
+via this <a href="https://groups.google.com/forum/#!forum/artifact-evaluation">public discussion group</a>!
 
 <br>
 <br>

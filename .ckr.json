@@ -1,9 +1,10 @@
 {
-  "data_uid": "1b8b35474438bdbc", 
-  "data_name": "ck-artifact-evaluation", 
+  "data_alias": "ck-artifact-evaluation",
+  "data_name": "ck-artifact-evaluation",
+  "data_uid": "1b8b35474438bdbc",
+  "data_uoa": "ck-artifact-evaluation",
   "dict": {
-    "url": "https://github.com/ctuning/ck-artifact-evaluation", 
-    "shared": "git",
+    "desc": "CK components for the <a href=\"http://cTuning.org/ae\">Artifact Evaluation initiative</a> at systems, AI and ML conferences.",
     "repo_deps": [
       {
         "repo_uoa": "ck-env"
@@ -17,8 +18,8 @@
       {
         "repo_uoa": "ck-docker"
       }
-    ]
-  }, 
-  "data_alias": "ck-artifact-evaluation", 
-  "data_uoa": "ck-artifact-evaluation"
+    ],
+    "shared": "git",
+    "url": "https://github.com/ctuning/ck-artifact-evaluation"
+  }
 }

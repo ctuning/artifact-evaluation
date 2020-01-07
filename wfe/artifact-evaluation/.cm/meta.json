@@ -13,10 +13,11 @@
 
      "nodes":[
        {"id":"index", "name":"About", "link":"$#wfe_url_prefix_page#$index"},
+       {"id":"submission", "name":"Submission","link":"$#wfe_url_prefix_page#$submission"},
+       {"id":"appendix", "name":"Appendix","link":"$#wfe_url_prefix_page#$submission_extra"},
+       {"id":"reviewing", "name":"Reviewing","link":"$#wfe_url_prefix_page#$reviewing"},
        {"id":"artifacts", "name":"Artifacts", "link":"$#wfe_url_prefix_page#$artifacts"},
        {"id":"committee", "name":"Committee","link":"$#wfe_url_prefix_page#$committee"},
-       {"id":"submission", "name":"Submission","link":"$#wfe_url_prefix_page#$submission"},
-       {"id":"reviewing", "name":"Reviewing","link":"$#wfe_url_prefix_page#$reviewing"},
        {"id":"faq", "name":"FAQ","link":"$#wfe_url_prefix_page#$faq"},
        {"id":"prior", "name":"Prior AE","link":"$#wfe_url_prefix_page#$prior_ae"}
      ]

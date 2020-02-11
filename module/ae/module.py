@@ -146,3 +146,54 @@ def process_hotcrp(i):
 
 
     return {'return':0}
+
+##############################################################################
+# Convert a list of HotCRP users in CSV to HTML
+
+def convert_hotcrp_users_cvs_to_html(i):
+    """
+    Input:  {
+              file [string] - CSV filename
+              fileout [string] - html output file
+            }
+
+    Output: {
+              return       - return code =  0, if successful
+                                         >  0, if error
+              (error)      - error text if return > 0
+            }
+
+    """
+
+    fn=i['file']
+
+    import csv
+    import sys
+
+    if sys.version_info[0] > 2:
+       f=open(fn, 'r', encoding="utf-8")
+    else:
+       f=open(fn, 'rb')
+
+
+    reader = csv.reader(f)
+    users = list(reader)
+
+    f.close()
+
+    # Prepare
+    h='<ul>\n'
+    for u in users:
+        h+=' <li>'
+        h+=u[0]+' '+u[1]+' ('+u[3]+')'
+        h+='</li>\n'
+    h+='</ul>\n'
+
+    fo=i.get('fileout','')
+    if fo=='':
+       ck.out(h)
+    else:
+       r=ck.save_text_file({'text_file':fo, 'string':h})
+       if r['return']>0: return r
+
+    return {'return':0}

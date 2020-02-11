@@ -1,9 +1,13 @@
 {
   "actions": {
+    "convert_hotcrp_users_cvs_to_html": {
+      "desc": "Convert a list of HotCRP users in CSV to HTML"
+    },
     "process_hotcrp": {
       "desc": "process JSON file from HOTCRP and generate table of artifacts"
     }
   },
+  "actions_redirect": {},
   "copyright": "See CK COPYRIGHT.txt for copyright details",
   "desc": "automating artifact evaluation",
   "developer": "Grigori Fursin",

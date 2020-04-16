@@ -1,0 +1,307 @@
+This document (<b>V20190727</b>) provides guidelines to submit your artifact for evaluation across a range of CS conferences and journals.
+
+It gradually evolves to define a common submission methodology based 
+on <a href="$#ck_root_page_url#$prior_ae$#ck_page_suffix#$">our past Artifact Evaluations and open discussions</a>,
+the <a href="https://www.acm.org/publications/policies/artifact-review-badging">ACM reviewing and badging policy</a> 
+(which we contributed to as a part of the <a href="https://www.acm.org/publications/task-force-on-data-software-and-reproducibility">ACM taskforce on reproducibility</a>), 
+<a href="http://artifact-eval.org">artifact-eval.org</a> and your feedback (<a href="https://portalparts.acm.org/3230000/3229762/fm/frontmatter.pdf">2018a</a>,
+<a href="https://docs.google.com/document/d/1QZzRVMZMsMev3lxBgHG4TFHEFXy__N7B69ysWXi0ZcY/edit">2018b</a>,
+<a href="https://www.slideshare.net/GrigoriFursin/enabling-open-and-reproducible-computer-systems-research-the-good-the-bad-and-the-ugly">2017a</a>,
+<a href="https://www.slideshare.net/GrigoriFursin/cgoppopp17-artifact-evaluation-discussion-enabling-open-and-reproducible-research">2017b</a>,
+<a href="https://www.slideshare.net/GrigoriFursin/panel-at-acmsigplantrust2014">2014</a>).
+
+<p>
+<h3>News</h3>
+<ul>
+ <li>
+  Do not forget to provide a list of hardware, software, benchmark and data set dependencies in your artifact abstract - this is essential to find appropriate evaluators!
+ </li>
+ <li>
+  We created an index of <a href="https://ReproIndex.com/components">reusable research components</a> (automated tasks, packages, software detection plugins).
+ </li>
+ <li>
+  We opened a <a href="https://groups.google.com/forum/#!forum/artifact-evaluation">dedicated AE google group</a> - feel free to provide your feedback or ask questions there!
+ </li>
+ <li>
+  Results from the <a href="https://cKnowledge.org/request">1st ACM ReQuEST-ASPLOS'18 tournament</a>
+    to co-design efficient SW/HW stacks for deep learning: 
+    <a href="https://doi.org/10.1145/3229762">ACM proceedings</a>,
+    <a href="https://portalparts.acm.org/3230000/3229762/fm/frontmatter.pdf">organizers' report</a>,
+    <a href="https://github.com/ctuning/ck-request-asplos18-results">automated workflows</a>.
+ </li>
+</ul>
+
+
+<div style="background-color:#e5e5FF;padding:5px;margin:5px">
+<center>
+ <a href="#expect">What to expect</a>&nbsp;&nbsp;
+ <a href="#prepare">Preparing artifacts for submission</a>&nbsp;&nbsp;
+ <a href="#accepted">If accepted</a>&nbsp;&nbsp;
+ <a href="#examples">Examples of accepted artifacts</a>&nbsp;&nbsp;
+ <a href="#archive">Methodology archive</a>&nbsp;&nbsp;
+ <a href="$#ck_root_page_url#$submission_extra$#ck_page_suffix#$">Extended artifact description</a>
+</center>
+</div>
+
+<!-------------------------------------------------------------------------------------------->
+<p>
+<h1><a name="expect"><u>What to expect</u></a></h1>
+
+<p>
+We aim to formalize and unify artifact submission while keeping it relatively simple.
+You will need to pack your artifacts (code and data) using any publicly available tool. 
+In some exceptional cases when rare hardware or proprietary software is used,
+you can arrange a remote access to a machine with the pre-installed software.
+Then you need to prepare a small and informal Artifact Appendix
+using our <a href="$#ck_url_template_pull#$templates/ae-20190108.tex">AE LaTeX template</a> 
+(now used by ASPLOS, SML, CGO, PPoPP, Supercomputing, PACT, IA3, RTSS, ReQuEST and other ACM/IEEE conferences and workshops) 
+to explain evaluators what your artifact is and how to validate it.
+You will normally be allowed to add up to 2 pages of this Appendix to your final camera-ready paper.
+You will need to add this appendix to you paper and submit it to the AE submission website for a given event.
+You can find examples of such AE appendices in the following papers:
+<a href="https://dl.acm.org/citation.cfm?doid=3229762.3229763">MLSys'19</a>, 
+<a href="https://dl.acm.org/citation.cfm?doid=3229762.3229763">ReQuEST-ASPLOS'18</a> 
+(associated <a href="https://github.com/ctuning/ck-request-asplos18-caffe-intel">experimental workflow</a>), 
+<a href="https://www.cl.cam.ac.uk/~sa614/papers/Software-Prefetching-CGO2017.pdf">CGO'17</a>, 
+<a href="http://arxiv.org/pdf/1501.05387v6.pdf">PPoPP'16</a>,
+<a href="https://drive.google.com/file/d/0BxJn2NuLIEx_dnRlSHU3MlpHSGs/view">SC'16</a>.
+<b>Note that since your paper is already accepted, artifact submission is single blind i.e. you can add authors to your PDF!</b>
+
+<p>
+<b>Please, do not forget to check the following <a href="$#ck_root_page_url#$reviewing$#ck_page_suffix#$">artifact reviewing guidelines</a>
+to understand how your artifact will be evaluated. In the end, you will receive a report 
+with the following overall assessment of your artifact and a <a href="$#ck_root_page_url#$reviewing$#ck_page_suffix#$">set of ACM reproducibility badges</a></b>:
+
+<center>
+ <img src="http://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/artifacts_available_dl.jpg">
+
+ <img src="http://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/artifacts_evaluated_functional_dl.jpg">
+
+ <img src="http://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/artifacts_evaluated_reusable_dl.jpg">
+
+ <img src="http://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/results_reproduced_dl.jpg">
+
+ <img src="http://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/results_replicated_dl.jpg">
+</center>
+
+<p>
+Since our eventual goal is to promote <a href="https://arxiv.org/abs/1406.4020">collaborative and reproducible research</a>, 
+we see AE as a cooperative process between authors 
+and reviewers to validate shared artifacts rather than naming and shaming
+problematic artifacts. We therefore allow continuous and anonymous communication between authors
+and reviewers via HotCRP to fix raised issues until a given artifact can pass evaluation
+or until a major issue is detected.
+
+<!-------------------------------------------------------------------------------------------->
+<p>
+<h1><a name="prepare"><u>Preparing artifacts for submission</u></a></h1>
+
+You need to perform the following steps to submit your artifact for evaluation:
+
+<ol>
+ <li>
+  <b>Prepare experimental workflow</b>.
+
+  <p><b>You can skip this step if you just want to make your artifacts publicly available without validation of experimental results.</b>
+
+  <p>You need to provide at least some scripts or <a href="http://jupyter.org">Jupyter Notebooks</a>
+  to prepare and run experiments, as well as reporting and validating results. 
+
+  <p>
+  <i>Note that we are developing an open-source <a href="https://doi.org/10.5281/zenodo.2556147">Collective Knowledge Framework (CK)</a>
+  to automate and standardize the evaluation of artifacts. CK helps to reuse various automation tasks, data sets, models, programs and portable workflows
+  <a href="https://ReproIndex.com/components">already shared by the community</a> 
+  (see CK artifacts and workflows from <a href="https://reproindex.com/papers?a=-">reproduced papers</a>).
+  If you would like to use it for your submission, please check <a href="https://github.com/ctuning/ck/wiki/Adding-new-workflows">this guide</a> 
+  or get in touch with the <a href="https://groups.google.com/forum/#!forum/collective-knowledge">CK community</a> for assistance.
+  </i>
+
+ <li>
+  <b>Pack your artifact</b> (code and data) or provide an easy access to them 
+  using any publicly available and free tool you prefer or strictly require. 
+  <br>
+  <br>
+  For example, you can use the following:
+  <ul>
+   <li>
+    <a href="https://www.docker.com">Docker</a> to pack only touched code and data during experiment. 
+   </li>
+   <li>
+    <a href="https://www.virtualbox.org">Virtual Box</a> to pack all code and data including OS 
+    (typical images are around 2..3GB; we strongly recommend to avoid images larger than 10GB).
+   </li>
+   <li>
+    Standard zip or tar with all related code and data, particularly when an artifact
+    should be rebuilt on a reviewers machine (for example to have a non-virtualized access to a specific hardware). 
+   </li>
+   <li>
+    Private or public GIT or SVN.
+   </li>
+   <li>
+    Arrange a remote access to a machine with pre-installed software 
+    (<i>exceptional cases when rare hardware or proprietary software is used or your VM image is too large</i>) 
+    - you will need to privately send the access information to the AE chairs. Also, please avoid making any changes
+    to the remote machine during evaluation unless explicitly agreed with AE chairs - you can do it during
+    the rebuttal phase if needed!
+   </li>
+   <li>
+    Check <a href="http://github.com/ctuning/ck/wiki/Enabling-open-science-tools">other tools</a> 
+    which can be useful for artifact and workflow sharing.
+  </ul>
+
+  <br>
+
+ <li>
+  <b>Write a brief artifact abstract with a SW/HW check-list</b> to informally describe your artifact 
+  including minimal hardware and software requirements, how it supports your paper, how it can be validated and
+  what the expected result is. Particularly stress if you use any proprietary software or hardware
+  <b>Note that it is critical to help AE chairs select appropriate reviewers</b>!
+  If you use proprietary benchmarks or tools (SPEC, Intel compilers, etc), 
+  we suggest you to provide a simplified test case with open source software 
+  to be able to quickly validate functionality of your experimental workflow.
+ </li>
+ 
+ <br>
+ <li>
+  <b>Fill in and append AE template (<a href="$#ck_url_template_pull#$templates/ae-20190108.tex">download here</a>)</b> to the PDF of your (accepted) paper.
+  Though it should be relatively intuitive, we still strongly suggest you to
+  check out <a href="$#ck_root_page_url#$submission_extra$#ck_page_suffix#$">extra notes
+  about how to fill in this template</a> based on our past AE experience.
+ </li>
+
+ <br>
+ <li>
+  <b>Submit the artifact abstract and the new PDF </b> at the AE submission website provided by the event.
+ </li>
+
+</ol>
+
+<i>
+If you encounter problems, find some ambiguities or have any questions, 
+do not hesitate to get in touch with the AE community via 
+the <a href="https://groups.google.com/forum/#!forum/artifact-evaluation">dedicated AE google group</a>.
+</i>
+
+<!-------------------------------------------------------------------------------------------->
+<p>
+<h1><a name="accepted"><u>If accepted</u></a></h1>
+
+ You will need to add up to 2 pages of your AE appendix 
+ to your camera ready paper while removing all unnecessary or confidential information. 
+ This will help readers better understand what was evaluated.
+ If your paper will be published in the ACM Digital Library,
+ you do not need to add reproducibility stamps yourself - ACM will add them to your camera-ready paper!
+ In other cases, AE chairs will tell you how to add a stamp to your paper.
+
+ <p>
+ <i>Sometimes artifact evaluation help discover some minor mistakes in the accepted paper -
+ in such case you now have a chance to add related notes and corrections
+ in the Artifact Appendix of your camera-ready paper.</i>.
+
+<!-------------------------------------------------------------------------------------------->
+<p>
+<h1><a name="examples"><u>A few artifact examples from the past conferences, workshops and journals</u></a></h1>
+
+<ul>
+ <li>
+  Reproduced papers, artifacts, appendices and badges from <a href="https://ReproIndex.com/papers/&a=papers-sysml-2019">MLSys'19</a> (the Conference on Systems and Machine Learning)
+ </li>
+ <li>
+  Reproduced papers, artifacts, appendices and badges from <a href="https://dl.acm.org/citation.cfm?doid=3229762">ReQuEST-ASPLOS'18</a> (the 1st reproducible tournament on co-designing Pareto-efficient deep learning)
+ </li>
+ <li>
+  "Highly Efficient 8-bit Low Precision Inference of Convolutional Neural Networks with IntelCaffe", ReQuEST-ASPLOS'18
+  (<a href="https://doi.org/10.1145/3229762.3229763">Paper DOI</a>,  <a href="https://doi.org/10.1145/3229769">Artifact DOI</a>, 
+  <a href="https://github.com/intel/caffe/wiki/ReQuEST-Artifact-Installation-Guide">Original artifact</a>,
+  <a href="https://github.com/ctuning/ck-request-asplos18-caffe-intel">CK workflow</a>,
+  <a href="https://github.com/ctuning/ck-request-asplos18-results-caffe-intel">CK results</a>
+ </li>
+ <li>
+  "Software Prefetching for Indirect Memory Accesses", CGO 2017, <b>distinguished artifact award</b> (<a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper">Sources at GitHub</a>, <a href="$#ck_root_page_url#$resources/paper-with-distinguished-ck-artifact-and-ae-appendix-cgo2017.pdf">PDF with AE appendix</a>, <a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper/files/618737/ck-aarch64-dashboard.pdf">CK dashboard snapshot</a>)
+ </li>
+ <li>
+  "Optimizing Word2Vec Performance on Multicore Systems", IA3 at Computing 2017, <b>distinguished artifact award</b> (<a href="https://github.com/vasupsu/IA3_Paper16_ArtifactEvaluation">Sources at GitHub</a>, <a href="https://dl.acm.org/citation.cfm?doid=3149704.3149768">PDF with AE appendix</a>)
+ </li>
+ <li>
+  "Self-Checkpoint: An In-Memory Checkpoint Method Using Less Space and its Practice on Fault-Tolerant HPL", PPoPP 2017 (example of a public evaluation via HPC and supercomputer mailing lists: <a href="https://github.com/thu-pacman/self-checkpoint/issues/1">GitHub discussions</a>)
+ </li>
+ <li>
+  "Lift: A Functional Data-Parallel IR for High-Performance GPU Code Generation", CGO 2017 (example of a public evaluation with a bug fix: <a href="https://gitlab.com/michel-steuwer/cgo_2017_artifact/issues/1">GitLab discussions</a>,
+    example of a paper with AE Appendix and a stamp: <a href="https://github.com/michel-steuwer/publications/raw/master/2017/CGO-2017.pdf">PDF</a>,
+    CK workflow for this artifact: <a href="https://github.com/lift-project/ck-lift">GitHub</a>,
+    CK concepts: <a href="https://michel-steuwer.github.io/About-CK">blog</a>)
+ </li>
+ <li>
+  "Gunrock: A High-Performance Graph Processing Library on the GPU", PPoPP 2016 (<a href="http://arxiv.org/pdf/1501.05387v6.pdf">PDF with AE appendix</a> and <a href="https://github.com/gunrock/gunrock">GitHub</a>)
+ </li>
+ <li>
+  "GEMMbench: a framework for reproducible and collaborative benchmarking of matrix multiplication", ADAPT 2016 (example of a <a href="http://github.com/ctuning/ck/wiki">CK</a>-powered <a href="https://github.com/dividiti/gemmbench">artifact</a> </a> reviewed and validated by the community via <a href="https://www.reddit.com/r/adaptworkshop/comments/3sngox/adapt16_submission_gemmbench_a_framework_for/">Reddit</a>)
+ </li>
+ <li>
+  "Integrating algorithmic parameters into benchmarking and design space exploration in dense 3D scene understanding", PACT 2016 (example of <a href="http://cknowledge.org/repo/web.php?template=cknowledge&wcid=208c21b837924601:2d41f89bcf32d4d4:3b1b261d30f3934a">interactive graphs</a> and <a href="http://github.com/ctuning/reproduce-pamela-project">artifacts</a> in the <a href="">Collective Knowledge</a> format)
+ </li>
+ <li>
+  "Polymer: A NUMA-aware Graph-structured Analytics Framework", PPoPP 2015 (<a href="https://github.com/realstolz/polymer">GitHub</a> and <a href="http://ipads.se.sjtu.edu.cn/projects/polymer.html">personal web page</a>)
+ </li>
+ <li>
+  "A graph-based higher-order intermediate representation", CGO 2015 (<a href="https://anydsl.github.io">GitHub</a>)
+ </li>
+ <li>
+  "MemorySanitizer: fast detector of uninitialized memory use in C++", CGO 2015 (<a href="http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43308.pdf">added to <a href="http://llvm.org">LLVM</a></a>)
+ </li>
+ <li>
+  "Predicate RCU: an RCU for scalable concurrent updates", PPoPP 2015 (<a href="https://bitbucket.org/mayaarl/predicatercu">BitBucket</a>)
+ </li>
+ <li>
+  "Low-Overhead Software Transactional Memory with Progress Guarantees and Strong Semantics", PPoPP 2015 (<a href="http://sourceforge.net/p/jikesrvm/research-archive/46/">SourceForge</a> and <a href="http://sourceforge.net/p/jikesrvm">Jikes RVM</a>)
+ </li>
+ <li>
+  "More than You Ever Wanted to Know about Synchronization", PPoPP 2015 (<a href="https://github.com/gramoli/synchrobench">GitHub</a>)
+ </li>
+ <li>
+  "Roofline-aware DVFS for GPUs", ADAPT 2014 (<a href="http://dl.acm.org/citation.cfm?doid=2553062.2553067">ACM DL</a>, <a href="http://cknowledge.org/repo/web.php?wcid=876bf92b1409cb46:26177154df5a20ef">Collective Knowledge repository</a>)
+ </li>
+ <li>
+  "Many-Core Compiler Fuzzing", PLDI 2015 (example of an <a href="https://github.com/ctuning/ck/wiki/Getting_started_guide_clsmith">artifact</a> with a <a href="http://github.com/ctuning/ck/wiki/Portable-workflows">CK-based</a> experimental workflow and <a href="http://cknowledge.org/repo/web.php?wcid=bc0409fb61f0aa82:1b437e72c74fe782">live results</a>)
+ </li>
+</ul>
+
+<!-------------------------------------------------------------------------------------------->
+<p>
+<h1><a name="archive"><u>Methodology archive</u></a></h2>
+
+We keep track of the past submission and reviewing methodology to let readers 
+understand which one was used in the papers with the evaluated artifacts.
+
+<ul>
+ <li><b>V20190108 (MLSys'19)</b>: 
+  <a href="$#ck_url_template_pull#$templates/ae-20190108.tex">LaTeX template</a>,
+  <a href="$#ck_root_page_url#$submission-20190108$#ck_page_suffix#$">submission guide</a>,
+  <a href="$#ck_root_page_url#$reviewing-20190108$#ck_page_suffix#$">reviewing guide</a>
+ <li><b>V20180713 (CGO'19/PPoPP'19/PACT'18/IA3'18/ReQuEST'18)</b>: 
+  <a href="$#ck_url_template_pull#$templates/ae-20180713.tex">LaTeX template</a>,
+  <a href="$#ck_root_page_url#$submission-20180713$#ck_page_suffix#$">submission guide</a>,
+  <a href="$#ck_root_page_url#$reviewing-20180713$#ck_page_suffix#$">reviewing guide</a>
+ <li><b>V20171101 (CGO'18/PPoPP'18)</b>: 
+  <a href="$#ck_url_template_pull#$templates/ae-20170622.tex">LaTeX template</a>,
+  <a href="$#ck_root_page_url#$submission-20171101$#ck_page_suffix#$">submission guide</a>,
+  <a href="$#ck_root_page_url#$reviewing-20171101$#ck_page_suffix#$">reviewing guide</a>
+ <li><b>V20170414 (PACT'17)</b>: 
+  <a href="$#ck_url_template_pull#$templates/ae-20160509.tex">LaTeX template</a>,
+  <a href="$#ck_root_page_url#$submission-20170414$#ck_page_suffix#$">submission guide</a>,
+  <a href="$#ck_root_page_url#$reviewing-20170414$#ck_page_suffix#$">reviewing guide</a>
+ <li><b>V20161020 (PPoPP'17/CGO'17)</b>: 
+  <a href="$#ck_url_template_pull#$templates/ae-20160509.tex">LaTeX template</a>,
+  <a href="$#ck_root_page_url#$submission-20161020$#ck_page_suffix#$">submission guide</a>,
+  <a href="$#ck_root_page_url#$reviewing-20161020$#ck_page_suffix#$">reviewing guide</a>
+ <li><b>V20160509 (PACT'16)</b>: 
+  <a href="$#ck_url_template_pull#$templates/ae-20160509.tex">LaTeX template</a>,
+  <a href="$#ck_root_page_url#$submission-20160509$#ck_page_suffix#$">submission guide</a>,
+  <a href="$#ck_root_page_url#$reviewing-20160509$#ck_page_suffix#$">reviewing guide</a>
+ <li><b>V20151015 (PPoPP'16/CGO'16/ADAPT'16)</b>: 
+  <a href="$#ck_url_template_pull#$templates/ae-20151015.tex">LaTeX template</a>,
+  <a href="$#ck_root_page_url#$submission-20151015$#ck_page_suffix#$">submission guide</a>,
+  <a href="$#ck_root_page_url#$reviewing-20151015$#ck_page_suffix#$">reviewing guide</a>
+</ul>
+
+Also see <a href="http://artifact-eval.org">original AE procedures for programming language conferences</a>.

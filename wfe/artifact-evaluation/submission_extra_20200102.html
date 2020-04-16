@@ -6,7 +6,7 @@
 
 <div style="margin-left: 20px;">
 
-  Here we provide a few informal suggestions to help you fill in your <a href="https://github.com/ctuning/ck-artifact-evaluation/blob/master/wfe/artifact-evaluation/templates/ae.tex">Artifact Appendix</a> 
+  Here we provide a few informal suggestions to help you fill in your <a href="https://github.com/ctuning/ck-artifact-evaluation/blob/master/wfe/artifact-evaluation/templates/ae.tex">Artifact Appendix with the Reproducibility Checklist</a> 
   for submission while avoiding common pitfalls.  
 
   After introducing it in 2014, we regularly update it based on 
@@ -14,19 +14,21 @@
    (<a href="https://portalparts.acm.org/3230000/3229762/fm/frontmatter.pdf">2018</a>,
    <a href="https://www.slideshare.net/GrigoriFursin/enabling-open-and-reproducible-computer-systems-research-the-good-the-bad-and-the-ugly">2017a</a>,
    <a href="https://www.slideshare.net/GrigoriFursin/cgoppopp17-artifact-evaluation-discussion-enabling-open-and-reproducible-research">2017b</a>,
-   <a href="https://www.slideshare.net/GrigoriFursin/panel-at-acmsigplantrust2014">2014</a>),
+   <a href="https://www.slideshare.net/GrigoriFursin/panel-at-acmsigplantrust2014">2014</a>,
+   <a href="https://hal.inria.fr/inria-00436029v2">2009</a>),
   the feedback we receive from researchers (<a href="https://groups.google.com/forum/#!forum/artifact-evaluation">Artifact Evaluation google group</a>, 
    <a href="https://docs.google.com/document/d/1QZzRVMZMsMev3lxBgHG4TFHEFXy__N7B69ysWXi0ZcY/edit">Shared Google doc</a>),
   <a href="http://artifact-eval.org">PL AE</a>, 
   and the <a href="https://www.acm.org/publications/policies/artifact-review-badging">ACM reviewing and badging policy</a> 
-   which we are contributing to as a member of the <a href="https://www.acm.org/publications/task-force-on-data-software-and-reproducibility">ACM taskforce on reproducibility</a>.
-  Our goal is to come up with a common methodology and an <a href="https://codereef.ai/portal">open reproducibility platform</a> for artifact sharing, validation, automation and reuse.
+ which we are contributing to as a member of the <a href="https://www.acm.org/publications/task-force-on-data-software-and-reproducibility">ACM taskforce on reproducibility</a>.
+Our goal is to come up with a common methodology, <a href="$#ck_root_page_url#$submission_extra$#ck_page_suffix#$">unified artifact appendix with the reproducibility checklist</a>, 
+and an <a href="https://cKnowledge.io">open reproducibility platform</a> for artifact sharing, validation and reuse.
 
   <p>
   <i>
   If you have questions or suggestions, do not hesitate to get in touch with the AE community via 
   the <a href="https://groups.google.com/forum/#!forum/artifact-evaluation">dedicated AE google group</a>
-  or the <a href="https://codereef.ai/portal/slack">#artifact-evaluation Slack channel</a>
+  or the <a href="https://cknowledge.org/join-slack">#artifact-evaluation Slack channel</a>
   </i>
 
 </div>
@@ -43,9 +45,9 @@
   It will also help readers understand what was evaluated and how.
 
  <!------------------------------------------------------------------->
- <h2>Artifact check-list (meta-information)</h2>
+ <h2>Checklist</h2>
 
-     Together with the artifact abstract, this informal check-list will help us make sure that reviewers 
+     Together with the artifact abstract, this check-list will help us make sure that reviewers 
      have appropriate competency and an access to the technology required to evaluate your artifact. 
      It can also be used as meta information to find your artifacts in Digital Libraries.
 
@@ -119,7 +121,7 @@
        <li>
         <b>Metrics:</b>              Which metrics are reported (execution time, inference per second, Top1 accuracy, static and dynamic energy consumption, etc) - 
                                      particularly important for multi-objective benchmarking, optimization and co-design 
-                                     (see <a href="http://cKnowledge.org/request">ACM ReQuEST ML/SW/HW co-design tournaments</a>).
+                                     (see <a href="https://cKnowledge.org/request">ACM ReQuEST ML/SW/HW co-design tournaments</a>).
        </li>
        <li>
         <b>Output:</b>               What is your output (console, file, table, graph) and what is your result 
@@ -130,8 +132,8 @@
        <li>
         <b>Experiments:</b>          How to prepare experiments and replicate/reproduce results
                                      (OS scripts, manual steps by user, 
-                                     <a href="http://jupyter.org">IPython/Jupyter notebook</a>, 
-                                     <a href="https://codereef.ai/portal/search/?q=%22reproduced-papers%22%20AND%20%22portable-workflow-ck%22">automated workflows</a>, etc)? 
+                                     <a href="https://jupyter.org">IPython/Jupyter notebook</a>, 
+                                     <a href="https://cKnowledge.io/?q=%22reproduced-papers%22%20AND%20%22portable-workflow-ck%22">automated workflows</a>, etc)? 
                                      Do not forget to mention the maximum allowable variation of empirical results!
        </li>
 
@@ -165,7 +167,7 @@
 
        <li>
         <b>Workflow frameworks used?</b>   Did authors use any portable workflow framework which can  automate and customize experiments?
-        See examples of reproduced papers with <a href="https://codereef.ai/portal/search/?q=%22reproduced-papers%22%20AND%20%22portable-workflow-ck%22">portable and automated workflows</a>.
+        See examples of reproduced papers with <a href="https://cKnowledge.io/?q=%22reproduced-papers%22%20AND%20%22portable-workflow-ck%22">portable and automated workflows</a>.
        </li>
 
        <li>
@@ -248,6 +250,7 @@
   </div>
 
 <!------------------------------------------------------------------->
+ <p>
  <h2><a name="desc_installation">Installation</a></h2>
 
  Describe the setup procedures for your artifact 
@@ -255,15 +258,16 @@
  (even if you use VM image or access to remote machine) . 
 
 <!------------------------------------------------------------------->
+ <p>
  <h2><a name="desc_workflow">Experiment workflow</a></h2>
 
   Describe the experimental workflow and how it is implemented, 
   invoked and customized (if needed), i.e. some OS scripts, 
-  <a href="http://jupyter.org">IPython/Jupyter notebook</a>, 
+  <a href="https://jupyter.org">IPython/Jupyter notebook</a>, 
   <a href="https://github.com/ctuning/ck/wiki/Adding-new-workflows">portable CK workflow</a>, etc.
 
   <p>
-  See examples of <a href="https://codereef.ai/portal/search/?q=%22reproduced-papers%22%20AND%20%22portable-workflow-ck%22">reproduced papers</a>
+  See examples of <a href="https://cKnowledge.io/?q=%22reproduced-papers%22%20AND%20%22portable-workflow-ck%22">reproduced papers</a>
   with portable workflows and an example of the experimental workflow 
   for multi-objective and machine-learning based autotuning:
 
@@ -275,6 +279,7 @@
   </center>
 
 <!------------------------------------------------------------------->
+ <p>
  <h2><a name="desc_evaluation">Evaluation and expected result</a></h2>
 
   Describe all the steps necessary to evaluate your artifact
@@ -285,6 +290,7 @@
   and the <a href="$#ck_root_page_url#$faq$#ck_page_suffix#$">AE FAQ</a>.
 
 <!------------------------------------------------------------------->
+ <p>
  <h2><a name="desc_evaluation">Experiment customization</a></h2>
 
   It is currently optional since it is not always trivial.
@@ -296,10 +302,11 @@
   changing number of threads, applying different optimizations, CPU/GPU frequency, 
   autotuning scenario, model topology, etc). 
 
-  See artifact description of the <a href="https://codereef.ai/portal/search/?q=%22reproduced-papers%22%20AND%20%22portable-workflow-ck%22">reproduced systems and ML papers</a> 
+  See artifact description of the <a href="https://cKnowledge.io/?q=%22reproduced-papers%22%20AND%20%22portable-workflow-ck%22">reproduced systems and ML papers</a> 
   with portable, customizable and reusable workflows.
 
 <!------------------------------------------------------------------->
+ <p>
  <h2>Notes</h2>
 
  You can add informal notes to draw the attention of reviewers
@@ -311,10 +318,12 @@
 <center>
  <small>
   <i>
-   This guide was prepared by <a href="http://fursin.net/research">Grigori Fursin</a>
-   with contributions from <a href="http://people.cs.pitt.edu/~childers">Bruce Childers</a>, 
-   <a href="http://www.sandia.gov/~maherou">Michael Heroux</a>, 
+   This guide was prepared by <a href="https://fursin.net/research">Grigori Fursin</a>
+   with contributions from <a href="https://people.cs.pitt.edu/~childers">Bruce Childers</a>, 
+   <a href="https://www.sandia.gov/~maherou">Michael Heroux</a>, 
    <a href="https://gcl.cis.udel.edu/personal/taufer/">Michela Taufer</a> and other colleagues.
   </i>
  </small>
 </center>
+
+<br>

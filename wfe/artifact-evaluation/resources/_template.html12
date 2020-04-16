@@ -1,3 +1,5 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <html lang="en" class="h-100">
 
  <head>
@@ -36,7 +38,7 @@
 
      <nav class="navbar navbar-expand-lg navbar-light" style="border-bottom: 1px solid #d5e5ef; font-family: Arial;">
       <a href="$#ck_root_page_url#$">
-       <img class="logo" src="$#ck_url_template_pull#$resources/logo-ae.png" height="32">
+       <img class="logo" src="$#ck_url_template_pull#$resources/logo-ae2.png" height="32">
       </a>
 
       &nbsp;
@@ -59,7 +61,7 @@
          <a href="https://cKnowledge.io/papers" class="nav-link" style="vertical-align: middle; display: table-cell; color:#286eb1;" target="_blank">Reproduced papers</a>
         </li>
         <li class="nav-item">
-         <a href="$#ck_root_page_url#$submission_extra$#ck_page_suffix#$" class="nav-link" style="vertical-align: middle; display: table-cell; color:#286eb1;">Reproducibility Checklist</a>
+         <a href="$#ck_root_page_url#$submission_extra$#ck_page_suffix#$" class="nav-link" style="vertical-align: middle; display: table-cell; color:#286eb1;">Artifact Appendix</a>
         </li>
         <li class="nav-item">
          <a href="$#ck_root_page_url#$submission$#ck_page_suffix#$" class="nav-link" style="vertical-align: middle; display: table-cell; color:#286eb1;">Submission</a>
@@ -94,7 +96,7 @@
    <div class="footer-copyright text-center py-3" style="background-color:#e5f5ff;">
     Maintained by the <a href="https://cTuning.org">cTuning foundation</a> 
     and <a href="https://fursin.net/research.html">Grigori Fursin</a>
-    &copy; 2015-2020
+    &copy; 2010-2020
 
     &nbsp;&nbsp;&nbsp;
 

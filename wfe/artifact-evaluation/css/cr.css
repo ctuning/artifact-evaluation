@@ -1,0 +1,71 @@
+/* cKnowledge.org */
+
+#vspace4
+{
+ padding:4px 0px 0px 0px;
+}
+
+#vspace8
+{
+ padding:8px 0px 0px 0px;
+}
+
+#ck_entries
+{
+ width:99%; 
+ text-align:left;
+ padding:4px;
+ margin:4px;
+ margin-bottom:10px;
+
+ border: 1px solid #AFAFAF;
+ background-color: #FFFFFF;
+ border-spacing: 0px;
+
+ -webkit-box-shadow: 2px 2px 4px 1px #bbb;
+ box-shadow: 2px 2px 4px 1px #bbb;
+}
+
+#ck_entries5
+{
+ width:99%; 
+ text-align:left;
+ padding:0px;
+ margin:4px;
+ margin-bottom:10px;
+
+ border: 1px solid #286eb1;
+ background-color: #FFFFFF;
+ border-spacing: 0px;
+
+ -webkit-box-shadow: 2px 2px 4px 1px #bbb;
+ box-shadow: 2px 2px 4px 1px #bbb;
+}
+
+#header5
+{
+ background-color:#286eb1;
+ color:#ffffff;
+ margin:0px;
+ padding:3px;
+}
+
+#ck_entries1
+{
+ color:#000000;
+ text-align:left;
+ padding:0px;
+ margin:0px;
+ font-family:arial;
+ font-size:125%;
+}
+
+#ck_entries1a
+{
+ color:#00004F;
+ text-align:left;
+ padding:0px;
+ margin:0px;
+ font-family:arial;
+ font-size:25px;
+}

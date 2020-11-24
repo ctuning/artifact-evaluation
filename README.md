@@ -6,8 +6,7 @@ Code license: [![License](https://img.shields.io/badge/License-BSD%203--Clause-b
 
 This is a [Collective Knowledge](https://github.com/ctuning/ck) repository 
 with methodology, templates and workflows to reproduce results 
-from published articles (artifact evaluation) - 
-see [Artifact Evaluation evaluation website](http://cTuning.org/ae) 
+from published articles (artifact evaluation). See [Artifact Evaluation evaluation website](http://cTuning.org/ae) 
 for more details.
 
 Description
@@ -70,19 +69,20 @@ to upload your updates to cTuning.org/ae .
 Public discussions
 ==================
 * [Artifact Evaluation google group](https://groups.google.com/forum/#!forum/artifact-evaluation)
-* [Collective Knowledge google group](http://groups.google.com/group/collective-knowledge)
 
 Artifacts in the CK format
 ==========================
 
 We promote collaborative and reproducible research where artifacts and workflows are shared along 
-with papers in a common "plug&play" format to let the community quickly reuse them and thus
-accelerate science!
+with papers in a common format to let the community quickly reuse them and thus
+accelerate open science!
 
-Please check [ACM proceedings](https://doi.org/10.1145/3229762) 
+You can find all papers with artifacts shared in the CK format [here](https://cknowledge.io/?q=%22reproduced-papers%22%20AND%20%22portable-workflow-ck%22).
+
+Please check the [ACM proceedings](https://doi.org/10.1145/3229762) 
 of our [1st ACM ReQUEST tournament](https://portalparts.acm.org/3230000/3229762/fm/frontmatter.pdf) 
-with a [live scoreboard](http://cknowledge.org/request-results) 
-and with all artifacts and workflows shared in a [common CK format](https://github.com/ctuning/ck-request-asplos18-results)!
+with a [live scoreboard](https://cknowledge.io/c/result/pareto-efficient-ai-co-design-tournament-request-acm-asplos-2018/) 
+and all artifacts and workflows shared in a [common CK format](https://github.com/ctuning/ck-request-asplos18-results).
 
 You can also check this reusable and customizable artifact from [CGO'17](http://cgo.org/cgo2017) 
 with automatic cross-platform software installation and web-based experimental dashboard powered 
@@ -91,57 +91,8 @@ by the CK framework:
 * [Paper with artifact appendix](http://cTuning.org/ae/resources/paper-with-distinguished-ck-artifact-and-ae-appendix-cgo2017.pdf)
 * [PDF snapshot of the interactive CK dashboard](https://github.com/SamAinsworth/reproduce-cgo2017-paper/files/618737/ck-aarch64-dashboard.pdf)
 
-Vision publications
-===================
+Our publications
+================
 
-* [PDF](https://hal.inria.fr/inria-00436029v2/document)
-
-```
-@inproceedings{Fur2009,
-  author =    {Grigori Fursin},
-  title =     {{Collective Tuning Initiative}: automating and accelerating development and optimization of computing systems},
-  booktitle = {Proceedings of the GCC Developers' Summit},
-  year =      {2009},
-  month =     {June},
-  location =  {Montreal, Canada},
-  keys =      {http://www.gccsummit.org/2009}
-  url  =      {https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IwcnpkwAAAAJ&cstart=20&citation_for_view=IwcnpkwAAAAJ:8k81kl-MbHgC}
-}
-```
-
-* [PDF](https://arxiv.org/pdf/1406.4020)
-
-```
-@inproceedings{Fursin:2014:CRV:2618137.2618142,
- author = {Fursin, Grigori and Dubach, Christophe},
- title = {Community-driven Reviewing and Validation of Publications},
- booktitle = {Proceedings of the 1st ACM SIGPLAN Workshop on Reproducible Research Methodologies and New Publication Models in Computer Engineering},
- series = {TRUST '14},
- year = {2014},
- isbn = {978-1-4503-2951-4},
- location = {Edinburgh, United Kingdom},
- pages = {5:1--5:4},
- articleno = {5},
- numpages = {4},
- url = { http://doi.acm.org/10.1145/2618137.2618142 },
- doi = {10.1145/2618137.2618142},
- acmid = {2618142},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {collaborative artifact evaluation, collective mind, community-driven journals, crowdsourcing paper reviewing, reproducible research, software and hardware dependencies},
-} 
-```
-
-* [PDF](https://drive.google.com/file/d/0B3lp_jPECSVlTkVvQlltd2FyenM/view)
-
-```
-@inproceedings{ck-date16,
-    title = {{Collective Knowledge}: towards {R\&D} sustainability},
-    author = {Fursin, Grigori and Lokhmotov, Anton and Plowman, Ed},
-    booktitle = {Proceedings of the Conference on Design, Automation and Test in Europe (DATE'16)},
-    year = {2016},
-    month = {March},
-    url = {https://www.researchgate.net/publication/304010295_Collective_Knowledge_Towards_RD_Sustainability}
-}
-
-```
+* ["Community-driven Reviewing and Validation of Publications"](https://arxiv.org/pdf/1406.4020)
+* ["Collective Knowledge:  organizing research projects as a database ofreusable components and portable workflows with common APIs"](https://arxiv.org/pdf/2011.01149.pdf)

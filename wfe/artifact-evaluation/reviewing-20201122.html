@@ -1,22 +1,6 @@
 <br>
 
-<i>
 This document (<b>V20201122</b>) provides the guidelines to evaluate artifacts across a range of systems and machine learning conferences and journals.
-We regularly update it based on 
-our <a href="$#ck_root_page_url#$prior_ae$#ck_page_suffix#$">past Artifact Evaluation experience</a> and open reproducibility discussions
- (<a href="https://portalparts.acm.org/3230000/3229762/fm/frontmatter.pdf">2018</a>,
- <a href="https://www.slideshare.net/GrigoriFursin/enabling-open-and-reproducible-computer-systems-research-the-good-the-bad-and-the-ugly">2017a</a>,
- <a href="https://www.slideshare.net/GrigoriFursin/cgoppopp17-artifact-evaluation-discussion-enabling-open-and-reproducible-research">2017b</a>,
- <a href="https://www.slideshare.net/GrigoriFursin/panel-at-acmsigplantrust2014">2014</a>,
- <a href="https://hal.inria.fr/inria-00436029v2">2009</a>),
-the feedback we receive from researchers (<a href="https://groups.google.com/forum/#!forum/artifact-evaluation">Artifact Evaluation google group</a>, 
- <a href="https://docs.google.com/document/d/1QZzRVMZMsMev3lxBgHG4TFHEFXy__N7B69ysWXi0ZcY/edit">Shared Google doc</a>),
-<a href="http://artifact-eval.org">PL AE</a>, 
-and the <a href="https://www.acm.org/publications/policies/artifact-review-badging">ACM reviewing and badging policy</a> 
- which we are contributing to as a member of the <a href="https://www.acm.org/publications/task-force-on-data-software-and-reproducibility">ACM taskforce on reproducibility</a>.
-Our goal is to come up with a common methodology, <a href="$#ck_root_page_url#$submission_extra$#ck_page_suffix#$">unified artifact appendix with the reproducibility checklist</a>, 
-and an <a href="https://cKnowledge.io">open reproducibility platform</a> for artifact sharing, validation and reuse.
-</i>
 
 <!-------------------------------------------------------------------------------------------->
 <h2>Reviewing process</h2>
@@ -50,7 +34,6 @@ and an <a href="https://cKnowledge.io">open reproducibility platform</a> for art
 
   <p>
   Authors and reviewers are encouraged to check the <a href="$#ck_root_page_url#$faq$#ck_page_suffix#$">AE FAQ</a>
-  and use our <a href="https://cknowledge.org/join-slack">Slack (#reproducible-research channel)</a>
   and the <a href="https://groups.google.com/forum/#!forum/artifact-evaluation">dedicated AE google group</a> in case of questions or suggestions.
 
 </div>
@@ -214,7 +197,7 @@ that it is possible to reuse a given artifact in a different experimental setup.
     <tr>
      <td colspan="2" valign="top"><a name="results_validated"><b>Results validated?</b></td>
      <td valign="top">
-      Can all main results from the paper be validated using provided artifacts?
+      Was it possible to validate the main results from the paper using provided artifacts?
 
       <p>
       Report any unexpected artifact behavior (depends on the type of artifact such as unexpected output, scalability issues, crashes, performance variation, etc).
@@ -223,12 +206,12 @@ that it is possible to reuse a given artifact in a different experimental setup.
      <td valign="top">
 
 The artifacts associated with the paper will receive a
-"Results replicated" badge <i>only if</i> the main results 
+"Results reproduced" badge <i>only if</i> the main results 
 of the paper have been obtained in a subsequent study 
 by a person or team other than the authors, using, 
 in part, artifacts provided by the author.
 
-      <p><center><img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/results_replicated_dl.jpg"></center>
+      <p><center><img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/results_reproduced_dl.jpg"></center>
 
        <p>
        Note that variation of empirical and numerical results is tolerated.
@@ -240,20 +223,14 @@ in part, artifacts provided by the author.
 
        <p>
        <i>Since it may take weeks and even months to rerun some complex experiments 
-       such as deep learning model training, we suggest to use a staged AE where we will first validate that
+       such as deep learning model training, we are discussing a staged AE where we will first validate that
        artifacts are functional before the camera ready paper deadline, and then
        use a separate AE with the full validation of all experimental results 
        with open reviewing and without strict deadlines. We successfully validated
        a similar approach at the <a href="https://cKnowledge.org/request">ACM ASPLOS-ReQuEST'18 tournament (SW/HW co-design of Pareto-efficient deep learning)</a>
        and <a href="https://adapt-workshop.org">ADAPT'16</a>, 
        and we saw similar initiatives at the <a href="https://openreview.net/group?id=NeurIPS.cc/2019/Reproducibility_Challenge">NeurIPS conference</a>.
-
-       <p>
-       We are also working with the community on an open-source technology to enable "live" papers where experimental results are continuously validated by the community
-       (see the <a href="https://cKnowledge.io/c/report/rpi3-crowd-tuning-2017-interactive">RPi crowd-tuning paper</a> 
-        and the <a href="https://cKnowledge.io/demo">MLPerf/MobileNets crowd-benchmarking demo</a>).
        </i>
-
      </td>
     </tr>
 
@@ -271,12 +248,6 @@ in part, artifacts provided by the author.
       We promote the use of portable workflow frameworks
       to standardize, automate and simplify the artifact evaluation process.
       Such artifacts can receive a special prize if arranged by the event.
-
-      <p>
-      See our related effort at the Supercomputing Student Cluster Competition:
-      <a href="https://github.com/SC-Tech-Program/SCreproducibility/blob/master/Reproducibility-Challenge-Artifact-Description.md">common artifact format</a>,
-      <a href="https://github.com/reproindex/ck-scc">automation workflow</a>, 
-      <a href="https://github.com/ctuning/ck-scc18">SCC'18 application workflow example</a>.
      </td>
     </tr>
 
@@ -342,3 +313,21 @@ to help you understand which one was used in papers with evaluated artifacts:
   <a href="$#ck_root_page_url#$submission-20151015$#ck_page_suffix#$">submission guide</a>,
   <a href="$#ck_root_page_url#$reviewing-20151015$#ck_page_suffix#$">reviewing guide</a>
 </ul>
+
+<hr>
+<i>
+We regularly update this document based on 
+our <a href="$#ck_root_page_url#$prior_ae$#ck_page_suffix#$">past Artifact Evaluation experience</a> and open reproducibility discussions
+ (<a href="https://portalparts.acm.org/3230000/3229762/fm/frontmatter.pdf">2018</a>,
+ <a href="https://www.slideshare.net/GrigoriFursin/enabling-open-and-reproducible-computer-systems-research-the-good-the-bad-and-the-ugly">2017a</a>,
+ <a href="https://www.slideshare.net/GrigoriFursin/cgoppopp17-artifact-evaluation-discussion-enabling-open-and-reproducible-research">2017b</a>,
+ <a href="https://www.slideshare.net/GrigoriFursin/panel-at-acmsigplantrust2014">2014</a>,
+ <a href="https://hal.inria.fr/inria-00436029v2">2009</a>),
+the feedback we receive from researchers (<a href="https://groups.google.com/forum/#!forum/artifact-evaluation">Artifact Evaluation google group</a>, 
+ <a href="https://docs.google.com/document/d/1QZzRVMZMsMev3lxBgHG4TFHEFXy__N7B69ysWXi0ZcY/edit">Shared Google doc</a>),
+<a href="http://artifact-eval.org">PL AE</a>, 
+and the <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">ACM reviewing and badging policy</a> 
+ which we are contributing to as a member of the <a href="https://www.acm.org/publications/task-force-on-data-software-and-reproducibility">ACM taskforce on reproducibility</a>.
+Our goal is to come up with a common methodology, <a href="$#ck_root_page_url#$submission_extra$#ck_page_suffix#$">unified artifact appendix with the reproducibility checklist</a>, 
+and an <a href="https://cKnowledge.io">open reproducibility platform</a> for artifact sharing, validation and reuse.
+</i>

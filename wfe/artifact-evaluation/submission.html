@@ -1,6 +1,6 @@
 <br>
 
-This document (<b>V20200102</b>) provides the guidelines to submit your artifacts for evaluation across a range of systems and machine learning conferences and journals.
+This document (<b>V20201122</b>) provides the guidelines to submit your artifacts for evaluation across a range of systems and machine learning conferences and journals.
 
 <!-------------------------------------------------------------------------------------------->
 <p>
@@ -8,12 +8,11 @@ This document (<b>V20200102</b>) provides the guidelines to submit your artifact
 
 <div style="margin-left:20px;">
 <p>
-It's becoming increasingly difficult to reproduce results from CS papers. 
+It's becoming increasingly difficult to <a href="https://www.reddit.com/r/MachineLearning/comments/ioq8do/n_reproducing_150_research_papers_the_problems">reproduce results from CS papers</a>. 
 Voluntarily Artifact Evaluation (AE) was successfully introduced
 at program languages, systems and machine learning conferences and tournaments 
 to validate experimental results by the independent AE Committee, share unified Artifact Appendices, 
-and assign reproducibility badges
-(see <a href="https://cTuning.org/ae/#motivation">our AE motivation</a>).
+and assign reproducibility badges.
 
 <p>
 AE promotes the reproducibility of experimental results 
@@ -22,7 +21,7 @@ Authors are invited to formally describe all supporting material (code, data, mo
 using the <a href="$#ck_root_page_url#$checklist$#ck_page_suffix#$">unified Artifact Appendix and the Reproducibility Checklist template</a>
 and submit it to the <a href="$#ck_root_page_url#$reviewing$#ck_page_suffix#$">single-blind AE process</a>.
 Reviewers will then collaborate with the authors to evaluate their artifacts and assign the following
-<a href="https://www.acm.org/publications/policies/artifact-review-badging">ACM reproducibility badges</a>:
+<a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">ACM reproducibility badges</a>:
 
  <center>
   <img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/artifacts_available_dl.jpg" width="64">
@@ -82,55 +81,6 @@ Reviewers will then collaborate with the authors to evaluate their artifacts and
  using <a href="https://jupyter.org">Jupyter Notebooks</a>
  or plain ReadMe files.
 
- <p>
- Based on your feedback, we are now working with the community 
- on a common format for digital artifacts,
- open-source portable workflows and reusable R&D actions
- to automate and simplify the artifact evaluation process. 
- Feel free to check the following community projects and provide your feedback (optional):
-
- <ul>
-  <li>
-   Our related effort to standardize artifact submissions for the Supercomputing Student Cluster Competition:
-    <a href=" https://github.com/SC-Tech-Program/SCreproducibility/blob/master/Reproducibility-Challenge-Artifact-Description.md ">Digital Artifact description</a>,
-    <a href="https://github.com/reproindex/ck-scc">automation workflow</a>.
-  </li>
-
-  <br>
-  <li>
-   The <a href="https://cKnowledge.org">Collective Knowledge project</a> to provide a common directory/file-based
-   structure for research projects with all artifacts (code, data, models, scripts, experiments) shared as portable, 
-   reusable and customizable components and workflows with CLI-based actions, Python/REST API  and JSON meta.
-   See examples of digitial artifacts in the CK format which passed artifact evaluation: 
-   <a href="https://github.com/ctuning/ck-scc18">Supercomputing'18</a>,
-   <a href="https://github.com/ctuning/reproduce-sysml19-paper-aggregathor">MLSys'19 (a)</a>, 
-   <a href="https://github.com/ctuning/reproduce-sysml19-paper-p3">MLSys'19 (b)</a>,
-   <a href="https://github.com/ctuning/ck-request-asplos18-caffe-intel">ASPLOS-REQUEST'18</a> (with a <a href="https://cKnowledge.io/result/pareto-efficient-ai-co-design-tournament-request-acm-asplos-2018/">public scoreboard</a>),
-   <a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper">CGO'17</a>.
-
-   <p>
-   You can reuse the following CK components in your artifact submissions:
-   <ul>
-    <li>
-     <a href="https://cKnowledge.io/actions">Reusable CLI-based R&D automation "actions"</a>
-    <li>
-     <a href="https://cKnowledge.io/packages">meta packages</a> (code, data set, models)
-    <li>
-     <a href="https://cKnowledge.io/soft">soft detection plugins</a>
-    <li>
-     <a href="https://cKnowledge.io/programs">portable ML/system workflows</a>
-    <li>
-     <a href="https://cKnowledge.io/?q=%22reproduced-results%22">reproduced results</a> (dashboards for crowd-evaluation)
-   </ul>
-
-  </li>
-
-  <br>
-  <li>
-   List of <a href="https://github.com/ctuning/ck/wiki/Enabling-open-science-tools">other tools</a> from the community.
-  </li>
-
- </ul>
 
 </div>
 
@@ -151,12 +101,11 @@ before submitting the final version to archival repositories.
 Other acceptable methods include:
  <ul>
   <li>
-   Using <a href="https://www.docker.com">Docker</a>, <a href="https://www.virtualbox.org">Virtual Box</a> and other containers and VM images. 
-   However, since they are usually not easily portable and customizable, we do not consider them for the "artifact reusable badge".
-  </li>
-  <li>
    Using zip or tar files with all related code and data, particularly when your artifact
    should be rebuilt on reviewers' machines (for example to have a non-virtualized access to a specific hardware). 
+  </li>
+  <li>
+   Using <a href="https://www.docker.com">Docker</a>, <a href="https://www.virtualbox.org">Virtual Box</a> and other containers and VM images. 
   </li>
   <li>
    Arranging remote access to the authors' machine with the pre-installed software 
@@ -231,16 +180,16 @@ in your final Artifact Appendix!
 
   <ul>
    <li>
-    <a href="https://cKnowledge.io/?q=%22reproduced-papers%22">Some papers from our past AE</a> (MLSys, Supercomputing, CGO, PPoPP, PACT, IA3, ReQuEST)
+    <a href="https://cKnowledge.io/?q=%22reproduced-papers%22">Some papers from the past AE</a> (ASPLOS, MLSys, Supercomputing, CGO, PPoPP, PACT, IA3, ReQuEST)
    </li>
    <li>
     <a href="https://cKnowledge.io/?q=%22reproduced-papers%22%20AND%20%22portable-workflow-ck%22">Papers with automated and portable workflows</a>
    </li>
    <li>
-    <a href="https://cKnowledge.io/?q=%22live-paper%22">"Live" papers</a> (crowd-validation)
+    <a href="https://cknowledge.io/c/report/rpi3-crowd-tuning-2017-interactive/">"Live" papers</a> (collaborative validation by the community)
    </li>
    <li>
-    <a href="https://cKnowledge.io/?q=%22reproduced-results%22">SOTA leaderboards</a>
+    <a href="https://cKnowledge.io/?q=%22reproduced-results%22">Dashboards with reproduced results</a>
    </li>
    <li>
     Paper "Highly Efficient 8-bit Low Precision Inference of Convolutional Neural Networks with IntelCaffe" from ACM ASPLOS-ReQuEST'18<br>
@@ -259,9 +208,6 @@ in your final Artifact Appendix!
      <a href="$#ck_root_page_url#$resources/paper-with-distinguished-ck-artifact-and-ae-appendix-cgo2017.pdf">PDF with the Artifact Appendix</a>,
      <a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper/files/618737/ck-aarch64-dashboard.pdf">CK dashboard snapshot</a></i>
     </div>
-   </li>
-   <li>
-    <a href="https://cknowledge.io/solution/demo-obj-detection-coco-tf-cpu-benchmark-linux-portable-workflows/">Live demo of our open-source portable workflows</a>
    </li>
   </ul>
 
@@ -325,7 +271,7 @@ our <a href="$#ck_root_page_url#$prior_ae$#ck_page_suffix#$">past Artifact Evalu
 the feedback we receive from researchers (<a href="https://groups.google.com/forum/#!forum/artifact-evaluation">Artifact Evaluation google group</a>, 
  <a href="https://docs.google.com/document/d/1QZzRVMZMsMev3lxBgHG4TFHEFXy__N7B69ysWXi0ZcY/edit">Shared Google doc</a>),
 <a href="http://artifact-eval.org">PL AE</a>, 
-and the <a href="https://www.acm.org/publications/policies/artifact-review-badging">ACM reviewing and badging policy</a> 
+and the <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">ACM reviewing and badging policy</a> 
  which we are contributing to as a member of the <a href="https://www.acm.org/publications/task-force-on-data-software-and-reproducibility">ACM taskforce on reproducibility</a>.
 Our goal is to come up with a common methodology, <a href="$#ck_root_page_url#$checklist$#ck_page_suffix#$">unified artifact appendix with the reproducibility checklist</a>, 
 and an <a href="https://cKnowledge.io">open reproducibility platform</a> for artifact sharing, validation and reuse.

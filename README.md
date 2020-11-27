@@ -12,17 +12,17 @@ for more details.
 Description
 ===========
 
-Install Collective Knowledge (CK) on Linux, Windows or MacOS 
-as described in this [Read Me](https://github.com/ctuning/ck).
-
+Install the Collective Knowledge framework (CK) on Linux, Windows or MacOS 
+as described [here](https://ck.readthedocs.io/en/latest/src/installation.html).
 
 Pull this repository:
 
-```
- $ ck pull repo:ck-artifact-evaluation
+```bash
+ck pull repo:ck-artifact-evaluation
 ```
 
-Note that dependency on ck-web and other CK repositories will be automatically resolved.
+Note that the dependencies on ck-web and other CK repositories 
+will be automatically resolved by the CK framework!
 
 
 ```

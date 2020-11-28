@@ -53,9 +53,6 @@ In case of any doubts, try to find a free alternative. In fact,
 we strongly suggest you provide a small subset of free benchmarks 
 and data sets to simplify evaluation.
 
-Note, that we have a preliminary agreement with the <a href="https://www.eembc.org">EEMBC consortium</a>
-to let authors share their EEMBC benchmarks with the evaluators for Artifact Evaluation purposes.
-
 <!----------------------------------------------------------------------------------------------------->
 <h3>Can I engage with the community to evaluate my artifacts?</h3>
 
@@ -73,13 +70,13 @@ and CGO/PPoPP'17 AE!
 <!----------------------------------------------------------------------------------------------------->
 <h3>How to automate, customize and port experiments?</h3>
 
-For our past AE experience, the major difficulty that evaluators 
+For our <a href="https://arxiv.org/pdf/2011.01149.pdf">past experience reproducing research papers</a>, 
+the major difficulty that evaluators 
 face is the lack of a common and portable workflow framework
 in systems research. This means that each year they have 
 to learn some ad-hoc scripts and formats in nearly 
 all artifacts without even reusing such knowledge the following year
-(see our public presentation about 
-<a href="https://fr.slideshare.net/GrigoriFursin/cgoppopp17-artifact-evaluation-discussion-enabling-open-and-reproducible-research">CGO-PPoPP'17 AE issues</a>).
+(see <a href="https://www.reddit.com/r/MachineLearning/comments/ioq8do/n_reproducing_150_research_papers_the_problems">our public presentation</a>).
 
 Things get even worse if an evaluator would like to validate experiments 
 using a different compiler, tool, library, data set, operating systems or hardware
@@ -88,46 +85,22 @@ VM and Docker images - our experience shows that most of the submitted scripts
 are not easy to change, customize or adapt to other platform.
 
 <p>
-That is why we collaborate with <a href="http://cKnowledge.org/partners.html">the community</a> 
-and <a href="http://acm.org">ACM</a> to develop a common experimental framework
-(<a href="https://github.com/ctuning/ck">Collective Knowledge aka CK</a>) 
-with and a common JSON API and a <a href="https://github.com/ctuning/ck/wiki/Portable-workflows">portable package manager</a> 
-which unifies detection and installation of dependencies for Linux, MacOS, Windows and Android.
+That is why we collaborate with <a href="https://cKnowledge.org/partners.html">the community</a> 
+and <a href="https://acm.org">ACM</a> to develop a <a href="https://github.com/ctuning/ck">common experimental framework (CK)</a>.
 
-<p>
-You can see how CK workflows helped automate, crowdsource and visualize experiments in the 
+You can see how CK workflows helped to automate, crowdsource and visualize experiments in the 
 <a href="http://cKnowledge.org/request">1st ACM ReQuEST-ASPLOS'18 tournament</a> 
 to co-design Pareto-efficient software/hardware stack for deep learning:
  <a href="https://github.com/ctuning/ck-request-asplos18-results">CK workflows</a>,
    <a href="https://doi.org/10.1145/3229762">ACM proceedings</a>,
    <a href="https://portalparts.acm.org/3230000/3229762/fm/frontmatter.pdf">report</a> and
-   <a href="http://cKnowledge.org/request-results">reproducible results</a>.
+   <a href="https://cKnowledge.io/reproduced-results">public dashboards with reproducible results</a>.
 
-You can also reuse shared <a href="http://cKnowledge.org/shared-programs.html">programs/benchmarks</a>,
-<a href="http://cKnowledge.org/shared-packages.html">portable packages (code and data sets)</a>,
-<a href="http://cKnowledge.org/shared-repos.html">repositories with customizable workflows and other CK components</a>,
-and <a href="http://cKnowledge.org/shared-soft-detection-plugins.html">software detection plugins</a> in your own workflows.
+You can find reproduced papers with portable CK workflows and reusable components
+using the <a href="https://cknowledge.io/?q=%22reproduced-papers%22%20AND%20%22portable-workflow-ck%22">cKnowledge.io portal</a>.
 
-<p>
-You can also check this CGO'17 article from the University of Cambridge 
-on "Software Prefetching for Indirect Memory Accesses"
-with CK-based experimental workflow and packages, which won a distinguished artifact award:
-<ul>
-  <li><a href="$#ck_root_page_url#$resources/paper-with-distinguished-ck-artifact-and-ae-appendix-cgo2017.pdf">Paper&nbsp;with&nbsp;AE&nbsp;appendix&nbsp;and&nbsp;CK&nbsp;workflow</a>
-  <li><a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper">Artifacts at GitHub</a>
-  <li><a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper/files/618737/ck-aarch64-dashboard.pdf">PDF snapshot of the interactive CK dashboard</a>
-</ul>
-
-Please, follow <a href="https://github.com/ctuning/ck/wiki/Adding-new-workflows">this guide</a> 
+Please, follow <a href="https://ck.readthedocs.io/en/latest/src/typical-usage.html">this guide</a> 
 if you want to convert your artifacts and workflows to the CK format.
-Note that you are not obliged to use CK. 
-<b>However if you are interested to give it a try and help evaluators,
-<a href="http://cTuning.org">the non-profit cTuning foundation</a> 
-regularly helps users to convert their workflows to the CK format while reusing already existing artifacts -
-just <a href="https://github.com/ctuning/ck/wiki/Contacts">contact them</a> way before 
-submitting artifacts.</b> You can also join us at the <a href="http://rescue-hpc.org">ResCuE-HPC workshop</a>
-on Reproducible, Customizable and Portable Workflows for HPC at Supercomputing'18
-to discuss how to introduce common workflows to systems research!
 
 <!----------------------------------------------------------------------------------------------------->
 <h3>Do I have to make my artifacts public if they pass evaluation?</h3>
@@ -155,34 +128,33 @@ and perform statistical analysis (i.e. do not just look at average but at distri
 
 There is no universal recipe how many times you should repeat your empirical experiment 
 since it heavily depends on the type of your experiments, platform and environment. 
-You should then analyze distribution of execution time as shown in the figure below:
+You should then analyze the distribution of execution times as shown in the figure below:
 
 <center><img src="https://raw.githubusercontent.com/ctuning/ck-assets/master/slide/reproducibility/994e7359d7760ab1-cropped.png"></center>
 
 <p>If you have more than one expected value (b), it means that you have several
-run-time states on your machine which may be switching during your experiments
-(such as adaptive frequency scaling) and you can not reliably compare empirical results.
+run-time states in your system (such as adaptive frequency scaling) 
+and you can not reliably compare empirical results.
 
 However, if there is only one expected value for a given experiment (a), 
 then you can use it to compare multiple experiments (for example during
-autotuning as described 
-<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=IwcnpkwAAAAJ&citation_for_view=IwcnpkwAAAAJ:maZDTaKrznsC">here</a>).
+autotuning as described in this <a href="https://cKnowledge.org/rpi-crowd-tuning">article</a>.
  
 <p>
-You should also report variation of empirical results together with expected values.
+You should also report the variation of empirical results together with all expected values.
 Furthermore, we strongly suggest you to pre-record results from your platform
 and provide a script to automatically compare new results with the pre-recorded ones
-preferably using expected values. This will help evaluators avoid wasting time 
+preferably using expected values. This will help evaluators avoid to wasting time 
 when trying to dig out and validate results from "stdout".
 For example, see how new results are visualized and compared against the pre-recorded ones
-using <a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper/files/618737/ck-aarch64-dashboard.pdf">CK dashboard</a> 
-in the <a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper">CGO'17 distinguished artifact</a>.
+using the <a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper/files/618737/ck-aarch64-dashboard.pdf">CK dashboard</a> 
+in the <a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper">CGO'17 artifact</a>.
 
 <!----------------------------------------------------------------------------------------------------->
 <h3>How to deal with numerical accuracy and instability?</h3>
 
 If the accuracy of your results depends on a given machine, environment and optimizations 
-(for example, when optimizing BLAS, DNN, etc), you should provide a script/plugin to automatically 
+(for example, when optimizing BLAS, DNN, etc), you should provide a script to automatically 
 report unexpected loss in accuracy (above provided threshold) as well as any numerical instability.
 
 <!----------------------------------------------------------------------------------------------------->
@@ -190,11 +162,9 @@ report unexpected loss in accuracy (above provided threshold) as well as any num
 
 If you present a novel parallel algorithm or some predictive model which should scale 
 across a number of cores/processors/nodes, we suggest you 
-to provide such an experimental workflow which could automatically detect the underlying topology 
-of a user machine (or it can at least be configurable), validate your models or algorithm scalability, 
-and report any unexpected behavior. In the future, we expect to use public repositories
-of knowledge where results will be automatically validated against the ones continuously shared
-by the community (<a href="http://cKnowledge.org/repo">1</a>, <a href="http://cKnowledge.org/rpi-crowd-tuning">2</a>).
+to provide an experimental workflow that could automatically detect the topology 
+of a user machine, validate your models or algorithm scalability, 
+and report any unexpected behavior. 
 
 <!----------------------------------------------------------------------------------------------------->
 <h3>Is there any page limit for my Artifact Evaluation Appendix?</h3>
@@ -284,52 +254,8 @@ Please, see an example of a paper and its artifact in the ACM Digital library (c
 <!----------------------------------------------------------------------------------------------------->
 <a name="contacts"><h3>Questions and Feedback</h3>
 
-If you have any questions, do not hesitate to contact the AE community 
-via this <a href="https://groups.google.com/forum/#!forum/artifact-evaluation">public discussion group</a>!
+If you have any questions, do not hesitate to get in touch with the AE community 
+using this <a href="https://groups.google.com/forum/#!forum/artifact-evaluation">public discussion group</a>!
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 <br>

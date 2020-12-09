@@ -23,7 +23,7 @@ able to fix it and will likely give you a negative score.
 AE is a single-blind process, i.e. authors' names are known to the evaluators
 (there is no need to hide them since papers are accepted),
 but names of evaluators are not known to authors.
-AE chair is usually used as a proxy between authors and evaluators
+AE chairs are usually used as a proxy between authors and evaluators
 in case of questions and problems.
 
 <!----------------------------------------------------------------------------------------------------->
@@ -40,7 +40,7 @@ for more details.
 <h3>Is it possible to provide a remote access to a machine with pre-installed artifacts?</h3>
 
 Only in exceptional cases, i.e. when rare hardware or proprietary software/benchmarks are required,
-or VM image is too large, or when you are not authorized to move artifacts outside your organization.
+or VM image is too large or when you are not authorized to move artifacts outside your organization.
 In such case, you will need to send the access information 
 to the AE chairs via private email or SMS. 
 They will then pass this information to the evaluators.
@@ -51,36 +51,34 @@ They will then pass this information to the evaluators.
 Please check the license of your benchmarks, data sets and software. 
 In case of any doubts, try to find a free alternative. In fact, 
 we strongly suggest you provide a small subset of free benchmarks 
-and data sets to simplify evaluation.
+and data sets to simplify the evaluation process.
 
 <!----------------------------------------------------------------------------------------------------->
 <h3>Can I engage with the community to evaluate my artifacts?</h3>
 
 <p>
-Based on the community feedback, we provided an extra option of open evaluations
+Based on the community feedback, we allow open evaluation
 to let the community validate artifacts which are publicly available 
-at GitHub, GitLab, BitBuckets, etc, report issues and help authors 
-fix them. 
+at GitHub, GitLab, BitBuckets, etc, report issues and help the authors 
+to fix them. 
 
 Note, that in the end, these artifacts still go through traditional
 evaluation process via the AE committee. We successfully validated 
 at <a href="http://adapt-workshop.org/motivation2016.html">ADAPT'16</a> 
-and CGO/PPoPP'17 AE!
+and CGO/PPoPP'17!
 
 <!----------------------------------------------------------------------------------------------------->
 <h3>How to automate, customize and port experiments?</h3>
 
-For our <a href="https://arxiv.org/pdf/2011.01149.pdf">past experience reproducing research papers</a>, 
-the major difficulty that evaluators 
-face is the lack of a common and portable workflow framework
-in systems research. This means that each year they have 
+From our <a href="https://www.reddit.com/r/MachineLearning/comments/ioq8do/n_reproducing_150_research_papers_the_problems">past experience reproducing research papers</a>, 
+the major difficulty that evaluators face is the lack of a common and portable workflow framework
+in ML and systems research. This means that each year they have 
 to learn some ad-hoc scripts and formats in nearly 
-all artifacts without even reusing such knowledge the following year
-(see <a href="https://www.reddit.com/r/MachineLearning/comments/ioq8do/n_reproducing_150_research_papers_the_problems">our public presentation</a>).
+all artifacts without even reusing such knowledge the following year.
 
 Things get even worse if an evaluator would like to validate experiments 
 using a different compiler, tool, library, data set, operating systems or hardware
-rather than just replicating quickly outdated results using 
+rather than just reproducing quickly outdated results using 
 VM and Docker images - our experience shows that most of the submitted scripts 
 are not easy to change, customize or adapt to other platform.
 
@@ -89,7 +87,7 @@ That is why we collaborate with <a href="https://cKnowledge.org/partners.html">t
 and <a href="https://acm.org">ACM</a> to develop a <a href="https://github.com/ctuning/ck">common experimental framework (CK)</a>.
 
 You can see how CK workflows helped to automate, crowdsource and visualize experiments in the 
-<a href="http://cKnowledge.org/request">1st ACM ReQuEST-ASPLOS'18 tournament</a> 
+<a href="https://cKnowledge.org/request">1st ACM ReQuEST-ASPLOS'18 tournament</a> 
 to co-design Pareto-efficient software/hardware stack for deep learning:
  <a href="https://github.com/ctuning/ck-request-asplos18-results">CK workflows</a>,
    <a href="https://doi.org/10.1145/3229762">ACM proceedings</a>,
@@ -105,26 +103,28 @@ if you want to convert your artifacts and workflows to the CK format.
 <!----------------------------------------------------------------------------------------------------->
 <h3>Do I have to make my artifacts public if they pass evaluation?</h3>
 
-No, you don't have to and it may be impossible in some cases of some commercial artifacts.
+No, you don't have to and it may be impossible in the case of commercial artifacts.
 Nevertheless, we encourage you to make your artifacts publicly available upon publication, 
-for example, by including them as "source materials" in the Digital Library
-or sharing them in a permanent repository (required to receive the "available" badge)
-as outlined in <a href="http://dl.acm.org/citation.cfm?id=2618142">our vision</a>
-for collaborative and reproducible computer engineering.
+for example, by including them in a permanent repository (required to receive the "artifact available" badge)
+to support open science as outlined in <a href="http://dl.acm.org/citation.cfm?id=2618142">our vision</a>.
 
 <p>
-Furthermore, if you have your artifacts already publicly available at the time
+Furthermore, if you make  your artifacts publicly available at the time
 of submission, you may profit from the "public review" option, where you are engaged
-directly with the community to discuss, evaluate and use your software. See such
-examples <a href="http://cTuning.org/ae/artifacts.html">here</a> 
-(search for "example of public evaluation").
+with the community to discuss, evaluate and use your software. See such
+examples <a href="https://cTuning.org/ae/artifacts.html">here</a> 
+(search for "public evaluation").
 
 <!----------------------------------------------------------------------------------------------------->
 <h3>How to report and compare empirical results?</h3>
 
+<b>News:</b> Please check the <a href="https://www.sigarch.org/a-checklist-manifesto-for-empirical-evaluation-a-preemptive-strike-against-a-replication-crisis-in-computer-science/">SIGARCH empirical checklist</a>
+and the <a href="https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist.pdf">NeurIPS reproducibility checklist</a>.
+
+<br><br>
 First of all, you should undoubtedly run empirical experiments more than once 
-(we still encounter many cases where researchers measure execution time only once)
-and perform statistical analysis (i.e. do not just look at average but at distribution of values)! 
+(we still encounter many cases where researchers measure execution time only once).
+and perform statistical analysis.
 
 There is no universal recipe how many times you should repeat your empirical experiment 
 since it heavily depends on the type of your experiments, platform and environment. 
@@ -134,28 +134,31 @@ You should then analyze the distribution of execution times as shown in the figu
 
 <p>If you have more than one expected value (b), it means that you have several
 run-time states in your system (such as adaptive frequency scaling) 
-and you can not reliably compare empirical results.
+and you can not use average and reliably compare empirical results.
 
 However, if there is only one expected value for a given experiment (a), 
-then you can use it to compare multiple experiments (for example during
-autotuning as described in this <a href="https://cKnowledge.org/rpi-crowd-tuning">article</a>.
+then you can use it to compare multiple experiments. This is particularly
+useful when running experiments across different platforms from different
+users as described in this <a href="https://cKnowledge.org/rpi-crowd-tuning">article</a>.
  
 <p>
 You should also report the variation of empirical results together with all expected values.
 Furthermore, we strongly suggest you to pre-record results from your platform
-and provide a script to automatically compare new results with the pre-recorded ones
-preferably using expected values. This will help evaluators avoid to wasting time 
-when trying to dig out and validate results from "stdout".
+and provide a script to automatically compare new results with the pre-recorded ones.
+Otherwise, evaluators can spend considerable amount of time 
+digging out and validating results from "stdout".
 For example, see how new results are visualized and compared against the pre-recorded ones
-using the <a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper/files/618737/ck-aarch64-dashboard.pdf">CK dashboard</a> 
+using <a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper/files/618737/ck-aarch64-dashboard.pdf">some dashboard</a> 
 in the <a href="https://github.com/SamAinsworth/reproduce-cgo2017-paper">CGO'17 artifact</a>.
+
+
 
 <!----------------------------------------------------------------------------------------------------->
 <h3>How to deal with numerical accuracy and instability?</h3>
 
 If the accuracy of your results depends on a given machine, environment and optimizations 
 (for example, when optimizing BLAS, DNN, etc), you should provide a script to automatically 
-report unexpected loss in accuracy (above provided threshold) as well as any numerical instability.
+report unexpected loss in accuracy above provided threshold as well as any numerical instability.
 
 <!----------------------------------------------------------------------------------------------------->
 <h3>How to validate models or algorithm scalability?</h3>
@@ -172,10 +175,10 @@ and report any unexpected behavior.
 There is no limit for the AE Appendix at the time of the submission for Artifact Evaluation.
 
 <p>
-However, there is currently a 2 page limit for the AE Appendix in the camera-ready CGO and PPoPP papers.
+However, there is currently a 2 page limit for the AE Appendix in the camera-ready CGO, PPoPP, ASPLOS and MLSys papers.
 There is no page limit for the AE Appendix in the camera-ready SC paper. We also expect 
 that there will be no page limits for AE Appendices in the journals willing to participate 
-in our AE initiative.
+in the AE initiative.
 
 <!----------------------------------------------------------------------------------------------------->
 <a name="hotcrp"><h3>Where can I find a sample HotCRP configuration to set up AE?</h3>
@@ -183,7 +186,11 @@ in our AE initiative.
 Please, check out our <a href="https://www.linkedin.com/pulse/acm-ppopp19-artifact-evaluation-report-hotcrp-grigori-fursin/">PPoPP'19 HotCRP configuration for AE</a> in case you need to set up your own HotCRP instance.
 
 <!----------------------------------------------------------------------------------------------------->
-<a name="artifacts_for_acm_dl"><h3>How to prepare your artifact for the ACM DL?</h3>
+<a name="artifacts_for_acm_dl"><h3>How to prepare my artifact for the ACM DL?</h3>
+
+<b>News:</b> ACM is not accepting artifacts in the DL at this moment. Therefore we suggest you to use Zenodo or FigShare to deposit your artifacts.
+
+<br><br>
 
 The procedure is not yet automated and our ACM colleagues are working on that. 
 
@@ -233,7 +240,7 @@ and make them available to your Artifact Evaluation chairs
          <li>Install CK as described <a href="https://github.com/ctuning/ck#installation">here</a> (Linux, Windows, MacOS).<BR><BR>
          <li>If you already have some CK repositories installed, update them as follows: <pre>ck pull all</pre>
          <li>Install the Artifact Evaluation repository as follows: <pre>ck pull repo:ck-artifact-evaluation</pre>
-         <li>Validate your XML as follows untill there are not mistakes: <pre>ck validate xml:acm-artifact-dtd-1.1 --xml_file=artifact.xml</pre>
+         <li>Validate your XML as follows until there are not mistakes: <pre>ck validate xml:acm-artifact-dtd-1.1 --xml_file=artifact.xml</pre>
         </ol>
 
         <p>

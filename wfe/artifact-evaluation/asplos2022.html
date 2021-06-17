@@ -20,8 +20,8 @@
 
 <div style="margin-left:20px;">
  Paper decision: November 15, 2021<br>
- Intent to submit: TBA<br>
- Artifact submission: TBA<br>
+ Artifact abstract submission: <b>November 20, 2021</b><br>
+ Artifact submission: <b>December 1, 2021</b><br>
  Artifact decision: TBA<br>
  Camera-ready paper: TBA<br>
  Conference: <a href="http://asplos-conference.org/2022">Feb 28-Mar 4, 2022</a> (Lausanne, Switzerland)<br>
@@ -30,7 +30,7 @@
 <!------------------------------------------------>
 <div id="vspace8"></div>
 <div id="vspace8"></div>
-<h4>Reproducibility chairs</h4>
+<h4>Artifact evaluation chairs</h4>
 
 <div style="margin-left:20px;">
  <ul>
@@ -42,13 +42,13 @@
 
 
 <!------------------------------------------------>
-<div id="vspace8"></div>
+<!--div id="vspace8"></div>
 <div id="vspace8"></div>
 <h4>Artifact Evaluation Committee</h4>
 
 <div style="margin-left:20px;">
 TBA
-</div>
+</div-->
 
 
 <!------------------------------------------------>
@@ -58,28 +58,30 @@ TBA
 
 <div style="margin-left:20px;">
 
-TBA
+<p>
+ Artifact evaluation promotes reproducibility of experimental results and
+ encourages code and data sharing to help the community quickly validate and
+ compare alternative approaches. Authors of accepted papers are invited to
+ formally describe supporting materials (code, data, models, workflows, results)
+ using the
+ <a href="https://github.com/ctuning/ck-artifact-evaluation/blob/master/wfe/artifact-evaluation/templates/ae.tex">standard Artifact Appendix template</a>
+ and submit it together with the materials for evaluation.
 
-</div>
+<div id="vspace4"></div>
+<p>
+ Note that this submission is <b>voluntary and will not influence</b> the final
+ decision regarding the papers. We want to help the authors validate
+ experimental results from their accepted papers by an independent AE Committee
+ in a collaborative way while helping readers find articles with available,
+ functional, and validated artifacts!
 
-<!------------------------------------------------>
-<div id="vspace8"></div>
-<div id="vspace8"></div>
-<h4>Artifact submission</h4>
-
-<div style="margin-left:20px;">
-
-TBA
-
-</div>
-
-
-<!------------------------------------------------>
-<div id="vspace8"></div>
-<div id="vspace8"></div>
-<h4>ACM reproducibility badges</h4>
-
-<div style="margin-left:20px;">
+<p>
+ The papers that successfully go through AE will receive a set of
+ <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">ACM badges</a>
+ of approval printed on the papers themselves and available as meta information
+ in the ACM Digital Library (it is now possible to search for papers with
+ specific badges in ACM DL). Authors of such papers will have an option to
+ include up to 2 pages of their Artifact Appendix to the camera-ready paper.
 
   <table border="0">
    <tr>
@@ -109,6 +111,137 @@ TBA
   </table>
 
 </div>
+
+<!------------------------------------------------>
+<div id="vspace8"></div>
+<div id="vspace8"></div>
+<h4>Artifact preparation</h4>
+
+<div style="margin-left:20px;">
+
+<p>
+ You need to prepare the <a href="https://github.com/ctuning/ck-artifact-evaluation/blob/master/wfe/artifact-evaluation/templates/ae.tex">Artifact Appendix</a>
+ describing all software, hardware and data set dependencies, key results to be reproduced, and how to prepare, run and validated experiments.
+
+ Though it is relatively intuitive and based on our
+ <a href="$#ck_root_page_url#$prior_ae$#ck_page_suffix#$">past AE experience and your feedback</a>,
+ we strongly encourage you to check the
+  the <a href="$#ck_root_page_url#$checklist$#ck_page_suffix#$">Artifact Appendix guide</a>,
+  <a href="$#ck_root_page_url#$reviewing$#ck_page_suffix#$">artifact reviewing guide</a>,
+  the <a href="https://www.sigarch.org/a-checklist-manifesto-for-empirical-evaluation-a-preemptive-strike-against-a-replication-crisis-in-computer-science/">SIGARCH empirical checklist</a>,
+  the <a href="https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist.pdf">NeurIPS reproducibility checklist</a>
+  and <a href="$#ck_root_page_url#$faq$#ck_page_suffix#$">AE FAQs</a> before submitting artifacts for evaluation!
+
+ You can find the examples of Artifact Appendices
+ in the following <a href="https://cKnowledge.io/reproduced-papers">reproduced papers</a>.
+
+ <p>
+ <i>Since the AE methodology is slightly different at different conferences, we introduced the unified Artifact Appendix
+ with the Reproducibility Checklist to help readers understand what was evaluated and how! Furthermore, artifact evaluation
+ sometimes help to discover some minor mistakes in the accepted paper -
+ in such case you have a chance to add related notes and corrections
+ in the Artifact Appendix of your camera-ready paper!</i>
+
+<p>
+ We strongly recommend you to provide at least some scripts to build your workflow,
+ all inputs to run your workflow, and some expected outputs to validate results from your paper.
+ You can then describe the steps to evaluate your artifact
+ using <a href="https://jupyter.org">Jupyter Notebooks</a>
+ or plain README files.
+ <b>You can skip this step if you want to share your artifacts without the validation of experimental results</b> -
+ in such case your paper can still be entitled for the "artifact available" badge!
+
+</div>
+
+<!------------------------------------------------>
+<div id="vspace8"></div>
+<div id="vspace8"></div>
+<h4>Artifact submission</h4>
+
+<div style="margin-left:20px;">
+
+<p>
+ Submit the artifact abstract and the PDF of your paper with the Artifact
+ Appendix attached using the AE submission website (Link TBA).
+
+<p>
+ The (brief) abstract should describe your artifact, the minimal hardware and
+ software requirements, how it supports your paper, how it can be validated and
+ what the expected result is. Do not forget to specify if you use any
+ proprietary software or hardware! This abstract will be used by evaluators
+ during artifact bidding to make sure that they have an access to appropriate
+ hardware and software and have required skills.
+
+
+<p>
+Most of the time, the authors make their artifacts available to the evaluators via GitHub,
+GitLab, BitBucket or similar private or public service. Public artifact sharing allows
+optional "open evaluation" which we have successfully validated at <a href="https://adapt-workshop.org">ADAPT'16</a>
+and <a href="https://cKnowledge.org/request">ASPLOS-REQUEST'18</a>.
+It allows the authors to quickly fix encountered issues during evaluation
+before submitting the final version to archival repositories.
+ Other acceptable methods include:
+ <ul>
+  <li>
+   Using zip or tar files with all related code and data, particularly when your artifact
+   should be rebuilt on reviewers' machines (for example to have a non-virtualized access to a specific hardware).
+  </li>
+  <li>
+   Using <a href="https://www.docker.com">Docker</a>, <a href="https://www.virtualbox.org">Virtual Box</a> and other containers and VM images.
+  </li>
+  <li>
+   Arranging remote access to the authors' machine with the pre-installed software
+   - this is an exceptional cases when rare or proprietary software and hardware is used.
+   You will need to privately send the access information to the AE chairs.
+  </li>
+ </ul>
+
+<p>
+ Note that your artifacts will receive the ACM "artifact available" badge
+ <b>only if</b> they have been placed on any publicly accessible archival repository
+ such as <a href="https://zenodo.org">Zenodo</a>, <a href="https://figshare.com">FigShare</a>,
+ and <a href="http://datadryad.org">Dryad</a>.
+ You must provide a DOI automatically assigned to your artifact by these repositories
+ in your final Artifact Appendix!
+
+</div>
+
+<!------------------------------------------------>
+<div id="vspace8"></div>
+<div id="vspace8"></div>
+<h4>Artifact review</h4>
+
+<div style="margin-left:20px;">
+
+<p>
+  Reviewers will need to read a paper and then thoroughly go through the
+  Artifact Appendix step-by-step to evaluate a given artifact based on
+  a set of <a href="https://ctuning.org/ae/reviewing.html">reviewing guidelines</a>.
+
+<p>
+  Reviewers are strongly encouraged to communicate with the authors about
+  encountered issues immediately (and anonymously) via the HotCRP submission
+  website to give the authors time to resolve all problems! Note that our
+  philosophy of artifact evaluation is not to fail problematic artifacts but to
+  help the authors improve their artifacts (at least publicly available ones)
+  and pass the evaluation!
+
+<p>
+  In the end, AE chairs will decide on a set of the standard ACM reproducibility
+  badges to award to a given artifact based on all reviews as well as the
+  authors' responses.
+</div>
+
+<!------------------------------------------------>
+<!--div id="vspace8"></div>
+<div id="vspace8"></div>
+<h4>ACM reproducibility badges</h4>
+
+<div style="margin-left:20px;">
+
+
+
+</div-->
 
 <!------------------------------------------------>
 <div id="vspace8"></div>

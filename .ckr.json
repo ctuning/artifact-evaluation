@@ -7,16 +7,10 @@
     "desc": "CK components for the <a href=\"http://cTuning.org/ae\">Artifact Evaluation initiative</a> at systems, AI and ML conferences.",
     "repo_deps": [
       {
-        "repo_uoa": "ck-env"
+        "repo_uoa": "ck-mlops"
       },
       {
         "repo_uoa": "ck-dissemination-modules"
-      },
-      {
-        "repo_uoa": "ck-web"
-      },
-      {
-        "repo_uoa": "ck-docker"
       }
     ],
     "shared": "git",

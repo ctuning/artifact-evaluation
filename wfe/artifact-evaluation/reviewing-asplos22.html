@@ -1,0 +1,135 @@
+<br>
+
+This document provides the reviewer guidelines to evaluate artifacts for ASPLOS 2022.
+
+<!-------------------------------------------------------------------------------------------->
+<h2>Reviewing process</h2>
+
+<div style="margin-left:20px;">
+
+  <p>
+  Shortly after the artifact submission deadline, the AE committee members 
+  will bid on artifacts they would like to review based on their competencies 
+  and the information provided in the artifact abstract such as software and hardware dependencies
+  while avoiding possible conflicts of interest.
+
+  Within a few days, AE chairs will make the final selection of reviewers
+  to ensure at least two or more reviewers per artifact.
+
+  <p> 
+  Reviewers will then have approximately 2 weeks to perform an
+  initial 'smoke-test' to check that the artifact runs OK.
+  Once the artifact passes this first test, reviewers will continue with the 
+  full evaluation. 
+
+  Reviewers are strongly encouraged to communicate with the authors about encountered issues 
+  immediatelly (and anonymously) via the HotCRP submission website to give the authors time to 
+  resolve all problems! Note that our philosophy of artifact evaluation is not to fail problematic artifacts 
+  but to help the authors improve their artifacts (at least publicly available ones) and pass the evaluation!
+
+  <p>
+  In the end, AE chairs will decide on a set of the standard ACM reproducibility badges (see below)
+  to award to a given artifact based on all reviews as well as the authors' responses.
+  Such badges can be printed on the 1st page of the paper and can be made available as meta information in some Digital Libraries 
+  such as the <a href="https://dl.acm.org">ACM DL</a>.
+
+  <p>
+  Authors and reviewers are encouraged to check the <a href="$#ck_root_page_url#$faq$#ck_page_suffix#$">AE FAQ</a>
+  and the <a href="https://groups.google.com/forum/#!forum/artifact-evaluation">dedicated AE google group</a> in case of questions or suggestions.
+
+</div>
+
+<!-------------------------------------------------------------------------------------------->
+<h2>Milestone 1: Kick-the-Tires</h2>
+
+  <p>
+  The goal of this initial phase is to ensure that the artifact works as expected,
+  e.g. no important files are missing and the artifact can be installed and run as expected. 
+  At this stage, reviewers are expected to read the paper and the Artifact Appendix, 
+  install the artifact and check that they can answer the following questions:
+
+  <ul>
+    <li>
+      What are the main contributions of the paper and how are these supported by the artifact?
+    </li>
+    <li>
+      What are the specific experimental claims of the paper (e.g. figures, tables) that the artifact should support? 
+    </li>
+    <li>
+      Are you able to install and test the artifact as described in the documentation?
+    </li>
+    <li>
+      Do you know how to reproduce each experimental claim (from 2nd question) using the artifact?
+    </li>
+  </ul>  
+  <p>
+  On HotCRP, the reviewers will then add a brief note of success or ask clarifying questions.
+  The authors will have a chance to fix bugs or provide further clarifications. 
+
+
+<!-------------------------------------------------------------------------------------------->
+<h2>Milestone 2: Full Evaluation</h2>
+
+  <p>
+  After the initial smoke test, reviewers will proceed with the full artifact
+  evaluation and write a complete review.
+  
+  The review should address the following questions:
+  <ul>
+    <li>Q1: Is the artifact complete, i.e. are all components relevant to evaluation included?</li>
+    <p><i>Note that proprietary artifacts need not be included. If they are required
+to exercise the package then this should be documented, along with instructions
+on how to obtain them. Proxies for proprietary data should be included so as to
+demonstrate the analysis.</i>
+    <li>Q2: Is the artifact well documented, i.e. enough to understand, install and evaluate artifact?</li>
+    <li>Q3: Is the artifact exercisable, i.e. it includes scripts and/or software to perform appropriate experiments and generate results? </li>
+    <li>Q4: Is the artifact consistent, i.e. is it relevant to the associated paper and contributes in some inherent way to the generation of its main results?
+    </li>
+    <li>Q5: Are all artifacts related to this paper publicly available? 
+    </li>
+  </ul> 
+  
+  <p>
+  Where a question is not applicable to a particular artifact, it should be disregard
+  and the artifact evaluated as appropriate. The reviews should include 
+  a specific recommendation for which badge(s) to award. 
+  Once reviews are submitted, they will be made available to the other reviewers
+  in order to have a discussion towards a decision. 
+  Reviews can be revised based on the discussions or feedback from the authors. 
+  
+  <p>
+  To award the "Artifacts Evaluated - Functional" badge, the artifact should
+  validate at least some results from the paper, e.g. using a small/sample data.
+  
+
+
+  <p>
+  The author-created artifacts relevant to this paper will receive an
+  ACM "Artifact Available" badge <b>only if</b> they have been placed on a
+  publicly accessible archival repository such as <a
+  href="https://zenodo.org">Zenodo</a>, <a
+  href="https://figshare.com">FigShare</a>, and <a
+  href="http://datadryad.org">Dryad</a>. A DOI will be then assigned to their
+  artifacts and must be provided in the Artifact Appendix!
+
+  <p>
+  ACM does not mandate the use of above repositories. However, publisher repositories,
+  institutional repositories, or open commercial repositories are acceptable
+  <b>only</b> if they have a declared plan to enable permanent accessibility!
+  <b>Personal web pages, GitHub, GitLab and BitBucket are not acceptable for this purpose.</b>
+
+  <p>
+  Artifacts do not need to have been formally evaluated in order for an article
+  to receive this badge. In addition, they need not be complete in the sense
+  described above. They simply need to be relevant to the study and add value
+  beyond the text in the article. Such artifacts could be something as simple
+  as the data from which the figures are drawn, or as complex as a complete
+  software system under study.
+ 
+  <p>
+  The authors can provide the DOI at the very end of the AE process 
+  and use GitHub or any other convenient way to access their artifacts 
+  during AE.
+
+<br>
+<br>

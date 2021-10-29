@@ -76,60 +76,90 @@ This document provides the reviewer guidelines to evaluate artifacts for ASPLOS 
   
   The review should address the following questions:
   <ul>
-    <li>Q1: Is the artifact complete, i.e. are all components relevant to evaluation included?</li>
+    <li>Q1: Are all artifacts related to this paper publicly available? 
+    </li>
+    <li>Q2: Is the artifact complete, i.e. are all components relevant to evaluation included?</li>
     <p><i>Note that proprietary artifacts need not be included. If they are required
 to exercise the package then this should be documented, along with instructions
 on how to obtain them. Proxies for proprietary data should be included so as to
 demonstrate the analysis.</i>
-    <li>Q2: Is the artifact well documented, i.e. enough to understand, install and evaluate artifact?</li>
-    <li>Q3: Is the artifact exercisable, i.e. it includes scripts and/or software to perform appropriate experiments and generate results? </li>
-    <li>Q4: Is the artifact consistent, i.e. is it relevant to the associated paper and contributes in some inherent way to the generation of its main results?
+    <li>Q3: Is the artifact well documented, i.e. enough to understand, install and evaluate artifact?</li>
+    <li>Q4: Is the artifact exercisable, i.e. it includes scripts and/or software to perform appropriate experiments and generate results? </li>
+    <li>Q5: Is the artifact consistent, i.e. is it relevant to the associated paper and contributes in some inherent way to the generation of its main results?
     </li>
-    <li>Q5: Are all artifacts related to this paper publicly available? 
+    <li>Q6: Was it possible to validate the key results from the paper using provided artifacts? 
+      <p><i>Report any unexpected artifact behavior (depends on the type of artifact such as unexpected output, scalability issues, crashes, performance variation, etc).</i>
     </li>
+    
   </ul> 
   
   <p>
   Where a question is not applicable to a particular artifact, it should be disregard
-  and the artifact evaluated as appropriate. The reviews should include 
-  a specific recommendation for which badge(s) to award. 
+  and the artifact evaluated as appropriate. 
   Once reviews are submitted, they will be made available to the other reviewers
   in order to have a discussion towards a decision. 
   Reviews can be revised based on the discussions or feedback from the authors. 
   
-  <p>
-  To award the "Artifacts Evaluated - Functional" badge, the artifact should
-  validate at least some results from the paper, e.g. using a small/sample data.
+  <h4>Badge recommendation</h4>
+  The reviews should include a specific recommendation for which badge(s) to award:
+
   
+  <table border="0" cellpadding="5" cellspacing="0">
+    <tr>
+      <tr>
+        <td><img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/artifacts_available_dl.jpg" height="64"></td>
+        <td>
+          The author-created artifacts relevant to this paper will receive an
+          ACM <i><b>Artifact Available</b></i> badge <i>only if</i> they have been placed on a
+          publicly accessible archival repository such as <a
+          href="https://zenodo.org">Zenodo</a>, <a
+          href="https://figshare.com">FigShare</a>, and <a
+          href="http://datadryad.org">Dryad</a>. A DOI will be then assigned to their
+          artifacts and must be provided in the Artifact Appendix!<br>
 
+          ACM does not mandate the use of above repositories. However, publisher repositories,
+          institutional repositories, or open commercial repositories are acceptable
+          <b>only</b> if they have a declared plan to enable permanent accessibility!
+          <b>Personal web pages, GitHub, GitLab and BitBucket are not acceptable for this purpose.</b><br>
 
-  <p>
-  The author-created artifacts relevant to this paper will receive an
-  ACM "Artifact Available" badge <b>only if</b> they have been placed on a
-  publicly accessible archival repository such as <a
-  href="https://zenodo.org">Zenodo</a>, <a
-  href="https://figshare.com">FigShare</a>, and <a
-  href="http://datadryad.org">Dryad</a>. A DOI will be then assigned to their
-  artifacts and must be provided in the Artifact Appendix!
+          Artifacts do not need to have been formally evaluated in order for an article
+          to receive this badge. In addition, they need not be complete in the sense
+          described above. They simply need to be relevant to the study and add value
+          beyond the text in the article. Such artifacts could be something as simple
+          as the data from which the figures are drawn, or as complex as a complete
+          software system under study.<br>
+         
+          The authors can provide the DOI at the very end of the AE process 
+          and use GitHub or any other convenient way to access their artifacts 
+          during AE.
 
-  <p>
-  ACM does not mandate the use of above repositories. However, publisher repositories,
-  institutional repositories, or open commercial repositories are acceptable
-  <b>only</b> if they have a declared plan to enable permanent accessibility!
-  <b>Personal web pages, GitHub, GitLab and BitBucket are not acceptable for this purpose.</b>
+        </td>
+      </tr>
+      <td><img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/artifacts_evaluated_functional_dl.jpg" height="64"></td>
+      <td>
+        The artifacts associated with the paper will receive an <i><b>Artifacts Evaluated
+        - Functional</b></i> badge <i>only if</i> they are found to be documented, consistent,
+        complete, exercisable, and include appropriate evidence of verification and
+        validation.<br>
 
-  <p>
-  Artifacts do not need to have been formally evaluated in order for an article
-  to receive this badge. In addition, they need not be complete in the sense
-  described above. They simply need to be relevant to the study and add value
-  beyond the text in the article. Such artifacts could be something as simple
-  as the data from which the figures are drawn, or as complex as a complete
-  software system under study.
- 
-  <p>
-  The authors can provide the DOI at the very end of the AE process 
-  and use GitHub or any other convenient way to access their artifacts 
-  during AE.
+        We usually ask the authors to provide a small/sample data set to validate at least
+        some results from the paper to make sure that their artifact is functional.
 
-<br>
-<br>
+      </td>
+    </tr>
+    <tr>
+      <td><img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/results_reproduced_dl.jpg" height="64"></td>
+      <td>
+        The artifacts associated with the paper will receive a
+        <i><b>Results Reproduced</b></i> badge <i>only if</i> the main results 
+        of the paper have been obtained in a subsequent study 
+        by a person or team other than the authors, using, 
+        in part, artifacts provided by the author.<br>
+
+        Note that since it may take weeks and even months to rerun some complex experiments 
+       such as deep learning model training, it may not be possible to award this badge to 
+       every artifact.
+      </td>
+    </tr>
+    
+  </table>

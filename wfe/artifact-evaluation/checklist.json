@@ -1,7 +1,7 @@
 {
- "template_file":"resources/_template.html",
-
  "title":"Unified Artifact Appendix and Checklist",
+
+ "raw": "yes",
 
  "menu":["appendix"]
 }

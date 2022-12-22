@@ -1,3 +1,11 @@
+***News: we have moved the main AE pages [here](https://github.com/mlcommons/ck/tree/master/docs/artifact-evaluation) 
+   to be maintained by the [open MLCommons taskforce on education and reproducibility](https://github.com/mlcommons/ck/blob/master/docs/mlperf-education-workgroup.md).***
+
+<br>
+<br>
+<br>
+
+
 [![compatibility](https://github.com/ctuning/ck-guide-images/blob/master/ck-compatible.svg)](https://github.com/ctuning/ck)
 [![DOI](https://zenodo.org/badge/42662522.svg)](https://zenodo.org/badge/latestdoi/42662522)
 

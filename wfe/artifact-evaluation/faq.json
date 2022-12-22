@@ -1,7 +1,7 @@
 {
- "template_file":"resources/_template.html",
-
  "title":"Frequently asked questions",
+
+ "raw": "yes",
 
  "menu":["faq"]
 }

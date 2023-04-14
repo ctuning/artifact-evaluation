@@ -85,11 +85,11 @@ We promote collaborative and reproducible research where artifacts and workflows
 with papers in a common format to let the community quickly reuse them and thus
 accelerate open science!
 
-You can find all papers with artifacts shared in the CK format [here](https://cknowledge.io/?q=%22reproduced-papers%22%20AND%20%22portable-workflow-ck%22).
+You can find all papers with artifacts shared in the CK format [here](https://cknow.io/?q=%22reproduced-papers%22%20AND%20%22portable-workflow-ck%22).
 
 Please check the [ACM proceedings](https://doi.org/10.1145/3229762) 
 of our [1st ACM ReQUEST tournament](https://portalparts.acm.org/3230000/3229762/fm/frontmatter.pdf) 
-with a [live scoreboard](https://cknowledge.io/c/result/pareto-efficient-ai-co-design-tournament-request-acm-asplos-2018/) 
+with a [live scoreboard](https://cKnow.io/c/result/pareto-efficient-ai-co-design-tournament-request-acm-asplos-2018/) 
 and all artifacts and workflows shared in a [common CK format](https://github.com/ctuning/ck-request-asplos18-results).
 
 You can also check this reusable and customizable artifact from [CGO'17](http://cgo.org/cgo2017) 

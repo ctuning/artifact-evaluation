@@ -2,7 +2,7 @@
 
  Copyright 2020 cKnowledge
 
- Developer(s): Grigori Fursin, https://cKnowledge.io/@gfursin
+ Developer(s): Grigori Fursin, https://cKnowledge.org/gfursin
 
 */
 

@@ -19,11 +19,11 @@
 <h4>Important dates</h4>
 
 <div style="margin-left:20px;">
- Paper rebuttal/Revision: <i>June 26 – July 7, 2023</i><br>
- Paper decision: <i>July 24, 2023</i><br>
- Artifact submission: <i>TBA</i><br>
- Artifact decision: <i>TBA</i><br>
- Conference: <a href="https://microarch.org/micro56/">October 28 - November 1, 2023</a> (Toronto, Canada)<br>
+ Paper rebuttal/Revision: <strike>June 26 – July 7, 2023</strike><br>
+ Paper decision: <strike>July 24, 2023</strike><br>
+ Artifact submission deadline: <b>August 7, 2023 AoE</b><br>
+ Artifact decision: <b>September 14, 2023</b><br>
+ Conference: <b><a href="https://microarch.org/micro56">October 28 - November 1, 2023</a></b> (Toronto, Canada)<br>
 </div>
 
 <!------------------------------------------------>
@@ -35,157 +35,11 @@
  <ul>
   <li><a href="https://people.csail.mit.edu/suvinay/about.html">Suvinay Subramanian</a> (Google)<br>
   <li><a href="https://www.linkedin.com/in/karthik-murthy-b1b1314">Karthik Murthy (Google)<br>
-  <li><a href="https://cKnowledge.org/gfursin">Grigori Fursin</a> (cTuning foundation, cKnowledge Ltd, MLCommons)<br>
+  <li><a href="https://cKnowledge.org/gfursin">Grigori Fursin</a> (cTuning.org, cKnowledge.org, MLCommons)<br>
  </ul>
 </div>
 
 
-
-<!------------------------------------------------>
-<div id="vspace8"></div>
-<div id="vspace8"></div>
-<h4>Artifact evaluation process</h4>
-
-<div style="margin-left:20px;">
-
-<p>
- Artifact evaluation promotes reproducibility of experimental results and
- encourages code and data sharing to help the community quickly validate and
- compare alternative approaches. Authors of accepted papers are invited to
- formally describe supporting materials (code, data, models, workflows, results)
- using the
- <a href="https://github.com/mlcommons/ck/blob/master/docs/artifact-evaluation/template/ae.tex">standard Artifact Appendix template</a>
- and submit it with the paper and materials for evaluation.
-
-<div id="vspace4"></div>
-<p>
- This submission is <b>voluntary and will not influence</b> the final
- decision regarding the papers. We want to help the authors validate
- experimental results from their accepted papers by an independent AE Committee
- in a collaborative way while helping readers find articles with available,
- functional, and validated artifacts!
-
-
-
-<p>
- The papers that successfully go through AE will receive a set of
- <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">ACM badges</a>
- of approval printed on the papers themselves and available as meta information
- in the ACM Digital Library (it is now possible to search for papers with
- specific badges in ACM DL). Authors of such papers will have an option to
- include up to 2 pages of their Artifact Appendix to the camera-ready paper.
-
-  <table border="0">
-   <tr>
-    <td>
-     <img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/artifacts_available_dl.jpg" height="64">
-    </td>
-    <td>
-     Artifact available
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/artifacts_evaluated_functional_dl.jpg" height="64">
-    </td>
-    <td>
-     Artifact evaluated - functional
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/results_reproduced_dl.jpg" height="64">
-    </td>
-    <td>
-     Results reproduced
-    </td>
-   </tr>
-  </table>
-
-
-<p>
-<i>
-Since criteria for the ACM "Artifacts Evaluated – Reusable" badge are quite vague, we partnered with the 
-<a href="https://github.com/mlcommons/ck/blob/master/docs/taskforce.md">MLCommons task force on automation and reproducibility</a> 
-to add their <a href="https://github.com/mlcommons/ck/blob/master/docs/README.md">unified interface (MLCommons CM)</a> 
-to the submitted artifacts to make them more portable, reproducible and reusable. 
-This interface was successfully validated at 
-the <a href="https://github.com/mlcommons/ck/blob/master/docs/tutorials/sc22-scc-mlperf.md">Student Cluster Competition at SuperComputing'23</a>
-and we would like to test it as a possible criteria to obtain the ACM "Artifacts Evaluated – Reusable" badge.
-Our ultimate goal is to provide a common interface to evaluate and reuse all artifacts across diverse and rapidly evolving software and hardware. 
-We suggest the authors to join the <a href="https://discord.gg/JjWNWXKxwT">public Discord server for this task force</a> 
-to get free help from the community and MLCommons to add this interface to their artifacts before evaluation. The authors can also try to add this unified interface themselves 
-following <a href="https://github.com/mlcommons/ck/blob/master/docs/tutorials/common-interface-to-reproduce-research-projects.md">this tutorial</a>.
-Artifacts with a unified interface will receive an extra ACM "Artifacts Evaluated – Reusable" badge:<br>
-
-  <table border="0">
-   <tr>
-    <td>
-     <img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/artifacts_evaluated_reusable_dl.jpg" height="64">
-    </td>
-    <td>
-     Artifacts Evaluated – Reusable
-    </td>
-   </tr>
-  </table>
-
-</i>
-
-</div>
-
-
-<!------------------------------------------------>
-<div id="vspace8"></div>
-<div id="vspace8"></div>
-<h4>Artifact preparation</h4>
-
-<div style="margin-left:20px;">
-
-<p>
- You need to prepare the <a href="https://github.com/mlcommons/ck/blob/master/docs/artifact-evaluation/template/ae.tex">Artifact Appendix</a>
- describing all software, hardware and data set dependencies, key results to be reproduced, and how to prepare, run and validate experiments.
-
- We suggest the authors and evaluators to join our <a href="https://discord.gg/JjWNWXKxwT">public Discord server for automation and reproducibility</a> 
- to get free help from the community and MLCommons to prepare and submit your artifacts (#general and #artifact-evaluation channels).
-
- Though it is relatively intuitive and based on our
- <a href="$#ck_root_page_url#$prior_ae$#ck_page_suffix#$">past AE experience and your feedback</a>,
- we strongly encourage you to check the
-  the <a href="https://github.com/mlcommons/ck/blob/master/docs/artifact-evaluation/checklist.md">Artifact Appendix guide</a>,
-  <a href="https://github.com/mlcommons/ck/blob/master/docs/artifact-evaluation/reviewing.md">artifact reviewing guide</a>,
-  the <a href="https://www.sigplan.org/Resources/EmpiricalEvaluation">SIGPLAN Empirical Evaluation Guidelines</a>,
-  the <a href="https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist.pdf">NeurIPS reproducibility checklist</a>
-  and <a href="https://github.com/mlcommons/ck/blob/master/docs/artifact-evaluation/faq.md">AE FAQs</a> before submitting artifacts for evaluation!
-
- You can find the examples of Artifact Appendices
- in the following <a href="https://cknow.io/reproduced-papers">reproduced papers</a>.
-
- <p>
- <i>Since the AE methodology is slightly different at different conferences, we introduced the unified Artifact Appendix
- with the Reproducibility Checklist to help readers understand what was evaluated and how! Furthermore, artifact evaluation
- sometimes help to discover some minor mistakes in the accepted paper -
- in such case you have a chance to add related notes and corrections
- in the Artifact Appendix of your camera-ready paper!</i>
-
-<p>
- We strongly recommend you to provide at least some scripts to build your workflow,
- all inputs to run your workflow, and some expected outputs to validate results from your paper.
- You can then describe the steps to evaluate your artifact
- using <a href="https://jupyter.org">Jupyter Notebooks</a>
- or plain README files.
- <b>You can skip this step if you want to share your artifacts without the validation of experimental results</b> -
- in such case your paper can still be entitled for the "artifact available" badge!
-
-<p>
-We encourage you to participate in our pilot project with the <a href="https://github.com/mlcommons/ck/blob/master/docs/taskforce.md">MLCommons task force on automation and reproducibility</a>
-to provide a common interface for all artifacts in a non-intrusive way and thus make it easier to prepare, run, reproduce and reuse experiments using 
-the <a href="https://github.com/mlcommons/ck/blob/master/docs/README.md">MLCommons CM automation language</a>.
-It was successfully validated at the <a href="https://github.com/mlcommons/ck/blob/master/docs/tutorials/sc22-scc-mlperf.md">Student Cluster Competition at SuperComputing'23</a>
-and we would like to test it as a possible criteria to obtain the ACM "Artifacts Evaluated – Reusable" badge.
-You will get free help from the community and MLCommons via <a href="https://discord.gg/JjWNWXKxwT">public Discord server</a> 
-or you can try to add this interface yourself using <a href="https://github.com/mlcommons/ck/blob/master/docs/tutorials/common-interface-to-reproduce-research-projects.md">this tutorial</a>.
-
-</div>
 
 <!------------------------------------------------>
 <div id="vspace8"></div>
@@ -195,29 +49,49 @@ or you can try to add this interface yourself using <a href="https://github.com/
 <div style="margin-left:20px;">
 
 <p>
- Submit the artifact abstract and the PDF of your paper with the Artifact
- Appendix attached using the <a href="https://micro23-ae.hotcrp.com">HotCRP submission website for MICRO 2023 AE</a>.
+ Artifact evaluation promotes reproducibility of experimental results and
+ encourages code and data sharing. 
 
 <p>
- The (brief) abstract should describe your artifact, the minimal hardware and
- software requirements, how it supports your paper, how it can be validated and
- what the expected result is. Do not forget to specify if you use any
- proprietary software or hardware! This abstract will be used by evaluators
- during artifact bidding to make sure that they have an access to appropriate
- hardware and software and have required skills.
+ The authors will need to fill in this <a href="https://github.com/mlcommons/ck/blob/master/docs/artifact-evaluation/template/ae.tex">Artifact Appendix</a>
+ describing the minimal software, hardware and data set requirements, and explaining how to prepare, run and reproduce key experiments.
+
+ The Artifact Appendix should be appended to the accepted paper and submitted for evaluation via <a href="https://micro23-ae.hotcrp.com">MICRO'23 AE HotCRP website</a>.
+
+
+<p> 
+ We introduced this Artifact Appendix to <a href="https://learning.acm.org/techtalks/reproducibility">unify the description of experimental setups
+ and results across different conferences</a>.
+ Though it is relatively intuitive and based on the feedback from the community, we encourage the authors to check
+ the <a href="https://github.com/mlcommons/ck/blob/master/docs/artifact-evaluation/checklist.md">Artifact Appendix guide</a>,
+ <a href="https://github.com/mlcommons/ck/blob/master/docs/artifact-evaluation/reviewing.md">artifact reviewing guide</a>,
+ the <a href="https://www.sigplan.org/Resources/EmpiricalEvaluation">SIGPLAN Empirical Evaluation Guidelines</a>,
+ the <a href="https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist.pdf">NeurIPS reproducibility checklist</a>,
+ <a href="https://github.com/mlcommons/ck/blob/master/docs/artifact-evaluation/faq.md">AE FAQs</a> 
+ and <a href="https://cknow.io/reproduced-papers">Artifact Appendices from past papers</a> before submitting artifacts for evaluation.
 
 <p>
-If you artifacts are already publicly available via GitHub or GitLab, 
-you can choose an "open evaluation" option to 
-via our <a href="https://access.cKnowledge.org">reproducibility challenges</a>
-It allows the authors to communicate with the community and quickly fix encountered issues 
+ This submission is <b>voluntary and will not influence</b> the final
+ decision regarding the papers - our goal is to help the authors validate
+ their experiments by an independent AE Committee in a collaborative and constructive way.
+ Furthermore, the authors can add notes and corrections to the Artifact Appendix
+ if some mistakes were found during artifact evaluation.
+
+<p>
+ The authors are welcome to join the <a href="https://discord.gg/JjWNWXKxwT">public Discord server for automation and reproducibility</a> 
+ to get in touch with Artifact Evaluation chairs and get help with the preparation and submission of their artifacts (#general and #artifact-evaluation channels).
+ The authors will communicate with evaluators via HotCRP after the submission.
+
+<p>
+We suggest the authors to make their artifacts available for evaluation via GitHub or similar public or private service.
+Public artifact sharing allows the authors to quickly fix encountered issues during evaluation
 before submitting the final version to archival repositories.
+Other acceptable methods include:
 
- Other acceptable methods include:
  <ul>
   <li>
-   Using zip or tar files with all related code and data, particularly when your artifact
-   should be rebuilt on reviewers' machines (for example to have a non-virtualized access to a specific hardware).
+   Using zip or tar files with all related code and data, particularly when code
+   must be rebuilt on reviewers' machines (for example to have a non-virtualized access to some specific hardware).
   </li>
   <li>
    Using <a href="https://www.docker.com">Docker</a>, <a href="https://www.virtualbox.org">Virtual Box</a> and other containers and VM images.
@@ -225,44 +99,128 @@ before submitting the final version to archival repositories.
   <li>
    Arranging remote access to the authors' machine with the pre-installed software
    - this is an exceptional cases when rare or proprietary software and hardware is used.
-   You will need to privately send the access information to the AE chairs.
+   The authors will need to privately send the access information to the AE chairs.
   </li>
  </ul>
 
+
+<p> 
+ The papers that successfully go through AE will receive a set of
+ <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">ACM badges</a>
+ of approval printed on the papers themselves and available as meta information
+ in the ACM Digital Library (it is now possible to search for papers with
+ specific badges in the ACM DL). Authors of such papers will have an option to
+ include up to 2 pages of their Artifact Appendix to the camera-ready paper.
+
 <p>
- Note that your artifacts will receive the ACM "artifact available" badge
- <b>only if</b> they have been placed on any publicly accessible archival repository
- such as <a href="https://zenodo.org">Zenodo</a>, <a href="https://figshare.com">FigShare</a>,
- and <a href="http://datadryad.org">Dryad</a>.
- You will need to provide a DOI assigned by those repositories in your final Artifact Appendix
- in the very end of the artifact evaluation process.
+  <br>
+  <table border="1" cellpadding="10" cellspacing="0">
+   <tr>
+    <td>
+     <img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/artifacts_available_dl.jpg" height="64">
+    </td>
+    <td align="center">
+     Artifact available
+    </td>
+    <td>
+     <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">General ACM guidelines</a> 
+      - artifacts will receive the ACM "artifact available" badge
+      <b>only if</b> they have been placed on any publicly accessible archival repository
+      such as <a href="https://zenodo.org">Zenodo</a>, <a href="https://figshare.com">FigShare</a>,
+      and <a href="http://datadryad.org">Dryad</a> with a DOI. 
+      The authors can provide a DOI of the final artifact at the very end of the AE process.
+    </td>
+   </tr>
+
+   <tr>
+    <td>
+     <img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/artifacts_evaluated_functional_dl.jpg" height="64">
+    </td>
+    <td align="center">
+     Artifact evaluated - functional
+    </td>
+    <td>
+     <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">General ACM guidelines</a>.
+    </td>
+   </tr>
+
+   <tr>
+    <td>
+     <img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/artifacts_evaluated_reusable_dl.jpg" height="64">
+    </td>
+    <td align="center">
+     Artifacts evaluated – reusable<br><b>(pilot&nbsp;project)</b>
+    </td>
+    <td>
+<p>
+<i>
+Since the criteria for the ACM "Artifacts Evaluated – Reusable" badge are very vague, we have partnered with the 
+<a href="https://github.com/mlcommons/ck/blob/master/docs/taskforce.md">MLCommons task force on automation and reproducibility</a> 
+to help the authors add the <a href="https://doi.org/10.5281/zenodo.8105339">unified and technology-agnostic Collective Mind automation interface (MLCommons CM)</a> 
+to the shared artifacts in a non-intrusive way. 
+
+<p>
+This interface was already successfully validated to automate and unify the <a href="https://github.com/mlcommons/ck/blob/master/docs/tutorials/sc22-scc-mlperf.md">Student Cluster Competition at SuperComputing'22</a>
+and diverse <a href="https://access.cknowledge.org/playground">MLPerf benchmark submissions</a>.
+
+That is why we would like to test it as a possible criteria to obtain the ACM "Artifacts Evaluated – Reusable" badge.
+
+Our goal is to help the community access diverse research projects, reproduce results and reuse artifacts
+in a unified and automated way across continuously evolving software and hardware.
+
+
+<p>The authors will get free help from MLCommons and the community via the <a href="https://discord.gg/JjWNWXKxwT">public Discord server</a> 
+and/or can try to add the MLCommons CM interface to their artifacts themselves using this 
+<a href="https://github.com/mlcommons/ck/blob/master/docs/tutorials/common-interface-to-reproduce-research-projects.md">tutorial</a>.
+
+    </td>
+   </tr>
+
+
+   <tr>
+    <td>
+     <img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/results_reproduced_dl.jpg" height="64">
+    </td>
+    <td align="center">
+     Results reproduced
+    </td>
+    <td>
+     <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">General ACM guidelines</a> 
+      and our <a href="https://github.com/mlcommons/ck/blob/master/docs/artifact-evaluation/reviewing.md">extended guidelines</a>.   
+    </td>
+   </tr>
+
+  </table>
+
+</i>
+
 
 </div>
+
 
 <!------------------------------------------------>
 <div id="vspace8"></div>
 <div id="vspace8"></div>
-<h4>Artifact review (single-blind or public)</h4>
+<h4>Artifact reviewing process (single-blind or public)</h4>
 
 <div style="margin-left:20px;">
 
 <p>
-  Reviewers will need to read a paper and then thoroughly go through the
-  Artifact Appendix step-by-step to evaluate a given artifact based on
-  a set of <a href="https://github.com/mlcommons/ck/blob/master/docs/artifact-evaluation/reviewing.md">reviewing guidelines</a>.
+  Evaluators will read a paper and then go through the Artifact Appendix to evaluate artifacts and reproduce experiments
+  based on <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">general ACM guidelines</a> 
+  and our <a href="https://github.com/mlcommons/ck/blob/master/docs/artifact-evaluation/reviewing.md">extended guidelines</a>.
 
 <p>
-  Reviewers are strongly encouraged to communicate with the authors about
-  encountered issues immediately (and anonymously) via the <a href="https://micro23-ae.hotcrp.com">HotCRP submission website</a> 
-  to give the authors time to resolve all problems! Note that our
-  philosophy of artifact evaluation is not to fail problematic artifacts but to
-  help the authors improve their artifacts (at least publicly available ones)
-  and pass the evaluation!
+  Reviewers will communicate with the authors about any encountered issue immediately (and anonymously) 
+  via the <a href="https://micro23-ae.hotcrp.com">HotCRP submission website</a> 
+  to give the authors time to resolve all problems! Note that our philosophy 
+  is not to fail problematic artifacts but to help the authors improve 
+  their public artifacts and pass the evaluation!
 
 <p>
-  In the end, AE chairs will decide on a set of the standard ACM reproducibility
-  badges to award to a given artifact based on all reviews as well as the
-  authors' responses.
+  In the end, AE chairs will communicate with the authors and decide on a set of the standard ACM reproducibility
+  badges to award to a given paper/artifact based on all reviews and the authors' responses.
+
 </div>
 
 <!------------------------------------------------>
@@ -300,3 +258,5 @@ via our <a href="https://discord.gg/JjWNWXKxwT">Discord server</a> and/or the <a
 
 <div id="vspace8"></div>
 <div id="vspace8"></div>
+
+<br>

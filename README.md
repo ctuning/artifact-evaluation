@@ -1,5 +1,5 @@
-***News: we have moved the main AE pages [here](https://github.com/mlcommons/ck/tree/master/docs/artifact-evaluation) 
-   to be maintained by the [open MLCommons taskforce on education and reproducibility](https://github.com/mlcommons/ck/blob/master/docs/mlperf-education-workgroup.md).***
+***News: we have moved all main AE pages to our [MLCommons CM repository](https://github.com/mlcommons/ck/tree/master/docs/artifact-evaluation) 
+   maintained by the [MLCommons taskforce on education and reproducibility](https://github.com/mlcommons/ck/blob/master/docs/taskforce.md).***
 
 <br>
 <br>

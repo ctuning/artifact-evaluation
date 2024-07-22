@@ -1,3 +1,5 @@
+***This page is archived since we deprecated the CK framework and are gradually updating the guidelines for the CM framework (CK2).***
+
 Preparing the CK-based web-site for Artifact Evaluation
 =======================================================
 

@@ -26,8 +26,8 @@ Such badges will be printed on the 1st page of the paper and will be available
 as meta information in the [ACM Digital Library](https://dl.acm.org)
 
 Authors and reviewers are encouraged to check the [AE FAQ](faq.md)
-and contact chairs and the community via our [Discord server for automation and reproducibility](https://discord.gg/JjWNWXKxwT) 
-or the [dedicated AE google group](https://groups.google.com/forum/#!forum/artifact-evaluation)
+and contact chairs and the community via our 
+[dedicated AE google group](https://groups.google.com/forum/#!forum/artifact-evaluation)
 in case of questions or suggestions.
 
 
@@ -153,5 +153,4 @@ When arranged by the event, an artifact can receive a distinguished artifact awa
  with contributions from [Bruce Childers](https://people.cs.pitt.edu/~childers), 
  [Michael Heroux](https://www.sandia.gov/~maherou), 
  [Michela Taufer](https://gcl.cis.udel.edu/personal/taufer) and others.
- It is maintained by the [cTuning foundation](https://cTuning.org/ae) and the 
- [open MLCommons taskforce on automation and reproducibility](https://github.com/mlcommons/ck/blob/master/docs/taskforce.md).*
+ It is maintained by the [cTuning foundation](https://cTuning.org/ae).*

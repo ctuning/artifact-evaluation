@@ -27,10 +27,8 @@
 
 ## Frequently Asked Questions
 
-
 **If you have questions or suggestions which are not addressed here, please feel free 
-to contact the [public MLCommons task force on automation and reproducibility](https://github.com/mlcommons/ck/blob/master/docs/taskforce.md) 
-via this [Discord server](https://discord.gg/JjWNWXKxwT) or post them to the dedicated [AE google group](https://groups.google.com/forum/#!forum/artifact-evaluation).**
+to contact us via public [AE google group](https://groups.google.com/forum/#!forum/artifact-evaluation).**
 
 
 ### What is the difference between Repeatability, Reproducibility and Replicability?
@@ -142,12 +140,8 @@ VM and Docker images - our experience shows that most of the submitted scripts
 are not easy to change, customize or adapt to other platform.
 
 That is why we collaborate with the [open MLCommons taskforce on automation and reproducibility](https://github.com/mlcommons/ck/blob/master/docs/mlperf-education-workgroup.md)
-and [ACM](https://acm.org) to develop a [portable automation framework](https://github.com/mlcommons/ck/tree/master/docs) to make it easier to reproduce experiments
+and [ACM](https://acm.org) to develop a [portable automation framework](https://github.com/mlcommons/ck/tree/master/cm) to make it easier to reproduce experiments
 across continuously changing software, hardware and data.
-
-Please join this [taskforce](https://github.com/mlcommons/ck/blob/master/docs/mlperf-education-workgroup.md)
-or get in touch with [the AE community](https://groups.google.com/forum/#!forum/artifact-evaluation) 
-to discuss how to automate your artifacts and make them more portable and reusable.
 
 
 ### Do I have to make my artifacts public if they pass evaluation?
@@ -180,7 +174,7 @@ There is no universal recipe how many times you should repeat your empirical exp
 since it heavily depends on the type of your experiments, platform and environment. 
 You should then analyze the distribution of execution times as shown in the figure below:
 
-![](https://raw.githubusercontent.com/mlcommons/ck/master/docs/artifact-evaluation/image-994e7359d7760ab1-cropped.png)
+![](https://raw.githubusercontent.com/ctuning/artifact-evaluation/master/docs/image-994e7359d7760ab1-cropped.png)
 If you have more than one expected value (b), it means that you have several
 run-time states in your system (such as adaptive frequency scaling) 
 and you can not use average and reliably compare empirical results.

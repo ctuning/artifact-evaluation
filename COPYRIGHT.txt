@@ -1,4 +1,4 @@
-Copyright (c) 2014-2021 cTuning foundation
+Copyright (c) 2014-2024 cTuning foundation
 
 File xml/acm-artifact-dtd-1.1/acm_artifact_v1.1.dtd - Copyright (c) 2019 ACM
 File xml/example_acm_artifact_description_ppopp.xml - Copyright (c) 2019 ACM

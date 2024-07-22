@@ -4,7 +4,7 @@
 
 
 Here we provide a few informal suggestions to help you fill in the 
-[Unified Artifact Appendix with the Reproducibility Checklist](https://github.com/mlcommons/ck/blob/master/docs/artifact-evaluation/template/ae.tex) 
+[Unified Artifact Appendix with the Reproducibility Checklist]( https://github.com/ctuning/artifact-evaluation/blob/master/docs/template/ae.tex ) 
 for artifact evaluation while avoiding common pitfalls. 
 We've introduced this appendix to [unify the description of experimental setups and results across different conferences](https://learning.acm.org/techtalks/reproducibility).
 
@@ -26,7 +26,7 @@ We've introduced this appendix to [unify the description of experimental setups 
  have appropriate competency and an access to the technology required to evaluate your artifacts. 
  It can also be used as meta information to find your artifacts in Digital Libraries.
 
- ![](https://raw.githubusercontent.com/mlcommons/ck/master/docs/artifact-evaluation/image-general-workflow1.png)
+ ![] (https://raw.githubusercontent.com/ctuning/artifact-evaluation/master/docs/image-general-workflow1.png)
   
 
  Fill in whatever is applicable with some informal keywords and remove unrelated items 
@@ -186,7 +186,7 @@ and benchmarks - you will be informed in case of positive outcome.*
  Describe the experimental workflow and how it is implemented
  and executed, i.e. some OS scripts, 
  [IPython/Jupyter notebook](https://jupyter.org "https://jupyter.org"), 
- [MLCommons CM automation language](https://github.com/mlcommons/ck/tree/master/docs), etc.
+ [MLCommons CM automation language](https://github.com/mlcommons/ck/tree/master/cm), etc.
 
  Check [examples of reproduced papers](https://cknow.io/reproduced-papers "https://cknow.io/reproduced-papers").
   
@@ -241,5 +241,4 @@ or without this interface!
  with contributions from [Bruce Childers](https://people.cs.pitt.edu/~childers),
  [Michael Heroux](https://www.sandia.gov/~maherou), 
  [Michela Taufer](https://gcl.cis.udel.edu/personal/taufer) and other great colleagues.
- It is maintained by the [cTuning foundation](https://cTuning.org/ae) and the 
- [MLCommons taskforce on automation and reproducibility](https://github.com/mlcommons/ck/blob/master/docs/taskforce.md).*
+ It is maintained by the [cTuning foundation](https://cTuning.org/ae).*

@@ -34,7 +34,7 @@ Reviewers will then collaborate with the authors to evaluate their artifacts and
 ## Preparing your Artifact Appendix and the Reproducibility Checklist
 
 
-You need to prepare the [Artifact Appendix](https://github.com/mlcommons/ck/blob/master/docs/artifact-evaluation/template/ae.tex)
+You need to prepare the [Artifact Appendix](https://github.com/ctuning/artifact-evaluation/blob/master/docs/template/ae.tex)
 describing all software, hardware and data set dependencies, key results to be reproduced, and how to prepare, run and validated experiments.
 
 Though it is relatively intuitive and based on our 
@@ -69,8 +69,9 @@ all inputs to run your workflow, and some expected outputs to validate results f
 You can then describe the steps to evaluate your artifact 
 using README files or [Jupyter Notebooks](https://jupyter.org "https://jupyter.org").
 
-Feel free to reuse [portable CM scripts](https://github.com/mlcommons/ck/tree/master/cm-mlops/script) 
-being developed by the MLCommons to automate common steps to prepare and run various benchmarks 
+Feel free to reuse [portable CM scripts](https://access.cknowledge.org/playground/?action=scripts) 
+being developed by the cTuning foundation, cKnowledge.org and MLCommons 
+to automate common steps to prepare and run various benchmarks 
 across continously changing software, hardware and data.
 
 
@@ -129,9 +130,7 @@ using the AE submission website provided by the event.
 
  If you have questions or suggestions, 
  do not hesitate to get in touch with the the AE chairs or the community using 
- the public [Discord server](https://discord.gg/JjWNWXKxwT),
- [Artifact Evaluation google group](https://groups.google.com/forum/#!forum/artifact-evaluation)
- and weekly conf-calls of the [open MLCommons taskforce on automation and reproducibility](https://github.com/mlcommons/ck/blob/master/docs/taskforce.md).
+ the public [[Artifact Evaluation google group](https://groups.google.com/forum/#!forum/artifact-evaluation).
 
 ## Preparing your camera-ready paper
 
@@ -176,5 +175,4 @@ In other cases, AE chairs will tell you how to add stamps to the first page of y
  with contributions from [Bruce Childers](https://people.cs.pitt.edu/~childers "https://people.cs.pitt.edu/~childers"), 
  [Michael Heroux](https://www.sandia.gov/~maherou "https://www.sandia.gov/~maherou"), 
  [Michela Taufer](https://gcl.cis.udel.edu/personal/taufer/ "https://gcl.cis.udel.edu/personal/taufer/") and others.
- It is maintained by the [cTuning foundation](https://cTuning.org/ae) and the 
- [open MLCommons taskforce on automation and reproducibility](https://github.com/mlcommons/ck/blob/master/docs/mlperf-education-workgroup.md).*
+ It is maintained by the [cTuning foundation](https://cTuning.org/ae).*

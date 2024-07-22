@@ -1,106 +1,48 @@
-***News: we have moved all main AE pages to our [MLCommons CM repository](https://github.com/mlcommons/ck/tree/master/docs/artifact-evaluation) 
-   maintained by the [MLCommons taskforce on education and reproducibility](https://github.com/mlcommons/ck/blob/master/docs/taskforce.md).***
-
-<br>
-<br>
-<br>
-
-
 [![compatibility](https://github.com/ctuning/ck-guide-images/blob/master/ck-compatible.svg)](https://github.com/ctuning/ck)
 [![DOI](https://zenodo.org/badge/42662522.svg)](https://zenodo.org/badge/latestdoi/42662522)
 
 Data license: [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
 Code license: [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
-This is a [Collective Knowledge](https://github.com/ctuning/ck) repository 
-with methodology, templates and workflows to reproduce results 
-from published articles (artifact evaluation). See [Artifact Evaluation evaluation website](http://cTuning.org/ae) 
-for more details.
+# Artifact evaluation
 
-Description
-===========
+## Maintainers
 
-Install the Collective Knowledge framework (CK) on Linux, Windows or MacOS 
-as described [here](https://ck.readthedocs.io/en/latest/src/installation.html).
+* [Grigori Fursin](https://cKnowledge.org/gfursin)
 
-Pull this repository:
+## Automation
 
-```bash
-ck pull repo:ck-artifact-evaluation
-```
+We are developing Collective Mind in collaboration with MLCommons to automate reproducibility initiatives and artifact evaluation:
+* [GitHub](https://github.com/mlcommons/ck)
+* [ACM REP'23 keynote about "Collective Mind: toward a common language to facilitate reproducible research and technology transfer"](https://doi.org/10.5281/zenodo.8105339)
+* [White paper about "enabling more efficient and cost-effective AI/ML systems with Collective Mind, virtualized MLOps, MLPerf, Collective Knowledge Playground and reproducible optimization tournaments"](https://arxiv.org/abs/2406.16791)
 
-Note that the dependencies on ck-web and other CK repositories 
-will be automatically resolved by the CK framework!
+## License
 
+### Data
 
-```
- $ ck start web
- $ Open web page: http://localhost:3344/?template=artifact-evaluation&page=index
-```
+* CC BY 4.0 license
 
-That's all!
+### Code
+* Apache 2.0 for the CM framework (2022-cur.)
+* BSD 3-clause for the CK framework (2014-2022)
 
-Note, that it is also possible to create a static website for http://cTuning.org/ae as follows:
+## Copyright
+
+2014-2024 cTuning foundation
 
 
-```
- $ cd `script/compile-website-adapt-workshop`
- $ ./create_website.sh
-```
+## Public discussions
 
-or on Windows:
-```
- $ ck find script/compile-website-adapt-workshop
- $ cd /D {above directory}
- $ create_website.bat
-```
-
-CK will create all static html pages in the "tmp-website" sub-directory
-that you can upload to your web server.
-
-You can generate a list of artifacts with their ACM badges from the HotCRP JSON file as follows:
-```
- $ ck process_hotcrp ae --json_file={downloaded JSON file with decisions from HotCRP}
-```
-
-You can also validate your artifact XML before adding it to the ACM DL as follows:
-```
-```
-
-
-Contributions
-=============
-
-Just send a pull request and contact [Grigori Fursin](mailto:Grigori.Fursin@cTuning.org)
-to upload your updates to cTuning.org/ae .
-
-Public discussions
-==================
 * [Artifact Evaluation google group](https://groups.google.com/forum/#!forum/artifact-evaluation)
 
-Artifacts in the CK format
-==========================
+## Related publications and presentations
 
-We promote collaborative and reproducible research where artifacts and workflows are shared along 
-with papers in a common format to let the community quickly reuse them and thus
-accelerate open science!
-
-You can find all papers with artifacts shared in the CK format [here](https://cknow.io/?q=%22reproduced-papers%22%20AND%20%22portable-workflow-ck%22).
-
-Please check the [ACM proceedings](https://doi.org/10.1145/3229762) 
-of our [1st ACM ReQUEST tournament](https://portalparts.acm.org/3230000/3229762/fm/frontmatter.pdf) 
-with a [live scoreboard](https://cKnow.io/c/result/pareto-efficient-ai-co-design-tournament-request-acm-asplos-2018/) 
-and all artifacts and workflows shared in a [common CK format](https://github.com/ctuning/ck-request-asplos18-results).
-
-You can also check this reusable and customizable artifact from [CGO'17](http://cgo.org/cgo2017) 
-with automatic cross-platform software installation and web-based experimental dashboard powered 
-by the CK framework: 
-* [GitHub CK repo](https://github.com/SamAinsworth/reproduce-cgo2017-paper)
-* [Paper with artifact appendix](http://cTuning.org/ae/resources/paper-with-distinguished-ck-artifact-and-ae-appendix-cgo2017.pdf)
-* [PDF snapshot of the interactive CK dashboard](https://github.com/SamAinsworth/reproduce-cgo2017-paper/files/618737/ck-aarch64-dashboard.pdf)
-
-Our publications
-================
-
+* [Artifact Evaluation for Publications (Dagstuhl Perspectives Workshop 15452)](https://drops.dagstuhl.de/entities/document/10.4230/DagRep.5.11.29)
 * ["Community-driven Reviewing and Validation of Publications"](https://arxiv.org/pdf/1406.4020)
-* ["Collective Knowledge:  organizing research projects as a database ofreusable components and portable workflows with common APIs"](https://arxiv.org/pdf/2011.01149.pdf)
+* ["Collective Knowledge: organizing research projects as a database ofreusable components and portable workflows with common APIs"](https://royalsocietypublishing.org/doi/10.1098/rsta.2020.0211)
+* [ACM TechTalk'21 about "Reproducing 150 Research Papers and Testing Them in the Real World: Challenges and Solutions"](https://learning.acm.org/techtalks/reproducibility)
+
+## Acknowledgments
+
+Partial list (2014-2021) is available [here](https://ctuning.org/ae/committee.html).

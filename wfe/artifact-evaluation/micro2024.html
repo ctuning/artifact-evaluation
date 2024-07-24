@@ -7,13 +7,228 @@
 
 <!------------------------------------------------>
  <span style="font-size:small">
-  [ <a href="https://microarch.org/micro57">Back to the ACM/IEEE MICRO 2024 conference website</a> ]
+  [ <a href="https://microarch.org/micro57">Back to the IEEE/ACM MICRO 2024 conference website</a> ]
  </span>
 </center>
 
 
 <br>
 
-TBD
+
+<!------------------------------------------------>
+<div id="vspace8"></div>
+<div id="vspace8"></div>
+<h4>Important dates</h4>
+
+<div style="margin-left:20px;">
+ Artifact submission deadline: August 7, 2024 AoE<br>
+ Artifact decision: September 18, 2024<br>
+ Camera-ready paper deadline: September 22, 2024<br>
+ Conference: <a href="https://microarch.org/micro57">November 2 - November 6, 2024</a> (Austin, Texas, USA)<br>
+</div>
+
+
+
+<!------------------------------------------------>
+<div id="vspace8"></div>
+<div id="vspace8"></div>
+<h4>Artifact evaluation chairs</h4>
+
+<div style="margin-left:20px;">
+ <ul>
+  <li><a href="https://www.linkedin.com/in/gino-chacon-b8648477">Gino Chacon</a> (Intel)<br>
+  <li><a href="https://www.linkedin.com/in/nathan-gober-6497315b">Nathan Gober</a> (Texas A&M University)<br>
+  <li><a href="https://cKnowledge.org/gfursin">Grigori Fursin</a> (cTuning.org and cKnowledge.org)<br>
+ </ul>
+</div>
+
+
+
+<!------------------------------------------------>
+<div id="vspace8"></div>
+<div id="vspace8"></div>
+<h4>Artifact Evaluation Committee</h4>
+
+<div style="margin-left:20px;">
+TBA - please use <a href="https://docs.google.com/forms/d/e/1FAIpQLScHoZUtc8tXPruXQaTPQpgAddsip_4OMdB2xNS61EImdiXE3g/viewform">this form</a> 
+to nominate yourself or other colleagues with relevant AE experience.
+</div>
+
+
+
+<!------------------------------------------------>
+<div id="vspace8"></div>
+<div id="vspace8"></div>
+<h4>Artifact submission</h4>
+
+<div style="margin-left:20px;">
+
+<p>
+ Artifact evaluation promotes reproducibility of experimental results and
+ encourages code and data sharing. 
+ The authors will need to fill the unified <a href="https://github.com/ctuning/artifact-evaluation/blob/master/docs/template/ae.tex">Artifact Appendix</a>
+ to describe the minimal software, hardware and data set requirements, and explaining how to prepare, run and reproduce key experiments.
+
+ The Artifact Appendix should be appended to the accepted paper and submitted for evaluation via <a href="https://micro24-ae.hotcrp.com">MICRO'24 AE HotCRP website</a>.
+
+
+<p> 
+ This Artifact Appendix was introduced to unify the description of experimental setups
+ and results across different conferences.
+ Though it is relatively intuitive and based on the feedback from the community, we encourage the authors to check
+ the <a href="https://github.com/ctuning/artifact-evaluation/blob/master/docs/checklist.md">Artifact Appendix guide</a>,
+ <a href="https://github.com/ctuning/artifact-evaluation/blob/master/docs/reviewing.md">artifact reviewing guide</a>,
+ the <a href="https://www.sigplan.org/Resources/EmpiricalEvaluation">SIGPLAN Empirical Evaluation Guidelines</a>,
+ the <a href="https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist.pdf">NeurIPS reproducibility checklist</a>,
+ <a href="https://github.com/ctuning/artifact-evaluation/blob/master/docs/faq.md">AE FAQs</a> 
+ and Artifact Appendices from MICRO'23 papers before submitting artifacts for evaluation.
+
+<p>
+ This submission is <b>voluntary and will not influence</b> the final
+ decision regarding the papers - our goal is to help the authors validate
+ their experiments by an independent AE Committee in a collaborative and constructive way.
+ Furthermore, the authors can add notes and corrections to the Artifact Appendix
+ if some mistakes were found during artifact evaluation.
+
+<p>
+ The authors will communicate with evaluators via HotCRP after the submission.
+
+<p>
+We suggest the authors to make their artifacts available for evaluation via GitHub or similar public or private service.
+Public artifact sharing allows the authors to quickly fix encountered issues during evaluation
+before submitting the final version to archival repositories.
+Other acceptable methods include:
+
+ <ul>
+  <li>
+   Using zip or tar files with all related code and data, particularly when code
+   must be rebuilt on reviewers' machines (for example to have a non-virtualized access to some specific hardware).
+  </li>
+  <li>
+   Using <a href="https://www.docker.com">Docker</a> and similar technology.
+  </li>
+  <li>
+   Arranging remote access to the authors' machine with the pre-installed software
+   - this is an exceptional cases when rare or proprietary software and hardware is used.
+   The authors will need to privately send the access information to the AE chairs.
+  </li>
+ </ul>
+
+
+<p> 
+ The papers that successfully go through AE will receive a set of
+ <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">ACM badges</a>
+ of approval printed on the papers themselves and available as meta information
+ in the ACM Digital Library (it is now possible to search for papers with
+ specific badges in the ACM DL). Authors of such papers will have an option to
+ include up to 2 pages of their Artifact Appendix to the camera-ready paper.
+
+<p>
+  <br>
+  <table border="1" cellpadding="10" cellspacing="0">
+   <tr>
+    <td valign="top">
+     <img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/artifacts_available_dl.jpg" height="64">
+    </td>
+    <td valign="top" align="center">
+     Artifact available
+    </td>
+    <td valign="top">
+     <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">General ACM guidelines</a> 
+      - artifacts will receive the ACM "artifact available" badge
+      <b>only if</b> they have been placed on any publicly accessible archival repository
+      such as <a href="https://zenodo.org">Zenodo</a>, <a href="https://figshare.com">FigShare</a>,
+      and <a href="http://datadryad.org">Dryad</a> with a DOI. 
+      The authors can provide a DOI of the final artifact at the very end of the AE process.
+    </td>
+   </tr>
+
+   <tr>
+    <td valign="top">
+     <img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/artifacts_evaluated_functional_dl.jpg" height="64">
+    </td>
+    <td valign="top" align="center">
+     Artifact evaluated - functional
+    </td>
+    <td valign="top">
+     <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">General ACM guidelines</a>.
+    </td>
+   </tr>
+
+   <tr>
+    <td valign="top">
+     <img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/results_reproduced_dl.jpg" height="64">
+    </td>
+    <td valign="top" align="center">
+     Results reproduced
+    </td>
+    <td valign="top">
+     <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">General ACM guidelines</a> 
+      and our <a href="reviewing-micro24.html">MICRO'24 reviewing guidelines</a>.   
+    </td>
+   </tr>
+
+  </table>
+
+</i>
+
+
+</div>
+
+
+<!------------------------------------------------>
+<div id="vspace8"></div>
+<div id="vspace8"></div>
+<h4>Artifact evaluation process</h4>
+
+<div style="margin-left:20px;">
+
+<p>
+<i>Note that our artifact evaluation is single-blind because the paper is accepted, there no need to hide the authors, 
+   and we help the authors fix issues, improve their artifacts and pass evaluation.</i>
+
+<p>
+  Evaluators will read a paper and then go through the Artifact Appendix to evaluate artifacts and reproduce experiments
+  based on <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">general ACM guidelines</a> 
+  and our <a href="https://cTuning.org/ae/reviewing-micro24.html">MICRO'24 guidelines</a>.
+
+<p>
+  Reviewers will communicate with the authors about any encountered issue immediately (and anonymously) 
+  via the <a href="https://micro24-ae.hotcrp.com">HotCRP submission website</a> 
+  to give the authors time to resolve all problems! Note that our philosophy 
+  is not to fail problematic artifacts but to help the authors improve 
+  their public artifacts and pass the evaluation!
+
+<p>
+  In the end, AE chairs will communicate with the authors and decide on a set of the standard ACM reproducibility
+  badges to award to a given paper/artifact based on all reviews and the authors' responses.
+
+</div>
+
+<!------------------------------------------------>
+<!--div id="vspace8"></div>
+<div id="vspace8"></div>
+<h4>ACM reproducibility badges</h4>
+
+<div style="margin-left:20px;">
+
+
+
+</div-->
+
+
+<!------------------------------------------------>
+<div id="vspace8"></div>
+<div id="vspace8"></div>
+<h4>Questions and feedback</h4>
+
+<div style="margin-left:20px;">
+Please check the <a href="https://github.com/ctuning/artifact-evaluation/blob/master/docs/faq.md">AE FAQs</a> 
+and feel free to ask questions or provide your feedback and suggestions
+via our <a href="https://groups.google.com/forum/#!forum/artifact-evaluation">public AE discussion group</a>.
+</div>
+
+<div id="vspace8"></div>
+<div id="vspace8"></div>
 
 <br>

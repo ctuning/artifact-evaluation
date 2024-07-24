@@ -121,25 +121,6 @@ and the [NeurIPS reproducibility checklist](https://www.cs.mcgill.ca/~jpineau/Re
  a similar approach at the [MLCommons open reproducibility and optimization challenges)](https://access.cKnowledge.org)
  and there is a related initiative at the [NeurIPS conference](https://openreview.net/group?id=NeurIPS.cc/2019/Reproducibility_Challenge).*
 
-### Artifacts reusable (pilot project with MLCommons)
-
-Since the criteria for the ACM "Artifacts Evaluated – Reusable" badge are very vague, we have partnered with
-[MLCommons](https://mlcommons.org) to add their [unified and technology-agnostic Collective Mind automation interface (MLCommons CM)](https://doi.org/10.5281/zenodo.8105339)
-to the shared artifacts.
-
-This non-intrusive interface was successfully validated to automate and unify the [Student Cluster Competition at SuperComputing'22](https://github.com/mlcommons/ck/blob/master/docs/tutorials/sc22-scc-mlperf.md)
-and diverse [MLPerf benchmark community submissions and recent research papers](https://access.cknowledge.org/playground).
-
-That is why we would like to test it as a possible criteria to obtain the ACM "Artifacts Evaluated – Reusable" badge.
-
-Our goal is to help the community access diverse research projects, reproduce results and reuse artifacts
-in a unified and automated way across continuously evolving software and hardware.
-
-*Note that it will be possible to prepare and run experiments without this interface too.*
-
-The authors will get free help from MLCommons and the community via the [public Discord server](https://discord.gg/JjWNWXKxwT)
-and/or can try to add the MLCommons CM interface to their artifacts themselves using this [https://github.com/mlcommons/ck/blob/master/docs/tutorials/common-interface-to-reproduce-research-projects.mdtutorial).
-
 
 
 

@@ -1,8 +1,6 @@
 {
- "template_file":"resources/_template.html",
-
- "title":"AE PACT 2018",
-
- "menu":["pact2018"]
+  "vars": {
+     "cx_title":"AE PACT 2018"
+  }
 }
 

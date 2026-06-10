@@ -1,8 +1,8 @@
 {
- "title":"Artifact submission guide",
+  "raw": "yes",
 
- "raw": "yes",
-
- "menu":["submission"]
+  "vars": {
+    "cx_title":"Artifact submission guide"
+  }
 }
 

@@ -1,8 +1,6 @@
 {
- "template_file":"resources/_template.html",
-
- "title":"Submission guide (V20190727)",
-
- "menu":["submission"]
+  "vars": {
+    "cx_title":"Submission guide (V20190727)"
+  }
 }
 

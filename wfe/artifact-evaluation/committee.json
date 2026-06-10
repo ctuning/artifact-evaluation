@@ -1,8 +1,6 @@
 {
- "template_file":"resources/_template.html",
-
- "title":"AE Committee",
-
- "menu":["committee"]
+  "vars": {
+     "cx_title":"AE Committee"
+  }
 }
 

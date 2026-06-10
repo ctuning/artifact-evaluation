@@ -1,8 +1,8 @@
 {
- "title":"Frequently asked questions",
-
- "raw": "yes",
-
- "menu":["faq"]
+  "raw": "yes",
+ 
+  "vars": {
+     "cx_title":"Frequently asked questions"
+  }
 }
 

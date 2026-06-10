@@ -1,8 +1,6 @@
 {
- "template_file":"resources/_template.html",
-
- "title":"Prior reproducibility initiatives",
-
- "menu":["prior"]
+  "vars": {
+    "cx_title":"Prior reproducibility initiatives"
+  }
 }
 

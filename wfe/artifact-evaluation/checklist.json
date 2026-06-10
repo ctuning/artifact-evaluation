@@ -1,7 +1,6 @@
 {
- "title":"Unified Artifact Appendix and Checklist",
-
- "raw": "yes",
-
- "menu":["appendix"]
+  "raw": "yes",
+  "vars": {
+     "cx_title":"Unified Artifact Appendix and Checklist"
+  }
 }

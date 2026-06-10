@@ -1,8 +1,6 @@
 {
- "template_file":"resources/_template.html",
-
- "title":"AE CGO 2016",
-
- "menu":["cgo2016"]
+  "vars": {
+    "cx_title":"AE CGO 2016"
+  }
 }
 

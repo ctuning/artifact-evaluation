@@ -5,16 +5,15 @@
 
   <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
 
-  <link type="text/css" rel="stylesheet" media="all" href="$#ck_url_template_pull#$css/layout.css">
+  <meta name="keywords" content="{{cx_keywords}}">
 
-  <link rel="icon" type="image/png" href="$#ck_url_template_pull#$images/logo-ck-single-tr4.png" />
+  <link type="text/css" rel="stylesheet" media="all" href="{{cx_url}}css/layout.css">
+
+  <link rel="icon" type="image/png" href="{{cx_url}}resources/logo-ck-single-tr4.png" />
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="$#ck_url_template_pull#$css/cr.css">
 
-  <script src="$#ck_url_template_pull#$js/cr.js"></script>
-
-  <title>$#ck_title#$</title>
+  <title>{{cx_title}}</title>
 
  </head>
 
@@ -36,7 +35,7 @@
 
      <nav class="navbar navbar-expand-lg navbar-light" style="border-bottom: 1px solid #d5e5ef; font-family: Arial;">
       <a href="https://cTuning.org/ae">
-       <img class="logo" src="$#ck_url_template_pull#$resources/logo-ae.png" height="32">
+       <img class="logo" src="{{cx_url}}resources/logo-ae.png" height="32">
       </a>
 
       &nbsp;
@@ -53,25 +52,25 @@
 
        <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-         <a href="https://access.cknowledge.org/playground/?action=challenges" class="nav-link" style="vertical-align: middle; display: table-cell; color:#286eb1;" target="_blank">Open challenges</a>
+         <a href="https://ctuning.ai/project/ck/challenges" class="nav-link" style="vertical-align: middle; display: table-cell; color:#286eb1;" target="_blank">Open challenges</a>
         </li>
         <li class="nav-item">
-         <a href="$#ck_root_page_url#$checklist$#ck_page_suffix#$" class="nav-link" style="vertical-align: middle; display: table-cell; color:#286eb1;">Artifact Checklist</a>
+         <a href="{{cx_url}}checklist.html" class="nav-link" style="vertical-align: middle; display: table-cell; color:#286eb1;">Artifact Checklist</a>
         </li>
         <li class="nav-item">
-         <a href="$#ck_root_page_url#$submission$#ck_page_suffix#$" class="nav-link" style="vertical-align: middle; display: table-cell; color:#286eb1;">Submission</a>
+         <a href="{{cx_url}}submission.html" class="nav-link" style="vertical-align: middle; display: table-cell; color:#286eb1;">Submission</a>
         </li>
         <li class="nav-item">
-         <a href="$#ck_root_page_url#$reviewing$#ck_page_suffix#$" class="nav-link" style="vertical-align: middle; display: table-cell; color:#286eb1;">Reviewing</a>
+         <a href="{{cx_url}}reviewing.html" class="nav-link" style="vertical-align: middle; display: table-cell; color:#286eb1;">Reviewing</a>
         </li>
         <li class="nav-item">
-         <a href="$#ck_root_page_url#$committee$#ck_page_suffix#$" class="nav-link" style="vertical-align: middle; display: table-cell; color:#286eb1;">Committee</a>
+         <a href="{{cx_url}}committee.html" class="nav-link" style="vertical-align: middle; display: table-cell; color:#286eb1;">Committee</a>
         </li>
         <li class="nav-item">
-         <a href="$#ck_root_page_url#$faq$#ck_page_suffix#$" class="nav-link" style="vertical-align: middle; display: table-cell; color:#286eb1;">FAQ</a>
+         <a href="{{cx_url}}faq.html" class="nav-link" style="vertical-align: middle; display: table-cell; color:#286eb1;">FAQ</a>
         </li>
         <li class="nav-item">
-         <a href="$#ck_root_page_url#$prior_ae$#ck_page_suffix#$" class="nav-link" style="vertical-align: middle; display: table-cell; color:#286eb1;">Prior AE</a>
+         <a href="{{cx_url}}prior_ae.html" class="nav-link" style="vertical-align: middle; display: table-cell; color:#286eb1;">Prior AE</a>
         </li>
         <li class="nav-item">
          <a href="https://github.com/ctuning/artifact-evaluation" class="nav-link" style="vertical-align: middle; display: table-cell; color:#286eb1;">GitHub</a>
@@ -85,19 +84,17 @@
   <!--------------------------------------- page body start --------------------------------------->
 
   <div class="container">
-    $#ck_template_middle#$
+    {{cx_body}}
   </div>
  </div>
 
   <!------------------------------------------------------------------------------>
   <footer class="footer mt-auto font-small bg-light">
    <div class="footer-copyright text-center py-3" style="background-color:#e5f5ff;">
-    Maintained by <a href="https://cKnowledge.org/gfursin">Grigori Fursin</a> and the <a href="https://cTuning.org">cTuning foundation</a>
-    (2015-cur.)
+    Maintained by <a href="https://cTuning.ai/@gfursin">Grigori Fursin</a> and the <a href="https://cTuning.org">cTuning foundation</a>
+    (2015-2026)
     &nbsp;&nbsp;&nbsp;
-    <a href="mailto:grigori.fursin@cTuning.org"><img src="$#ck_url_template_pull#$resources/email_50px.png" width="32"></a>
-    &nbsp;&nbsp;&nbsp;
-    <a href="https://www.clustrmaps.com/map/Ctuning.org"><img src="https://www2.clustrmaps.com/stats/maps-no_clusters/Ctuning.org-thumb.jpg" height="32"/></a>
+    <a href="mailto:grigori.fursin@cTuning.org"><img src="{{cx_url}}resources/email_50px.png" width="32"></a>
 
    </div>
   </footer>

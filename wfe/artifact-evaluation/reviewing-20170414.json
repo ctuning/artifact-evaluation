@@ -1,8 +1,6 @@
 {
- "template_file":"resources/_template.html",
-
- "title":"Reviewing Guide (V20170414)",
-
- "menu":["reviewing"]
+  "vars": {
+    "cx_title":"Reviewing Guide (V20170414)"
+  }
 }
 

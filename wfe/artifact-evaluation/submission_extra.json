@@ -1,8 +1,8 @@
 {
- "title":"Extended submission guide: artifact appendix",
+  "raw": "yes",
 
- "raw": "yes",
- 
- "menu":["appendix"]
+  "vars": {
+    "cx_title":"Extended submission guide: artifact appendix"
+  }
 }
 

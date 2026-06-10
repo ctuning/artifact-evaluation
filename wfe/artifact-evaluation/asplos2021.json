@@ -1,8 +1,6 @@
 {
- "template_file":"resources/_template.html",
-
- "title":"Reproducibility initiative at ASPLOS 2021",
-
- "menu":["asplos2021"]
+  "vars": {
+    "cx_title":"Reproducibility initiative at ASPLOS 2021"
+  }
 }
 

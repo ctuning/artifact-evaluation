@@ -1,8 +1,6 @@
 {
- "template_file":"resources/_template.html",
-
- "title":"AE PPoPP 2018",
-
- "menu":["ppopp2018"]
+  "vars": {
+     "cx_title":"AE PPoPP 2018"
+  }
 }
 

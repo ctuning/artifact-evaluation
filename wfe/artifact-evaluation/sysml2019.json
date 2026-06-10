@@ -1,8 +1,6 @@
 {
- "template_file":"resources/_template.html",
-
- "title":"AE MLSys 2019",
-
- "menu":["sysml2019"]
+  "vars": {
+    "cx_title":"AE MLSys 2019"
+   }
 }
 

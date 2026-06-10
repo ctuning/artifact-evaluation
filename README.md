@@ -10,11 +10,15 @@ Code license: [![License](https://img.shields.io/badge/License-BSD%203--Clause-b
 
 ## Maintainers
 
-* [Grigori Fursin](https://cKnowledge.org/gfursin)
+* [Grigori Fursin](https://cTuning.ai/@gfursin)
 
 ## Automation
 
-We are developing Collective Mind in collaboration with MLCommons to automate reproducibility initiatives and artifact evaluation:
+We are developing the next generation of CK and CM to help automate reproducibility initiatives: [cTuning.ai](https://cTuning.ai).
+
+### Legacy (2014-2025)
+
+We have developed the Collective Mind framework in collaboration with MLCommons to automate reproducibility initiatives and artifact evaluation:
 * [GitHub](https://github.com/mlcommons/ck)
 * [ACM REP'23 keynote about "Collective Mind: toward a common language to facilitate reproducible research and technology transfer"](https://doi.org/10.5281/zenodo.8105339)
 * [White paper about "enabling more efficient and cost-effective AI/ML systems with Collective Mind, virtualized MLOps, MLPerf, Collective Knowledge Playground and reproducible optimization tournaments"](https://arxiv.org/abs/2406.16791)
@@ -31,7 +35,7 @@ We are developing Collective Mind in collaboration with MLCommons to automate re
 
 ## Copyright
 
-2014-2024 cTuning foundation
+2014-2026 Grigori Fursin and the cTuning foundation
 
 
 ## Public discussions

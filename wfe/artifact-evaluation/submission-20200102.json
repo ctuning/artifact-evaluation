@@ -1,8 +1,6 @@
 {
- "template_file":"resources/_template.html",
-
- "title":"Artifact Submission guide (V20200102)",
-
- "menu":["submission"]
+  "vars": {
+    "cx_title":"Artifact Submission guide (V20200102)"
+  }
 }
 

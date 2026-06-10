@@ -1,8 +1,8 @@
 {
- "title":"Artifact Reviewing Guide",
+  "raw": "yes",
 
- "raw": "yes",
-
- "menu":["reviewing"]
+  "vars": {
+    "cx_title":"Artifact Reviewing Guide"
+  }
 }
 

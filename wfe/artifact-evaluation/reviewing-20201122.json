@@ -1,8 +1,6 @@
 {
- "template_file":"resources/_template.html",
-
- "title":"Artifact Reviewing Guide (V20201122)",
-
- "menu":["reviewing"]
+  "vars": {
+    "cx_title":"Artifact Reviewing Guide (V20201122)"
+  }
 }
 

@@ -12,18 +12,18 @@ and the information provided in the artifact abstract such as software and hardw
 while avoiding possible conflicts of interest.
 
 Within a few days, the AE chairs will make the final selection of evaluators
-to ensure at least two or more evaluators per artifact.
+to ensure at least two evaluators per artifact.
 
-Evaluators will then have approximately 1 months to review artifacts via HotCRP,
-discuss with the authors about all encountered issues and help them fix all the issues.
+Evaluators will then have approximately one month to review artifacts via HotCRP,
+discuss all encountered issues with the authors and help them fix those issues.
 Remember that our philosophy of artifact evaluation is not to fail problematic artifacts 
 but to help the authors improve their public artifacts, pass evaluation
 and improve their Artifact Appendix.
 
 In the end, the AE chairs will decide on a set of the standard ACM reproducibility badges (see below)
 to award to a given artifact based on all reviews and the authors' responses.
-Such badges will be printed on the 1st page of the paper and will be available 
-as meta information in the [ACM Digital Library](https://dl.acm.org)
+Such badges will be printed on the first page of the paper and will be available 
+as metadata in the [ACM Digital Library](https://dl.acm.org)
 
 Authors and reviewers are encouraged to check the [AE FAQ](faq.md)
 and contact chairs and the community via our 
@@ -36,7 +36,7 @@ in case of questions or suggestions.
 Reviewers must read a paper and then thoroughly go through the Artifact Appendix 
 to evaluate shared artifacts. They should then describe their experience 
 at each stage (success or failure, encountered problems and how they were possibly solved, 
-and questions or suggestions to the authors), and give a score on scale -1 .. +1:
+and questions or suggestions to the authors), and give a score on a scale of -1 .. +1:
 
 - *+1* if exceeded expectations
 - *0* if met expectations (or inapplicable)
@@ -55,11 +55,11 @@ The author-created artifacts relevant to this paper will receive an ACM "artifac
 such as [Zenodo](https://zenodo.org), [FigShare](https://figshare.com),
 and [Dryad](http://datadryad.org).
 
-A DOI will be then assigned to their artifacts and must be provided in the Artifact Appendix!
+A DOI will then be assigned to their artifacts and must be provided in the Artifact Appendix!
 
 *Notes:*
 
-* ACM does not mandate the use of above repositories. However, publisher repositories,
+* ACM does not mandate the use of the above repositories. However, publisher repositories,
   institutional repositories, or open commercial repositories are acceptable
   **only** if they have a declared plan to enable permanent accessibility!
   **Personal web pages, GitHub, GitLab and BitBucket are not acceptable for this purpose.**
@@ -97,13 +97,13 @@ some results from the paper to make sure that their artifact is functional.
 
 ### Results reproduced
 
-* Was it possible to validate the key results from the paper using provided artifacts? 
+* Was it possible to validate the key results from the paper using the provided artifacts? 
 
 ![](https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/results_reproduced_dl.jpg)
 
 *You should report any unexpected artifact behavior to the authors (depends on the type of artifact such as unexpected output, scalability issues, crashes, performance variation, etc).*
 
-The artifacts associated with the paper will receive a "Results reproduced" badge *only if* the key results 
+The artifacts associated with the paper will receive a "Results Reproduced" badge *only if* the key results 
 of the paper have been obtained in a subsequent study by a person or team other than the authors, using 
 artifacts provided by the author.
 
@@ -115,10 +115,10 @@ and the [NeurIPS reproducibility checklist](https://www.cs.mcgill.ca/~jpineau/Re
 
 *Since it may take weeks and even months to rerun some complex experiments 
  such as deep learning model training, we are discussing a staged AE where we will first validate that
- artifacts are functional before the camera ready paper deadline, and then
+ artifacts are functional before the camera-ready paper deadline, and then
  use a separate AE with the full validation of all experimental results 
  with open reviewing and without strict deadlines. We successfully validated
- a similar approach at the [MLCommons open reproducibility and optimization challenges)](https://access.cKnowledge.org)
+ a similar approach at the [MLCommons open reproducibility and optimization challenges](https://access.cKnowledge.org)
  and there is a related initiative at the [NeurIPS conference](https://openreview.net/group?id=NeurIPS.cc/2019/Reproducibility_Challenge).*
 
 

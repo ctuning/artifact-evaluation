@@ -11,7 +11,7 @@
     * [Do I have to open source my software artifacts?](#do-i-have-to-open-source-my-software-artifacts?)
     * [Is Artifact evaluation blind or double-blind?](#is-artifact-evaluation-blind-or-double-blind?)
     * [How to pack artifacts?](#how-to-pack-artifacts?)
-    * [Is it possible to provide a remote access to a machine with pre-installed artifacts?](#is-it-possible-to-provide-a-remote-access-to-a-machine-with-pre-installed-artifacts?)
+    * [Is it possible to provide remote access to a machine with pre-installed artifacts?](#is-it-possible-to-provide-remote-access-to-a-machine-with-pre-installed-artifacts?)
     * [Can I share commercial benchmarks or software with evaluators?](#can-i-share-commercial-benchmarks-or-software-with-evaluators?)
     * [Can I engage with the community to evaluate my artifacts?](#can-i-engage-with-the-community-to-evaluate-my-artifacts?)
     * [How to automate, customize and port experiments?](#how-to-automate-customize-and-port-experiments?)
@@ -51,7 +51,7 @@ We use the following definitions [adopted by ACM and NISO](https://www.acm.org/p
 
   The measurement can be obtained with stated precision by a different team, a different measuring system, 
   in a different location on multiple trials. For computational experiments, this means that an independent group 
-  can obtain the same result using artifacts which they develop completely independently.
+  can obtain the same result using artifacts that they develop completely independently.
 
 
 
@@ -81,19 +81,19 @@ in case of questions and problems.
 
 
 We do not have strict requirements at this stage. You can pack 
-your artifacts simply in a tar ball, zip file, Virtual Machine or Docker image.
+your artifacts simply in a tarball, zip file, virtual machine or Docker image.
 You can also share artifacts via public services including GitHub, GitLab and BitBucket.
 
 Please see [our submission guide](submission.md) for more details.
 
 
-### Is it possible to provide a remote access to a machine with pre-installed artifacts?
+### Is it possible to provide remote access to a machine with pre-installed artifacts?
 
 
 
 Only in exceptional cases, i.e. when rare hardware or proprietary software/benchmarks are required,
-or VM image is too large or when you are not authorized to move artifacts outside your organization.
-In such case, you will need to send the access information 
+or the VM image is too large, or when you are not authorized to move artifacts outside your organization.
+In such cases, you will need to send the access information 
 to the AE chairs via private email or SMS. 
 They will then pass this information to the evaluators.
 
@@ -114,11 +114,11 @@ and data sets to simplify the evaluation process.
 
 Based on the community feedback, we allow open evaluation
 to let the community validate artifacts which are publicly available 
-at GitHub, GitLab, BitBuckets, etc, report issues and help the authors 
+at GitHub, GitLab, BitBucket, etc., report issues and help the authors 
 to fix them. 
 
-Note, that in the end, these artifacts still go through traditional
-evaluation process via the AE committee. We successfully validated 
+Note that in the end, these artifacts still go through the traditional
+evaluation process via the AE committee. We successfully validated this 
 at [ADAPT'16](http://adapt-workshop.org/motivation2016.html)
 and CGO/PPoPP'17!
 
@@ -134,12 +134,12 @@ to learn some ad-hoc scripts and formats in nearly
 all artifacts without even reusing such knowledge the following year.
 
 Things get even worse if an evaluator would like to validate experiments 
-using a different compiler, tool, library, data set, operating systems or hardware
+using a different compiler, tool, library, data set, operating system or hardware
 rather than just reproducing quickly outdated results using 
 VM and Docker images - our experience shows that most of the submitted scripts 
-are not easy to change, customize or adapt to other platform.
+are not easy to change, customize or adapt to other platforms.
 
-That is why we collaborate with the [open MLCommons taskforce on automation and reproducibility](https://github.com/mlcommons/ck/blob/master/docs/mlperf-education-workgroup.md)
+That is why we collaborate with the [open MLCommons task force on automation and reproducibility](https://github.com/mlcommons/ck/blob/master/docs/mlperf-education-workgroup.md)
 and [ACM](https://acm.org) to develop a [portable automation framework](https://github.com/mlcommons/ck/tree/master/cm) to make it easier to reproduce experiments
 across continuously changing software, hardware and data.
 
@@ -166,7 +166,7 @@ and the [NeurIPS reproducibility checklist](https://www.cs.mcgill.ca/~jpineau/Re
   
   
 
-First of all, you should undoubtedly run empirical experiments more than once 
+First of all, you should run empirical experiments more than once 
 (we still encounter many cases where researchers measure execution time only once).
 and perform statistical analysis.
 
@@ -186,13 +186,13 @@ users as described in this [article](https://cknow.io/c/report/rpi3-crowd-tuning
  
 
 You should also report the variation of empirical results together with all expected values.
-Furthermore, we strongly suggest you to pre-record results from your platform
+Furthermore, we strongly suggest that you pre-record results from your platform
 and provide a script to automatically compare new results with the pre-recorded ones.
 Otherwise, evaluators can spend considerable amount of time 
 digging out and validating results from "stdout".
 
 For example, see how new results are visualized and compared against the pre-recorded ones
-using [some dashboard](https://github.com/SamAinsworth/reproduce-cgo2017-paper/files/618737/ck-aarch64-dashboard.pdf) 
+using [a dashboard](https://github.com/SamAinsworth/reproduce-cgo2017-paper/files/618737/ck-aarch64-dashboard.pdf) 
 in the [CGO'17 artifact](https://github.com/SamAinsworth/reproduce-cgo2017-paper).
 
 
@@ -204,7 +204,7 @@ in the [CGO'17 artifact](https://github.com/SamAinsworth/reproduce-cgo2017-paper
 
 If the accuracy of your results depends on a given machine, environment and optimizations 
 (for example, when optimizing BLAS, DNN, etc), you should provide a script to automatically 
-report unexpected loss in accuracy above provided threshold as well as any numerical instability.
+report unexpected loss in accuracy above a provided threshold as well as any numerical instability.
 
 
 ### How to validate models or algorithm scalability?

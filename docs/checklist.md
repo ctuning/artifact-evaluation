@@ -14,7 +14,7 @@ We've introduced this appendix to [unify the description of experimental setups 
 ## Abstract
 
  Briefly and informally describe your artifacts including minimal hardware, software and other requirements, 
- how they support your paper and what are they key results to be reproduced.
+ how they support your paper and what key results should be reproduced.
  Note that evaluators will use artifact abstracts to bid on artifacts.
  The AE chairs will also use it to finalize artifact assignments.
 
@@ -22,9 +22,9 @@ We've introduced this appendix to [unify the description of experimental setups 
 ## Checklist
 
 
- Together with the artifact abstract, this check-list will help us make sure that evaluators 
- have appropriate competency and an access to the technology required to evaluate your artifacts. 
- It can also be used as meta information to find your artifacts in Digital Libraries.
+ Together with the artifact abstract, this checklist will help us make sure that evaluators 
+ have appropriate competency and access to the technology required to evaluate your artifacts. 
+ It can also be used as metadata to find your artifacts in Digital Libraries.
 
  ![] (https://raw.githubusercontent.com/ctuning/artifact-evaluation/master/docs/image-general-workflow1.png)
   
@@ -55,10 +55,10 @@ We've introduced this appendix to [unify the description of experimental setups 
  Public/private? Is it included? Which version?
 * **Binary:** Are binaries included? OS-specific? Which version?
 * **Model:** Do you use specific models (GPT-J, BERT, MobileNets ...)?
- Are they included? If not, how to download and install? 
+ Are they included? If not, how can they be downloaded and installed? 
  What is their approximate size?
 * **Data set:** Do you use specific data sets?
- Are they included? If not, how to download and install? 
+ Are they included? If not, how can they be downloaded and installed? 
  What is their approximate size?
 * **Run-time environment:** Is your artifact OS-specific (Linux, Windows, MacOS, Android, etc) ?
  Which version? Which are the main software dependencies (JIT, libs, run-time adaptation frameworks, etc);
@@ -77,15 +77,15 @@ We've introduced this appendix to [unify the description of experimental setups 
  (README, scripts, [IPython/Jupyter notebook](https://jupyter.org "https://jupyter.org"), 
  [MLCommons CM automation language](https://doi.org/10.5281/zenodo.8105339), containers etc)? 
  Do not forget to mention the maximum allowable variation of empirical results!
-* **How much disk space required (approximately)?:** This can help evaluators and end-users to find appropriate resources.
-* **How much time is needed to prepare workflow (approximately)?:** This can help evaluators and end-users to estimate resources needed to evaluate your artifact.
+* **How much disk space is required (approximately)?:** This can help evaluators and end-users to find appropriate resources.
+* **How much time is needed to prepare the workflow (approximately)?:** This can help evaluators and end-users to estimate resources needed to evaluate your artifact.
 * **How much time is needed to complete experiments (approximately)?:** This can help evaluators and end-users to estimate resources needed to evaluate your artifact.
 * **Publicly available?:** Will your artifact be publicly available? If yes, we may spend an extra effort to help you with the documentation.
-* **Code licenses (if publicly available)?:** If you workflows and artifacts will be publicly available, please provide information about licenses.
+* **Code licenses (if publicly available)?:** If your workflows and artifacts will be publicly available, please provide information about licenses.
  This will help the community to reuse your components.
-* **Code licenses (if publicly available)?:** If you workflows and artifacts will be publicly available, please provide information about licenses.
+* **Code licenses (if publicly available)?:** If your workflows and artifacts will be publicly available, please provide information about licenses.
  This will help the community to reuse your components.
-* **Workflow frameworks used?** Did authors use any workflow framework which can automate and customize experiments?
+* **Workflow frameworks used?** Did the authors use any workflow framework that can automate and customize experiments?
 * **Archived?:** 
  Note that the author-created artifacts relevant to this paper 
  will receive the ACM "artifact available" badge \*only if\* 
@@ -93,7 +93,7 @@ We've introduced this appendix to [unify the description of experimental setups 
  accessible archival repository such as [Zenodo](https://zenodo.org "https://zenodo.org"), 
  [FigShare](https://figshare.com "https://figshare.com")
  or [Dryad](http://datadryad.org "http://datadryad.org"). 
- A DOI will be then assigned to their artifacts and must be provided here! 
+ A DOI will then be assigned to their artifacts and must be provided here! 
  Personal web pages, Google Drive, GitHub, GitLab and BitBucket 
  are not accepted for this badge. 
  Authors can provide the DOI for their artifacts at the end of the evaluation.
@@ -109,11 +109,11 @@ We've introduced this appendix to [unify the description of experimental setups 
 
 
 
-Describe the way how reviewers will access your artifacts:
+Describe how reviewers will access your artifacts:
 
 * Clone a repository from GitHub, GitLab or any similar service
 * Download a package from a public website
-* Download a package from a private website (you will need to send information how to access your artifacts to AE chairs)
+* Download a package from a private website (you will need to send information about how to access your artifacts to AE chairs)
 * Access artifact via private machine with pre-installed software (only when access to rare or publicly unavailable hardware is required or proprietary
   software is used - you will need to send credentials to access your machine to the AE chairs)
 
@@ -138,15 +138,15 @@ Describe the way how reviewers will access your artifacts:
  Describe any specific OS and software packages required to evaluate your
  artifact. This is particularly important if you share your source code 
  and it must be compiled or if you rely on some proprietary software that you
- can not include to your package. In such case, we strongly suggest you 
- to describe how to obtain and to install all third-party software, data sets
+ cannot include in your package. In such cases, we strongly suggest that you 
+ describe how to obtain and install all third-party software, data sets
  and models.
 
    
   
 
 *Note that we are trying to obtain AE licenses for some commonly used proprietary tools 
-and benchmarks - you will be informed in case of positive outcome.*
+and benchmarks - you will be informed in case of a positive outcome.*
 
 ### Data sets
 
@@ -184,7 +184,7 @@ and benchmarks - you will be informed in case of positive outcome.*
 
 
  Describe the experimental workflow and how it is implemented
- and executed, i.e. some OS scripts, 
+ and executed, i.e. using OS scripts, 
  [IPython/Jupyter notebook](https://jupyter.org "https://jupyter.org"), 
  [MLCommons CM automation language](https://github.com/mlcommons/ck/tree/master/cm), etc.
 
@@ -194,7 +194,7 @@ and benchmarks - you will be informed in case of positive outcome.*
 
 
 
-## Evaluation and expected result
+## Evaluation and expected results
 
 
 
@@ -212,8 +212,8 @@ and benchmarks - you will be informed in case of positive outcome.*
 
 
  It is optional but can be useful for the community if you describe all the knobs
- to customize and tune your experiments and maybe even trying them
- with a different data sets, benchmark/applications,
+ to customize and tune your experiments and maybe even try them
+ with different data sets, benchmarks/applications,
  machine learning models, software environment (compilers, libraries, 
  run-time systems) and hardware.
 

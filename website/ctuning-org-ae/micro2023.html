@@ -1,0 +1,319 @@
+<center>
+ <p>
+  <span style="font-size:30px;"><b><span style="font-family: tahoma,geneva,sans-serif">
+  Artifact Evaluation for MICRO 2023
+  </span></b></span>
+ </p>
+
+<!------------------------------------------------>
+ <span style="font-size:small">
+  [ <a href="https://microarch.org/micro56">Back to the ACM/IEEE MICRO 2023 conference website</a> ]
+ </span>
+</center>
+
+
+<br>
+
+
+<!------------------------------------------------>
+<div id="vspace8"></div>
+<div id="vspace8"></div>
+<h4>Important dates</h4>
+
+<div style="margin-left:20px;">
+ Paper rebuttal/Revision: <strike>June 26 – July 7, 2023</strike><br>
+ Paper decision: <strike>July 24, 2023</strike><br>
+ Artifact submission deadline: <strike>August 7, 2023 AoE</strike><br>
+ Artifact decision: <strike>September 14, 2023</strike><br>
+ Conference: <strike><a href="https://microarch.org/micro56">October 28 - November 1, 2023</a></strike> (Toronto, Canada)<br>
+</div>
+
+<!------------------------------------------------>
+<div id="vspace8"></div>
+<div id="vspace8"></div>
+<br>
+<h4>A common CM interface to rerun experiments from different papers</h4>
+
+<div style="margin-left:20px;">
+ <i>
+  We are developing a common CM interface to rerun experiments from different papers in a unified and automated way:
+  <ul>
+   <li>
+    <a href="https://github.com/mlcommons/cm4mlops/tree/main/script">GitHub repo with MLCommons CM scripts (see reproduce-ieee-acm-micro2023-*)</a>
+   <li>
+    <a href="https://access.cknowledge.org/playground/?action=scripts">MLCommons CM automation recipes for ResearchOps, DevOps and MLOps</a>
+   </ul>
+ </i>
+</div>
+
+<!------------------------------------------------>
+<div id="vspace8"></div>
+<div id="vspace8"></div>
+<h4>Artifact evaluation chairs</h4>
+
+<div style="margin-left:20px;">
+ <ul>
+  <li><a href="http://suvinay.com">Suvinay Subramanian</a> (Google)<br>
+  <li><a href="https://www.linkedin.com/in/karthik-murthy-b1b1314">Karthik Murthy</a> (Google)<br>
+  <li><a href="https://cKnowledge.org/gfursin">Grigori Fursin</a> (cTuning foundation, cKnowledge.org)<br>
+ </ul>
+</div>
+
+
+
+<!------------------------------------------------>
+<div id="vspace8"></div>
+<div id="vspace8"></div>
+<h4>Artifact submission</h4>
+
+<div style="margin-left:20px;">
+
+<p>
+ Artifact evaluation promotes reproducibility of experimental results and
+ encourages code and data sharing. 
+
+<p>
+ The authors will need to fill in this <a href="https://github.com/ctuning/artifact-evaluation/blob/master/docs/template/ae.tex">Artifact Appendix</a>
+ to describe the minimal software, hardware and data set requirements, and explaining how to prepare, run and reproduce key experiments.
+
+ The Artifact Appendix should be appended to the accepted paper and submitted for evaluation via <a href="https://micro23-ae.hotcrp.com">MICRO'23 AE HotCRP website</a>.
+
+
+<p> 
+ We introduced this Artifact Appendix to <a href="https://learning.acm.org/techtalks/reproducibility">unify the description of experimental setups
+ and results across different conferences</a>.
+ Though it is relatively intuitive and based on the feedback from the community, we encourage the authors to check
+ the <a href="https://github.com/ctuning/artifact-evaluation/blob/master/docs/checklist.md">Artifact Appendix guide</a>,
+ <a href="https://github.com/ctuning/artifact-evaluation/blob/master/docs/reviewing.md">artifact reviewing guide</a>,
+ the <a href="https://www.sigplan.org/Resources/EmpiricalEvaluation">SIGPLAN Empirical Evaluation Guidelines</a>,
+ the <a href="https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist.pdf">NeurIPS reproducibility checklist</a>,
+ <a href="https://github.com/ctuning/artifact-evaluation/blob/master/docs/faq.md">AE FAQs</a> 
+ and <a href="https://cknow.io/reproduced-papers">Artifact Appendices from past papers</a> before submitting artifacts for evaluation.
+
+<p>
+ This submission is <b>voluntary and will not influence</b> the final
+ decision regarding the papers - our goal is to help the authors validate
+ their experiments by an independent AE Committee in a collaborative and constructive way.
+ Furthermore, the authors can add notes and corrections to the Artifact Appendix
+ if some mistakes were found during artifact evaluation.
+
+<p>
+ The authors will communicate with evaluators via HotCRP after the submission.
+
+<p>
+We suggest the authors to make their artifacts available for evaluation via GitHub or similar public or private service.
+Public artifact sharing allows the authors to quickly fix encountered issues during evaluation
+before submitting the final version to archival repositories.
+Other acceptable methods include:
+
+ <ul>
+  <li>
+   Using zip or tar files with all related code and data, particularly when code
+   must be rebuilt on reviewers' machines (for example to have a non-virtualized access to some specific hardware).
+  </li>
+  <li>
+   Using <a href="https://www.docker.com">Docker</a>, <a href="https://www.virtualbox.org">Virtual Box</a> and other containers and VM images.
+  </li>
+  <li>
+   Arranging remote access to the authors' machine with the pre-installed software
+   - this is an exceptional cases when rare or proprietary software and hardware is used.
+   The authors will need to privately send the access information to the AE chairs.
+  </li>
+ </ul>
+
+
+<p> 
+ The papers that successfully go through AE will receive a set of
+ <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">ACM badges</a>
+ of approval printed on the papers themselves and available as meta information
+ in the ACM Digital Library (it is now possible to search for papers with
+ specific badges in the ACM DL). Authors of such papers will have an option to
+ include up to 2 pages of their Artifact Appendix to the camera-ready paper.
+
+<p>
+  <br>
+  <table border="1" cellpadding="10" cellspacing="0">
+   <tr>
+    <td valign="top">
+     <img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/artifacts_available_dl.jpg" height="64">
+    </td>
+    <td valign="top" align="center">
+     Artifact available
+    </td>
+    <td valign="top">
+     <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">General ACM guidelines</a> 
+      - artifacts will receive the ACM "artifact available" badge
+      <b>only if</b> they have been placed on any publicly accessible archival repository
+      such as <a href="https://zenodo.org">Zenodo</a>, <a href="https://figshare.com">FigShare</a>,
+      and <a href="http://datadryad.org">Dryad</a> with a DOI. 
+      The authors can provide a DOI of the final artifact at the very end of the AE process.
+    </td>
+   </tr>
+
+   <tr>
+    <td valign="top">
+     <img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/artifacts_evaluated_functional_dl.jpg" height="64">
+    </td>
+    <td valign="top" align="center">
+     Artifact evaluated - functional
+    </td>
+    <td valign="top">
+     <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">General ACM guidelines</a>.
+    </td>
+   </tr>
+
+   <tr>
+    <td valign="top">
+     <img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/artifacts_evaluated_reusable_dl.jpg" height="64">
+    </td>
+    <td valign="top" align="center">
+     Artifacts evaluated – reusable<br><b>(pilot&nbsp;project)</b>
+    </td>
+    <td valign="top">
+<p>
+To help digest the criteria for the ACM "Artifacts Evaluated – Reusable" badge, we have partnered with <a href="https://mlcommons.org">MLCommons</a> 
+to add their <a href="https://doi.org/10.5281/zenodo.8105339">unified automation interface (MLCommons CM)</a> 
+to the shared artifacts to <a href="https://github.com/ctuning/cm-reproduce-research-projects">prepare, run and plot results</a>. 
+We opine that MLCommons CM captures the core tenets of ACM "Artifacts Evaluated – Reusable" badge. 
+Hence, we have added it as a possible criteria to obtain the ACM "Artifacts Evaluated – Reusable" badge. 
+The authors can try to add the MLCommons CM interface to their artifacts themselves using this
+<a href="https://github.com/mlcommons/ck/blob/master/docs/tutorials/common-interface-to-reproduce-research-projects.md">tutorial</a>.
+    </td>
+   </tr>
+
+
+   <tr>
+    <td valign="top">
+     <img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/results_reproduced_dl.jpg" height="64">
+    </td>
+    <td valign="top" align="center">
+     Results reproduced
+    </td>
+    <td valign="top">
+     <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">General ACM guidelines</a> 
+      and our <a href="https://github.com/ctuning/artifact-evaluation/blob/master/docs/reviewing.md">extended guidelines</a>.   
+    </td>
+   </tr>
+
+  </table>
+
+</i>
+
+
+</div>
+
+
+<!------------------------------------------------>
+<div id="vspace8"></div>
+<div id="vspace8"></div>
+<h4>Artifact evaluation process</h4>
+
+<div style="margin-left:20px;">
+
+<i>Note that our artifact evaluation is single-blind because the paper is accepted, there no need to hide the authors, and we help the authors fix issues, improve their artifacts and pass evaluation.</i>
+
+<p>
+  Evaluators will read a paper and then go through the Artifact Appendix to evaluate artifacts and reproduce experiments
+  based on <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">general ACM guidelines</a> 
+  and our <a href="https://cTuning.org/ae/reviewing-micro23.html">MICRO'23 guidelines</a>.
+
+<p>
+  Reviewers will communicate with the authors about any encountered issue immediately (and anonymously) 
+  via the <a href="https://micro23-ae.hotcrp.com">HotCRP submission website</a> 
+  to give the authors time to resolve all problems! Note that our philosophy 
+  is not to fail problematic artifacts but to help the authors improve 
+  their public artifacts and pass the evaluation!
+
+<p>
+  In the end, AE chairs will communicate with the authors and decide on a set of the standard ACM reproducibility
+  badges to award to a given paper/artifact based on all reviews and the authors' responses.
+
+</div>
+
+<!------------------------------------------------>
+<!--div id="vspace8"></div>
+<div id="vspace8"></div>
+<h4>ACM reproducibility badges</h4>
+
+<div style="margin-left:20px;">
+
+
+
+</div-->
+
+<!------------------------------------------------>
+<div id="vspace8"></div>
+<div id="vspace8"></div>
+<h4>Artifact Evaluation Committee</h4>
+
+<div style="margin-left:20px;">
+<ul>
+  <li>Junaid Ahmed (Barcelona Supercomputing Center (BSC))
+  <li>Thomas Bourgeat (EPFL)
+  <li>Roman Kaspar Brunner (Norwegian University of Science and Technology (NTNU))
+  <li>Filippo Carloni (Politecnico di Milano)
+  <li>Scott Cheng (Pennsylvania State University)
+  <li>Davide Conficconi (Politecnico di Milano)
+  <li>Christin David Bose (Purdue university)
+  <li>Quang Duong (The University of Texas at Austin)
+  <li>Charles Eckman (Google)
+  <li>Yu Feng (University of Rochester)
+  <li>Peter Gavin (Google)
+  <li>Tianao Ge (The Hong Kong University of Science and Technology (Guangzhou))
+  <li>Yueming Hao (North Carolina State University)
+  <li>Ryan Hou (University of Michigan)
+  <li>Kashif Inayat (Incheon National University)
+  <li>Vikram Jain (University of California, Berkeley)
+  <li>Xiaolin Jiang (UC Riverside)
+  <li>Apostolos Kokolis (Meta)
+  <li>Stephen Longfield (Google)
+  <li>Themis Melissaris (Snowflake)
+  <li>Nafis Mustakin (UCR)
+  <li>Mahmood Naderan-Tahan (Ghent University)
+  <li>Alan Nair (The University of Edinburgh)
+  <li>Asmita Pal (University of Wisconsin-Madison)
+  <li>Subhankar Pal (IBM Research)
+  <li>Santosh Pandey (Rutgers University)
+  <li>Francesco Peverelli (Politecnico di Milano)
+  <li>Umair Riaz (Barcelona Supercomputing Center (BSC))
+  <li>Alen Sabu (National University of Singapore)
+  <li>Yukinori Sato (Toyohashi University of Technology)
+  <li>Umer Shahid (UET Lahore)
+  <li>Cesar A. Stuardo (Bytedance)
+  <li>Yiqiu Sun (University of Illinois Urbana-Champaign)
+  <li>Minh-Thuyen Thi (Institute List, CEA, Paris-Saclay University)
+  <li>Mohit Upadhyay (National University of Singapore)
+  <li>Marco Venere (Politecnico di Milano)
+  <li>Gaurav Verma (Stony Brook University, New York)
+  <li>Felippe Vieira Zacarias (UPC/BSC)
+  <li>Zishen Wan (Georgia Tech)
+  <li>Tianrui Wei (University of California, Berkeley)
+  <li>Zhenlin Wu (The Hong Kong University of Science and Technology (Guangzhou))
+  <li>Chengshuo Xu (Google)
+  <li>Jingyi Xu (University of California, Berkeley)
+  <li>Yuanchao Xu (North Carolina State University)
+  <li>Yufan Xu (University of Utah)
+  <li>Xizhe Yin (Univsersity of California, Riverside)
+  <li>Qirui Zhang (University of Michigan)
+  <li>Sai Qian Zhang (Harvard University/Meta)
+  <li>Zhizhou Zhang (Uber Technologies Inc)
+</ul>
+</div>
+
+
+
+<!------------------------------------------------>
+<div id="vspace8"></div>
+<div id="vspace8"></div>
+<h4>Questions and feedback</h4>
+
+<div style="margin-left:20px;">
+Please check the <a href="https://github.com/ctuning/artifact-evaluation/blob/master/docs/faq.md">AE FAQs</a> 
+and feel free to ask questions or provide your feedback and suggestions
+via our <a href="https://groups.google.com/forum/#!forum/artifact-evaluation">public AE discussion group</a>.
+</div>
+
+<div id="vspace8"></div>
+<div id="vspace8"></div>
+
+<br>

@@ -1,0 +1,65 @@
+### Review template for Artifact Evaluation V20170622
+
+Please, check details about scoring here: http://cTuning.org/ae/reviewing.html
+
+Possible scores:
+* +1: exceeded expectations
+*  0: met expectations (or inapplicable)
+* -1: fell below expectations
+
+################################################################
+
+# Artifacts publicly available (if applicable): (add your score)
+
+(Describe your experience, success/failure,
+encountered problems, and suggestions to authors)
+
+
+# Package complete: (add your score)
+(Describe your experience, success/failure,
+encountered problems, and suggestions to authors)
+
+
+# Well documented: (add your score)
+(Describe your experience, success/failure,
+encountered problems, and suggestions to authors)
+
+
+# Exercisable: (add your score)
+(Describe your experience, success/failure,
+encountered problems, and suggestions to authors)
+
+
+# Consistent: (add your score)
+(Describe your experience, success/failure,
+encountered problems, and suggestions to authors)
+
+
+# Artifacts functional: (add your overall score)
+(Describe your experience, success/failure,
+encountered problems, and suggestions to authors)
+
+
+# Artifacts customizable and reusable: (add your score)
+(Describe your experience, success/failure,
+encountered problems, and suggestions to authors)
+
+
+# Results replicated (if applicable): (add your score)
+(Describe your experience, success/failure,
+encountered problems, and suggestions to authors)
+
+
+# Results reproduced (if applicable): (add your score)
+(Describe your experience, success/failure,
+encountered problems, and suggestions to authors)
+
+
+################################################################
+
+# Overall score: (add your score)
+
+Did artifacts and results match authors' description? 
+
+Provide explanation of your score and 
+what can be improved during rebuttal.

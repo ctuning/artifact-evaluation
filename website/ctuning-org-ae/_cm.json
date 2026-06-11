@@ -1,0 +1,76 @@
+{
+  "alias": "artifact-evaluation",
+  "automation_alias": "wfe",
+  "automation_uid": "1e4e644996b7f2a0",
+  "control": {
+    "author": "Grigori Fursin",
+    "author_email": "Grigori.Fursin@cTuning.org",
+    "author_webpage": "https://cKnowledge.org/gfursin",
+    "copyright": "See CK COPYRIGHT.txt for copyright details",
+    "engine": "CK",
+    "iso_datetime": "2015-05-22T10:30:00.859000",
+    "license": "See CK LICENSE.txt for licensing details",
+    "version": [
+      "1",
+      "2",
+      "0514"
+    ]
+  },
+  "data_name": "adapt-workshop",
+  "global_keywords": "reproducible research, collective knowledge, open science, reusable components, pipelines, workflows, ppopp, cgo, mlsys, supercomputing, adapt, artifact evaluation, automated research",
+  "menu_desc": [
+    {
+      "html_end": "</div></div>",
+      "html_off_end": "</span>",
+      "html_off_start": "<span id=\"ck_menu_text_0\">",
+      "html_on_end": "</span>",
+      "html_on_start": "<span id=\"ck_menu_text_0_selected\">",
+      "html_start": "<div id=\"ck_menu_0\"><div style=\"padding:3px;margin-top:6px;\">",
+      "nodes": [
+        {
+          "id": "index",
+          "link": "$#wfe_url_prefix_page#$index",
+          "name": "About"
+        },
+        {
+          "id": "submission",
+          "link": "$#wfe_url_prefix_page#$submission",
+          "name": "Submission"
+        },
+        {
+          "id": "appendix",
+          "link": "$#wfe_url_prefix_page#$checklist",
+          "name": "Checklist"
+        },
+        {
+          "id": "reviewing",
+          "link": "$#wfe_url_prefix_page#$reviewing",
+          "name": "Reviewing"
+        },
+        {
+          "id": "artifacts",
+          "link": "$#wfe_url_prefix_page#$artifacts",
+          "name": "Artifacts"
+        },
+        {
+          "id": "committee",
+          "link": "$#wfe_url_prefix_page#$committee",
+          "name": "Committee"
+        },
+        {
+          "id": "faq",
+          "link": "$#wfe_url_prefix_page#$faq",
+          "name": "FAQ"
+        },
+        {
+          "id": "prior",
+          "link": "$#wfe_url_prefix_page#$prior_ae",
+          "name": "Prior AE"
+        }
+      ]
+    }
+  ],
+  "share": " <!-- AddToAny BEGIN -->\n<a class=\"a2a_dd\" href=\"https://www.addtoany.com/share\"><img src=\"https://static.addtoany.com/buttons/share_save_171_16.png\" width=\"171\" height=\"16\" border=\"0\" alt=\"Share\"/></a>\n<script async src=\"https://static.addtoany.com/menu/page.js\"></script>\n<!-- AddToAny END -->",
+  "template_file": "resources/_template.html",
+  "uid": "9c1d53af84de794d"
+}

@@ -1,0 +1,53 @@
+### Review template for Artifact Evaluation V20151015
+
+Possible scores:
+* +2: significantly exceeded expectations
+* +1: exceeded expectations
+*  0: met expectations
+* -1: fell below expectations
+* -2: significantly fell below expectations
+
+################################################################
+
+# Documentation: (add your score)
+
+(Describe your experience, success/failure,
+encountered problems, and suggestions to authors)
+
+
+# Packaging: (add your score)
+(Describe your experience, success/failure,
+encountered problems, and suggestions to authors)
+
+
+# Installation: (add your score)
+(Describe your experience, success/failure,
+encountered problems, and suggestions to authors)
+
+
+# Use case: (add your score)
+(Describe your experience, success/failure,
+encountered problems, and suggestions to authors)
+
+
+# Expected behavior: (add your score)
+(Describe your experience, success/failure,
+encountered problems, and suggestions to authors)
+
+
+# Relevance: (add your score)
+(Describe your experience, success/failure,
+encountered problems, and suggestions to authors)
+
+
+# Customization and reusability: (add your score)
+(Describe your experience, success/failure,
+encountered problems, and suggestions to authors)
+
+
+################################################################
+
+# Overall score: (add your score)
+
+Provide explanation of your score and 
+what can be improved during rebuttal.

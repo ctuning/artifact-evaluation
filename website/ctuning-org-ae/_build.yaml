@@ -1,0 +1,10 @@
+template_file: resources/_template.html
+vars: 
+  cx_keywords: reproducible research, collective knowledge, collective mind, cmeta, ctuning, open science, reusable components, pipelines, workflows, ppopp, cgo, mlsys, supercomputing, adapt, artifact evaluation, automated research
+  cx_html_end: </div></div>
+  cx_html_off_end: </span>
+  cx_html_off_start: <span id="ck_menu_text_0">
+  cx_html_on_end: </span>
+  cx_html_on_start: <span id="ck_menu_text_0_selected">
+  cx_html_start: <div id="ck_menu_0"><div style="padding:3px;margin-top:6px;">
+  cx_url: https://cTuning.org/ae/

@@ -1,0 +1,314 @@
+<center>
+ <p>
+  <span style="font-size:30px;"><b><span style="font-family: tahoma,geneva,sans-serif">
+  Artifact Evaluation for ASPLOS 2022
+  </span></b></span>
+ </p>
+
+<!------------------------------------------------>
+ <span style="font-size:small">
+  [ <a href="http://asplos-conference.org/2022">Back to the ASPLOS 2022 conference website</a> ]
+ </span>
+</center>
+
+
+<br>
+
+
+<!------------------------------------------------>
+<h4>Important dates</h4>
+
+<div style="margin-left:20px;">
+ Paper decision: <strike>November 15, 2021</strike><br>
+ <!--Artifact abstract registration: <b>November 22, 2021</b><br-->
+ Artifact submission: <strike>December 1, 2021</strike><br>
+ Artifact decision: <strike>January 21, 2022</strike><br>
+ Conference: <a href="http://asplos-conference.org/2022">Feb 28-Mar 4, 2022</a> (Lausanne, Switzerland)<br>
+</div>
+
+<!------------------------------------------------>
+<div id="vspace8"></div>
+<div id="vspace8"></div>
+<h4>Artifact evaluation chairs</h4>
+
+<div style="margin-left:20px;">
+ <ul>
+  <li><a href="https://people.csail.mit.edu/suvinay/about.html">Suvinay Subramanian</a> (Google)<br>
+  <li><a href="https://people.mpi-sws.org/~eva">Eva Darulova</a> (Uppsala University)<br>
+  <li><a href="https://cTuning.ai/@gfursin">Grigori Fursin</a> (OctoML.ai / cTuning foundation)<br>
+ </ul>
+</div>
+
+
+<!------------------------------------------------>
+<div id="vspace8"></div>
+<div id="vspace8"></div>
+<h4>Artifact Evaluation Committee</h4>
+
+<div style="margin-left:20px;">
+<ul>
+<li>  Alex  Grosul  (Google) </li>
+<li>  Alexander Fuerst  (Indiana University) </li>
+<li>  Alexander Midlash (Google) </li>
+<li>  Aporva  Amarnath  (IBM Research) </li>
+<li>  Asmita  Pal (University of Wisconsin-Madison) </li>
+<li>  Bogdan Alexandru  Stoica  (University of Chicago) </li>
+<li>  Byung Hoon  Ahn (University of California, San Diego) </li>
+<li>  Charles Eckman  (Google) </li>
+<li>  Clement Poncelet  (Uppsala University) </li>
+<li>  David Munday  (Google) </li>
+<li>  Davide  Conficconi  (Politecnico di Milano) </li>
+<li>  Emanuele  Vannacci  (Vrije Universiteit Amsterdam) </li>
+<li>  Faruk Guvenilir (Microsoft) </li>
+<li>  Farzin  Houshmand (UC Riverside) </li>
+<li>  Felippe Vieira Zacarias (UPC/BSC) </li>
+<li>  Francesco Minna (Vrijte Universiteit Amsterdam) </li>
+<li>  Gaurav  Verma (Stony Brook University, New York) </li>
+<li>  Hongyuan  Liu (William & Mary) </li>
+<li>  Hugo  Lefeuvre  (The University of Manchester) </li>
+<li>  Kartik  Lakshminarasimhan (Ghent University) </li>
+<li>  Korakit Seemakhupt  (University of Virginia) </li>
+<li>  Lev Mukhanov  (Queen's University Belfast) </li>
+<li>  Mahmood Naderan-Tahan (Ghent University) </li>
+<li>  Marcos  Horro (CITIC, Universidade da Coruña, Spain) </li>
+<li>  Mário Pereira (NOVA LINCS & DI -- Nova School of Sciences and Technology) </li>
+<li>  Mengchi Zhang (Facebook/Purdue University) </li>
+<li>  Miheer  Vaidya  (University of Utah) </li>
+<li>  Mohammad  Loni  (MDH) </li>
+<li>  Mohit Tekriwal  (University of Michigan, Ann Arbor) </li>
+<li>  Narges  Shadab  (UC Riverside) </li>
+<li>  Peter Gavin (Google) </li>
+<li>  Rahol Rajan (Google) </li>
+<li>  Shehbaz Jaffer  (University of Toronto) </li>
+<li>  Shijia  Wei (UT Austin) </li>
+<li>  Stephen Longfield (Google) </li>
+<li>  Subhankar Pal (IBM Research) </li>
+<li>  Sumanth Gudaparthi  (University of Utah) </li>
+<li>  Tirath  Ramdas  (HP Inc.) </li>
+<li>  Toluwanimi O. Odemuyiwa (University of California, Davis) </li>
+<li>  Utpal Bora  (IIT Hyderabad) </li>
+<li>  Vlad-Andrei Bădoiu  (University Politehnica of Bucharest) </li>
+<li>  Vlastimil Dort  (Charles University) </li>
+<li>  Wei Tang  (Princeton University) </li>
+<li>  Weiwei  Jia (New Jersey Institute of Technology) </li>
+<li>  Wenshao Zhong (University of Illinois at Chicago) </li>
+<li>  Xiaolin Jiang (UC Riverside) </li>
+<li>  Xiaowei Shang (New Jersey Institute of Technology) </li>
+<li>  Xizhe Yin (Univsersity of California, Riverside) </li>
+<li>  Yifan Yang  (Massachusetts Institute of Technology) </li>
+<li>  Yueying Li  (Cornell University) </li>
+<li>  Yufan Xu  (University of Utah) </li>
+<li>  Yuke  Wang  (University of California Santa Barbara) </li>
+<li>  Zhipeng Jia (The University of Texas at Austin) </li>
+<li>  Zishen  Wan (Georgia Tech) </li>
+<li>  Zixian  Cai (Australian National University) </li>
+<li>  Ziyang  Xu  (Princeton University) </li>
+</ul>
+</div>
+
+
+<!------------------------------------------------>
+<div id="vspace8"></div>
+<div id="vspace8"></div>
+<h4>The process</h4>
+
+<div style="margin-left:20px;">
+
+<p>
+ Artifact evaluation promotes reproducibility of experimental results and
+ encourages code and data sharing to help the community quickly validate and
+ compare alternative approaches. Authors of accepted papers are invited to
+ formally describe supporting materials (code, data, models, workflows, results)
+ using the
+ <a href="https://github.com/ctuning/ck-artifact-evaluation/blob/master/wfe/artifact-evaluation/templates/ae.tex">standard Artifact Appendix template</a>
+ and submit it together with the materials for evaluation.
+
+<div id="vspace4"></div>
+<p>
+ Note that this submission is <b>voluntary and will not influence</b> the final
+ decision regarding the papers. We want to help the authors validate
+ experimental results from their accepted papers by an independent AE Committee
+ in a collaborative way while helping readers find articles with available,
+ functional, and validated artifacts!
+
+<p>
+ The papers that successfully go through AE will receive a set of
+ <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">ACM badges</a>
+ of approval printed on the papers themselves and available as meta information
+ in the ACM Digital Library (it is now possible to search for papers with
+ specific badges in ACM DL). Authors of such papers will have an option to
+ include up to 2 pages of their Artifact Appendix to the camera-ready paper.
+
+  <table border="0">
+   <tr>
+    <td>
+     <img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/artifacts_available_dl.jpg" height="64">
+    </td>
+    <td>
+     Artifact available
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/artifacts_evaluated_functional_dl.jpg" height="64">
+    </td>
+    <td>
+     Artifact evaluated - functional
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <img src="https://www.acm.org/binaries/content/gallery/acm/publications/replication-badges/results_reproduced_dl.jpg" height="64">
+    </td>
+    <td>
+     Results reproduced
+    </td>
+   </tr>
+  </table>
+
+</div>
+
+<!------------------------------------------------>
+<div id="vspace8"></div>
+<div id="vspace8"></div>
+<h4>Artifact preparation</h4>
+
+<div style="margin-left:20px;">
+
+<p>
+ You need to prepare the <a href="https://github.com/ctuning/ck-artifact-evaluation/blob/master/wfe/artifact-evaluation/templates/ae.tex">Artifact Appendix</a>
+ describing all software, hardware and data set dependencies, key results to be reproduced, and how to prepare, run and validated experiments.
+
+ Though it is relatively intuitive and based on our
+ <a href="{{cx_url}}prior_ae.html">past AE experience and your feedback</a>,
+ we strongly encourage you to check the
+  the <a href="{{cx_url}}checklist.html">Artifact Appendix guide</a>,
+  <a href="{{cx_url}}reviewing.html">artifact reviewing guide</a>,
+  the <a href="https://www.sigplan.org/Resources/EmpiricalEvaluation">SIGPLAN Empirical Evaluation Guidelines</a>,
+  the <a href="https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist.pdf">NeurIPS reproducibility checklist</a>
+  and <a href="{{cx_url}}faq.html">AE FAQs</a> before submitting artifacts for evaluation!
+
+ You can find the examples of Artifact Appendices
+ in the following <a href="https://cknow.io/reproduced-papers">reproduced papers</a>.
+
+ <p>
+ <i>Since the AE methodology is slightly different at different conferences, we introduced the unified Artifact Appendix
+ with the Reproducibility Checklist to help readers understand what was evaluated and how! Furthermore, artifact evaluation
+ sometimes help to discover some minor mistakes in the accepted paper -
+ in such case you have a chance to add related notes and corrections
+ in the Artifact Appendix of your camera-ready paper!</i>
+
+<p>
+ We strongly recommend you to provide at least some scripts to build your workflow,
+ all inputs to run your workflow, and some expected outputs to validate results from your paper.
+ You can then describe the steps to evaluate your artifact
+ using <a href="https://jupyter.org">Jupyter Notebooks</a>
+ or plain README files.
+ <b>You can skip this step if you want to share your artifacts without the validation of experimental results</b> -
+ in such case your paper can still be entitled for the "artifact available" badge!
+
+</div>
+
+<!------------------------------------------------>
+<div id="vspace8"></div>
+<div id="vspace8"></div>
+<h4>Artifact submission</h4>
+
+<div style="margin-left:20px;">
+
+<p>
+ Submit the artifact abstract and the PDF of your paper with the Artifact
+ Appendix attached using the <a href="https://asplos22-ae.hotcrp.com/">AE submission website</a>.
+
+<p>
+ The (brief) abstract should describe your artifact, the minimal hardware and
+ software requirements, how it supports your paper, how it can be validated and
+ what the expected result is. Do not forget to specify if you use any
+ proprietary software or hardware! This abstract will be used by evaluators
+ during artifact bidding to make sure that they have an access to appropriate
+ hardware and software and have required skills.
+
+
+<p>
+Most of the time, the authors make their artifacts available to the evaluators via GitHub,
+GitLab, BitBucket or similar private or public service. Public artifact sharing allows
+optional "open evaluation" which we have successfully validated at <a href="https://adapt-workshop.org">ADAPT'16</a>
+and <a href="https://cKnowledge.org/request">ASPLOS-REQUEST'18</a>.
+It allows the authors to quickly fix encountered issues during evaluation
+before submitting the final version to archival repositories.
+ Other acceptable methods include:
+ <ul>
+  <li>
+   Using zip or tar files with all related code and data, particularly when your artifact
+   should be rebuilt on reviewers' machines (for example to have a non-virtualized access to a specific hardware).
+  </li>
+  <li>
+   Using <a href="https://www.docker.com">Docker</a>, <a href="https://www.virtualbox.org">Virtual Box</a> and other containers and VM images.
+  </li>
+  <li>
+   Arranging remote access to the authors' machine with the pre-installed software
+   - this is an exceptional cases when rare or proprietary software and hardware is used.
+   You will need to privately send the access information to the AE chairs.
+  </li>
+ </ul>
+
+<p>
+ Note that your artifacts will receive the ACM "artifact available" badge
+ <b>only if</b> they have been placed on any publicly accessible archival repository
+ such as <a href="https://zenodo.org">Zenodo</a>, <a href="https://figshare.com">FigShare</a>,
+ and <a href="http://datadryad.org">Dryad</a>.
+ You must provide a DOI automatically assigned to your artifact by these repositories
+ in your final Artifact Appendix!
+
+</div>
+
+<!------------------------------------------------>
+<div id="vspace8"></div>
+<div id="vspace8"></div>
+<h4>Artifact review</h4>
+
+<div style="margin-left:20px;">
+
+<p>
+  Reviewers will need to read a paper and then thoroughly go through the
+  Artifact Appendix step-by-step to evaluate a given artifact based on
+  a set of <a href="https://ctuning.org/ae/reviewing-asplos22.html">reviewing guidelines</a>.
+
+<p>
+  Reviewers are strongly encouraged to communicate with the authors about
+  encountered issues immediately (and anonymously) via the HotCRP submission
+  website to give the authors time to resolve all problems! Note that our
+  philosophy of artifact evaluation is not to fail problematic artifacts but to
+  help the authors improve their artifacts (at least publicly available ones)
+  and pass the evaluation!
+
+<p>
+  In the end, AE chairs will decide on a set of the standard ACM reproducibility
+  badges to award to a given artifact based on all reviews as well as the
+  authors' responses.
+</div>
+
+<!------------------------------------------------>
+<!--div id="vspace8"></div>
+<div id="vspace8"></div>
+<h4>ACM reproducibility badges</h4>
+
+<div style="margin-left:20px;">
+
+
+
+</div-->
+
+<!------------------------------------------------>
+<div id="vspace8"></div>
+<div id="vspace8"></div>
+<h4>Questions and feedback</h4>
+
+<div style="margin-left:20px;">
+Please check the <a href="https://cTuning.org/ae/faq.html">AE FAQs</a> 
+and feel free to ask questions or provide your feedback and suggestions
+via the <a href="https://groups.google.com/forum/#!forum/artifact-evaluation">public AE discussion group</a>.
+</div>
+
+<div id="vspace8"></div>
+<div id="vspace8"></div>

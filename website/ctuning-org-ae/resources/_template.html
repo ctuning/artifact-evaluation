@@ -13,6 +13,112 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
+  <!-- Open-source editorial fonts (SIL OFL): Newsreader headings, Inter body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- cTuning.org/ae editorial dark theme (matches cTuning.ai) — overrides Bootstrap + legacy layout.css -->
+  <style>
+    :root {
+      --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --font-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+      --bg: #0B0E14;
+      --panel: #12161f;
+      --rule: #232a36;
+      --ink: #e8e6e3;
+      --muted: #a7adba;
+      --accent: #7ea9ff;
+      --accent-hover: #a9c6ff;
+    }
+
+    html, body {
+      background: var(--bg) !important;
+      color: var(--ink) !important;
+      font-family: var(--font-sans) !important;
+    }
+    body { font-size: 1rem; line-height: 1.7; letter-spacing: -0.001em; }
+
+    .container-fluid, .container-fluid > .container { background: var(--bg) !important; }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-serif) !important;
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      color: #f0efec;
+    }
+
+    a { color: var(--accent); }
+    a:hover, a:focus { color: var(--accent-hover); }
+
+    /* ---- Navbar (dark) ---- */
+    .navbar {
+      background: #0e1218 !important;
+      border-bottom: 1px solid var(--rule) !important;
+      font-family: var(--font-sans) !important;
+    }
+    .navbar .nav-link { color: var(--accent) !important; }
+    .navbar .nav-link:hover { color: var(--accent-hover) !important; }
+    .navbar-toggler { border-color: var(--rule) !important; }
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28126,169,255,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+    }
+
+    /* ---- Content panel (modern card) ---- */
+    main.ct-content {
+      background: var(--panel) !important;
+      border: 1px solid var(--rule);
+      border-radius: 14px;
+      box-shadow: 0 1px 2px rgba(0,0,0,.3), 0 4px 18px rgba(0,0,0,.35);
+      padding: 2rem 2.25rem;
+      max-width: 70rem;
+      margin: 1.5rem auto 2rem;
+    }
+    main.ct-content p { margin-bottom: 1rem; }
+
+    /* Keep logos/images legible on dark with a subtle light chip */
+    main.ct-content img { background: #eef2f7; border-radius: 8px; }
+
+    /* ---- Legacy #ck_* boxes -> dark ---- */
+    #ck_box_with_shadow, #ck_box_with_shadow1, #ck_box_with_shadow2,
+    #ck_box_with_shadow3, #ck_box_with_shadow4 {
+      background: #171c26 !important;
+      color: var(--ink) !important;
+      border: 1px solid var(--rule) !important;
+      box-shadow: none !important;
+    }
+    #ck_menu_0, #ck_menu_text_0, #ck_menu_text_0_selected, #ck_menu1,
+    #ck_note1, #ck_note2 { background: transparent !important; color: var(--ink) !important; }
+    #ck_menu_text_0 a, #ck_menu1 a { color: var(--accent) !important; }
+    #ck_entries1, #ck_entries1a, #ck_entries2, #ck_entries3,
+    #ck_text51, #ck_text55, #ck_subtitle, #ck_subtitle1 { color: var(--ink) !important; }
+
+    /* ---- Tables / rules ---- */
+    hr, .ck_hr { border: 0 !important; height: 1px; background-color: var(--rule) !important; color: var(--rule) !important; }
+    table.ck_round_table, table.ck_table { background: #171c26 !important; color: var(--ink) !important; }
+    table.ck_table td, table.ck_table th { border-color: var(--rule) !important; }
+
+    /* ---- Footer (dark) ---- */
+    .footer, .footer.bg-light { background: var(--bg) !important; }
+    .footer .footer-copyright {
+      background: #0e1218 !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--rule);
+    }
+    .footer a { color: var(--accent) !important; }
+    .footer img { background: #eef2f7; border-radius: 6px; padding: 2px; }
+    .powered-by {
+      font-family: var(--font-sans);
+      font-size: 0.68rem;
+      letter-spacing: 0.03em;
+      margin-top: 0.35rem;
+      opacity: 0.7;
+    }
+    .powered-by img { display: none; }
+    .powered-by a { text-decoration: underline; }
+  </style>
+
   <title>{{cx_title}}</title>
 
  </head>
@@ -83,9 +189,9 @@
 
   <!--------------------------------------- page body start --------------------------------------->
 
-  <div class="container">
+  <main class="container ct-content">
     {{cx_body}}
-  </div>
+  </main>
  </div>
 
   <!------------------------------------------------------------------------------>
@@ -95,6 +201,10 @@
     (2015-2026)
     &nbsp;&nbsp;&nbsp;
     <a href="mailto:grigori.fursin@cTuning.org"><img src="{{cx_url}}resources/email_50px.png" width="32"></a>
+
+    <div class="powered-by">
+     Powered by <a href="https://github.com/cTuningLabs/cmeta" target="_blank" rel="noopener noreferrer">cMeta</a>
+    </div>
 
    </div>
   </footer>

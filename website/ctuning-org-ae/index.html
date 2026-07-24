@@ -1,3 +1,25 @@
+<!-- index page: split content into rounded sub-boxes (scoped to this page only) -->
+<style>
+  main.ct-content {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    max-width: 64rem !important;
+  }
+  .ct-subbox {
+    background: #12161f;
+    border: 1px solid #232a36;
+    border-radius: 16px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.30), 0 6px 20px rgba(0,0,0,.35);
+    padding: 1.5rem 1.9rem;
+    margin: 0 0 1.25rem;
+  }
+  .ct-subbox ul:last-child { margin-bottom: 0; }
+  .ct-subbox:last-child { margin-bottom: 0; }
+</style>
+
+<div class="ct-subbox">
 <p>
 <h4>Upcoming reproducibility and optimization events organized and/or supported by the <a href="https://cTuning.org">cTuning foundation</a> and <a href="https://cTuning.ai">cTuning Labs</a></h4>
 
@@ -6,7 +28,9 @@
   <li><a href="https://acm-rep.github.io/2026/">ACM REP 2026: The 4th ACM Conference on Reproducibility and Replicability</a>.
 
 </ul>
+</div>
 
+<div class="ct-subbox">
 <p>
 <h4>News</h4>
 
@@ -198,6 +222,9 @@ to make it easier to compose and benchmark AI systems across rapidly evolving an
 </ul>
 
 
+</div>
+
+<div class="ct-subbox">
 <!------------------------------------------------>
 <p>
 <h3><a name="motivation">Motivation</h3>
@@ -238,6 +265,9 @@ guidelines for more details.
 
 </ul>
 
+</div>
+
+<div class="ct-subbox">
 <!------------------------------------------------>
 <p>
 <h3>Related initiatives:</h3>
@@ -290,6 +320,9 @@ guidelines for more details.
 
 
 
+</div>
+
+<div class="ct-subbox">
 <!------------------------------------------------>
 <p>
 <h3>Sponsors and supporters</h3>
@@ -305,3 +338,4 @@ guidelines for more details.
  </ul>
 
 <br>
+</div>
